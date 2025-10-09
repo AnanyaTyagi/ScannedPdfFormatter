@@ -1,0 +1,46 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "json": "layout_out/page_001.layout.json"
+    },
+    {
+      "page": 2,
+      "json": "layout_out/page_002.layout.json"
+    },
+    {
+      "page": 3,
+      "json": "layout_out/page_003.layout.json"
+    },
+    {
+      "page": 4,
+      "json": "layout_out/page_004.layout.json"
+    },
+    {
+      "page": 5,
+      "json": "layout_out/page_005.layout.json"
+    },
+    {
+      "page": 6,
+      "json": "layout_out/page_006.layout.json"
+    },
+    {
+      "page": 7,
+      "json": "layout_out/page_007.layout.json"
+    },
+    {
+      "page": 8,
+      "json": "layout_out/page_008.layout.json"
+    },
+    {
+      "page": 9,
+      "json": "layout_out/page_009.layout.json"
+    },
+    {
+      "page": 10,
+      "json": "layout_out/page_010.layout.json"
+    }
+  ],
+  "dpi": 150,
+  "weights": "./yolov8n-doclaynet.pt"
+}

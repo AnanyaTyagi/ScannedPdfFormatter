@@ -1,0 +1,365 @@
+{
+  "page": 7,
+  "tags": [
+    {
+      "tag": "H1",
+      "text": "INTRODUCTION",
+      "bbox": [
+        207.72000122070312,
+        71.6400146484375,
+        302.719970703125,
+        80.64901733398438
+      ],
+      "size": 11.937338829040527,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "Urban storm water runoff has been recognized as a major contributor to water pollution.",
+      "bbox": [
+        22.32000732421875,
+        111.96003723144531,
+        441.54058837890625,
+        123.85154724121094
+      ],
+      "size": 10.786550521850586,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H2",
+      "text": "Impervious surfaces created in conventional development through the addition of paved streets,",
+      "bbox": [
+        22.319976806640625,
+        132.1199951171875,
+        476.41973876953125,
+        144.3715057373047
+      ],
+      "size": 10.658380508422852,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "sidewalks, roofs, conventional storm water sewers and parking lots disrupt the natural hydrology",
+      "bbox": [
+        22.319976806640625,
+        152.63995361328125,
+        482.7003173828125,
+        164.53184509277344
+      ],
+      "size": 10.696634292602539,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "of an area. Impervious surface coverage disrupts the natural hydrology by increasing the",
+      "bbox": [
+        21.9599609375,
+        172.7999267578125,
+        440.77996826171875,
+        185.0510711669922
+      ],
+      "size": 10.564105987548828,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "discharge rates and volumes of storm water runoff, eroding and incising waterways, adding",
+      "bbox": [
+        21.959991455078125,
+        193.3199005126953,
+        456.25982666015625,
+        205.57139587402344
+      ],
+      "size": 10.915546894073486,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "pollutants to the waterways, increasing flooding potential, and diminishing the recharge of",
+      "bbox": [
+        21.599945068359375,
+        213.83984375,
+        452.9800720214844,
+        226.4517059326172
+      ],
+      "size": 10.72085428237915,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "aquifers from rainfall (Largo 2001, 75).",
+      "bbox": [
+        21.599945068359375,
+        234.7198028564453,
+        208.69976806640625,
+        246.25132751464844
+      ],
+      "size": 10.322846412658691,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H2",
+      "text": "The federal government has also recognized this immense problem. The US Environmental",
+      "bbox": [
+        21.599945068359375,
+        275.3998107910156,
+        457.17950439453125,
+        287.29168701171875
+      ],
+      "size": 10.985403060913086,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "Protection Agency issued Storm Water Phase 1 (1990) and Phase 2 (1999) Final Rules under the",
+      "bbox": [
+        21.599945068359375,
+        295.9197998046875,
+        481.0999450683594,
+        307.8116760253906
+      ],
+      "size": 10.773303031921387,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "Clean Water Act (1972) for all urbanized areas across the country to develop Storm Water",
+      "bbox": [
+        21.239990234375,
+        316.4398193359375,
+        451.1797180175781,
+        328.6913146972656
+      ],
+      "size": 10.706960678100586,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H2",
+      "text": "Management Programs under the National Pollution Discharge Elimination System (NPDES)",
+      "bbox": [
+        21.239959716796875,
+        337.3197937011719,
+        466.45989990234375,
+        349.9316711425781
+      ],
+      "size": 10.983642578125,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "using Best Management Practices (BMPs). The California State Water Resources Control Board",
+      "bbox": [
+        20.879974365234375,
+        358.1997985839844,
+        480.70001220703125,
+        369.3709716796875
+      ],
+      "size": 10.564105987548828,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "administers this rule in California as authorized by the Porter Cologne Water Quality Act (2002).",
+      "bbox": [
+        20.879974365234375,
+        378.7198181152344,
+        482.82025146484375,
+        390.9713134765625
+      ],
+      "size": 10.578722953796387,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "All communities across the country are required to develop best management practices for",
+      "bbox": [
+        23.39996337890625,
+        419.7597961425781,
+        454.18011474609375,
+        432.01129150390625
+      ],
+      "size": 10.529996871948242,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "removing pollutants from storm water runoff to the maximum extent practicable. The most",
+      "bbox": [
+        20.519989013671875,
+        440.6398010253906,
+        456.6999816894531,
+        452.89129638671875
+      ],
+      "size": 10.928150177001953,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "commonly used BMPs are storm water detention basins. However, these basins prolong peak",
+      "bbox": [
+        20.519989013671875,
+        461.1597900390625,
+        467.4999694824219,
+        473.7712707519531
+      ],
+      "size": 10.7991361618042,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "flows during storm events causing more erosion of waterways.",
+      "bbox": [
+        20.51995849609375,
+        482.3997802734375,
+        317.5000915527344,
+        493.9312744140625
+      ],
+      "size": 10.733154296875,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "Communities are beginning to recognize that the design of the community can help alleviate",
+      "bbox": [
+        23.39996337890625,
+        523.0797729492188,
+        462.54034423828125,
+        535.6912841796875
+      ],
+      "size": 10.762450218200684,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "these problems. The Metro, the regional governing agency of the Portland, Oregon area, has",
+      "bbox": [
+        20.15997314453125,
+        543.959716796875,
+        460.8600769042969,
+        556.2113037109375
+      ],
+      "size": 10.733154296875,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "recognized this potential and is implementing its “Green Streets” program to help alleviate the",
+      "bbox": [
+        20.15997314453125,
+        564.479736328125,
+        468.5802001953125,
+        577.09130859375
+      ],
+      "size": 10.322846412658691,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "runoff from impervious surfaces. The Metro’s “Green Streets” program implemented a highly",
+      "bbox": [
+        19.800018310546875,
+        584.6397705078125,
+        466.58026123046875,
+        597.9716796875
+      ],
+      "size": 10.887996673583984,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "connected multimodal transportation system that preserves or restores streams and wild life",
+      "bbox": [
+        19.800018310546875,
+        605.8797607421875,
+        455.1002502441406,
+        617.7716674804688
+      ],
+      "size": 10.503022193908691,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "corridors (Metro June 2002,1).",
+      "bbox": [
+        19.800018310546875,
+        626.3997802734375,
+        167.90000915527344,
+        637.5709228515625
+      ],
+      "size": 10.760150909423828,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "The States of Maryland, Florida and more recently Wisconsin, Michigan and New Jersey are",
+      "bbox": [
+        22.32000732421875,
+        667.7997436523438,
+        462.8200378417969,
+        680.7716674804688
+      ],
+      "size": 11.186169624328613,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "also taking the lead in implementing statewide goals and principles in protecting their watersheds",
+      "bbox": [
+        19.44000244140625,
+        688.6797485351562,
+        483.0998229980469,
+        701.2916870117188
+      ],
+      "size": 10.604658603668213,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H1",
+      "text": "1",
+      "bbox": [
+        250.20001220703125,
+        738.3597412109375,
+        252.20004272460938,
+        746.6480712890625
+      ],
+      "size": 5.755046844482422,
+      "bold": false,
+      "region": {
+        "cls": "figure",
+        "score": 0.28173828125,
+        "bbox": [
+          247.80938720703125,
+          736.3125,
+          255.54376220703125,
+          748.6875
+        ]
+      }
+    }
+  ]
+}

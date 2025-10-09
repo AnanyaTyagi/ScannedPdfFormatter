@@ -1,0 +1,300 @@
+{
+  "page": 6,
+  "tags": [
+    {
+      "tag": "H1",
+      "text": "PREFACE",
+      "bbox": [
+        245.52000427246094,
+        66.24000549316406,
+        296.5197448730469,
+        74.88864135742188
+      ],
+      "size": 11.22036361694336,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "The purpose of this paper is to introduce the concept of reducing impervious surface",
+      "bbox": [
+        38.8800048828125,
+        119.52002716064453,
+        439.9803161621094,
+        131.4119110107422
+      ],
+      "size": 10.775511741638184,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "coverage by using compact development. Compact development can be used to meet the",
+      "bbox": [
+        38.520050048828125,
+        140.0400390625,
+        460.2200012207031,
+        151.9319305419922
+      ],
+      "size": 11.079693794250488,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "pollution reduction requirements of the Clean Water Act as implemented through the",
+      "bbox": [
+        38.1600341796875,
+        160.5600128173828,
+        443.2999572753906,
+        172.45152282714844
+      ],
+      "size": 10.77766752243042,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H2",
+      "text": "National Pollution Discharge Elimination System (NPDES) storm water discharge",
+      "bbox": [
+        37.800079345703125,
+        181.08001708984375,
+        430.0997619628906,
+        192.97190856933594
+      ],
+      "size": 10.899600982666016,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "permitting process. Various court cases and laws have been cited to give background to",
+      "bbox": [
+        38.160064697265625,
+        201.6000213623047,
+        456.74005126953125,
+        213.13079833984375
+      ],
+      "size": 10.28781509399414,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "development of the NPDES permit. Information has been garnered through the Internet",
+      "bbox": [
+        38.160064697265625,
+        221.7599639892578,
+        456.300537109375,
+        233.65110778808594
+      ],
+      "size": 10.713948249816895,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "and published resources.",
+      "bbox": [
+        37.800048828125,
+        242.27993774414062,
+        153.46041870117188,
+        253.4510955810547
+      ],
+      "size": 10.564105987548828,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H2",
+      "text": "Insights to the NPDES storm water permitting process were gathered by attending",
+      "bbox": [
+        40.6800537109375,
+        283.3199462890625,
+        430.540283203125,
+        295.5721740722656
+      ],
+      "size": 10.952303886413574,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "meetings of the State of California Regional Water Quality Control Board for Region II",
+      "bbox": [
+        37.4400634765625,
+        304.199951171875,
+        454.0201416015625,
+        316.4514465332031
+      ],
+      "size": 10.733154296875,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "(the San Francisco Bay area) on December 18, 2002, January 22, 2003 and February 19,",
+      "bbox": [
+        37.440093994140625,
+        324.3599548339844,
+        456.7002258300781,
+        336.971435546875
+      ],
+      "size": 10.866480827331543,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "LI",
+      "text": "2003. Public hearings were held at these meetings regarding the inclusion of the",
+      "bbox": [
+        37.440093994140625,
+        345.23992919921875,
+        420.7002258300781,
+        357.1318054199219
+      ],
+      "size": 10.724773406982422,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "treatment of runoff from new development and redevelopment in the Phase 1 NPDES",
+      "bbox": [
+        37.080108642578125,
+        365.7599182128906,
+        445.0599670410156,
+        377.65179443359375
+      ],
+      "size": 11.117732048034668,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "storm water discharge permits for Contra Costa County, Alameda County, and San Mateo",
+      "bbox": [
+        37.08013916015625,
+        386.6399230957031,
+        464.7799072265625,
+        398.53179931640625
+      ],
+      "size": 11.066900253295898,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H2",
+      "text": "County. Four supplemental stakeholder meetings were are also attended where",
+      "bbox": [
+        37.080108642578125,
+        407.159912109375,
+        411.219970703125,
+        419.0517883300781
+      ],
+      "size": 11.066900253295898,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "discussions were held on new development and redevelopment storm water treatment",
+      "bbox": [
+        36.7200927734375,
+        427.679931640625,
+        444.4997863769531,
+        439.9321594238281
+      ],
+      "size": 11.453690528869629,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "permit requirements that were being considered by the Regional Board. These meetings",
+      "bbox": [
+        36.7200927734375,
+        448.5599060058594,
+        454.0201416015625,
+        460.8114013671875
+      ],
+      "size": 10.989995956420898,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "were scheduled in response to the extensive public testimony at the December 18 hearing.",
+      "bbox": [
+        36.72015380859375,
+        469.07989501953125,
+        464.140625,
+        481.3313903808594
+      ],
+      "size": 10.529996871948242,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H2",
+      "text": "A one-day workshop entitled \"Storm Water Pollution Prevention Sustainable Strategies",
+      "bbox": [
+        36.720123291015625,
+        488.8798828125,
+        452.700439453125,
+        502.2117614746094
+      ],
+      "size": 10.886150360107422,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H2",
+      "text": "Workshop\" sponsored by Association of Bay Area Governments (ABAC) was also",
+      "bbox": [
+        36.720123291015625,
+        510.4798583984375,
+        431.82025146484375,
+        522.3717651367188
+      ],
+      "size": 11.431498527526855,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "P",
+      "text": "attended on January 30, 2003.",
+      "bbox": [
+        36.360137939453125,
+        531.3599243164062,
+        177.82022094726562,
+        542.5310668945312
+      ],
+      "size": 10.564105987548828,
+      "bold": false,
+      "region": null
+    },
+    {
+      "tag": "H1",
+      "text": "IV",
+      "bbox": [
+        245.88014221191406,
+        734.7598876953125,
+        254.88014221191406,
+        740.525634765625
+      ],
+      "size": 7.200000286102295,
+      "bold": false,
+      "region": {
+        "cls": "figure",
+        "score": 0.6943359375,
+        "bbox": [
+          244.1162872314453,
+          729.4151611328125,
+          254.6159210205078,
+          744.2381591796875
+        ]
+      }
+    }
+  ]
+}
