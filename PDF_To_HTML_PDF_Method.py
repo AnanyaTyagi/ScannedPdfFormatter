@@ -249,6 +249,6 @@ def main(pdf_path, out_html_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: python step3_structure_from_pdf_Initial.py input.pdf out_Initial.html")
+        print("Usage: python PDF_To_HTML_PDF_Method.py input.pdf out_Initial.html")
         sys.exit(1)
     main(sys.argv[1], sys.argv[2])
