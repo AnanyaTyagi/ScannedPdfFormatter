@@ -190,12 +190,13 @@ def which_script(script_dir, *candidates):
 
 def main(pdf_path, dpi="300", weights=None, labelmap="labelmap.json"):
     # Find Python executable
-
     # For Streamlit Cloud
     if os.path.exists("/home/adminuser/venv/bin/python"):
         py = "/home/adminuser/venv/bin/python"
     else:
         py = sys.executable
+
+    print(f"Using Python: {py}")
 
     # ═══════════════════════════════════════════════════════════════════
     # CRITICAL FIX: Get absolute path to script directory
