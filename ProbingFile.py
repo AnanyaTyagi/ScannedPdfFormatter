@@ -1,6 +1,10 @@
 import sys, os, json
-import fitz
-
+try:
+    import fitz
+except ImportError:
+    import sys
+    sys.path.insert(0, '/home/adminuser/venv/lib/python3.13/site-packages')
+    import fitz
 pdf_path = sys.argv[1]
 doc = fitz.open(pdf_path)
 os.makedirs("debug", exist_ok=True)
