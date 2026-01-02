@@ -190,7 +190,7 @@ def which_script(script_dir, *candidates):
 
 def main(pdf_path, dpi="300", weights=None, labelmap="labelmap.json"):
     # Find Python executable
-    py = sys.executable or shutil.which("python3") or "/opt/homebrew/bin/python3"
+    py = sys.executable
     print(f"Using Python: {py}")
 
     # ═══════════════════════════════════════════════════════════════════

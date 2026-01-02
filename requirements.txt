@@ -1,8 +1,11 @@
 # Core PDF Processing
 streamlit==1.52.2
-pillow==12.1.0
-pymupdf==1.26.7
+Pillow==12.1.0
+PyMuPDF==1.26.7
 pikepdf==10.1.0
+ultralytics==8.3.246
+opencv-python==4.12.0.88
+
 
 # YOLO for Layout Detection
 ultralytics==8.3.246
