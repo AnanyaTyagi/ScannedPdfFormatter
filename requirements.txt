@@ -7,7 +7,7 @@ ultralytics==8.3.246
 
 
 # YOLO for Layout Detection
-opencv-python==4.12.0.88
+opencv-python-headless==4.12.0.88
 
 # Optional: OCR support for scanned PDFs (uncomment if needed)
 # pytesseract==0.3.10
