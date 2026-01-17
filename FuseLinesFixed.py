@@ -594,8 +594,8 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                 "text": ln["text"],
                 "bbox": ln["bbox"],
                 "size": ln["size"],
-                "bold": ln["bold"],
-                "italic": ln["italic"],
+                "bold": ln.get("bold", False),
+                "italic": ln.get("italic", False),
                 "region": use_reg,
                 "source": source  # NEW: track source
             })
