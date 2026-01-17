@@ -1,0 +1,2 @@
+opencv-python-headless==4.12.0.88
+opencv-python @ https://github.com/opencv/opencv-python/releases/download/4.12.0.88/opencv_python_headless-4.12.0.88-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl ; python_version >= "3.9"

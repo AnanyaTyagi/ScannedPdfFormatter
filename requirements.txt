@@ -1,0 +1,61 @@
+# Core PDF Processing
+streamlit==1.52.2
+#Pillow==12.1.0
+#PyMuPDF==1.26.7
+#pikepdf==10.1.0
+ultralytics==8.3.246
+
+
+# YOLO for Layout Detection
+#opencv-python-headless==4.12.0.88
+
+# Optional: OCR support for scanned PDFs (uncomment if needed)
+# Install tesseract separately: brew install tesseract (Mac) or apt-get install tesseract-ocr (Linux)
+#pytesseract==0.3.10
+
+
+# PDF Processing
+pikepdf>=8.0.0
+PyMuPDF>=1.23.0  # fitz
+
+# OCR - EasyOCR (Python 3.12 Compatible!)
+easyocr>=1.7.0
+torch>=2.0.0  # PyTorch (CPU version)
+torchvision>=0.15.0
+
+# Image Processing
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# Web Framework
+streamlit>=1.28.0
+
+# Utilities
+python-dateutil>=2.8.2
+scikit-image>=0.21.0
+
+# Optional: GPU Support (Much Faster)
+# Uncomment if you have NVIDIA GPU with CUDA
+# torch>=2.0.0+cu118
+# torchvision>=0.15.0+cu118
+# Install with: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# Optional: Progress bars
+tqdm>=4.66.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
