@@ -2,7 +2,7 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# Install system dependencies (fixed package names for Debian Trixie)
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     libgl1 \
     libglib2.0-0 \
@@ -22,10 +22,9 @@ RUN apt-get update && apt-get install -y \
 
 # Copy requirements
 COPY requirements.txt .
-COPY constraints.txt .
 
-# Install Python packages
-RUN pip install --no-cache-dir -r requirements.txt -c constraints.txt
+# Install Python packages WITHOUT constraints.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy all application files
 COPY . .
