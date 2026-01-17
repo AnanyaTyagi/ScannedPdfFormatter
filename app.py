@@ -101,20 +101,19 @@ if 'session_id' not in st.session_state:
 
 SESSION_ID = st.session_state.session_id
 
-# Sidebar configuration
-parallel_processing = True
-max_workers = 1
+# Sidebar configuration - PARALLEL ENABLED
+parallel_processing = True  # Parallel processing ON
+max_workers = 4  # Process 4 PDFs at once
 keep_intermediate = False
-show_terminal_output = True
+show_terminal_output = False
 
-# Uncomment to enable parallel processing option:
-# with st.sidebar:
-#     st.header("⚙️ Settings")
-#     parallel_processing = st.checkbox("Enable parallel processing", value=False)
-#     if parallel_processing:
-#         max_workers = st.slider("Parallel workers", min_value=2, max_value=4, value=2)
-#     keep_intermediate = st.checkbox("Keep intermediate files", value=False)
-#     show_terminal_output = st.checkbox("Show terminal output", value=False)
+# Optional: Add sidebar controls
+with st.sidebar:
+    st.header("⚙️ Settings")
+    parallel_processing = st.checkbox("Enable parallel processing", value=True)
+    if parallel_processing:
+        max_workers = st.slider("Parallel workers", min_value=1, max_value=8, value=4)
+    show_terminal_output = st.checkbox("Show detailed errors", value=False)
 
 # File uploader
 uploaded_file = st.file_uploader("Upload a ZIP file with PDFs", type="zip")
@@ -219,24 +218,16 @@ def process_single_pdf(pdf_path, output_dir, worker_pool, worker_idx=None):
 
         env = os.environ.copy()
         env['PYTHONUNBUFFERED'] = '1'
-        # Get absolute path to TagMyPDF2.py (in project root)
         script_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "TagMyPDF2.py")
 
         result = subprocess.run(
             ["python", "-u", script_path, "temp.pdf"],
             env=env,
             cwd=work_dir,
+            capture_output=True,
             text=True,
             timeout=TIMEOUT_PER_FILE
         )
-        # result = subprocess.run(
-        #     ["python", "-u", "TagMyPDF2.py", "temp.pdf"],
-        #     env=env,
-        #     cwd=work_dir,
-        #     capture_output=True,
-        #     text=True,
-        #     timeout=TIMEOUT_PER_FILE
-        # )
 
         output_pdf = os.path.join(work_dir, "output.pdf")
         if result.returncode == 0 and os.path.exists(output_pdf):
@@ -334,15 +325,18 @@ if uploaded_file:
                             status_text.info(f"🔄 Processing... ({completed}/{pdf_count} complete)")
 
                             successful = [r for r in results if r["status"] == "success"]
+                            skipped = [r for r in results if r["status"] == "skipped"]
                             failed = [r for r in results if r["status"] == "failed"]
 
                             with results_placeholder.container():
-                                col1, col2, col3 = st.columns(3)
+                                col1, col2, col3, col4 = st.columns(4)
                                 with col1:
                                     st.metric("Total", pdf_count)
                                 with col2:
-                                    st.metric("✅ Success", len(successful))
+                                    st.metric("✅ Tagged", len(successful))
                                 with col3:
+                                    st.metric("⏭️ Skipped", len(skipped))
+                                with col4:
                                     st.metric("❌ Failed", len(failed))
 
                 else:
@@ -356,15 +350,18 @@ if uploaded_file:
                         progress_bar.progress(idx / pdf_count)
 
                         successful = [r for r in results if r["status"] == "success"]
+                        skipped = [r for r in results if r["status"] == "skipped"]
                         failed = [r for r in results if r["status"] == "failed"]
 
                         with results_placeholder.container():
-                            col1, col2, col3 = st.columns(3)
+                            col1, col2, col3, col4 = st.columns(4)
                             with col1:
                                 st.metric("Total", pdf_count)
                             with col2:
-                                st.metric("✅ Success", len(successful))
+                                st.metric("✅ Tagged", len(successful))
                             with col3:
+                                st.metric("⏭️ Skipped", len(skipped))
+                            with col4:
                                 st.metric("❌ Failed", len(failed))
 
                 elapsed_time = time.time() - start_time
@@ -372,6 +369,7 @@ if uploaded_file:
                 seconds = int(elapsed_time % 60)
 
                 successful = [r for r in results if r["status"] == "success"]
+                skipped = [r for r in results if r["status"] == "skipped"]
                 failed = [r for r in results if r["status"] == "failed"]
 
                 status_text.success(f"✅ Processing complete! (took {minutes}m {seconds}s)")
@@ -383,17 +381,23 @@ if uploaded_file:
                 with col1:
                     st.metric("Total Files", pdf_count)
                 with col2:
-                    st.metric("✅ Successful", len(successful))
+                    st.metric("✅ Tagged", len(successful))
                 with col3:
-                    st.metric("❌ Failed", len(failed))
+                    st.metric("⏭️ Skipped", len(skipped))
                 with col4:
-                    st.metric("⚡ Avg Time", f"{elapsed_time / pdf_count:.1f}s")
+                    st.metric("❌ Failed", len(failed))
 
                 if successful:
                     st.success(f"Successfully tagged {len(successful)} PDF(s)")
                     with st.expander("📄 View successful files", expanded=False):
                         for r in successful:
                             st.write(f"✓ {r['name']}")
+
+                if skipped:
+                    st.info(f"Skipped {len(skipped)} already-tagged PDF(s)")
+                    with st.expander("⏭️ View skipped files", expanded=False):
+                        for r in skipped:
+                            st.write(f"⏭️ {r['name']}")
 
                 if failed:
                     st.warning(f"Failed to tag {len(failed)} PDF(s)")
@@ -405,13 +409,14 @@ if uploaded_file:
                                 with st.expander(f"Details for {r['name']}"):
                                     st.code(r['details'], language='text')
 
-                if successful:
+                if successful or skipped:
                     st.write("---")
                     st.info("📦 Creating download package...")
 
                     output_zip_path = os.path.join(temp_dir, "tagged_pdfs.zip")
                     with zipfile.ZipFile(output_zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
-                        for r in successful:
+                        # Include both successful and skipped files
+                        for r in successful + skipped:
                             file_path = os.path.join(output_dir, r['output'])
                             if os.path.exists(file_path):
                                 zipf.write(file_path, r['output'])
@@ -473,13 +478,13 @@ with col1:
     1. Create a ZIP file with your PDFs
     2. Maximum 100 files per batch
     3. Files can be in subfolders
-    
+
     **⚙️ Current Mode**
     - ⚡ Parallel processing (4 workers)
     - 4x faster than sequential
+    - Auto-skip tagged PDFs
     - Safe for multiple users
     - Built-in automatic cleanup
-
     """)
 
 with col2:
@@ -491,6 +496,7 @@ with col2:
 
     **📥 Download**
     - Download ZIP with tagged PDFs
+    - Includes both new and skipped files
     - Old sessions cleaned automatically
     - No manual maintenance needed
     """)
