@@ -35,11 +35,43 @@ def is_pdf_already_tagged(pdf_path):
         import fitz  # PyMuPDF
         doc = fitz.open(pdf_path)
 
-        # Check if document has structure tree (accessibility tags)
-        is_tagged = doc.is_tagged
+        # Method 1: Check PyMuPDF's built-in flag
+        if hasattr(doc, 'is_tagged') and doc.is_tagged:
+            doc.close()
+            return True
+
+        # Method 2: Check for structure tree using pikepdf (more reliable)
+        try:
+            import pikepdf
+            pdf = pikepdf.open(pdf_path)
+
+            # Check if the PDF has a StructTreeRoot in the catalog
+            catalog = pdf.Root
+            has_struct_tree = '/StructTreeRoot' in catalog
+
+            pdf.close()
+            doc.close()
+
+            if has_struct_tree:
+                return True
+        except Exception as e:
+            print(f"Warning: Could not check with pikepdf: {e}")
+
+        # Method 3: Check for marked content in the page stream
+        # This detects tags even if StructTreeRoot is missing
+        try:
+            for page in doc:
+                text = page.get_text("dict")
+                # If page has any marked content operators, it's likely tagged
+                page_content = page.read_contents().decode('latin-1', errors='ignore')
+                if '/Artifact' in page_content or '/P' in page_content or '/Span' in page_content:
+                    doc.close()
+                    return True
+        except Exception:
+            pass
 
         doc.close()
-        return is_tagged
+        return False
 
     except Exception as e:
         # If we can't check, process it anyway to be safe
