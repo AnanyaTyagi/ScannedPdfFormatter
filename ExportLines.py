@@ -277,10 +277,8 @@ try:
 except Exception:
     OCR_AVAILABLE = False
 
-DPI_FOR_OCR = 300  # render resolution for OCR fallback
-
-# Auto-detect and use multiple languages
-DEFAULT_OCR_LANG = 'eng+spa'  # Multi-language support
+DPI_FOR_OCR = 200  # Reduced from 300 for faster processing
+DETECTION_DPI = 150  # Even lower DPI for language detection
 
 
 def dedupe_lines(lines, y_bucket=2.0):
@@ -369,33 +367,96 @@ def page_lines_from_text_layer(page):
     return span_lines
 
 
-def page_lines_from_ocr(page):
+def detect_language_fast(page):
     """
-    OCR fallback using Tesseract with automatic multi-language support.
-    Supports English, Spanish, French, German, Portuguese automatically.
+    Fast language detection using low-res sample OCR.
+    Returns best guess language code.
+    """
+    if not OCR_AVAILABLE:
+        return 'eng'
+
+    try:
+        # Render at very low DPI for fast detection
+        scale = DETECTION_DPI / 72.0
+        mat = fitz.Matrix(scale, scale)
+        pix = page.get_pixmap(matrix=mat, alpha=False)
+
+        # Only OCR a small section (top 30% of page)
+        img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+        height = img.height
+        cropped = img.crop((0, 0, img.width, int(height * 0.3)))
+
+        # Quick OSD (Orientation and Script Detection) to detect language
+        try:
+            osd = pytesseract.image_to_osd(cropped)
+            # Parse script from OSD output
+            if 'Script:' in osd:
+                for line in osd.split('\n'):
+                    if 'Script:' in line:
+                        script = line.split(':')[1].strip()
+                        if 'Latin' in script:
+                            # For Latin scripts, try quick detection with common languages
+                            quick_text = pytesseract.image_to_string(
+                                cropped,
+                                lang='eng+spa',
+                                config='--psm 6'
+                            )[:200]
+
+                            # Simple heuristic
+                            spanish_chars = set('áéíóúñÁÉÍÓÚÑ¿¡')
+                            spanish_words = {'de', 'el', 'la', 'en', 'y', 'del', 'los', 'las', 'un', 'una'}
+
+                            if any(c in quick_text for c in spanish_chars):
+                                return 'spa'
+
+                            words = quick_text.lower().split()
+                            spanish_count = sum(1 for w in words if w in spanish_words)
+                            if spanish_count > len(words) * 0.3:
+                                return 'spa'
+
+                            return 'eng'
+        except:
+            pass
+
+        # Fallback: Try both English and Spanish
+        return 'eng+spa'
+
+    except Exception as e:
+        print(f"   Language detection failed: {e}, defaulting to eng")
+        return 'eng'
+
+
+def page_lines_from_ocr(page, lang='eng'):
+    """
+    OCR fallback using Tesseract with specified language.
+    Optimized for speed.
     """
     if not OCR_AVAILABLE:
         return []
 
-    # Render at DPI_FOR_OCR to get a crisp bitmap for OCR
+    # Render at optimized DPI
     scale = DPI_FOR_OCR / 72.0
     mat = fitz.Matrix(scale, scale)
     pix = page.get_pixmap(matrix=mat, alpha=False)
     img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
 
     try:
-        # Use multi-language detection automatically
+        # Use detected language with optimized config
         data = pytesseract.image_to_data(
             img,
-            lang=DEFAULT_OCR_LANG,  # Auto-detect among installed languages
+            lang=lang,
             output_type=Output.DICT,
-            config='--psm 1'  # Automatic page segmentation with OSD
+            config='--psm 3 --oem 1'  # Faster: PSM 3 (auto), OEM 1 (LSTM only)
         )
     except pytesseract.TesseractError as e:
-        print(f"⚠️  Multi-lang OCR failed, trying English only: {e}")
+        print(f"⚠️  OCR with lang={lang} failed, trying English: {e}")
         try:
-            # Fallback to English only
-            data = pytesseract.image_to_data(img, lang='eng', output_type=Output.DICT)
+            data = pytesseract.image_to_data(
+                img,
+                lang='eng',
+                output_type=Output.DICT,
+                config='--psm 3 --oem 1'
+            )
         except Exception as e2:
             print(f"❌ OCR failed completely: {e2}")
             return []
@@ -415,7 +476,7 @@ def page_lines_from_ocr(page):
             conf = -1.0
 
         # skip empty/very low confidence noise
-        if not txt or conf < 0:
+        if not txt or conf < 30:  # Increased threshold to filter more noise
             continue
 
         key = (
@@ -479,6 +540,9 @@ def main(pdf_path, out_dir="lines_out"):
     os.makedirs(out_dir, exist_ok=True)
     doc = fitz.open(pdf_path)
 
+    # Detect language once for the whole document (use first page as sample)
+    detected_lang = None
+
     for i, page in enumerate(doc, start=1):
         # 1) Try digital text layer first
         lines_text = page_lines_from_text_layer(page)
@@ -487,11 +551,17 @@ def main(pdf_path, out_dir="lines_out"):
         if lines_text:
             lines = lines_text
         else:
-            print(f"⚠️  Page {i}: No text layer — using OCR fallback (auto-detect language)")
-            ocr_lines = page_lines_from_ocr(page)
+            # Detect language only once (on first OCR page)
+            if detected_lang is None:
+                print(f"⚠️  Page {i}: No text layer — detecting language...")
+                detected_lang = detect_language_fast(page)
+                print(f"   Detected: {detected_lang}")
+
+            print(f"⚠️  Page {i}: OCR with lang={detected_lang}")
+            ocr_lines = page_lines_from_ocr(page, lang=detected_lang)
 
             if not ocr_lines and not OCR_AVAILABLE:
-                print(f"❌ Page {i}: OCR not available (install tesseract + pytesseract + pillow)")
+                print(f"❌ Page {i}: OCR not available")
             lines = ocr_lines
 
         # 3) Dedupe lines
@@ -516,8 +586,8 @@ def main(pdf_path, out_dir="lines_out"):
 
         op = os.path.join(out_dir, f"page_{i:03d}.lines.json")
         with open(op, "w", encoding="utf-8") as f:
-            json.dump(page_obj, f, indent=2, ensure_ascii=False)  # Support all Unicode chars
-        print("wrote:", op)
+            json.dump(page_obj, f, indent=2, ensure_ascii=False)
+        print(f"wrote: {op}")
 
 
 if __name__ == "__main__":
