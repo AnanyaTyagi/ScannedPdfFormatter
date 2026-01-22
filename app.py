@@ -931,7 +931,7 @@ with col1:
     st.markdown("""
     **📤 Upload**
     1. Create a ZIP file with your PDFs
-    2. Maximum 100 files per batch
+    2. Maximum 200MB files per batch
     3. Files can be in subfolders
 
     **⚙️ Features**
