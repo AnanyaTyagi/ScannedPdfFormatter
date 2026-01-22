@@ -555,7 +555,7 @@ st.write("Upload a ZIP file containing up to 100 PDFs to automatically tag them 
 
 # Configuration
 MAX_FILES = 100
-TIMEOUT_PER_FILE = 900  # 15 minutes for OCR-heavy PDFs
+TIMEOUT_PER_FILE = 1200  # 15 minutes for OCR-heavy PDFs
 CLEANUP_INTERVAL = 3600  # Run cleanup every hour (3600 seconds)
 SESSION_MAX_AGE = 7200  # Delete sessions older than 2 hours (7200 seconds)
 
