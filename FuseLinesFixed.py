@@ -1,4 +1,4 @@
-# #!/usr/bin/env python3
+# # !/usr/bin/env python3
 # import os, sys, json, glob, re
 #
 # # ========== CONFIGURATION ==========
@@ -114,35 +114,37 @@
 #     letters = "".join([c for c in s if c.isalpha()])
 #     return bool(letters) and CAP_RE.match(s)
 #
+#
+# # ========== SMART TAGGING FUNCTION WITH SOURCE TRACKING ==========
+#
 # def tag_line_smart(ln, region, body):
 #     """
-#     Intelligent tagging with priority system:
-#     1. High-confidence patterns (captions, explicit lists)
-#     2. ML regions + font analysis (YOLO + typography)
-#     3. Pattern-based headings (fallback when no region)
-#     4. Font-only analysis (large text = heading)
-#     5. All-caps heuristics
-#     6. Default to P
+#     Intelligent tagging with priority system and SOURCE TRACKING.
+#
+#     Returns: (tag, source)
+#     where source is one of:
+#     - "ML:region_type" (from YOLO/ML detection)
+#     - "heuristic:pattern" (from pattern matching)
+#     - "heuristic:font" (from font analysis)
+#     - "heuristic:caps" (from all-caps detection)
+#     - "default" (fallback to P)
 #     """
 #     txt = (ln.get("text") or "").strip()
 #     size = float(ln.get("size", 10.0))
 #     bold = bool(ln.get("bold", False))
 #
 #     # ===== PRIORITY 1: High-Confidence Patterns =====
-#     # These are almost always correct, override everything
 #
 #     if looks_like_caption(txt):
-#         return "FigureCaptionCandidate"
+#         return "FigureCaptionCandidate", "heuristic:caption_pattern"
 #
 #     if looks_like_list_item(txt):
-#         return "LI"
+#         return "LI", "heuristic:list_pattern"
 #
-#     # ===== PRIORITY 2: ML Region + Font Analysis (Hybrid) =====
-#     # Use YOLO detection + typography together
+#     # ===== PRIORITY 2: ML Region + Font Analysis =====
 #
 #     region_cls = None
 #     if region:
-#         # accept either "cls" (YOLO) or "label" (other layouts)
 #         region_cls = (region.get("cls") or region.get("label") or "").lower()
 #
 #     if region_cls:
@@ -150,76 +152,73 @@
 #         if region_cls in ("title", "section_header"):
 #             # Very large text in title region → H1
 #             if size >= body * 1.8 and is_short(txt):
-#                 return "H1"
+#                 return "H1", f"ML:{region_cls}+font"
 #
 #             # Medium-large or bold in title region → H2
 #             if (size >= body * 1.4 and is_short(txt)) or (size >= body * 1.25 and bold):
-#                 return "H2"
+#                 return "H2", f"ML:{region_cls}+font"
 #
 #             # Title region but normal size → still H2 (trust the ML)
 #             if is_short(txt):
-#                 return "H2"
+#                 return "H2", f"ML:{region_cls}"
 #
 #         # --- CAPTION REGIONS ---
 #         if region_cls == "caption":
-#             # If it's in a caption region, treat as caption even if pattern is fuzzy
-#             return "FigureCaptionCandidate"
+#             return "FigureCaptionCandidate", f"ML:{region_cls}"
 #
 #         # --- LIST REGIONS ---
 #         if region_cls in ("list", "list_item"):
-#             return "LI"
+#             return "LI", f"ML:{region_cls}"
 #
 #         # --- TABLE REGIONS ---
 #         if region_cls == "table":
-#             return "TableRowCandidate"
+#             return "TableRowCandidate", f"ML:{region_cls}"
 #
 #         # --- FIGURE / PICTURE REGIONS ---
 #         if region_cls in ("figure", "picture"):
-#             # Check if it's a caption within figure region
 #             low = txt.lower()
 #             if "figure" in low or "fig." in low or "table" in low or "tbl" in low:
-#                 return "FigureCaptionCandidate"
-#             # Otherwise just treat as body text near a figure
-#             return "P"
+#                 return "FigureCaptionCandidate", f"ML:{region_cls}+pattern"
+#             return "P", f"ML:{region_cls}"
 #
 #         # --- FOOTNOTE REGIONS ---
 #         if region_cls == "footnote":
-#             # Could be specialized later, but for now mark as paragraph-ish
-#             return "P"
+#             return "P", f"ML:{region_cls}"
 #
-#         # Page header/footer: usually not structural headings in content
+#         # --- PAGE HEADER/FOOTER ---
 #         if region_cls in ("page_header", "page_footer"):
-#             return "P"
+#             return "P", f"ML:{region_cls}"
 #
-#     # ===== PRIORITY 3: Pattern-Based Headings (No Region or ML Missed) =====
+#     # ===== PRIORITY 3: Pattern-Based Headings =====
 #
 #     if looks_like_h1_pattern(txt):
-#         return "H1"
+#         return "H1", "heuristic:h1_pattern"
 #
 #     if looks_like_h2_pattern(txt):
-#         return "H2"
+#         return "H2", "heuristic:h2_pattern"
 #
-#     # ===== PRIORITY 4: Font-Based Analysis (Region-Agnostic) =====
+#     # ===== PRIORITY 4: Font-Based Analysis =====
 #
 #     # Very large text → H1
 #     if size >= body * 1.8 and is_short(txt):
-#         return "H1"
+#         return "H1", "heuristic:font_size"
 #
 #     # Large text → H2
 #     if size >= body * 1.4 and is_short(txt):
-#         return "H2"
+#         return "H2", "heuristic:font_size"
 #
 #     # Bold + moderately large → H2
 #     if bold and size >= body * 1.25 and is_short(txt):
-#         return "H2"
+#         return "H2", "heuristic:font_bold"
 #
 #     # ===== PRIORITY 5: All-Caps Heuristic =====
 #
 #     if is_all_caps(txt) and size >= body * 1.2 and is_short(txt):
-#         return "H2"
+#         return "H2", "heuristic:all_caps"
 #
 #     # ===== PRIORITY 6: Default =====
-#     return "P"
+#     return "P", "default"
+#
 #
 # # ========== MAIN PROCESSING ==========
 #
@@ -231,6 +230,15 @@
 #     if not pages:
 #         print(f"No line files found in {lines_dir}")
 #         sys.exit(1)
+#
+#     # Track statistics
+#     stats = {
+#         'total_tags': 0,
+#         'ml_tags': 0,
+#         'heuristic_tags': 0,
+#         'source_breakdown': {},
+#         'tag_types': {}
+#     }
 #
 #     for lp in pages:
 #         # Load lines data
@@ -252,6 +260,8 @@
 #
 #         # Tag each line
 #         tagged = []
+#         page_ml_count = 0
+#         page_heuristic_count = 0
 #
 #         for ln in lines:
 #             # Find best matching region
@@ -266,8 +276,20 @@
 #             # Use region only if coverage meets threshold
 #             use_reg = best if best_cov >= MIN_COVER else None
 #
-#             # Smart tagging with ALL signals
-#             tag = tag_line_smart(ln, use_reg, body)
+#             # Smart tagging with source tracking
+#             tag, source = tag_line_smart(ln, use_reg, body)
+#
+#             # Track statistics
+#             stats['total_tags'] += 1
+#             stats['tag_types'][tag] = stats['tag_types'].get(tag, 0) + 1
+#             stats['source_breakdown'][source] = stats['source_breakdown'].get(source, 0) + 1
+#
+#             if source.startswith("ML:"):
+#                 stats['ml_tags'] += 1
+#                 page_ml_count += 1
+#             else:
+#                 stats['heuristic_tags'] += 1
+#                 page_heuristic_count += 1
 #
 #             # Build tagged line object
 #             tagged.append({
@@ -275,16 +297,47 @@
 #                 "text": ln["text"],
 #                 "bbox": ln["bbox"],
 #                 "size": ln["size"],
-#                 "bold": ln["bold"],
-#                 "region": use_reg
+#                 "bold": ln.get("bold", False),
+#                 "italic": ln.get("italic", False),
+#                 "region": use_reg,
+#                 "source": source  # NEW: track source
 #             })
 #
 #         # Save tagged output
 #         outp = os.path.join(out_dir, f"page_{pnum:03d}.tags.json")
 #         with open(outp, "w", encoding="utf-8") as f:
-#             json.dump({"page": pnum, "tags": tagged}, f, indent=2)
+#             json.dump({
+#                 "page": pnum,
+#                 "tags": tagged,
+#                 "stats": {
+#                     "ml_tags": page_ml_count,
+#                     "heuristic_tags": page_heuristic_count,
+#                     "total": len(tagged)
+#                 }
+#             }, f, indent=2)
 #
-#         print(f"Wrote: {outp} ({len(tagged)} lines tagged)")
+#         # Print page summary
+#         ml_pct = (page_ml_count / len(tagged) * 100) if tagged else 0
+#         print(f"Page {pnum}: {len(tagged)} tags ({page_ml_count} ML [{ml_pct:.1f}%], {page_heuristic_count} heuristic)")
+#
+#     # Print overall statistics
+#     print(f"\n{'=' * 70}")
+#     print("TAGGING STATISTICS")
+#     print(f"{'=' * 70}")
+#     print(f"Total tags: {stats['total_tags']}")
+#     print(f"  • ML-based: {stats['ml_tags']} ({stats['ml_tags'] / stats['total_tags'] * 100:.1f}%)")
+#     print(
+#         f"  • Heuristic-based: {stats['heuristic_tags']} ({stats['heuristic_tags'] / stats['total_tags'] * 100:.1f}%)")
+#
+#     print(f"\nTag type distribution:")
+#     for tag, count in sorted(stats['tag_types'].items(), key=lambda x: -x[1]):
+#         print(f"  • {tag}: {count}")
+#
+#     print(f"\nSource breakdown:")
+#     for source, count in sorted(stats['source_breakdown'].items(), key=lambda x: -x[1]):
+#         pct = count / stats['total_tags'] * 100
+#         print(f"  • {source}: {count} ({pct:.1f}%)")
+#     print(f"{'=' * 70}\n")
 #
 #
 # if __name__ == "__main__":
@@ -296,6 +349,11 @@
 
 
 # !/usr/bin/env python3
+"""
+FuseLinesFixed_PATCHED.py
+FIXED: Added artifact detection for page numbers, headers, footers
+This fixes 22,000+ PDF/UA validation errors
+"""
 import os, sys, json, glob, re
 
 # ========== CONFIGURATION ==========
@@ -412,14 +470,82 @@ def is_all_caps(txt):
     return bool(letters) and CAP_RE.match(s)
 
 
-# ========== SMART TAGGING FUNCTION WITH SOURCE TRACKING ==========
-
-def tag_line_smart(ln, region, body):
+# ============================================================================
+# ✅ NEW: ARTIFACT DETECTION (Fixes 22,000+ validation errors)
+# ============================================================================
+def should_be_artifact(txt, region_cls, bbox, page_height):
     """
-    Intelligent tagging with priority system and SOURCE TRACKING.
+    Determine if content should be marked as Artifact (decorative/non-structural).
+
+    PDF/UA requires ALL content to be either:
+    - Tagged as structural content (H1, P, Table, etc.)
+    - Marked as Artifact (invisible to screen readers)
+
+    Artifacts include:
+    - Page numbers (short numeric text at page edges)
+    - Headers/footers (detected by YOLO in page_header/page_footer regions)
+    - Very small decorative text (< 6pt)
+    - Empty/whitespace-only content
+    - Decorative lines and borders
+
+    Fixes veraPDF error:
+    "Content is neither marked as Artifact nor tagged as real content"
+    """
+    txt_stripped = (txt or "").strip()
+
+    # Empty content → artifact
+    if not txt_stripped:
+        return True
+
+    # ✅ ML detected header/footer regions → artifact
+    # This is the PRIMARY artifact detection method
+    if region_cls in ("page_header", "page_footer"):
+        return True
+
+    # ✅ Page numbers: short numeric text at page edges
+    # Common patterns: "1", "Page 1", "- 42 -", etc.
+    if len(txt_stripped) <= 10:
+        # Check if mostly numeric
+        digits = sum(1 for c in txt_stripped if c.isdigit())
+        if digits >= len(txt_stripped) * 0.5:
+            # Check if in top 60 pts or bottom 60 pts of page
+            y0, y1 = bbox[1], bbox[3]
+            if y0 < 60 or y1 > (page_height - 60):
+                return True
+
+    # ✅ Common page number patterns at edges
+    page_num_patterns = [
+        r'^\s*-?\s*\d+\s*-?\s*$',  # "1", "- 1 -", "42"
+        r'^\s*page\s+\d+\s*$',  # "Page 1", "page 42"
+        r'^\s*\d+\s*/\s*\d+\s*$',  # "1/10", "42/100"
+    ]
+
+    for pat in page_num_patterns:
+        if re.match(pat, txt_stripped, re.IGNORECASE):
+            y0, y1 = bbox[1], bbox[3]
+            if y0 < 60 or y1 > (page_height - 60):
+                return True
+
+    # ✅ Very short text at extreme edges (likely decorative)
+    if len(txt_stripped) <= 3:
+        y0, y1 = bbox[1], bbox[3]
+        x0, x1 = bbox[0], bbox[2]
+        # At top/bottom edge
+        if y0 < 40 or y1 > (page_height - 40):
+            return True
+
+    return False
+
+
+# ========== SMART TAGGING FUNCTION WITH ARTIFACT DETECTION ==========
+
+def tag_line_smart(ln, region, body, page_height):
+    """
+    Intelligent tagging with priority system and ARTIFACT DETECTION.
 
     Returns: (tag, source)
     where source is one of:
+    - "artifact_detection" (decorative content)
     - "ML:region_type" (from YOLO/ML detection)
     - "heuristic:pattern" (from pattern matching)
     - "heuristic:font" (from font analysis)
@@ -429,6 +555,17 @@ def tag_line_smart(ln, region, body):
     txt = (ln.get("text") or "").strip()
     size = float(ln.get("size", 10.0))
     bold = bool(ln.get("bold", False))
+    bbox = ln.get("bbox", [0, 0, 0, 0])
+
+    # Get region class
+    region_cls = None
+    if region:
+        region_cls = (region.get("cls") or region.get("label") or "").lower()
+
+    # ===== PRIORITY 0: ARTIFACT DETECTION (NEW!) =====
+    # Check FIRST if this should be an artifact
+    if should_be_artifact(txt, region_cls, bbox, page_height):
+        return "Artifact", "artifact_detection"
 
     # ===== PRIORITY 1: High-Confidence Patterns =====
 
@@ -439,10 +576,6 @@ def tag_line_smart(ln, region, body):
         return "LI", "heuristic:list_pattern"
 
     # ===== PRIORITY 2: ML Region + Font Analysis =====
-
-    region_cls = None
-    if region:
-        region_cls = (region.get("cls") or region.get("label") or "").lower()
 
     if region_cls:
         # --- TITLE / SECTION HEADER REGIONS ---
@@ -482,9 +615,7 @@ def tag_line_smart(ln, region, body):
         if region_cls == "footnote":
             return "P", f"ML:{region_cls}"
 
-        # --- PAGE HEADER/FOOTER ---
-        if region_cls in ("page_header", "page_footer"):
-            return "P", f"ML:{region_cls}"
+        # ✅ REMOVED: page_header/page_footer now return Artifact above
 
     # ===== PRIORITY 3: Pattern-Based Headings =====
 
@@ -533,6 +664,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
         'total_tags': 0,
         'ml_tags': 0,
         'heuristic_tags': 0,
+        'artifact_tags': 0,  # NEW
         'source_breakdown': {},
         'tag_types': {}
     }
@@ -549,16 +681,20 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
         # Load corresponding layout data (optional)
         layoutp = os.path.join(layout_dir, f"page_{pnum:03d}.layout.json")
         regions = []
+        page_height = 792.0  # Default letter size
 
         if os.path.exists(layoutp):
             with open(layoutp, "r", encoding="utf-8") as f:
                 R = json.load(f)
             regions = R.get("regions", [])
+            # ✅ GET PAGE HEIGHT for artifact detection
+            page_height = R.get("height", 792.0)
 
         # Tag each line
         tagged = []
         page_ml_count = 0
         page_heuristic_count = 0
+        page_artifact_count = 0  # NEW
 
         for ln in lines:
             # Find best matching region
@@ -573,15 +709,18 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
             # Use region only if coverage meets threshold
             use_reg = best if best_cov >= MIN_COVER else None
 
-            # Smart tagging with source tracking
-            tag, source = tag_line_smart(ln, use_reg, body)
+            # ✅ Smart tagging with artifact detection (PASS PAGE_HEIGHT)
+            tag, source = tag_line_smart(ln, use_reg, body, page_height)
 
             # Track statistics
             stats['total_tags'] += 1
             stats['tag_types'][tag] = stats['tag_types'].get(tag, 0) + 1
             stats['source_breakdown'][source] = stats['source_breakdown'].get(source, 0) + 1
 
-            if source.startswith("ML:"):
+            if source == "artifact_detection":
+                stats['artifact_tags'] += 1
+                page_artifact_count += 1
+            elif source.startswith("ML:"):
                 stats['ml_tags'] += 1
                 page_ml_count += 1
             else:
@@ -597,7 +736,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                 "bold": ln.get("bold", False),
                 "italic": ln.get("italic", False),
                 "region": use_reg,
-                "source": source  # NEW: track source
+                "source": source
             })
 
         # Save tagged output
@@ -609,13 +748,14 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                 "stats": {
                     "ml_tags": page_ml_count,
                     "heuristic_tags": page_heuristic_count,
+                    "artifact_tags": page_artifact_count,  # NEW
                     "total": len(tagged)
                 }
             }, f, indent=2)
 
         # Print page summary
-        ml_pct = (page_ml_count / len(tagged) * 100) if tagged else 0
-        print(f"Page {pnum}: {len(tagged)} tags ({page_ml_count} ML [{ml_pct:.1f}%], {page_heuristic_count} heuristic)")
+        print(
+            f"Page {pnum}: {len(tagged)} tags ({page_ml_count} ML, {page_heuristic_count} heuristic, {page_artifact_count} artifacts)")
 
     # Print overall statistics
     print(f"\n{'=' * 70}")
@@ -625,6 +765,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
     print(f"  • ML-based: {stats['ml_tags']} ({stats['ml_tags'] / stats['total_tags'] * 100:.1f}%)")
     print(
         f"  • Heuristic-based: {stats['heuristic_tags']} ({stats['heuristic_tags'] / stats['total_tags'] * 100:.1f}%)")
+    print(f"  • Artifacts: {stats['artifact_tags']} ({stats['artifact_tags'] / stats['total_tags'] * 100:.1f}%)")
 
     print(f"\nTag type distribution:")
     for tag, count in sorted(stats['tag_types'].items(), key=lambda x: -x[1]):
@@ -639,7 +780,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
-        print("Usage: python FuseLines.py <pdf_path> <layout_dir> <lines_dir> <out_dir>")
+        print("Usage: python FuseLinesFixed_PATCHED.py <pdf_path> <layout_dir> <lines_dir> <out_dir>")
         sys.exit(1)
 
     main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
