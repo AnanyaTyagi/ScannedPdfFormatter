@@ -1,0 +1,7 @@
+*.pdf
+Test*.pdf
+lines_out/
+__pycache__/
+*.pyc
+venv/
+.DS_Store
