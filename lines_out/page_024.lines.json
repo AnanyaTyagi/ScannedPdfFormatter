@@ -1,0 +1,1150 @@
+{
+  "page": 24,
+  "body_size": 10.11418890953064,
+  "lines": [
+    {
+      "text": "Bennett’sBennett’s AutoAutoDealership,Dealership,Burns,Burns,OROR",
+      "bbox": [
+        53.63999938964844,
+        66.60002136230469,
+        302.32000732421875,
+        77.41082763671875
+      ],
+      "size": 12.1491117477417,
+      "bold": false
+    },
+    {
+      "text": "★?",
+      "bbox": [
+        109.44000244140625,
+        147.2400360107422,
+        121.43997192382812,
+        159.49227905273438
+      ],
+      "size": 17.139408111572266,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        52.91999816894531,
+        214.92002868652344,
+        57.91996765136719,
+        225.7308349609375
+      ],
+      "size": 10.392271995544434,
+      "bold": false
+    },
+    {
+      "text": "DemographicsDemographics",
+      "bbox": [
+        71.63999938964844,
+        214.92002868652344,
+        152.63999938964844,
+        225.7308349609375
+      ],
+      "size": 12.074767112731934,
+      "bold": false
+    },
+    {
+      "text": "Burns,Burns,populationpopulation3,064, 3,064,is the largestis thecommunitylargestlocatedcommunityin HarneylocatedCounty in",
+      "bbox": [
+        53.279998779296875,
+        234.36001586914062,
+        427.9200744628906,
+        245.5311737060547
+      ],
+      "size": 10.039934158325195,
+      "bold": false
+    },
+    {
+      "text": "southeasternsoutheasternOregon.Oregon.",
+      "bbox": [
+        52.560001373291016,
+        253.80003356933594,
+        156.52015686035156,
+        264.61083984375
+      ],
+      "size": 10.624634742736816,
+      "bold": false
+    },
+    {
+      "text": "Oregon.HighwaysHighways395,395,20, and20,78andrun through78 runBurns,throughbut theBurns,nearestbut",
+      "bbox": [
+        165.60000610351562,
+        253.80003356933594,
+        460.1597900390625,
+        264.61083984375
+      ],
+      "size": 10.304946899414062,
+      "bold": false
+    },
+    {
+      "text": "majormajorcitycityis Bendis Bend(population(population52,029), located52,029),130 locatedmiles away.13021away.21",
+      "bbox": [
+        52.91999816894531,
+        272.8800354003906,
+        358.1999816894531,
+        283.6908264160156
+      ],
+      "size": 10.155698299407959,
+      "bold": false
+    },
+    {
+      "text": "away.13021away.21",
+      "bbox": [
+        359.6400146484375,
+        270.7200012207031,
+        365.6400146484375,
+        275.7650451660156
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "TableTable 33",
+      "bbox": [
+        246.9600067138672,
+        311.3999938964844,
+        287.2399597167969,
+        320.04864501953125
+      ],
+      "size": 9.738718032836914,
+      "bold": false
+    },
+    {
+      "text": "BurnsBurnsPopulationPopulationDataData",
+      "bbox": [
+        203.75999450683594,
+        325.08001708984375,
+        330.44012451171875,
+        335.89080810546875
+      ],
+      "size": 11.288970947265625,
+      "bold": false
+    },
+    {
+      "text": "%% BelowBelow",
+      "bbox": [
+        351.0,
+        350.6400146484375,
+        394.6801452636719,
+        358.92828369140625
+      ],
+      "size": 11.088088512420654,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty% BelowLevelLevel",
+      "bbox": [
+        338.3999938964844,
+        363.2400207519531,
+        406.96014404296875,
+        373.6904602050781
+      ],
+      "size": 10.501674175262451,
+      "bold": false
+    },
+    {
+      "text": "Poverty8.4%8.4%",
+      "bbox": [
+        358.55999755859375,
+        378.3599853515625,
+        381.55999755859375,
+        387.0086364746094
+      ],
+      "size": 9.967954635620117,
+      "bold": false
+    },
+    {
+      "text": "8.6%8.6%",
+      "bbox": [
+        358.55999755859375,
+        393.4800109863281,
+        381.55987548828125,
+        401.7682800292969
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "PopulationPopulation",
+      "bbox": [
+        425.8800048828125,
+        350.6400146484375,
+        480.87939453125,
+        360.7300720214844
+      ],
+      "size": 10.529909133911133,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmerican",
+      "bbox": [
+        122.4000015258789,
+        351.0,
+        183.3597412109375,
+        359.6486511230469
+      ],
+      "size": 10.969941139221191,
+      "bold": false
+    },
+    {
+      "text": "AmericanIndianIndian",
+      "bbox": [
+        137.52000427246094,
+        363.6000061035156,
+        167.5197296142578,
+        371.8882751464844
+      ],
+      "size": 9.099414825439453,
+      "bold": false
+    },
+    {
+      "text": "2.5%2.5%",
+      "bbox": [
+        142.9199981689453,
+        378.7200012207031,
+        165.9198760986328,
+        387.0082702636719
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "%%",
+      "bbox": [
+        221.39999389648438,
+        351.0,
+        230.4000244140625,
+        359.28826904296875
+      ],
+      "size": 12.208212852478027,
+      "bold": false
+    },
+    {
+      "text": "MedianMedian",
+      "bbox": [
+        273.6000061035156,
+        351.0,
+        309.6001892089844,
+        359.28826904296875
+      ],
+      "size": 9.967964172363281,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncomeMedian",
+      "bbox": [
+        273.239990234375,
+        363.6000061035156,
+        310.2401123046875,
+        371.8882751464844
+      ],
+      "size": 10.105466842651367,
+      "bold": false
+    },
+    {
+      "text": "$26,658$26,658",
+      "bbox": [
+        273.239990234375,
+        378.3600158691406,
+        311.2403259277344,
+        388.0897521972656
+      ],
+      "size": 10.272894859313965,
+      "bold": false
+    },
+    {
+      "text": "$30,957$30,957",
+      "bbox": [
+        273.239990234375,
+        393.1200256347656,
+        311.2401123046875,
+        403.2100830078125
+      ],
+      "size": 10.461369514465332,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%",
+      "bbox": [
+        203.75999450683594,
+        363.60003662109375,
+        247.75962829589844,
+        373.6900939941406
+      ],
+      "size": 10.529909133911133,
+      "bold": false
+    },
+    {
+      "text": "5.3%5.3%",
+      "bbox": [
+        216.36000061035156,
+        378.7200012207031,
+        239.35987854003906,
+        387.0082702636719
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "4.2%4.2%",
+      "bbox": [
+        215.63999938964844,
+        393.4800109863281,
+        239.63986206054688,
+        402.128662109375
+      ],
+      "size": 10.182305335998535,
+      "bold": false
+    },
+    {
+      "text": "3,0503,050",
+      "bbox": [
+        446.3999938964844,
+        378.3600158691406,
+        472.40020751953125,
+        387.7293701171875
+      ],
+      "size": 9.866345405578613,
+      "bold": false
+    },
+    {
+      "text": "7,6097,609",
+      "bbox": [
+        446.3999938964844,
+        393.48004150390625,
+        472.40020751953125,
+        402.8493957519531
+      ],
+      "size": 9.866345405578613,
+      "bold": false
+    },
+    {
+      "text": "BurnsBurns",
+      "bbox": [
+        53.279998779296875,
+        379.0799865722656,
+        80.28007507324219,
+        387.0079345703125
+      ],
+      "size": 9.248579978942871,
+      "bold": false
+    },
+    {
+      "text": "CountyHarneyHarney",
+      "bbox": [
+        53.279998779296875,
+        394.20001220703125,
+        87.280029296875,
+        404.2900695800781
+      ],
+      "size": 10.68831729888916,
+      "bold": false
+    },
+    {
+      "text": "CountyCountyHarney",
+      "bbox": [
+        52.91999816894531,
+        406.44000244140625,
+        85.91999816894531,
+        416.89044189453125
+      ],
+      "size": 10.71634292602539,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:CountyOregonSource:OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationPopulation",
+      "bbox": [
+        52.91999816894531,
+        421.5600280761719,
+        89.91984558105469,
+        431.65008544921875
+      ],
+      "size": 11.14986515045166,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>OregonSource:OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationPopulation Research1.3%PopulationCenter, Portland8.0%StateSelect:University$40,916Profiles[NoforDate],Oregon.",
+      "bbox": [
+        52.91999816894531,
+        433.44000244140625,
+        343.8399353027344,
+        442.0886535644531
+      ],
+      "size": 8.313817024230957,
+      "bold": false
+    },
+    {
+      "text": "Source:<http;//www,upa.pdx.edu/CPRC/about/index.html>OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationPopulation Research Center, Portland StateSelect:UniversityProfiles[NoforDate],Oregon. [20 JanuaryResearch2005]",
+      "bbox": [
+        52.91999816894531,
+        443.5199890136719,
+        436.07989501953125,
+        452.16864013671875
+      ],
+      "size": 8.211940288543701,
+      "bold": false
+    },
+    {
+      "text": "4%4%",
+      "bbox": [
+        142.55999755859375,
+        393.4800109863281,
+        156.56008911132812,
+        402.128662109375
+      ],
+      "size": 10.998214721679688,
+      "bold": false
+    },
+    {
+      "text": "8.0%8.0%",
+      "bbox": [
+        216.36000061035156,
+        420.8399963378906,
+        239.36000061035156,
+        429.4886474609375
+      ],
+      "size": 9.967954635620117,
+      "bold": false
+    },
+    {
+      "text": "$40,916$40,916",
+      "bbox": [
+        273.6000061035156,
+        420.8399963378906,
+        311.600341796875,
+        430.5697326660156
+      ],
+      "size": 10.272894859313965,
+      "bold": false
+    },
+    {
+      "text": "7.9%7.9%",
+      "bbox": [
+        358.55999755859375,
+        420.84002685546875,
+        381.55987548828125,
+        429.1282958984375
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "3,421,3993,421,399",
+      "bbox": [
+        425.1600036621094,
+        420.8399963378906,
+        472.16033935546875,
+        430.5697326660156
+      ],
+      "size": 10.075754165649414,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:1.3%1.3%Population",
+      "bbox": [
+        143.27999877929688,
+        421.20001220703125,
+        166.27987670898438,
+        429.48828125
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        52.91999816894531,
+        496.0799865722656,
+        57.91996765136719,
+        504.7286376953125
+      ],
+      "size": 9.295130729675293,
+      "bold": false
+    },
+    {
+      "text": "TheThe SiteSite",
+      "bbox": [
+        70.91999816894531,
+        496.0799865722656,
+        115.75988006591797,
+        504.7286376953125
+      ],
+      "size": 10.014111518859863,
+      "bold": false
+    },
+    {
+      "text": "FromFromthetheearlyearly1950s1950sthroughthroughthe latethe1970s,lateBennett’s1970s, AutoBennett’sDealershipAutowasDealershiplocated on",
+      "bbox": [
+        53.279998779296875,
+        516.5999755859375,
+        475.11993408203125,
+        526.6900634765625
+      ],
+      "size": 9.955549716949463,
+      "bold": false
+    },
+    {
+      "text": "thisthis1",
+      "bbox": [
+        52.560001373291016,
+        535.6799926757812,
+        68.56018829345703,
+        545.7700805664062
+      ],
+      "size": 8.980029106140137,
+      "bold": false
+    },
+    {
+      "text": "this11 acreacreproperty,property,in downtownin downtownBurns.",
+      "bbox": [
+        74.16000366210938,
+        535.6799926757812,
+        246.0801544189453,
+        545.7700805664062
+      ],
+      "size": 9.72725772857666,
+      "bold": false
+    },
+    {
+      "text": "Burns.InIn1985,1985,thethepropertypropertywas soldwastosoldan",
+      "bbox": [
+        255.24000549316406,
+        535.6799926757812,
+        426.5199279785156,
+        545.7700805664062
+      ],
+      "size": 9.768260478973389,
+      "bold": false
+    },
+    {
+      "text": "investmentinvestmentcompany,company,whichwhichremodeledremodeledthe buildingstheforbuildingscommercialforretailcommercialuse. The",
+      "bbox": [
+        52.91999816894531,
+        554.4000244140625,
+        455.12005615234375,
+        564.8504638671875
+      ],
+      "size": 10.41993522644043,
+      "bold": false
+    },
+    {
+      "text": "commercialcommercialretailretailsite neversite provedneversuccessful,proved successful,and by 2001 theandbuildingsby 2001had begunthe buildingsto",
+      "bbox": [
+        52.91999816894531,
+        573.1199951171875,
+        472.4800109863281,
+        583.9304809570312
+      ],
+      "size": 10.122910976409912,
+      "bold": false
+    },
+    {
+      "text": "collapse.collapse.2222collapse.22",
+      "bbox": [
+        52.91999816894531,
+        592.2000122070312,
+        93.92001342773438,
+        602.2901000976562
+      ],
+      "size": 9.583318710327148,
+      "bold": false
+    },
+    {
+      "text": "collapse.collapse.2222collapse.22",
+      "bbox": [
+        95.76000213623047,
+        590.0399780273438,
+        102.76001739501953,
+        595.4453735351562
+      ],
+      "size": 6.148179531097412,
+      "bold": false
+    },
+    {
+      "text": "2121<http://info.econ.state.or.us;591/profile.htm>Ore<http://info.econ.state.or.us;591/profile.htm>22??Oregon<http://info.econ.state.or.us;591/profile.htm>OregonOregon Economic and Community DevelopmentSelect:Department [2 February 2005]",
+      "bbox": [
+        52.560001373291016,
+        647.6400146484375,
+        407.4798889160156,
+        665.2901000976562
+      ],
+      "size": 10.039902687072754,
+      "bold": false
+    },
+    {
+      "text": "2222??Oregon<http://info.econ.state.or.us;591/profile.htm>■■Oregon21<http://info.econ.state.or.us;591/profile.htm>Ore22??OregonCleanup,<http://info.econ.state.or.us;591/profile.htm>Select:DEQ,<http://info.econ.state.or.us;591/profile.htm>22??Oregon<http://info.econ.state.or.us;591/profile.htm>OregonOregon EconomicDEQ, [No andDate],Community<www.deq.state.or.us>DevelopmentSelect:DepartmentSelect:Burns [15 March[2 February2005]",
+      "bbox": [
+        52.91999816894531,
+        667.0800170898438,
+        382.2798767089844,
+        676.809326171875
+      ],
+      "size": 9.071009159088135,
+      "bold": false
+    },
+    {
+      "text": "2222??Oregon<http://info.econ.state.or.us;591/profile.htm>■■OregonCleanup,22??OregonCleanup,<http://info.econ.state.or.us;591/profile.htm>Select:DEQ,??OregonCleanup,Bennett’s<http://info.econ.state.or.us;591/profile.htm>22??Oregon<http://info.econ.state.or.us;591/profile.htm>OregonSelect:DEQ, [NoBrownfields,Date], <www.deq.state.or.us>Select: SiteSelect:AutoDEQ,Dealership.[NoBrownfields,Date],SpecificSelect:AssessmentSelect:Burns Land[15 MarchofQuality,Brownfield2005]Select:Sites,EnvironmentalSelect:EconomicDEQ,",
+      "bbox": [
+        52.560001373291016,
+        678.2400512695312,
+        467.0793762207031,
+        688.329345703125
+      ],
+      "size": 9.448480606079102,
+      "bold": false
+    },
+    {
+      "text": "■■OregonCleanup,22??OregonCleanup,<http://info.econ.state.or.us;591/profile.htm>Select:DEQ,??OregonCleanup,Bennett’sBennett'sCleanup,Bennett’sSelect:AutoDEQ,Dealership.[NoBrownfields,Date],Select:Auto<www.deq.state.or.us>[15Select:March SiteSelect:AutoDEQ,Dealership.[NoBrownfields,Date],2005]Dealership.Brownfields,[15Select:MarchSpecific AssessmentSelect: LandofQuality,BrownfieldSelect:Sites,EnvironmentalSelect:",
+      "bbox": [
+        52.560001373291016,
+        689.760009765625,
+        449.20001220703125,
+        699.4896850585938
+      ],
+      "size": 8.818135261535645,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,??OregonCleanup,Bennett’sBennett'sCleanup,Bennett’sSelect:Auto Dealership.Brownfields,Select:Auto[15Select:March SiteSelect:AutoDEQ,Dealership.[NoBrownfields,Date],2005]Dealership.Brownfields,[15Select:MarchSpecific",
+      "bbox": [
+        52.91999816894531,
+        701.280029296875,
+        242.9599609375,
+        711.0097045898438
+      ],
+      "size": 9.333324432373047,
+      "bold": false
+    },
+    {
+      "text": "2222??Oregon<http://info.econ.state.or.us;591/profile.htm>■■Oregon22??OregonCleanup,<http://info.econ.state.or.us;591/profile.htm>Select:DEQ,<http://info.econ.state.or.us;591/profile.htm>22??Oregon<http://info.econ.state.or.us;591/profile.htm>Oregon",
+      "bbox": [
+        52.20000076293945,
+        676.0800170898438,
+        58.20003890991211,
+        680.7647094726562
+      ],
+      "size": 5.299074172973633,
+      "bold": false
+    },
+    {
+      "text": "20",
+      "bbox": [
+        470.8800048828125,
+        739.0800170898438,
+        480.88006591796875,
+        746.6475830078125
+      ],
+      "size": 8.694854736328125,
+      "bold": false
+    },
+    {
+      "text": "Bennett’sBennett’s AutoAutoDealership,Dealership,Burns,Burns,OROR",
+      "bbox": [
+        53.63999938964844,
+        65.7892837524414,
+        293.6494140625,
+        80.64222717285156
+      ],
+      "size": 12.432722091674805,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        52.91999816894531,
+        214.10928344726562,
+        60.870262145996094,
+        228.9622344970703
+      ],
+      "size": 12.432722091674805,
+      "bold": false
+    },
+    {
+      "text": "DemographicsDemographics",
+      "bbox": [
+        71.63999938964844,
+        214.10928344726562,
+        163.81163024902344,
+        228.9622344970703
+      ],
+      "size": 12.432722091674805,
+      "bold": false
+    },
+    {
+      "text": "Burns,Burns,populationpopulation3,064, 3,064,is the largestis thecommunitylargestlocatedcommunityin HarneylocatedCounty in in Harney County in",
+      "bbox": [
+        53.279998779296875,
+        233.52227783203125,
+        562.4344482421875,
+        248.86985778808594
+      ],
+      "size": 12.846762657165527,
+      "bold": false
+    },
+    {
+      "text": "southeasternsoutheasternOregon.Oregon.HighwaysHighways",
+      "bbox": [
+        52.560001373291016,
+        252.98922729492188,
+        190.86032104492188,
+        267.8421630859375
+      ],
+      "size": 12.432722091674805,
+      "bold": false
+    },
+    {
+      "text": "Oregon.HighwaysHighways395,395,20, and20,78andrun through78 runBurns,throughaway.21but theBurns,nearestbut the nearest",
+      "bbox": [
+        165.60000610351562,
+        252.98922729492188,
+        552.6890258789062,
+        267.8421630859375
+      ],
+      "size": 12.432722091674805,
+      "bold": false
+    },
+    {
+      "text": "majormajorcitycityis Bendis Bend(population(population52,029), located52,029),130 locatedmiles away.13021away.21miles away.21",
+      "bbox": [
+        52.91999816894531,
+        272.0692443847656,
+        469.3650207519531,
+        286.92218017578125
+      ],
+      "size": 12.432722091674805,
+      "bold": false
+    },
+    {
+      "text": "away.130through21away.21miles",
+      "bbox": [
+        359.6400146484375,
+        267.1700134277344,
+        399.0476989746094,
+        278.1620178222656
+      ],
+      "size": 9.20090389251709,
+      "bold": false
+    },
+    {
+      "text": "PopulationTableTable 33",
+      "bbox": [
+        246.9600067138672,
+        310.75128173828125,
+        285.11871337890625,
+        322.6363830566406
+      ],
+      "size": 9.948476791381836,
+      "bold": false
+    },
+    {
+      "text": "BurnsBurnsPopulationPopulationTable 3  DataData",
+      "bbox": [
+        203.75999450683594,
+        324.2692565917969,
+        346.8218078613281,
+        339.1221923828125
+      ],
+      "size": 12.432722091674805,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%% BelowBelowLevelLevel",
+      "bbox": [
+        351.0,
+        350.0182800292969,
+        393.65655517578125,
+        361.4087219238281
+      ],
+      "size": 9.53443717956543,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%8.4%8.4%BelowLevelLevel",
+      "bbox": [
+        338.3999938964844,
+        362.45623779296875,
+        422.13873291015625,
+        376.8145446777344
+      ],
+      "size": 12.018681526184082,
+      "bold": false
+    },
+    {
+      "text": "Poverty8.4%8.4%",
+      "bbox": [
+        358.55999755859375,
+        377.7112731933594,
+        384.63604736328125,
+        389.59637451171875
+      ],
+      "size": 9.948476791381836,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmericanIndianIndian",
+      "bbox": [
+        122.4000015258789,
+        350.3512878417969,
+        184.0717010498047,
+        362.23638916015625
+      ],
+      "size": 9.948476791381836,
+      "bold": false
+    },
+    {
+      "text": "2.5%2.5%",
+      "bbox": [
+        142.9199981689453,
+        378.0982666015625,
+        167.91079711914062,
+        389.48870849609375
+      ],
+      "size": 9.53443717956543,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%%",
+      "bbox": [
+        221.39999389648438,
+        350.3782653808594,
+        231.1484832763672,
+        361.7687072753906
+      ],
+      "size": 9.53443717956543,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncomeMedianMedian",
+      "bbox": [
+        273.6000061035156,
+        350.3782653808594,
+        309.5564880371094,
+        361.7687072753906
+      ],
+      "size": 9.53443717956543,
+      "bold": false
+    },
+    {
+      "text": "$26,658$26,658$30,957",
+      "bbox": [
+        273.239990234375,
+        377.6302795410156,
+        319.7538146972656,
+        390.9992980957031
+      ],
+      "size": 11.19059944152832,
+      "bold": false
+    },
+    {
+      "text": "$30,957$26,658$30,957",
+      "bbox": [
+        273.239990234375,
+        392.36328125,
+        321.4748229980469,
+        406.2269287109375
+      ],
+      "size": 11.604640007019043,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic5.3%%",
+      "bbox": [
+        203.75999450683594,
+        362.84326171875,
+        254.93101501464844,
+        376.7069091796875
+      ],
+      "size": 11.604640007019043,
+      "bold": false
+    },
+    {
+      "text": "Hispanic5.3%5.3%",
+      "bbox": [
+        216.36000061035156,
+        378.0982666015625,
+        241.35079956054688,
+        389.48870849609375
+      ],
+      "size": 9.53443717956543,
+      "bold": false
+    },
+    {
+      "text": "7,6097,609",
+      "bbox": [
+        446.3999938964844,
+        392.7772521972656,
+        477.4104309082031,
+        405.6516418457031
+      ],
+      "size": 10.776558876037598,
+      "bold": false
+    },
+    {
+      "text": "CountyCountyHarneyHarney",
+      "bbox": [
+        53.279998779296875,
+        393.4432678222656,
+        96.29624938964844,
+        407.3069152832031
+      ],
+      "size": 11.604640007019043,
+      "bold": false
+    },
+    {
+      "text": "CountyOregonCountyOregonSource:HarneyHarney",
+      "bbox": [
+        52.91999816894531,
+        405.65625,
+        96.71076202392578,
+        420.0145568847656
+      ],
+      "size": 12.018681526184082,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:CountyOregonSource:OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationPopulation Research1.3%1.3%PopulationCenter, Portland",
+      "bbox": [
+        52.91999816894531,
+        420.80328369140625,
+        210.19688415527344,
+        434.66693115234375
+      ],
+      "size": 11.604640007019043,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>OregonSource:OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationPopulation Research1.3%PopulationCenter, Portland8.0%StateSelect:University$40,916Profiles[NoforDate],Oregon.7.9%[20 JanuaryResearch2005]3,421,399ResearchCenter,Center,PortlandPortlanState",
+      "bbox": [
+        52.91999816894531,
+        432.7912902832031,
+        572.4959716796875,
+        444.6763916015625
+      ],
+      "size": 9.948476791381836,
+      "bold": false
+    },
+    {
+      "text": "Source:<http;//www,upa.pdx.edu/CPRC/about/index.html>OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationPopulation Research Center, Portland StateSelect:UniversityProfiles[NoforDate],Oregon. [20 JanuaryResearch2005] ResearchCenter,Center,PortlandPortlanState",
+      "bbox": [
+        52.91999816894531,
+        442.87127685546875,
+        570.5966186523438,
+        454.7563781738281
+      ],
+      "size": 9.948476791381836,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationPortland8.0%8.0%State",
+      "bbox": [
+        216.36000061035156,
+        420.1912841796875,
+        242.43603515625,
+        432.0763854980469
+      ],
+      "size": 9.948476791381836,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationUniversity$40,916$40,916[No Date],",
+      "bbox": [
+        273.6000061035156,
+        420.1102600097656,
+        320.11383056640625,
+        433.4792785644531
+      ],
+      "size": 11.19059944152832,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>Population7.9%7.9%",
+      "bbox": [
+        358.55999755859375,
+        420.21826171875,
+        383.5508117675781,
+        431.60870361328125
+      ],
+      "size": 9.53443717956543,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>Population3,421,3993,421,399Research",
+      "bbox": [
+        425.1600036621094,
+        420.1102600097656,
+        482.40777587890625,
+        433.4792785644531
+      ],
+      "size": 11.19059944152832,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:OregonSource:<http;//www,upa.pdx.edu/CPRC/about/index.html>PopulationResearch1.3%1.3%Population",
+      "bbox": [
+        143.27999877929688,
+        420.5782775878906,
+        168.2707977294922,
+        431.9687194824219
+      ],
+      "size": 9.53443717956543,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        52.91999816894531,
+        495.4312744140625,
+        59.281681060791016,
+        507.3163757324219
+      ],
+      "size": 9.948476791381836,
+      "bold": false
+    },
+    {
+      "text": "TheThe SiteSite",
+      "bbox": [
+        70.91999816894531,
+        495.4312744140625,
+        113.5295181274414,
+        507.3163757324219
+      ],
+      "size": 9.948476791381836,
+      "bold": false
+    },
+    {
+      "text": "FromFromthetheearlyearly1950s1950sthroughthroughthe latethe1970s,lateBennett’s1970s, AutoBennett’sDealershipAutowasDealershiplocated on was located on",
+      "bbox": [
+        53.279998779296875,
+        515.84326171875,
+        570.3557739257812,
+        529.7069091796875
+      ],
+      "size": 11.604640007019043,
+      "bold": false
+    },
+    {
+      "text": "thisthis11 acreacreproperty,property,in downtownin downtownBurns. Burns.InIn1985,1985,",
+      "bbox": [
+        52.560001373291016,
+        534.9232788085938,
+        287.79974365234375,
+        548.7869262695312
+      ],
+      "size": 11.604640007019043,
+      "bold": false
+    },
+    {
+      "text": "Burns.InIn1985,1985,thethepropertypropertywas soldwastosoldan to an",
+      "bbox": [
+        255.24000549316406,
+        534.9232788085938,
+        467.4250183105469,
+        548.7869262695312
+      ],
+      "size": 11.604640007019043,
+      "bold": false
+    },
+    {
+      "text": "investmentinvestmentcompany,company,whichwhichremodeledremodeledthe buildingstheforbuildingscommercialforretailcommercialuse. The  retail use. The",
+      "bbox": [
+        52.91999816894531,
+        553.6162109375,
+        559.16748046875,
+        567.9745483398438
+      ],
+      "size": 12.018681526184082,
+      "bold": false
+    },
+    {
+      "text": "commercialcommercialcollapse.22retailretailsite neversite provedneversuccessful,proved successful,and by 2001 theandbuildingsby 2001had begunthe buildingsto  had beg",
+      "bbox": [
+        52.91999816894531,
+        572.3092651367188,
+        571.8889770507812,
+        587.1621704101562
+      ],
+      "size": 12.432722091674805,
+      "bold": false
+    },
+    {
+      "text": "collapse.commercialcollapse.2222collapse.22retail",
+      "bbox": [
+        95.76000213623047,
+        586.8500366210938,
+        149.28416442871094,
+        597.842041015625
+      ],
+      "size": 9.20090389251709,
+      "bold": false
+    },
+    {
+      "text": "22??Oregon<http://info.econ.state.or.us;591/profile.htm>2121<http://info.econ.state.or.us;591/profile.htm>Ore<http://info.econ.state.or.us;591/profile.htm>22??Oregon<http://info.econ.state.or.us;591/profile.htm>OregonOregon Economic and Community DevelopmentSelect:DepartmentBurns [15 March[2 February2005] 2005]  EconomicDEQ, [No andDa",
+      "bbox": [
+        52.560001373291016,
+        646.3162841796875,
+        574.2656860351562,
+        670.5673828125
+      ],
+      "size": 20.299495697021484,
+      "bold": false
+    },
+    {
+      "text": "2222??Oregon<http://info.econ.state.or.us;591/profile.htm>■■Oregon21<http://info.econ.state.or.us;591/profile.htm>Ore22??OregonCleanup,<http://info.econ.state.or.us;591/profile.htm>Select:DEQ,<http://info.econ.state.or.us;591/profile.htm>22??Oregon<http://info.econ.state.or.us;591/profile.htm>OregonOregon EconomicDEQ, [No andDate],Community<www.deq.state.or.us>DevelopmentSelect:DepartmentSelect:Burns Land[15 March[2Quality,February2005]Select:2005]EnvironmentalEconomicDEQ, [No[NoBrowandDa",
+      "bbox": [
+        52.91999816894531,
+        666.3502197265625,
+        575.8722534179688,
+        679.71923828125
+      ],
+      "size": 11.19059944152832,
+      "bold": false
+    },
+    {
+      "text": "2222??Oregon<http://info.econ.state.or.us;591/profile.htm>■■OregonCleanup,22??OregonCleanup,<http://info.econ.state.or.us;591/profile.htm>Select:DEQ,??OregonCleanup,Bennett’s<http://info.econ.state.or.us;591/profile.htm>22??Oregon<http://info.econ.state.or.us;591/profile.htm>OregonSelect:DEQ, [NoBrownfields,Date], <www.deq.state.or.us>Select: SiteSelect:AutoDEQ,Dealership.[NoBrownfields,Date],SpecificSelect:AssessmentSelect:Burns Land[15 MarchofQuality,Brownfield2005]Select:Sites,EnvironmentalSelect:EconomicDEQ,<www.deq[No[NoBrowandDa",
+      "bbox": [
+        52.560001373291016,
+        677.4832763671875,
+        569.6358642578125,
+        691.346923828125
+      ],
+      "size": 11.604640007019043,
+      "bold": false
+    },
+    {
+      "text": "■■OregonCleanup,22??OregonCleanup,<http://info.econ.state.or.us;591/profile.htm>Select:DEQ,??OregonCleanup,Bennett’sBennett'sCleanup,Bennett’sSelect:AutoDEQ,Dealership.[NoBrownfields,Date],Select:Auto<www.deq.state.or.us>[15Select:March SiteSelect:AutoDEQ,Dealership.[NoBrownfields,Date],2005]Dealership.Brownfields,[15Select:MarchSpecific AssessmentSelect: LandofQuality,BrownfieldSelect:Sites,EnvironmentalSelect: Site2005]Specific<www.deq[NoBrow",
+      "bbox": [
+        52.560001373291016,
+        689.0302124023438,
+        569.3859252929688,
+        702.3992309570312
+      ],
+      "size": 11.19059944152832,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,??OregonCleanup,Bennett’sBennett'sCleanup,Bennett’sSelect:Auto Dealership.Brownfields,Select:Auto[15Select:March SiteSelect:AutoDEQ,Dealership.[NoBrownfields,Date],2005]Dealership.Brownfields,[15Select:MarchSpecific Assessment of Brownfield Sites, Select: Site2005]Specific<www.deq",
+      "bbox": [
+        52.91999816894531,
+        700.5502319335938,
+        562.2425537109375,
+        713.9192504882812
+      ],
+      "size": 11.19059944152832,
+      "bold": false
+    },
+    {
+      "text": "2222??Oregon<http://info.econ.state.or.us;591/profile.htm>■■Oregon21<http://info.econ.state.or.us;591/profile.htm>Ore22??OregonCleanup,<http://info.econ.state.or.us;591/profile.htm>Select:DEQ,<http://info.econ.state.or.us;591/profile.htm>22??Oregon<http://info.econ.state.or.us;591/profile.htm>OregonDEQ, [No Date], <www.deq.state.or.us>Select:Select:Burns Land[15",
+      "bbox": [
+        52.20000076293945,
+        672.1600341796875,
+        318.0854187011719,
+        683.1520385742188
+      ],
+      "size": 9.20090389251709,
+      "bold": false
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "page": 2,
+  "body_size": 10.472520351409912,
+  "lines": [
+    {
+      "text": "ApprovedApprovedUrban andbybyRegionalthetheDepartmentDepartmentPlanningofof",
+      "bbox": [
+        321.1199951171875,
+        480.9599914550781,
+        471.75994873046875,
+        491.7707824707031
+      ],
+      "size": 10.392271995544434,
+      "bold": false
+    },
+    {
+      "text": "ApprovedUrbanUrban andandbyRegionalRegionalthe DepartmentPlanningPlanningof",
+      "bbox": [
+        326.1600036621094,
+        493.91998291015625,
+        467.9599914550781,
+        504.37042236328125
+      ],
+      "size": 10.55276870727539,
+      "bold": false
+    },
+    {
+      "text": "ApprovedApprovedUrbanUrban andandbybyRegionalRegionalthetheDepartmentDepartmentPlanningPlanningofof",
+      "bbox": [
+        321.1199951171875,
+        480.1492004394531,
+        468.6019592285156,
+        495.00213623046875
+      ],
+      "size": 10.711177825927734,
+      "bold": false
+    },
+    {
+      "text": "ApprovedApprovedUrbanUrban andandbybyRegionalRegionalthetheDepartmentDepartmentPlanningPlanningof",
+      "bbox": [
+        326.1600036621094,
+        493.1361999511719,
+        460.17388916015625,
+        507.4945068359375
+      ],
+      "size": 10.35446834564209,
+      "bold": false
+    }
+  ]
+}

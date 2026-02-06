@@ -1,0 +1,666 @@
+{
+  "page": 42,
+  "body_size": 11.0300931930542,
+  "lines": [
+    {
+      "text": "BibliographyBibliography",
+      "bbox": [
+        227.52000427246094,
+        66.96004486083984,
+        311.5195617675781,
+        79.9330062866211
+      ],
+      "size": 13.469923973083496,
+      "bold": false
+    },
+    {
+      "text": "InterviewsInterviews",
+      "bbox": [
+        54.36000061035156,
+        105.12004089355469,
+        111.35958862304688,
+        114.4894027709961
+      ],
+      "size": 10.32972526550293,
+      "bold": false
+    },
+    {
+      "text": "Camarata,Camarata,interviewinterviewCamarata,interviewbyMary,author,OregontelephoneDepartmentbyMary,author,OregontelephoneDepartmentconversabyMary,author,OregontelephoneDepartmentconversaconversation,of EnvironmentalMay 12, 2004Quality, Western Region,",
+      "bbox": [
+        54.36000061035156,
+        128.88002014160156,
+        444.5002136230469,
+        140.4115447998047
+      ],
+      "size": 10.80516242980957,
+      "bold": false
+    },
+    {
+      "text": "Camarata,Camarata,interviewinterviewCamarata,interviewbyMary,author,OregontelephoneDepartmentbyMary,author,OregontelephoneDepartmentconversabyMary,author,OregontelephoneDepartmentconversaconversation,of EnvironmentalMay 12, 2004Quality,",
+      "bbox": [
+        54.720001220703125,
+        141.8400421142578,
+        337.639892578125,
+        153.37156677246094
+      ],
+      "size": 10.482181549072266,
+      "bold": false
+    },
+    {
+      "text": "Crowley,Crowley,person,Peggy,MayPeggy,Executive10, 2004ExecutiveDirector, CommunityDirector,Health Center,Communityinterview byHealthauthor, in",
+      "bbox": [
+        54.720001220703125,
+        166.3199920654297,
+        469.50006103515625,
+        178.57223510742188
+      ],
+      "size": 10.899600982666016,
+      "bold": false
+    },
+    {
+      "text": "person,Crowley,person,MayMay10,Peggy,200410,",
+      "bbox": [
+        54.720001220703125,
+        180.72003173828125,
+        159.62017822265625,
+        191.17047119140625
+      ],
+      "size": 10.587443828582764,
+      "bold": false
+    },
+    {
+      "text": "conversation,Ewing,Ewing,Bill, Bill,FormerDecemberFormerCity Administrator,City15, 2004Administrator,City of Falls City, interviewCity ofby author,FallstelephoneCity, interview",
+      "bbox": [
+        55.439998626708984,
+        204.1199951171875,
+        472.060302734375,
+        216.0118865966797
+      ],
+      "size": 10.257855415344238,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Ewing, Bill,DecemberDecemberFormer15, 2004City15,",
+      "bbox": [
+        55.08000183105469,
+        218.16000366210938,
+        218.2998809814453,
+        227.8897247314453
+      ],
+      "size": 10.17772626876831,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Ewing,Ewing,conversation,Ewing,Bill, CityAprilAdministrator,4, 2005 Bill,CityBill,CityAprilAdministrator,4,of CityAprilAdministrator,4,Nyssa, interview by author, telephone2005 2005",
+      "bbox": [
+        55.439998626708984,
+        242.280029296875,
+        419.50030517578125,
+        254.1719207763672
+      ],
+      "size": 10.42194938659668,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Ewing,Ewing,conversation,Ewing,Bill, CityAprilAdministrator,4, 2005",
+      "bbox": [
+        55.08000183105469,
+        255.96002197265625,
+        183.7401885986328,
+        266.41046142578125
+      ],
+      "size": 9.638822555541992,
+      "bold": false
+    },
+    {
+      "text": "Feener,Feener,Darrin,Darrin,Mayor, Mayor,City of FallsCityCity, ofinterviewFallsbyCity,author,interviewtelephone conversation,by author,",
+      "bbox": [
+        55.79999923706055,
+        279.72003173828125,
+        467.0997009277344,
+        291.25152587890625
+      ],
+      "size": 10.151412963867188,
+      "bold": false
+    },
+    {
+      "text": "AprilAprilFeener,4,4,20052005Darrin,",
+      "bbox": [
+        55.439998626708984,
+        294.1200256347656,
+        116.06015014648438,
+        304.5704650878906
+      ],
+      "size": 9.138906478881836,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Hickey,Hickey,conversation,Hickey,Lani, KlamathApril 5, 2005CountyLani,PublicLani,KlamathAprilWorksKlamathAprilDepartment,5, 2005Countyinterview5, 2005Countyby author, telephonePublic",
+      "bbox": [
+        55.79999923706055,
+        317.8800354003906,
+        477.1003112792969,
+        329.77191162109375
+      ],
+      "size": 10.899600982666016,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Hickey,Hickey,conversation,Hickey,Lani, KlamathApril 5, 2005County",
+      "bbox": [
+        55.439998626708984,
+        331.5600280761719,
+        184.10018920898438,
+        342.0104675292969
+      ],
+      "size": 9.638822555541992,
+      "bold": false
+    },
+    {
+      "text": "interviewinterviewMadding,Madding,interviewMadding,byKellyauthor,A., Director,telephonebyKellyauthor,A.,EconomicbyKellyauthor,A.,conversation.and DevelopmentMay 13,Director,telephoneEconomicconversati2004Director,telephoneEconomicconveDepartment, Jackson County,",
+      "bbox": [
+        56.15999984741211,
+        355.6800231933594,
+        474.65997314453125,
+        367.5718994140625
+      ],
+      "size": 11.160585403442383,
+      "bold": false
+    },
+    {
+      "text": "interviewinterviewMadding,Madding,interviewMadding,byKellyauthor,A., Director,telephonebyKellyauthor,A.,EconomicbyKellyauthor,A.,conversation.and DevelopmentMay 13,Director,telephoneEconomicconversati2004Director,telephoneEconomicconveDepartment,",
+      "bbox": [
+        55.79999923706055,
+        369.0000305175781,
+        338.7198791503906,
+        380.17120361328125
+      ],
+      "size": 10.482181549072266,
+      "bold": false
+    },
+    {
+      "text": "telephoneNudd,Nudd,Robin,Robin,Assistantconversation,Assistantto Baker CountytoAprilBakerBoard5, 2005Countyof Commissioners,Board interviewof Commissioners,by author,",
+      "bbox": [
+        56.15999984741211,
+        393.4800109863281,
+        471.0202941894531,
+        404.65118408203125
+      ],
+      "size": 10.47529125213623,
+      "bold": false
+    },
+    {
+      "text": "telephonetelephoneNudd, Robin,conversation,conversation,AssistantApril 5, 2005toAprilBaker",
+      "bbox": [
+        55.79999923706055,
+        406.800048828125,
+        235.5801239013672,
+        417.61083984375
+      ],
+      "size": 10.231197357177734,
+      "bold": false
+    },
+    {
+      "text": "interviewinterviewRobertson,byKatie,author,OregontelephoneDepartmentconversatioRobertson,interviewRobertson,byKatie,author,OregontelephoneDepartmentconversatibyKatie,author,OregontelephoneDepartmentconversation,of Environmentalmultiple dates,Quality,April Eastern2004  Region,",
+      "bbox": [
+        56.52000045776367,
+        443.8800354003906,
+        446.29998779296875,
+        455.05120849609375
+      ],
+      "size": 10.59809684753418,
+      "bold": false
+    },
+    {
+      "text": "interviewinterviewRobertson,byKatie,author,OregontelephoneDepartmentconversatioRobertson,interviewRobertson,byKatie,author,OregontelephoneDepartmentconversatibyKatie,author,OregontelephoneDepartmentconversation,of Environmentalmultiple dates,Quality,April Eastern2004",
+      "bbox": [
+        56.15999984741211,
+        456.84002685546875,
+        396.139892578125,
+        468.0111999511719
+      ],
+      "size": 10.205879211425781,
+      "bold": false
+    },
+    {
+      "text": "Robertson,Robertson,interviewKatie,byKatie,author,OregonOregonDepartmenttelephoneDepartmentof Environmentalconversation,ofQuality,EnvironmentalAprilEastern5, 2005Region,Quality,",
+      "bbox": [
+        56.52000045776367,
+        481.6800231933594,
+        446.29998779296875,
+        492.8511962890625
+      ],
+      "size": 10.581101417541504,
+      "bold": false
+    },
+    {
+      "text": "interviewRobertson,interviewby author,byKatie,author,telephoneOregontelephoneconversation,Departmentconversation,April 5, 2005of",
+      "bbox": [
+        56.52000045776367,
+        495.0000305175781,
+        334.5801086425781,
+        505.8108215332031
+      ],
+      "size": 10.175991535186768,
+      "bold": false
+    },
+    {
+      "text": "PapersPapers",
+      "bbox": [
+        56.880001068115234,
+        540.3600463867188,
+        94.87979125976562,
+        551.5311889648438
+      ],
+      "size": 11.889459609985352,
+      "bold": false
+    },
+    {
+      "text": "IncorporatingEconomicIncorporatingEconomicSeptemberIncorporatingEconomicPlanningBrownfields- The RevitalizationImpact PlanningBrownfields-on RuralProjectsand SmallIntoPlanning2003.BrownfieldsARegionalMetropolitanComprehensiveTheDevelopment.RevitalizationImpact",
+      "bbox": [
+        56.880001068115234,
+        564.4800415039062,
+        438.4207458496094,
+        575.6511840820312
+      ],
+      "size": 10.31204891204834,
+      "bold": false
+    },
+    {
+      "text": "SeptemberSeptemberEconomicIncorporatingEconomicIncorporatingEconomicSeptemberIncorporatingEconomicPlanning2003.BrownfieldsA -ReportThe RevitalizationImpactby thePlanning2003.PlanningBrownfields-onNationalRuralProjectsandAssociationSmallIntoPlanning2003.BrownfieldsAARegionalMetropolitanof-ReportTheDevelopmentComprehensiveTheDevelopment.RevitalizationImpactOrganizationsImpactby",
+      "bbox": [
+        56.880001068115234,
+        577.0800170898438,
+        446.239501953125,
+        588.2511596679688
+      ],
+      "size": 10.89954948425293,
+      "bold": false
+    },
+    {
+      "text": "SeptemberSeptemberEconomicEconomicSeptemberIncorporatingEconomic(NADO)PlanningResearch2003. A -ReportTheFoundationImpactby thePlanning2003.onNationalRural andAssociationSmallPlanning2003.BrownfieldsAAMetropolitanof-ReportTheDevelopmentDevelopment.OrganizationsImpactby",
+      "bbox": [
+        56.52000045776367,
+        589.6799926757812,
+        471.9005432128906,
+        601.2115478515625
+      ],
+      "size": 10.738680839538574,
+      "bold": false
+    },
+    {
+      "text": "SeptemberEconomic(NADO)(NADO)ResearchResearchFoundationFoundation",
+      "bbox": [
+        56.880001068115234,
+        603.3600463867188,
+        202.2197265625,
+        613.8104858398438
+      ],
+      "size": 10.837403297424316,
+      "bold": false
+    },
+    {
+      "text": "<http://bluebook.state.or.us><http://bluebook.state.or.us>OregonOregon<http://bluebook.state.or.us>OregonBlue Book. Oregon State[23 JanuaryArchives2005]Division.BlueBlue2005-2006Book.Book.editionOregonOregon",
+      "bbox": [
+        57.2400016784668,
+        627.8400268554688,
+        396.479736328125,
+        639.0111694335938
+      ],
+      "size": 10.59809684753418,
+      "bold": false
+    },
+    {
+      "text": "<http://bluebook.state.or.us><http://bluebook.state.or.us>OregonOregon<http://bluebook.state.or.us>OregonBlue Book. Oregon State[23 JanuaryArchives2005]Division.",
+      "bbox": [
+        56.52000045776367,
+        640.800048828125,
+        285.3799133300781,
+        651.61083984375
+      ],
+      "size": 10.368207931518555,
+      "bold": false
+    },
+    {
+      "text": "<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[FebruaryStateStateBrownfieldsBrownfieldsand Voluntaryand VoluntaryResponse Programs:ResponseAn UpdatePrograms:From theAnStatesUpdate",
+      "bbox": [
+        57.2400016784668,
+        666.0000610351562,
+        454.61981201171875,
+        676.8108520507812
+      ],
+      "size": 10.662096977233887,
+      "bold": false
+    },
+    {
+      "text": "<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm><http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[February[February<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[FebruaryState Brownfields2005] EPA-560-R-05-001.and Voluntary",
+      "bbox": [
+        56.880001068115234,
+        678.9600219726562,
+        232.05960083007812,
+        689.7708129882812
+      ],
+      "size": 10.59809684753418,
+      "bold": false
+    },
+    {
+      "text": "<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm><http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[February[February<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[February2005] EPA-560-R-05-001.  [20 March 2005]",
+      "bbox": [
+        56.52000045776367,
+        691.56005859375,
+        446.2998962402344,
+        702.370849609375
+      ],
+      "size": 10.520711898803711,
+      "bold": false
+    },
+    {
+      "text": "38",
+      "bbox": [
+        475.9200134277344,
+        738.0,
+        485.9199523925781,
+        745.2072143554688
+      ],
+      "size": 8.485254287719727,
+      "bold": false
+    },
+    {
+      "text": "Camarata,Camarata,interviewinterviewCamarata,interviewbyMary,author,OregontelephoneDepartmentbyMary,author,OregontelephoneDepartmentconversabyMary,author,OregontelephoneDepartmentconversaconversation,of EnvironmentalMay 12, 2004Quality, Western Region,",
+      "bbox": [
+        54.36000061035156,
+        128.01528930664062,
+        575.8969116210938,
+        143.8574981689453
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "Camarata,Camarata,interviewinterviewCamarata,interviewbyMary,author,OregontelephoneDepartmentbyMary,author,OregontelephoneDepartmentconversabyMary,author,OregontelephoneDepartmentconversaconversation,of EnvironmentalMay 12, 2004Quality, Western Region,",
+      "bbox": [
+        54.720001220703125,
+        140.97531127929688,
+        576.2568969726562,
+        156.81752014160156
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "Crowley,person,Crowley,person,MayPeggy,May10,Peggy,2004Executive10, 2004ExecutiveDirector, CommunityDirector,Health Center,Communityinterview byHealthauthor, in Center, interv",
+      "bbox": [
+        54.720001220703125,
+        165.40126037597656,
+        577.5704956054688,
+        182.23275756835938
+      ],
+      "size": 14.43671703338623,
+      "bold": false
+    },
+    {
+      "text": "Crowley,person,Crowley,person,MayPeggy,May10,Peggy,2004Executive10, 2004ExecutiveDirector,",
+      "bbox": [
+        54.720001220703125,
+        179.93629455566406,
+        195.09744262695312,
+        194.29458618164062
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Ewing,Ewing,Bill, Bill,FormerDecemberDecemberFormerCity Administrator,15, 2004City15, 2004Administrator,City of Falls City, interviewCity ofby author,FallstelephoneCity, interview by au",
+      "bbox": [
+        55.439998626708984,
+        203.22825622558594,
+        576.6478271484375,
+        219.56512451171875
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Ewing,Ewing,Bill, Bill,FormerDecemberDecemberFormerCity Administrator,15, 2004City15, 2004Administrator,City",
+      "bbox": [
+        55.08000183105469,
+        217.43026733398438,
+        257.8816223144531,
+        230.79928588867188
+      ],
+      "size": 11.466877937316895,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Ewing,Ewing,conversation,Ewing,Bill, CityAprilAdministrator,4, 2005 Bill,CityBill,CityAprilAdministrator,4,of CityAprilAdministrator,4,Nyssa, interview by author, telephone2005 2005 City of Nyssa,",
+      "bbox": [
+        55.439998626708984,
+        241.38829040527344,
+        573.0314331054688,
+        257.72515869140625
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Ewing,Ewing,conversation,Ewing,Bill, CityAprilAdministrator,4, 2005 Bill,CityBill,CityAprilAdministrator,4,of CityAprilAdministrator,4,Nyssa, interview by author, telephone2005",
+      "bbox": [
+        55.08000183105469,
+        255.17628479003906,
+        408.36041259765625,
+        269.5345764160156
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "AprilAprilFeener,Feener,4,4,2005Darrin,2005Darrin,Mayor, Mayor,City of FallsCityCity, ofinterviewFallsbyCity,author,interviewtelephone conversation,by author, telephone c",
+      "bbox": [
+        55.79999923706055,
+        278.85528564453125,
+        571.9724731445312,
+        294.697509765625
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Hickey,Hickey,conversation,Hickey,Lani, KlamathApril 5, 2005CountyLani,PublicLani,KlamathAprilWorksKlamathAprilDepartment,5, 2005Countyinterview5, 2005Countyby author, telephonePublic Works D",
+      "bbox": [
+        55.79999923706055,
+        316.98828125,
+        576.1658935546875,
+        333.32513427734375
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,Hickey,Hickey,conversation,Hickey,Lani, KlamathApril 5, 2005CountyLani,PublicLani,KlamathAprilWorksKlamathAprilDepartment,5, 2005Countyinterview5, 2005Countyby author,",
+      "bbox": [
+        55.439998626708984,
+        330.7762756347656,
+        409.56219482421875,
+        345.13458251953125
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "interviewinterviewMadding,Madding,interviewMadding,byKellyauthor,A., Director,telephonebyKellyauthor,A.,EconomicbyKellyauthor,A.,conversation.and DevelopmentMay 13,Director,telephoneEconomicconversati2004Director,telephoneEconomicconveDepartment, Jackson County,",
+      "bbox": [
+        55.79999923706055,
+        368.1622619628906,
+        572.254150390625,
+        383.5098571777344
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "telephonetelephoneNudd,Nudd,Robin,Robin,conversation,Assistantconversation,AssistanttoAprilBaker5, 2005CountytoAprilBakerBoard5, 2005Countyof Commissioners,Board interviewof Commissioners,by author,  interview",
+      "bbox": [
+        56.15999984741211,
+        392.64227294921875,
+        573.4674682617188,
+        407.9898681640625
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "telephonetelephoneNudd,Nudd,Robin,Robin,conversation,Assistantconversation,AssistanttoAprilBaker5, 2005CountytoAprilBakerBoard5, 2005Countyof Commissioners,",
+      "bbox": [
+        55.79999923706055,
+        405.9892578125,
+        303.66265869140625,
+        420.8421936035156
+      ],
+      "size": 12.739666938781738,
+      "bold": false
+    },
+    {
+      "text": "interviewinterviewRobertson,byKatie,author,OregontelephoneDepartmentconversatioRobertson,interviewRobertson,byKatie,author,OregontelephoneDepartmentconversatibyKatie,author,OregontelephoneDepartmentconversation,of Environmentalmultiple dates,Quality,April Eastern2004  Region,",
+      "bbox": [
+        56.15999984741211,
+        456.0022888183594,
+        577.8268432617188,
+        471.3498840332031
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "Robertson,interviewRobertson,interviewbyKatie,author,byKatie,author,OregontelephoneOregonDepartmenttelephoneconversation,Departmentof Environmentalconversation,April 5, 2005ofQuality,EnvironmentalAprilEastern5, 2005Region,Quality, Eastern Re",
+      "bbox": [
+        56.52000045776367,
+        480.84228515625,
+        577.3180541992188,
+        496.18988037109375
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "Robertson,interviewRobertson,interviewbyKatie,author,byKatie,author,OregontelephoneOregonDepartmenttelephoneconversation,Departmentof Environmentalconversation,April 5, 2005ofQuality,EnvironmentalAprilEastern5, 2005Region,",
+      "bbox": [
+        56.52000045776367,
+        494.18927001953125,
+        438.7259521484375,
+        509.0422058105469
+      ],
+      "size": 12.739666938781738,
+      "bold": false
+    },
+    {
+      "text": "PapersPapers",
+      "bbox": [
+        56.880001068115234,
+        539.5222778320312,
+        106.02770233154297,
+        554.869873046875
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "IncorporatingEconomicIncorporatingEconomicSeptemberIncorporatingEconomicPlanningBrownfields- The RevitalizationImpact PlanningBrownfields-on RuralProjectsand SmallIntoPlanning2003.BrownfieldsARegionalMetropolitanComprehensiveTheDevelopment.RevitalizationImpact-ReportTheon R",
+      "bbox": [
+        56.880001068115234,
+        563.6422729492188,
+        576.7781372070312,
+        578.9898681640625
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "SeptemberSeptemberEconomicIncorporatingEconomicIncorporatingEconomicSeptemberIncorporatingEconomicPlanning2003.BrownfieldsA -ReportThe RevitalizationImpactby thePlanning2003.PlanningBrownfields-onNationalRuralProjectsandAssociationSmallIntoPlanning2003.BrownfieldsAARegionalMetropolitanof-ReportTheDevelopmentComprehensiveTheDevelopment.RevitalizationImpactOrganizationsImpactby the-ReportTheonNationon R",
+      "bbox": [
+        56.880001068115234,
+        576.2422485351562,
+        572.496337890625,
+        591.58984375
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "SeptemberSeptemberEconomicEconomic(NADO)SeptemberIncorporatingEconomic(NADO)ResearchPlanningResearch2003. AFoundation-ReportTheFoundationImpactby thePlanning2003.onNationalRural andAssociationSmallPlanning2003.BrownfieldsAAMetropolitanof-ReportTheDevelopmentDevelopment.OrganizationsImpactby the-ReportTheonNation",
+      "bbox": [
+        56.52000045776367,
+        588.8152465820312,
+        577.2083129882812,
+        604.657470703125
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "SeptemberSeptemberEconomic(NADO)(NADO)ResearchResearch2003. AFoundationReportFoundationby thePlanning2003.National",
+      "bbox": [
+        56.880001068115234,
+        602.5762939453125,
+        251.26327514648438,
+        616.9346313476562
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "<http://bluebook.state.or.us><http://bluebook.state.or.us>OregonOregon<http://bluebook.state.or.us>OregonBlue Book. Oregon State[23 JanuaryArchives2005]Division.BlueBlue2005-2006Book.Book.editionOregonOregonState[23State[23JanuaryArchJanuaryA",
+      "bbox": [
+        57.2400016784668,
+        627.0022583007812,
+        572.9495239257812,
+        642.349853515625
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "<http://bluebook.state.or.us><http://bluebook.state.or.us>OregonOregon<http://bluebook.state.or.us>OregonBlue Book. Oregon State[23 JanuaryArchives2005]Division.BlueBlue2005-2006Book.Book.editionOregonOregonState[23State[23JanuaryArchJanuaryA",
+      "bbox": [
+        56.52000045776367,
+        639.9893188476562,
+        576.4623413085938,
+        654.8422241210938
+      ],
+      "size": 12.739666938781738,
+      "bold": false
+    },
+    {
+      "text": "[February<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[FebruaryStateStateBrownfieldsBrownfields2005] EPA-560-R-05-001.and Voluntaryand VoluntaryResponse Programs:ResponseAn UpdatePrograms:From theAnStatesUpdate From the20St",
+      "bbox": [
+        57.2400016784668,
+        665.1893310546875,
+        573.7743530273438,
+        680.042236328125
+      ],
+      "size": 12.739666938781738,
+      "bold": false
+    },
+    {
+      "text": "<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm><http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[February[February<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[FebruaryStateStateBrownfieldsBrownfields2005] EPA-560-R-05-001.and Voluntaryand VoluntaryResponse Programs:ResponseAn UpdatePrograms:[20FromMarchtheAn2005]StatesUpdate From the2020St",
+      "bbox": [
+        56.880001068115234,
+        678.1492919921875,
+        572.5885009765625,
+        693.002197265625
+      ],
+      "size": 12.739666938781738,
+      "bold": false
+    },
+    {
+      "text": "<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm><http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[February[February<http://www.epa.gov/brownfields/pubs/st_res__prog_report.htm>[February2005] EPA-560-R-05-001.  [20 March 2005]  2020",
+      "bbox": [
+        56.52000045776367,
+        690.749267578125,
+        572.228515625,
+        705.6021728515625
+      ],
+      "size": 12.739666938781738,
+      "bold": false
+    }
+  ]
+}

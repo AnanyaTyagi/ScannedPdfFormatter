@@ -1,0 +1,809 @@
+{
+  "page": 14,
+  "body_size": 10.773303031921387,
+  "lines": [
+    {
+      "text": "informationinformationhas beenhasabeenbarrier.aTBAsbarrier.do thisTBAsby providingdo thisanswersby toprovidingthe followinganswers",
+      "bbox": [
+        54.0,
+        65.52005004882812,
+        451.9396057128906,
+        76.69121551513672
+      ],
+      "size": 10.21177053451538,
+      "bold": false
+    },
+    {
+      "text": "questions:questions:",
+      "bbox": [
+        54.0,
+        86.0400390625,
+        101.99996185302734,
+        96.490478515625
+      ],
+      "size": 10.011192321777344,
+      "bold": false
+    },
+    {
+      "text": "●?",
+      "bbox": [
+        72.36000061035156,
+        104.40003967285156,
+        75.3600082397461,
+        114.49011993408203
+      ],
+      "size": 7.7769012451171875,
+      "bold": false
+    },
+    {
+      "text": "isisthethesitesitecontaminated,contaminated,and if so,andhowif contaminated?so, how contaminated?",
+      "bbox": [
+        90.54000091552734,
+        104.40003967285156,
+        353.140380859375,
+        114.49011993408203
+      ],
+      "size": 9.699453353881836,
+      "bold": false
+    },
+    {
+      "text": "●?",
+      "bbox": [
+        72.36000061035156,
+        124.20005798339844,
+        75.35997772216797,
+        133.5694122314453
+      ],
+      "size": 7.493964672088623,
+      "bold": false
+    },
+    {
+      "text": "WhatWhatisisthetheextentextentandandnaturenatureof theofcontamination?the contamination?",
+      "bbox": [
+        90.18000030517578,
+        124.20005798339844,
+        339.6599426269531,
+        133.5694122314453
+      ],
+      "size": 9.512081146240234,
+      "bold": false
+    },
+    {
+      "text": "●?",
+      "bbox": [
+        72.36000061035156,
+        144.0000457763672,
+        76.36000061035156,
+        154.81085205078125
+      ],
+      "size": 9.29515552520752,
+      "bold": false
+    },
+    {
+      "text": "WhatWhatarearesomesomeof the possibleof thecleanuppossibleoptions,cleanupand what options,are their costs?and",
+      "bbox": [
+        90.18000030517578,
+        143.28004455566406,
+        445.62017822265625,
+        154.8115692138672
+      ],
+      "size": 10.392271995544434,
+      "bold": false
+    },
+    {
+      "text": "TheThereportreportcontainscontainsbackgroundbackgroundinformation, resultsinformation,of samples collectedresultsand analysesof samples",
+      "bbox": [
+        54.720001220703125,
+        181.0800018310547,
+        474.17974853515625,
+        193.33224487304688
+      ],
+      "size": 10.733154296875,
+      "bold": false
+    },
+    {
+      "text": "ofofthisthisdata.data.",
+      "bbox": [
+        54.720001220703125,
+        200.52001953125,
+        109.30020141601562,
+        210.970458984375
+      ],
+      "size": 9.361969947814941,
+      "bold": false
+    },
+    {
+      "text": "data.IfIfaskedaskedfor itforcanitalsocanprovidealsopossibleprovidecleanuppossibleoptions, cleanupand the generaloptions,",
+      "bbox": [
+        118.26000213623047,
+        199.80001831054688,
+        467.17999267578125,
+        210.97117614746094
+      ],
+      "size": 10.089058876037598,
+      "bold": false
+    },
+    {
+      "text": "estimatedestimatedcost costassociatedassociatedwith the options.withAtthesitesoptions.with extensiveAtcontamination,sites with extensiveor",
+      "bbox": [
+        55.08000183105469,
+        218.52003479003906,
+        464.2201232910156,
+        230.0515594482422
+      ],
+      "size": 10.07065486907959,
+      "bold": false
+    },
+    {
+      "text": "wherewheremoremoreinformationinformationis neededis toneededdeterminetothedetermineextent of thethecontamination,extent ofatheSitecontamination,",
+      "bbox": [
+        55.08000183105469,
+        237.60003662109375,
+        470.4201354980469,
+        248.05047607421875
+      ],
+      "size": 9.871183395385742,
+      "bold": false
+    },
+    {
+      "text": "SpecificSpecificAssessmentAssessmentwill recommendwillfurtherrecommendinvestigation. Sincefurther1997, investigation.DEQ has",
+      "bbox": [
+        55.439998626708984,
+        256.6800231933594,
+        447.8199462890625,
+        269.2926330566406
+      ],
+      "size": 11.44729232788086,
+      "bold": false
+    },
+    {
+      "text": "completedcompletedTargetedTargetedBrownfieldBrownfieldAssessments atAssessmentsover 20 sites.",
+      "bbox": [
+        55.439998626708984,
+        276.1200256347656,
+        354.4800109863281,
+        288.01190185546875
+      ],
+      "size": 10.733154296875,
+      "bold": false
+    },
+    {
+      "text": "InInJuneJune2003,2003,EPA awardedEPA awardedthe Oregon RuraltheandOregonEconomicallyRuralDistressedand EconomicallySite",
+      "bbox": [
+        56.15999984741211,
+        313.2000427246094,
+        443.7798767089844,
+        324.7315368652344
+      ],
+      "size": 10.75599193572998,
+      "bold": false
+    },
+    {
+      "text": "AssessmentAssessmentInitiativeInitiativea total ofa$400,000total ofto$400,000conduct assessmentsto conductat propertiesassessmentslocated",
+      "bbox": [
+        55.439998626708984,
+        331.9200439453125,
+        474.82025146484375,
+        342.7308349609375
+      ],
+      "size": 10.057836055755615,
+      "bold": false
+    },
+    {
+      "text": "ininruralruralandandeconomicallyeconomicallydistressed areasdistressedstatewide. Asareasof Marchstatewide.2005, DEQ hasAs",
+      "bbox": [
+        56.15999984741211,
+        351.0000305175781,
+        454.65985107421875,
+        362.89190673828125
+      ],
+      "size": 10.773303031921387,
+      "bold": false
+    },
+    {
+      "text": "conductedconductedassessmentsassessmentsat 13 sitesatthroughout13 sitesthethroughoutstate, as well astheninestate,Phase",
+      "bbox": [
+        55.79999923706055,
+        370.08001708984375,
+        438.1398010253906,
+        381.2511901855469
+      ],
+      "size": 10.296634674072266,
+      "bold": false
+    },
+    {
+      "text": "state,II",
+      "bbox": [
+        443.3399963378906,
+        370.08001708984375,
+        444.3400573730469,
+        381.2511901855469
+      ],
+      "size": 4.724517345428467,
+      "bold": false
+    },
+    {
+      "text": "assessmentsassessmentsat sitesatundergoingsites undergoingthe certification theprocesscertificationfor the governor’sprocessIndustrialfor",
+      "bbox": [
+        56.15999984741211,
+        388.800048828125,
+        469.0595703125,
+        400.33154296875
+      ],
+      "size": 10.205879211425781,
+      "bold": false
+    },
+    {
+      "text": "LandLandInitiative.Initiative.DEQ hasDEQappliedhasforappliedtwo new competitivefor twograntsnewfromcompetitiveEPA to continuegrants",
+      "bbox": [
+        56.52000045776367,
+        407.8800354003906,
+        472.5402526855469,
+        419.4115295410156
+      ],
+      "size": 10.733154296875,
+      "bold": false
+    },
+    {
+      "text": "thetheOregonOregonRural Ruraland Economicallyand EconomicallyDistressed Site 2005.12AssessmentDistressedInitiative.SiteEPAAssessmentwill",
+      "bbox": [
+        56.15999984741211,
+        426.60003662109375,
+        459.5799865722656,
+        438.4919128417969
+      ],
+      "size": 10.733154296875,
+      "bold": false
+    },
+    {
+      "text": "announceannouncethe thewinnerswinnersof theseofgrantsthesein Junegrants2005.in122005.12",
+      "bbox": [
+        56.15999984741211,
+        446.4000244140625,
+        307.3397521972656,
+        456.8504638671875
+      ],
+      "size": 10.362561225891113,
+      "bold": false
+    },
+    {
+      "text": "Economically2005.in122005.12",
+      "bbox": [
+        308.8800048828125,
+        443.8800354003906,
+        314.8800048828125,
+        448.9250793457031
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "VoluntaryVoluntaryCleanupCleanupProgramProgram",
+      "bbox": [
+        56.52000045776367,
+        484.9200439453125,
+        213.1402587890625,
+        496.4515380859375
+      ],
+      "size": 12.304740905761719,
+      "bold": false
+    },
+    {
+      "text": "DevelopedDevelopedin 1989,inthis1989,programthisworksprogramwith responsibleworkspartieswithto cleanresponsibleup",
+      "bbox": [
+        56.880001068115234,
+        504.0,
+        419.860107421875,
+        515.8919067382812
+      ],
+      "size": 10.46757984161377,
+      "bold": false
+    },
+    {
+      "text": "contaminatedcontaminatedproperty.property.There are Theretwo pathwaysareavailabletwo pathwaysto property owners.availableIn the",
+      "bbox": [
+        56.52000045776367,
+        523.0800170898438,
+        464.8998718261719,
+        534.611572265625
+      ],
+      "size": 10.483651161193848,
+      "bold": false
+    },
+    {
+      "text": "VoluntaryVoluntaryCleanupCleanupPathway, Pathway,participants signparticipantsa letter of agreementsignwitha letterDEQ thatof",
+      "bbox": [
+        56.52000045776367,
+        541.800048828125,
+        451.3397521972656,
+        553.6919555664062
+      ],
+      "size": 10.366256713867188,
+      "bold": false
+    },
+    {
+      "text": "coverscoversliabilityliabilityissues andissuesindemnification,and indemnification,and requires the propertyandownerrequiresto pay forthe",
+      "bbox": [
+        56.880001068115234,
+        560.52001953125,
+        466.1400146484375,
+        572.4119262695312
+      ],
+      "size": 10.564105987548828,
+      "bold": false
+    },
+    {
+      "text": "DEQ’sDEQ’sinvolvementinvolvementin the cleanup.in the cleanup.",
+      "bbox": [
+        57.2400016784668,
+        580.3200073242188,
+        223.4202423095703,
+        590.7704467773438
+      ],
+      "size": 10.21766185760498,
+      "bold": false
+    },
+    {
+      "text": "cleanup.InInreturn,return,a DEQa DEQstaff personstaffispersonassigned toistheassignedsite.",
+      "bbox": [
+        231.66000366210938,
+        579.6000366210938,
+        480.780029296875,
+        590.7711791992188
+      ],
+      "size": 9.459699630737305,
+      "bold": false
+    },
+    {
+      "text": "ThisThisstaffstaffpersonpersonworks withworksthe propertywith ownerthe propertyto set objectivesownerfor thetocleanupset objectivesand",
+      "bbox": [
+        56.52000045776367,
+        599.0400390625,
+        464.6600646972656,
+        610.5715942382812
+      ],
+      "size": 10.369152069091797,
+      "bold": false
+    },
+    {
+      "text": "provideprovidetechnicaltechnicaland regulatoryand advice,regulatoryas well asadvice,concurrenceasonwellthe investigationas concurrenceand",
+      "bbox": [
+        56.880001068115234,
+        617.760009765625,
+        483.0198974609375,
+        629.6519165039062
+      ],
+      "size": 10.529996871948242,
+      "bold": false
+    },
+    {
+      "text": "cleanupcleanupactivities.activities.The alternateThe pathwayalternateis thepathwayIndependentisCleanupthe IndependentPathway, which is",
+      "bbox": [
+        56.880001068115234,
+        637.2000122070312,
+        484.26007080078125,
+        648.7315673828125
+      ],
+      "size": 11.076033115386963,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,12OregonInitiative12OregonCleanup,12OregonSelect:DEQ, [NoBrownfields,Date], <www.deq.state.or.us>Select:Select:DEQ,DEQ’s[10Select:DEQ,December[NoBrownfields,Date],2004Rural andSelect;[NoBrownfields,Date],EconomicallyLand Quality,DistressedSelect: SiteEnvironmentalAssessment<www.deq.state",
+      "bbox": [
+        57.2400016784668,
+        676.0800170898438,
+        476.1795349121094,
+        687.970458984375
+      ],
+      "size": 9.699453353881836,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,12OregonInitiative12OregonCleanup,12OregonInitiativeCleanup,Initiative[10Select:DEQ,December[NoBrownfields,Date],2004][10Select:DecemberBrownfields,2004]<www.deq.state.or.us>Select:Select:DEQ,DEQ’s[10Select:DEQ,December[NoBrownfields,Date],2004Rural andSelect;[NoBrownfields,Date],EconomicallyLand Quality,DistressedSelect: SiteEnvironmentalAssessment<www.deq.state",
+      "bbox": [
+        56.880001068115234,
+        688.6799926757812,
+        486.179931640625,
+        699.1304321289062
+      ],
+      "size": 9.609339714050293,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,12OregonInitiativeInitiativeCleanup,Initiative[10Select:DecemberBrownfields,2004][10Select:DecemberBrownfields,2004]",
+      "bbox": [
+        57.599998474121094,
+        700.9200439453125,
+        184.81996154785156,
+        710.6497192382812
+      ],
+      "size": 9.137275695800781,
+      "bold": false
+    },
+    {
+      "text": "10",
+      "bbox": [
+        477.3599853515625,
+        737.6400146484375,
+        487.35992431640625,
+        744.8472290039062
+      ],
+      "size": 8.485254287719727,
+      "bold": false
+    },
+    {
+      "text": "informationinformationhas beenhasabeenbarrier.aTBAsbarrier.do thisTBAsby providingdo thisanswersby toprovidingthe followinganswers to the fol",
+      "bbox": [
+        54.0,
+        64.6822509765625,
+        571.3539428710938,
+        80.02983093261719
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "●?",
+      "bbox": [
+        72.36000061035156,
+        123.49725341796875,
+        79.5956802368164,
+        136.37164306640625
+      ],
+      "size": 11.042614936828613,
+      "bold": false
+    },
+    {
+      "text": "WhatWhatisisthetheextentextentandandnaturenatureof theofcontamination?the contamination?",
+      "bbox": [
+        90.18000030517578,
+        123.49725341796875,
+        388.2222595214844,
+        136.37164306640625
+      ],
+      "size": 11.042614936828613,
+      "bold": false
+    },
+    {
+      "text": "●? WhatWhatarearesomesomeof the possibleof thecleanuppossibleoptions,cleanupand what options,are their costs?and what are their c",
+      "bbox": [
+        72.36000061035156,
+        142.41531372070312,
+        572.611328125,
+        158.2575225830078
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "TheThereportreportcontainsIf askedcontainsbackgroundfor itbackgroundcaninformation,also provideresultsinformation,of samplespossiblecollectedcleanupresultsand analysesofoptions,samplesand collecthe g",
+      "bbox": [
+        54.720001220703125,
+        180.16127014160156,
+        578.57421875,
+        196.99276733398438
+      ],
+      "size": 14.43671703338623,
+      "bold": false
+    },
+    {
+      "text": "ofofthisthisdata.data.IfIfaskedasked",
+      "bbox": [
+        54.720001220703125,
+        199.7362823486328,
+        129.75633239746094,
+        214.09457397460938
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "reportdata.IfIfaskedaskedcontainsfor itforcanitalsobackgroundcanprovidealsopossibleprovideinformation,cleanuppossibleoptions, cleanupandresultsthe generalofoptions,samplesand collecthe g",
+      "bbox": [
+        118.26000213623047,
+        198.9622802734375,
+        571.8522338867188,
+        214.3098602294922
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "estimatedestimatedcost costassociatedassociatedwith the options.withAtthesitesoptions.with extensiveAtcontamination,sites with extensiveor  contam",
+      "bbox": [
+        55.08000183105469,
+        217.65530395507812,
+        578.4266967773438,
+        233.4975128173828
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "wherewheremoremoreinformationinformationis neededis toneededdeterminetothedetermineextent of thethecontamination,extent ofatheSitecontamination, a",
+      "bbox": [
+        55.08000183105469,
+        236.81629943847656,
+        577.8380737304688,
+        251.17459106445312
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "SpecificSpecificAssessmentAssessmentwill recommendwillfurtherrecommendinvestigation. Sincefurther1997, investigation.DEQ has  Since 19",
+      "bbox": [
+        55.439998626708984,
+        255.73428344726562,
+        579.084716796875,
+        273.0604248046875
+      ],
+      "size": 14.860980033874512,
+      "bold": false
+    },
+    {
+      "text": "completedcompletedTargetedTargetedBrownfieldBrownfieldAssessments atAssessmentsover 20 sites.  at over 20 sites.",
+      "bbox": [
+        55.439998626708984,
+        275.2283020019531,
+        507.917724609375,
+        291.5651550292969
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "InInJuneJune2003,2003,EPA awardedEPA awardedthe Oregon RuraltheandOregonEconomicallyRuralDistressedand EconomicallySite  Distress",
+      "bbox": [
+        56.15999984741211,
+        312.3352966308594,
+        575.0546264648438,
+        328.1775207519531
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "AssessmentAssessmentInitiativeInitiativea total ofa$400,000total ofto$400,000conduct assessmentsto conductat propertiesassessmentslocated  at properties",
+      "bbox": [
+        55.439998626708984,
+        331.1092834472656,
+        577.8445434570312,
+        345.96221923828125
+      ],
+      "size": 12.739666938781738,
+      "bold": false
+    },
+    {
+      "text": "ininruralruralandandeconomicallyeconomicallydistressed areasdistressedstatewide. Asareasof Marchstatewide.2005, DEQ hasAs of March 2005",
+      "bbox": [
+        56.15999984741211,
+        350.1082763671875,
+        577.467041015625,
+        366.44512939453125
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "conductedconductedassessmentsassessmentsat 13 sitesatthroughout13 sitesthethroughoutstate, as well astheninestate,Phase IIas well as nine Ph",
+      "bbox": [
+        55.79999923706055,
+        369.2422790527344,
+        573.2005615234375,
+        384.5898742675781
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "state,IIas",
+      "bbox": [
+        443.3399963378906,
+        369.2422790527344,
+        447.65283203125,
+        384.5898742675781
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "assessmentsassessmentsat sitesatundergoingsites undergoingthe certification theprocesscertificationfor the governor’sprocessIndustrialfor the governo",
+      "bbox": [
+        56.15999984741211,
+        387.9352722167969,
+        574.1740112304688,
+        403.7774963378906
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "LandLandInitiative.Initiative.DEQ hasDEQappliedhasforappliedtwo new competitivefor twograntsnewfromcompetitiveEPA to continuegrants from EPA",
+      "bbox": [
+        56.52000045776367,
+        407.0152893066406,
+        578.9697875976562,
+        422.8575134277344
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "thetheOregonOregonRural Ruraland Economicallyand EconomicallyDistressed Site 122005.12AssessmentDistressedInitiative.SiteEPAAssessmentwill  Initiat",
+      "bbox": [
+        56.15999984741211,
+        425.7082824707031,
+        571.0267333984375,
+        442.0451354980469
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "announceannouncethe thewinnerswinnersof theseofgrantsthesein Junegrants2005.in122005.12June 2005.12",
+      "bbox": [
+        56.15999984741211,
+        445.61627197265625,
+        405.50714111328125,
+        459.9745788574219
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "Economically2005.in122005.12AssessmentJuneDistressed",
+      "bbox": [
+        308.8800048828125,
+        440.33001708984375,
+        349.0352783203125,
+        451.322021484375
+      ],
+      "size": 9.428060531616211,
+      "bold": false
+    },
+    {
+      "text": "VoluntaryVoluntaryCleanupCleanupProgramProgram",
+      "bbox": [
+        56.52000045776367,
+        484.0552978515625,
+        254.09812927246094,
+        499.89752197265625
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "DevelopedDevelopedin 1989,inthis1989,programthisworksprogramwith responsibleworkspartieswithto cleanresponsibleup  parties to clea",
+      "bbox": [
+        56.880001068115234,
+        503.1082763671875,
+        573.5962524414062,
+        519.4451293945312
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "contaminatedcontaminatedproperty.property.There are Theretwo pathwaysareavailabletwo pathwaysto property owners.availableIn the to property own",
+      "bbox": [
+        56.52000045776367,
+        522.2152709960938,
+        578.0890502929688,
+        538.0574951171875
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "VoluntaryVoluntaryCleanupCleanupPathway, Pathway,participants signparticipantsa letter of agreementsignwitha letterDEQ thatof agreement wit",
+      "bbox": [
+        56.52000045776367,
+        540.9083251953125,
+        570.511474609375,
+        557.2451782226562
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "coverscoversliabilityliabilityissues andissuesindemnification,and indemnification,and requires the propertyandownerrequiresto pay forthe property ow",
+      "bbox": [
+        56.880001068115234,
+        559.6282958984375,
+        577.2623291015625,
+        575.9651489257812
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "DEQ’sDEQ’sinvolvementinvolvementin the cleanup.in the cleanup.InInreturn,return,a",
+      "bbox": [
+        57.2400016784668,
+        579.5362548828125,
+        279.06884765625,
+        593.8945922851562
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "cleanup.InInreturn,return,a DEQa DEQstaff personstaffispersonassigned toistheassignedsite.  to the sit",
+      "bbox": [
+        231.66000366210938,
+        578.7622680664062,
+        574.8560180664062,
+        594.10986328125
+      ],
+      "size": 13.163928985595703,
+      "bold": false
+    },
+    {
+      "text": "ThisThisstaffstaffpersonpersonworks withworksthe propertywith ownerthe propertyto set objectivesownerfor thetocleanupset objectivesand  for the c",
+      "bbox": [
+        56.52000045776367,
+        598.1752319335938,
+        573.6212768554688,
+        614.0174560546875
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "provideprovidetechnicaltechnicaland regulatoryand advice,regulatoryas well asadvice,concurrenceasonwellthe investigationas concurrenceand  on the",
+      "bbox": [
+        56.880001068115234,
+        616.8682861328125,
+        575.4622802734375,
+        633.2051391601562
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "cleanupcleanupactivities.activities.The alternateThe pathwayalternateis thepathwayIndependentisCleanupthe IndependentPathway, which is Cleanup Pat",
+      "bbox": [
+        56.880001068115234,
+        636.3352661132812,
+        574.9420166015625,
+        652.177490234375
+      ],
+      "size": 13.588191032409668,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,12OregonInitiative12OregonCleanup,12OregonSelect:DEQ, [NoBrownfields,Date], <www.deq.state.or.us>Select:Select:DEQ,DEQ’s[10Select:DEQ,December[NoBrownfields,Date],2004Rural andSelect;[NoBrownfields,Date],EconomicallyLand Quality,DistressedSelect: SiteEnvironmentalAssessment<www.deq.state",
+      "bbox": [
+        57.2400016784668,
+        675.1882934570312,
+        579.0258178710938,
+        691.525146484375
+      ],
+      "size": 14.012454986572266,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,12OregonInitiative12OregonCleanup,12OregonInitiativeCleanup,Initiative[10Select:DEQ,December[NoBrownfields,Date],2004][10Select:DecemberBrownfields,2004]<www.deq.state.or.us>Select:Select:DEQ,DEQ’s[10Select:DEQ,December[NoBrownfields,Date],2004Rural andSelect;[NoBrownfields,Date],EconomicallyLand Quality,DistressedSelect: SiteEnvironmentalAssessment<www.deq.state",
+      "bbox": [
+        56.880001068115234,
+        687.896240234375,
+        576.3724975585938,
+        702.2545776367188
+      ],
+      "size": 12.31540298461914,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,12OregonInitiativeInitiativeCleanup,Initiative[10Select:DecemberBrownfields,2004][10Select:DecemberBrownfields,2004]Select: DEQ’s[10Select:DEQ,December[NoBrownfields,Date],2004Rural and Economically Distressed",
+      "bbox": [
+        57.599998474121094,
+        700.1902465820312,
+        394.8367919921875,
+        713.5592651367188
+      ],
+      "size": 11.466877937316895,
+      "bold": false
+    }
+  ]
+}

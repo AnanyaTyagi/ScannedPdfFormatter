@@ -1,0 +1,1150 @@
+{
+  "page": 22,
+  "body_size": 10.060808181762695,
+  "lines": [
+    {
+      "text": "AtlasAtlas Mill.Mill.FallsFallsCity.City.OregonOregon",
+      "bbox": [
+        54.36000061035156,
+        66.60002136230469,
+        240.320068359375,
+        77.41082763671875
+      ],
+      "size": 11.192885398864746,
+      "bold": false
+    },
+    {
+      "text": "//",
+      "bbox": [
+        139.32000732421875,
+        122.03999328613281,
+        142.3199920654297,
+        130.68862915039062
+      ],
+      "size": 7.199977397918701,
+      "bold": false
+    },
+    {
+      "text": "★?",
+      "bbox": [
+        62.279998779296875,
+        126.71997833251953,
+        75.2800521850586,
+        140.0532989501953
+      ],
+      "size": 18.609712600708008,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        54.720001220703125,
+        213.8400115966797,
+        59.719970703125,
+        224.65081787109375
+      ],
+      "size": 10.392271995544434,
+      "bold": false
+    },
+    {
+      "text": "DemographicsDemographics",
+      "bbox": [
+        73.08000183105469,
+        213.8400115966797,
+        154.0800018310547,
+        224.65081787109375
+      ],
+      "size": 12.074767112731934,
+      "bold": false
+    },
+    {
+      "text": "FallsFallsCityCityis isa smalla smallcity ofcity960oflocated960 locatedin Polk County,in PolkinCounty,the Willamettein theValleyWillamettein",
+      "bbox": [
+        54.720001220703125,
+        233.27999877929688,
+        442.320068359375,
+        244.45115661621094
+      ],
+      "size": 10.205879211425781,
+      "bold": false
+    },
+    {
+      "text": "westernwesternOregon.Oregon.TheThenearestnearestmajormajorhighwayhighwayis Interstateis Interstate5 (15) about5 (15)19 milesaboutaway.19",
+      "bbox": [
+        54.36000061035156,
+        252.35997009277344,
+        462.3199157714844,
+        263.1707763671875
+      ],
+      "size": 10.392271995544434,
+      "bold": false
+    },
+    {
+      "text": "TheThenearestnearestmajormajorcitycityis Monmouthis Monmouth(population(population7,741) which7,741)is 9whichmiles away.is 9 miles",
+      "bbox": [
+        54.36000061035156,
+        271.44000244140625,
+        428.83990478515625,
+        282.25079345703125
+      ],
+      "size": 10.217621803283691,
+      "bold": false
+    },
+    {
+      "text": "miles1717",
+      "bbox": [
+        431.6400146484375,
+        269.2799987792969,
+        437.6400146484375,
+        274.3250427246094
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "TableTable 22",
+      "bbox": [
+        248.75999450683594,
+        309.9599914550781,
+        288.6799621582031,
+        318.608642578125
+      ],
+      "size": 9.738718032836914,
+      "bold": false
+    },
+    {
+      "text": "FallsFalls CityCity PopulationPopulationDataData",
+      "bbox": [
+        196.1999969482422,
+        323.6399841308594,
+        341.2398681640625,
+        334.8111572265625
+      ],
+      "size": 11.076830387115479,
+      "bold": false
+    },
+    {
+      "text": "%% BelowBelow",
+      "bbox": [
+        351.7200012207031,
+        350.27996826171875,
+        395.39984130859375,
+        358.9286193847656
+      ],
+      "size": 11.326545715332031,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty% BelowLevelLevel",
+      "bbox": [
+        339.1199951171875,
+        363.2400207519531,
+        407.6798400878906,
+        373.330078125
+      ],
+      "size": 10.319002628326416,
+      "bold": false
+    },
+    {
+      "text": "Poverty11.6%11.6%",
+      "bbox": [
+        352.79998779296875,
+        377.9999694824219,
+        380.8000183105469,
+        386.64862060546875
+      ],
+      "size": 9.837087631225586,
+      "bold": false
+    },
+    {
+      "text": "6.3%6.3%",
+      "bbox": [
+        357.8399963378906,
+        393.1199951171875,
+        380.8398742675781,
+        401.40826416015625
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "%%",
+      "bbox": [
+        219.60000610351562,
+        350.6399841308594,
+        228.60003662109375,
+        359.28863525390625
+      ],
+      "size": 12.470786094665527,
+      "bold": false
+    },
+    {
+      "text": "PopulationPopulation",
+      "bbox": [
+        427.67999267578125,
+        350.6400146484375,
+        482.67938232421875,
+        360.7300720214844
+      ],
+      "size": 10.529909133911133,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmerican",
+      "bbox": [
+        119.5199966430664,
+        351.0,
+        180.48011779785156,
+        359.28826904296875
+      ],
+      "size": 10.738968849182129,
+      "bold": false
+    },
+    {
+      "text": "AmericanIndianIndian",
+      "bbox": [
+        134.63999938964844,
+        363.5999755859375,
+        164.6398162841797,
+        371.5279235839844
+      ],
+      "size": 8.899415969848633,
+      "bold": false
+    },
+    {
+      "text": "1.7%1.7%",
+      "bbox": [
+        140.0399932861328,
+        378.3599853515625,
+        162.0398712158203,
+        387.0086364746094
+      ],
+      "size": 9.748815536499023,
+      "bold": false
+    },
+    {
+      "text": "1.8%1.8%",
+      "bbox": [
+        139.67999267578125,
+        393.47998046875,
+        162.67999267578125,
+        402.1286315917969
+      ],
+      "size": 9.967954635620117,
+      "bold": false
+    },
+    {
+      "text": "MedianMedian",
+      "bbox": [
+        272.5199890136719,
+        350.9999694824219,
+        308.5201721191406,
+        358.92791748046875
+      ],
+      "size": 9.748873710632324,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncome",
+      "bbox": [
+        272.1600036621094,
+        363.5999755859375,
+        309.1599426269531,
+        371.5279235839844
+      ],
+      "size": 9.883322715759277,
+      "bold": false
+    },
+    {
+      "text": "$32,461$32,461",
+      "bbox": [
+        272.1600036621094,
+        378.0,
+        309.16015625,
+        388.0900573730469
+      ],
+      "size": 10.322824478149414,
+      "bold": false
+    },
+    {
+      "text": "$42,311$32,461$42,311",
+      "bbox": [
+        272.1600036621094,
+        392.760009765625,
+        309.15972900390625,
+        403.21044921875
+      ],
+      "size": 10.505461692810059,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%",
+      "bbox": [
+        201.9600067138672,
+        363.239990234375,
+        246.9597625732422,
+        373.6904296875
+      ],
+      "size": 10.837403297424316,
+      "bold": false
+    },
+    {
+      "text": "Hispanic3.6%3.6%",
+      "bbox": [
+        214.55999755859375,
+        378.3599853515625,
+        237.55987548828125,
+        386.64825439453125
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "8.8%8.8%",
+      "bbox": [
+        214.1999969482422,
+        393.1199951171875,
+        238.19985961914062,
+        401.7686462402344
+      ],
+      "size": 10.182305335998535,
+      "bold": false
+    },
+    {
+      "text": "960960",
+      "bbox": [
+        457.20001220703125,
+        378.3599853515625,
+        474.2000732421875,
+        386.2879333496094
+      ],
+      "size": 9.474187850952148,
+      "bold": false
+    },
+    {
+      "text": "FallsFallsCityCity",
+      "bbox": [
+        54.720001220703125,
+        378.7200012207031,
+        98.00009155273438,
+        389.1704406738281
+      ],
+      "size": 9.392419815063477,
+      "bold": false
+    },
+    {
+      "text": "PolkFallsPolk",
+      "bbox": [
+        54.720001220703125,
+        393.8399963378906,
+        74.7198486328125,
+        402.1282653808594
+      ],
+      "size": 9.099414825439453,
+      "bold": false
+    },
+    {
+      "text": "CountyPolkCounty",
+      "bbox": [
+        54.720001220703125,
+        406.44000244140625,
+        87.72000122070312,
+        416.89044189453125
+      ],
+      "size": 10.71634292602539,
+      "bold": false
+    },
+    {
+      "text": "OregonCountyOregonOregonSource:",
+      "bbox": [
+        54.720001220703125,
+        421.20001220703125,
+        91.7198486328125,
+        431.2900695800781
+      ],
+      "size": 11.14986515045166,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:OregonOregonSource:Source:<http://www.upa.pdx.edu/CPRC/about/index.html>PopulationPopulationPopulationResearch1.3% Center,ResearchPortland8.0%Center,StatePortlandUniversity$40,916ProfilesState[NoforDate],UniversityProfiles[NoforDate],Oregon.Oregon.",
+      "bbox": [
+        54.720001220703125,
+        433.0799865722656,
+        345.63995361328125,
+        441.7286376953125
+      ],
+      "size": 8.103288650512695,
+      "bold": false
+    },
+    {
+      "text": "Source:<http://www.upa.pdx.edu/CPRC/about/index.html>OregonSource:Source:<http://www.upa.pdx.edu/CPRC/about/index.html>PopulationPopulationPopulationResearch Center,ResearchPortlandCenter,StateSelect:PortlandUniversityProfilesState[NoforDate],UniversityProfiles[NoforDate],Oregon.Oregon. [20ResearchJanuary 2005]Center,",
+      "bbox": [
+        54.720001220703125,
+        443.5199890136719,
+        437.8799133300781,
+        452.16864013671875
+      ],
+      "size": 8.120435237884521,
+      "bold": false
+    },
+    {
+      "text": "62,38062,380",
+      "bbox": [
+        441.7200012207031,
+        393.1199951171875,
+        473.7202453613281,
+        402.8497314453125
+      ],
+      "size": 10.182367324829102,
+      "bold": false
+    },
+    {
+      "text": "Portland$40,916$40,916State",
+      "bbox": [
+        272.5199890136719,
+        420.4800109863281,
+        310.5201110839844,
+        430.570068359375
+      ],
+      "size": 10.461369514465332,
+      "bold": false
+    },
+    {
+      "text": "7.9%7.9%",
+      "bbox": [
+        358.20001220703125,
+        420.4800109863281,
+        381.19989013671875,
+        428.7682800292969
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "1.3%1.3%",
+      "bbox": [
+        139.67999267578125,
+        420.8399963378906,
+        162.67999267578125,
+        429.4886474609375
+      ],
+      "size": 9.967954635620117,
+      "bold": false
+    },
+    {
+      "text": "8.0%8.0%",
+      "bbox": [
+        214.1999969482422,
+        420.8399963378906,
+        238.20005798339844,
+        429.1282653808594
+      ],
+      "size": 9.967964172363281,
+      "bold": false
+    },
+    {
+      "text": "UniversityProfiles[NoforDate],Oregon.3,421,3993,421,399",
+      "bbox": [
+        426.9599914550781,
+        420.8399963378906,
+        473.9603271484375,
+        430.5697326660156
+      ],
+      "size": 10.075754165649414,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        54.720001220703125,
+        495.0,
+        60.12004470825195,
+        504.729736328125
+      ],
+      "size": 10.245820999145508,
+      "bold": false
+    },
+    {
+      "text": "TheThe SiteSite",
+      "bbox": [
+        72.72000122070312,
+        495.0,
+        119.16015625,
+        504.729736328125
+      ],
+      "size": 10.8885178565979,
+      "bold": false
+    },
+    {
+      "text": "VariousVariouslumberlumbermillsmillshavehaveoperatedoperatedon thison2-acrethis 2-acreparcel sinceparcel1890.sinceThe1890.propertyTheisproperty",
+      "bbox": [
+        54.36000061035156,
+        516.239990234375,
+        465.36004638671875,
+        526.6904296875
+      ],
+      "size": 10.045862197875977,
+      "bold": false
+    },
+    {
+      "text": "adjacentadjacenttotothetheLuckiamuteLuckiamuteRiverRiverin Fallsin FallsCity.",
+      "bbox": [
+        54.36000061035156,
+        535.3200073242188,
+        274.2397766113281,
+        545.7704467773438
+      ],
+      "size": 9.617905139923096,
+      "bold": false
+    },
+    {
+      "text": "City.AtlasAtlasMillMillwaswasthethelastlastoperator,operator,fromfrom",
+      "bbox": [
+        282.6000061035156,
+        535.3200073242188,
+        457.4001159667969,
+        545.7704467773438
+      ],
+      "size": 9.800374031066895,
+      "bold": false
+    },
+    {
+      "text": "19431943toto1964,1964,whenwhenthethemill millwaswasclosed.closed.",
+      "bbox": [
+        55.439998626708984,
+        554.3999633789062,
+        246.20030212402344,
+        564.8504028320312
+      ],
+      "size": 9.941187858581543,
+      "bold": false
+    },
+    {
+      "text": "closed.AfireAfire destroyeddestroyedthethefacilityfacilityin 1965.in 1965.",
+      "bbox": [
+        254.8800048828125,
+        554.3999633789062,
+        422.87994384765625,
+        564.8504028320312
+      ],
+      "size": 9.941187858581543,
+      "bold": false
+    },
+    {
+      "text": "1965.AtAtsomesome",
+      "bbox": [
+        431.2799987792969,
+        554.3999633789062,
+        469.9599914550781,
+        564.8504028320312
+      ],
+      "size": 10.558456897735596,
+      "bold": false
+    },
+    {
+      "text": "point,point,thethecitycityacquiredacquiredthetheland,land,butbuttherethereare noarerecordsno recordsas to ashowtothathowcamethatabout.came",
+      "bbox": [
+        54.720001220703125,
+        573.47998046875,
+        461.43975830078125,
+        583.570068359375
+      ],
+      "size": 9.699453353881836,
+      "bold": false
+    },
+    {
+      "text": "TheThepropertypropertyhashasmostmostrecentlyrecentlybeen beenused forusedtruckforparking,truck storageparking,andstoragecommunityand",
+      "bbox": [
+        54.36000061035156,
+        592.2000122070312,
+        459.2396240234375,
+        603.0104370117188
+      ],
+      "size": 10.469919204711914,
+      "bold": false
+    },
+    {
+      "text": "hazardoushazardous wastewastecollectioncollectionevents.events.",
+      "bbox": [
+        54.720001220703125,
+        611.280029296875,
+        222.00006103515625,
+        619.2079467773438
+      ],
+      "size": 8.945011138916016,
+      "bold": false
+    },
+    {
+      "text": "1818",
+      "bbox": [
+        224.63999938964844,
+        609.1200561523438,
+        230.64002990722656,
+        614.1651000976562
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "<http://info.econ.state.or.us:591/profile.htm><http://info.econ.state.or.us:591/profile.htm>OregonOregon17<http://info.econ.state.or.us:591/profile.htm>17Oregon Economic and Community DevelopmentSelect:DepartmentFalls City [15[2 MarchFebruary2005]EconomicDEQ2005]",
+      "bbox": [
+        54.720001220703125,
+        647.6400146484375,
+        412.1598815917969,
+        665.2897338867188
+      ],
+      "size": 9.85897445678711,
+      "bold": false
+    },
+    {
+      "text": "<http://info.econ.state.or.us:591/profile.htm><http://info.econ.state.or.us:591/profile.htm>OregonOregon<http://info.econ.state.or.us:591/profile.htm>17OregonOregonCleanup,OregonSelect:DEQEconomicDEQ [No Date],and Community<www.deq.state.or.us>[NoBrownfields,Date],DevelopmentSelect:Select:DepartmentFalls City [15[2<www.deq.state.or.us>Select:MarchFebruary2005]EconomicDEQ2005]",
+      "bbox": [
+        54.36000061035156,
+        666.3600463867188,
+        398.8398742675781,
+        676.8096923828125
+      ],
+      "size": 8.818135261535645,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,<http://info.econ.state.or.us:591/profile.htm>OregonOregonCleanup,OregonSelect:DEQOregonCleanup,OregonSelect:DEQSelect:DEQ [NoBrownfields,Date], <www.deq.state.or.us>Select:[NoBrownfields,Date],[NoBrownfields,Date],Site Specific Select:AssessmentFalls <www.deq.state.or.us>Select:CityLand[15ofQuality,<www.deq.state.or.us>Select:MarchBrownfieldSelect:2005]EconomicDEQSites,EnvironmentalSelect: AtlasSite",
+      "bbox": [
+        64.08000183105469,
+        678.2400512695312,
+        465.9993896484375,
+        688.329345703125
+      ],
+      "size": 9.524707794189453,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,OregonSelect:DEQMill.OregonCleanup,OregonSelect:DEQ[15 MarchSelect:DEQ [No2005]Brownfields,Date], <www.deq.state.or.us>Select:[NoBrownfields,Date],[NoBrownfields,Date],Site Specific Select:Assessment<www.deq.state.or.us>Select:Land ofQuality,<www.deq.state.or.us>Select:BrownfieldSelect:Sites,EnvironmentalSelect: AtlasSite",
+      "bbox": [
+        54.36000061035156,
+        689.760009765625,
+        476.55987548828125,
+        699.1293334960938
+      ],
+      "size": 8.7875394821167,
+      "bold": false
+    },
+    {
+      "text": "Mill.Cleanup,OregonSelect:DEQMill.[15[15MarchMarch2005]2005]",
+      "bbox": [
+        54.36000061035156,
+        701.280029296875,
+        144.67987060546875,
+        710.6493530273438
+      ],
+      "size": 8.966472148895264,
+      "bold": false
+    },
+    {
+      "text": "18",
+      "bbox": [
+        473.3999938964844,
+        739.0800170898438,
+        482.3999938964844,
+        746.6475830078125
+      ],
+      "size": 8.248649597167969,
+      "bold": false
+    },
+    {
+      "text": "AtlasAtlas Mill.Mill.FallsFallsCity.City.OregonOregon",
+      "bbox": [
+        54.36000061035156,
+        65.78922271728516,
+        215.9700164794922,
+        80.64216613769531
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "//",
+      "bbox": [
+        139.32000732421875,
+        121.39125061035156,
+        142.18275451660156,
+        133.27635192871094
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "FallsFallsCityCityis isa smalla smallcity ofcity960oflocated960 locatedin Polk County,in PolkinCounty,the Willamettein theValleyWillamettein  Valley in",
+      "bbox": [
+        54.720001220703125,
+        232.4422607421875,
+        528.4225463867188,
+        247.7898406982422
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "westernwesternOregon.Oregon.TheThenearestnearestmajormajorhighwayhighwayis Interstateis Interstate5 (15) about5 (15)19 milesabout17away.19 miles away.",
+      "bbox": [
+        54.36000061035156,
+        251.54922485351562,
+        540.013671875,
+        266.40216064453125
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "TheThenearestnearestmajormajorcitycityis Monmouthis Monmouth(population(population7,741) which7,741)is 9whichmiles away.is 9 miles1717  away.",
+      "bbox": [
+        54.36000061035156,
+        270.6292419433594,
+        497.06939697265625,
+        285.482177734375
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "aboutmiles1717",
+      "bbox": [
+        431.6400146484375,
+        265.72998046875,
+        442.23052978515625,
+        276.72198486328125
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "CityTableTablePopulation22",
+      "bbox": [
+        248.75999450683594,
+        309.3112487792969,
+        283.1026306152344,
+        321.19635009765625
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "FallsFalls CityCityTablePopulationPopulation2  DataData",
+      "bbox": [
+        196.1999969482422,
+        322.80224609375,
+        349.17626953125,
+        338.14984130859375
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%% BelowBelowLevelLevel",
+      "bbox": [
+        351.7200012207031,
+        349.6312561035156,
+        391.7778625488281,
+        361.516357421875
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%11.6%11.6%BelowLevelLevel",
+      "bbox": [
+        339.1199951171875,
+        362.4832458496094,
+        411.888427734375,
+        376.3468933105469
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "Poverty11.6%11.6%Level",
+      "bbox": [
+        352.79998779296875,
+        377.35125732421875,
+        381.9938049316406,
+        389.2363586425781
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%%",
+      "bbox": [
+        219.60000610351562,
+        349.99127197265625,
+        228.75462341308594,
+        361.8763732910156
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmericanIndianIndian",
+      "bbox": [
+        119.5199966430664,
+        350.3782653808594,
+        172.71435546875,
+        361.7687072753906
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "1.7%1.7%",
+      "bbox": [
+        140.0399932861328,
+        377.7112731933594,
+        163.5083465576172,
+        389.59637451171875
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "IncomeMedianMedian",
+      "bbox": [
+        272.5199890136719,
+        350.3299865722656,
+        303.7486572265625,
+        361.3219909667969
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncomeMedian",
+      "bbox": [
+        272.1600036621094,
+        362.92999267578125,
+        303.388671875,
+        373.9219970703125
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "$32,461$42,311$32,461$42,311",
+      "bbox": [
+        272.1600036621094,
+        377.2432556152344,
+        315.57122802734375,
+        391.1069030761719
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "$42,311$32,461$42,311",
+      "bbox": [
+        272.1600036621094,
+        391.9762268066406,
+        317.12005615234375,
+        406.33453369140625
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic3.6%3.6%%",
+      "bbox": [
+        201.9600067138672,
+        362.45623779296875,
+        249.65696716308594,
+        376.8145446777344
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "Hispanic3.6%3.6%",
+      "bbox": [
+        214.55999755859375,
+        377.7382507324219,
+        237.0516357421875,
+        389.1286926269531
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "960960",
+      "bbox": [
+        457.20001220703125,
+        377.69000244140625,
+        473.0857849121094,
+        388.6820068359375
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "FallsPolkFallsPolk CityCity",
+      "bbox": [
+        54.720001220703125,
+        377.93621826171875,
+        105.86297607421875,
+        392.2945251464844
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "PolkCountyFallsPolkCounty",
+      "bbox": [
+        54.720001220703125,
+        393.21826171875,
+        73.91535949707031,
+        404.60870361328125
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "CountyOregonPolkCountyOregon",
+      "bbox": [
+        54.720001220703125,
+        405.6562194824219,
+        94.1315689086914,
+        420.0145263671875
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:CountyOregonOregonSource:Population",
+      "bbox": [
+        54.720001220703125,
+        420.4432678222656,
+        94.77983856201172,
+        434.3069152832031
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http://www.upa.pdx.edu/CPRC/about/index.html>OregonOregonSource:Source:<http://www.upa.pdx.edu/CPRC/about/index.html>PopulationPopulationPopulationResearch1.3% Center,ResearchPortland8.0%Center,StateSelect:PortlandUniversity$40,916$40,916ProfilesState[NoforDate],UniversityProfiles[NoforDate],Oregon.Oregon.7.9%[20ResearchJanuary 2005]Center,3,421,3993,421,399Portland StateSelect:Univ",
+      "bbox": [
+        54.720001220703125,
+        432.4312744140625,
+        502.8530578613281,
+        444.3163757324219
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "Source:<http://www.upa.pdx.edu/CPRC/about/index.html>OregonSource:Source:<http://www.upa.pdx.edu/CPRC/about/index.html>PopulationPopulationPopulationResearch Center,ResearchPortlandCenter,StateSelect:PortlandUniversityProfilesState[NoforDate],UniversityProfiles[NoforDate],Oregon.Oregon. [20ResearchJanuary 2005]Center, Portland StateSelect:Univ",
+      "bbox": [
+        54.720001220703125,
+        442.8712463378906,
+        572.7019653320312,
+        454.75634765625
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "62,38062,380",
+      "bbox": [
+        441.7200012207031,
+        392.3902587890625,
+        477.14202880859375,
+        405.75927734375
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "PortlandUniversity$40,916$40,916State[No",
+      "bbox": [
+        272.5199890136719,
+        419.7232666015625,
+        315.93121337890625,
+        433.5869140625
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "UniversityProfiles[NoforDate],Oregon.7.9%7.9%",
+      "bbox": [
+        358.20001220703125,
+        419.8582458496094,
+        380.691650390625,
+        431.2486877441406
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "PopulationResearch1.3%1.3%",
+      "bbox": [
+        139.67999267578125,
+        420.1912536621094,
+        163.14834594726562,
+        432.07635498046875
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "ResearchPortland8.0%8.0%Center,",
+      "bbox": [
+        214.1999969482422,
+        420.21826171875,
+        236.69163513183594,
+        431.60870361328125
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "VariousVariouslumberlumbermillsmillshavehaveoperatedoperatedon thison2-acrethis 2-acreparcel sinceparcel1890.sinceThe1890.propertyTheisproperty is",
+      "bbox": [
+        54.36000061035156,
+        515.4562377929688,
+        518.988525390625,
+        529.8145751953125
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "adjacentadjacenttotothetheLuckiamuteLuckiamuteRiverRiverin Fallsin FallsCity. City.AtlasAtlas",
+      "bbox": [
+        54.36000061035156,
+        534.5362548828125,
+        306.71588134765625,
+        548.8945922851562
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "City.AtlasAtlasMillMillwaswasthethelastlastoperator,operator,fromfrom",
+      "bbox": [
+        282.6000061035156,
+        534.5362548828125,
+        483.0913391113281,
+        548.8945922851562
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "19431943toto1964,1964,whenwhenthethemill millwaswasclosed.closed.AfireAfire",
+      "bbox": [
+        55.439998626708984,
+        553.6162109375,
+        276.02288818359375,
+        567.9745483398438
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "closed.AfireAfire destroyeddestroyedthethefacilityfacilityin 1965.in 1965.AtAtsomesome",
+      "bbox": [
+        254.8800048828125,
+        553.6162109375,
+        445.03326416015625,
+        567.9745483398438
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "point,point,thethecitycityacquiredacquiredthetheland,land,butbuttherethereare noarerecordsno recordsas to ashowtothathowcamethatabout.came about.",
+      "bbox": [
+        54.720001220703125,
+        572.7232666015625,
+        503.41436767578125,
+        586.5869140625
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "TheThepropertypropertyhashasmostmostrecentlyrecentlybeen18beenused forusedtruckforparking,truck storageparking,andstoragecommunityand community",
+      "bbox": [
+        54.36000061035156,
+        591.3892822265625,
+        532.1505737304688,
+        606.2421875
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "recently1818been",
+      "bbox": [
+        224.63999938964844,
+        605.5700073242188,
+        235.2305145263672,
+        616.56201171875
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "<http://info.econ.state.or.us:591/profile.htm><http://info.econ.state.or.us:591/profile.htm>OregonOregon17<http://info.econ.state.or.us:591/profile.htm>17Oregon Economic and Community DevelopmentSelect:DepartmentFalls City [15[2 MarchFebruary2005]EconomicDEQ2005]  [No Date],andOregonCom",
+      "bbox": [
+        54.720001220703125,
+        646.3162231445312,
+        570.9842529296875,
+        670.5673217773438
+      ],
+      "size": 19.25775909423828,
+      "bold": false
+    },
+    {
+      "text": "<http://info.econ.state.or.us:591/profile.htm><http://info.econ.state.or.us:591/profile.htm>OregonOregon<http://info.econ.state.or.us:591/profile.htm>17OregonOregonCleanup,OregonSelect:DEQEconomicDEQ [No Date],and Community<www.deq.state.or.us>[NoBrownfields,Date],DevelopmentSelect:Select:DepartmentFalls CityLand[15Quality,[2<www.deq.state.or.us>Select:MarchFebruarySelect:2005]EconomicDEQ2005]Environmental [No Date],andOregonSite SpecificCom",
+      "bbox": [
+        54.36000061035156,
+        665.5762329101562,
+        575.7296142578125,
+        679.9345703125
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "<http://info.econ.state.or.us:591/profile.htm>Cleanup,<http://info.econ.state.or.us:591/profile.htm>OregonOregonCleanup,OregonSelect:DEQOregonCleanup,OregonSelect:DEQSelect:DEQ [NoBrownfields,Date], <www.deq.state.or.us>Select:[NoBrownfields,Date],[NoBrownfields,Date],Site SpecificSelect:Select:AssessmentFalls <www.deq.state.or.us>Select:CityLand[15ofQuality,<www.deq.state.or.us>Select:MarchBrownfieldSelect:2005]EconomicDEQSites,EnvironmentalSelect: AtlasSite[NoSpecificDate],andSite Select:AsSpecificCom",
+      "bbox": [
+        64.08000183105469,
+        677.4832763671875,
+        570.13134765625,
+        691.346923828125
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Mill.Cleanup,OregonSelect:DEQMill.OregonCleanup,OregonSelect:DEQ[15[15MarchMarchSelect:DEQ2005][No2005]Brownfields,Date], <www.deq.state.or.us>Select:[NoBrownfields,Date],[NoBrownfields,Date],Site Specific Select:Assessment<www.deq.state.or.us>Select:Land ofQuality,<www.deq.state.or.us>Select:BrownfieldSelect:Sites,EnvironmentalSelect: AtlasSite SpecificSite Select:AsSpecific",
+      "bbox": [
+        54.36000061035156,
+        689.0572509765625,
+        571.4183959960938,
+        701.931640625
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Mill.Cleanup,OregonSelect:DEQMill.[15[15MarchMarchSelect:2005]2005]Brownfields,",
+      "bbox": [
+        54.36000061035156,
+        700.5772705078125,
+        157.8876953125,
+        713.45166015625
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    }
+  ]
+}

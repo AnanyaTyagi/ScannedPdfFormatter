@@ -1,0 +1,1227 @@
+{
+  "page": 31,
+  "body_size": 10.105466842651367,
+  "lines": [
+    {
+      "text": "CommunityCommunity HealthHealthCenter,Center,WhiteWhiteCity,City,OregonOregon",
+      "bbox": [
+        53.279998779296875,
+        66.60000610351562,
+        355.1598815917969,
+        77.77117156982422
+      ],
+      "size": 12.437619686126709,
+      "bold": false
+    },
+    {
+      "text": "ii ^^",
+      "bbox": [
+        54.36000061035156,
+        164.1600341796875,
+        80.23998260498047,
+        177.4933624267578
+      ],
+      "size": 12.236863374710083,
+      "bold": false
+    },
+    {
+      "text": "3131",
+      "bbox": [
+        142.55999755859375,
+        172.8000030517578,
+        148.55996704101562,
+        178.5657501220703
+      ],
+      "size": 5.878756523132324,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        53.279998779296875,
+        216.72000122070312,
+        58.28001403808594,
+        227.8911590576172
+      ],
+      "size": 10.564105987548828,
+      "bold": false
+    },
+    {
+      "text": "DemographicsDemographics",
+      "bbox": [
+        71.63999938964844,
+        216.72000122070312,
+        152.6401824951172,
+        227.8911590576172
+      ],
+      "size": 12.27437686920166,
+      "bold": false
+    },
+    {
+      "text": "WhiteWhiteCityCityis theis thelargestlargestunincorporatedunincorporatedcommunitycommunityin the state ofinOregon,the stateand theof Oregon,fourth",
+      "bbox": [
+        52.91999816894531,
+        236.1599884033203,
+        480.32025146484375,
+        247.69151306152344
+      ],
+      "size": 10.068507194519043,
+      "bold": false
+    },
+    {
+      "text": "largestlargestpopulationpopulationcentercenterin Jacksonin JacksonCounty.",
+      "bbox": [
+        53.279998779296875,
+        255.60000610351562,
+        266.4800720214844,
+        266.77117919921875
+      ],
+      "size": 10.368579387664795,
+      "bold": false
+    },
+    {
+      "text": "County.ItItisisapproximatelyapproximately7 miles7 milesfrom Medford,from Medford,",
+      "bbox": [
+        275.3999938964844,
+        255.24000549316406,
+        469.4802551269531,
+        266.7715148925781
+      ],
+      "size": 10.624734878540039,
+      "bold": false
+    },
+    {
+      "text": "Oregon.Oregon.",
+      "bbox": [
+        53.279998779296875,
+        275.4000244140625,
+        90.28025817871094,
+        285.4900817871094
+      ],
+      "size": 10.322824478149414,
+      "bold": false
+    },
+    {
+      "text": "Oregon.3232",
+      "bbox": [
+        92.5199966430664,
+        273.239990234375,
+        98.52001190185547,
+        278.2850341796875
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "TableTable 66",
+      "bbox": [
+        247.67999267578125,
+        312.84002685546875,
+        287.60003662109375,
+        321.8490295410156
+      ],
+      "size": 9.85223388671875,
+      "bold": false
+    },
+    {
+      "text": "WhiteWhiteCityCityTablePopulationPopulation6  DataData",
+      "bbox": [
+        191.52000427246094,
+        326.52001953125,
+        343.31988525390625,
+        338.051513671875
+      ],
+      "size": 11.708320617675781,
+      "bold": false
+    },
+    {
+      "text": "%% BelowBelow",
+      "bbox": [
+        352.0799865722656,
+        353.52001953125,
+        395.400146484375,
+        361.80828857421875
+      ],
+      "size": 10.738968849182129,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty% BelowLevelLevel",
+      "bbox": [
+        339.4800109863281,
+        366.1200256347656,
+        408.6799011230469,
+        376.2100830078125
+      ],
+      "size": 10.418411254882812,
+      "bold": false
+    },
+    {
+      "text": "Poverty18.9%18.9%Level",
+      "bbox": [
+        354.6000061035156,
+        380.8800048828125,
+        382.60003662109375,
+        389.5286560058594
+      ],
+      "size": 9.837087631225586,
+      "bold": false
+    },
+    {
+      "text": "8.9%8.9%",
+      "bbox": [
+        360.0,
+        396.0,
+        382.9998779296875,
+        404.28826904296875
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "PopulationPopulation",
+      "bbox": [
+        426.239990234375,
+        353.52001953125,
+        481.2393798828125,
+        363.6100769042969
+      ],
+      "size": 10.529909133911133,
+      "bold": false
+    },
+    {
+      "text": "%%",
+      "bbox": [
+        223.55999755859375,
+        353.8800048828125,
+        232.56002807617188,
+        362.16827392578125
+      ],
+      "size": 12.208212852478027,
+      "bold": false
+    },
+    {
+      "text": "MedianMedian",
+      "bbox": [
+        275.3999938964844,
+        353.8800048828125,
+        311.4001770019531,
+        362.16827392578125
+      ],
+      "size": 9.967964172363281,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncomeMedian",
+      "bbox": [
+        275.0400085449219,
+        366.4800109863281,
+        312.0401306152344,
+        374.7682800292969
+      ],
+      "size": 10.105466842651367,
+      "bold": false
+    },
+    {
+      "text": "$29,342$29,342",
+      "bbox": [
+        275.0400085449219,
+        380.8800354003906,
+        313.0401306152344,
+        390.9700927734375
+      ],
+      "size": 10.461369514465332,
+      "bold": false
+    },
+    {
+      "text": "$36,461$29,342$36,461",
+      "bbox": [
+        275.0400085449219,
+        395.6400146484375,
+        312.0401611328125,
+        405.7300720214844
+      ],
+      "size": 10.322824478149414,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmerican",
+      "bbox": [
+        124.55999755859375,
+        354.2400207519531,
+        185.16012573242188,
+        362.5282897949219
+      ],
+      "size": 10.738968849182129,
+      "bold": false
+    },
+    {
+      "text": "AmericanIndianIndian",
+      "bbox": [
+        140.0399932861328,
+        366.8399963378906,
+        170.03981018066406,
+        374.7679443359375
+      ],
+      "size": 8.899415969848633,
+      "bold": false
+    },
+    {
+      "text": "1.5%1.5%",
+      "bbox": [
+        146.16000366210938,
+        381.6000061035156,
+        169.15988159179688,
+        389.8882751464844
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "1.1%1.1%",
+      "bbox": [
+        145.8000030517578,
+        396.3600158691406,
+        168.7998809814453,
+        404.6482849121094
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%",
+      "bbox": [
+        206.27999877929688,
+        366.4800109863281,
+        250.27963256835938,
+        376.570068359375
+      ],
+      "size": 10.529909133911133,
+      "bold": false
+    },
+    {
+      "text": "Hispanic16.5%16.5%",
+      "bbox": [
+        213.1199951171875,
+        381.239990234375,
+        242.1201629638672,
+        389.8886413574219
+      ],
+      "size": 10.011221885681152,
+      "bold": false
+    },
+    {
+      "text": "6.7%6.7%",
+      "bbox": [
+        218.52000427246094,
+        396.3600158691406,
+        242.5200653076172,
+        404.6482849121094
+      ],
+      "size": 9.967964172363281,
+      "bold": false
+    },
+    {
+      "text": "5,4665,466",
+      "bbox": [
+        447.1199951171875,
+        381.2400207519531,
+        473.1202087402344,
+        390.609375
+      ],
+      "size": 9.866345405578613,
+      "bold": false
+    },
+    {
+      "text": "181.269181.269",
+      "bbox": [
+        435.239990234375,
+        396.0,
+        473.23968505859375,
+        404.28826904296875
+      ],
+      "size": 9.481376647949219,
+      "bold": false
+    },
+    {
+      "text": "WhiteWhiteCityCity",
+      "bbox": [
+        52.91999816894531,
+        381.96002197265625,
+        101.96009063720703,
+        392.41046142578125
+      ],
+      "size": 10.019336223602295,
+      "bold": false
+    },
+    {
+      "text": "JacksonWhiteJacksonCity",
+      "bbox": [
+        52.91999816894531,
+        396.7200012207031,
+        91.92013549804688,
+        405.0082702636719
+      ],
+      "size": 9.60537052154541,
+      "bold": false
+    },
+    {
+      "text": "JacksonCountyCounty",
+      "bbox": [
+        53.279998779296875,
+        409.32000732421875,
+        87.27974700927734,
+        419.77044677734375
+      ],
+      "size": 10.877457618713379,
+      "bold": false
+    },
+    {
+      "text": "OregonCountyOregonSource:Source:Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Population",
+      "bbox": [
+        53.279998779296875,
+        424.4400329589844,
+        90.27984619140625,
+        434.53009033203125
+      ],
+      "size": 11.14986515045166,
+      "bold": false
+    },
+    {
+      "text": "Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>OregonSource:<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Source:Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Population ResearchPopulation1.3% Center. Portland8.0%StateSelect;University$40,916Profiles[NoforDate],Oregon.Population",
+      "bbox": [
+        53.63999938964844,
+        435.96002197265625,
+        343.55999755859375,
+        444.9690246582031
+      ],
+      "size": 8.313817024230957,
+      "bold": false
+    },
+    {
+      "text": "<http://www.upa.pdx.edu/CPRC/about/index.html><http://www.upa.pdx.edu/CPRC/about/index.html>Source:Source:Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Population Research Center. Portland StateSelect;UniversityProfiles[NoforDate],Oregon.Population[20PopulationJanuaryResearch2005]ResearchCenter.",
+      "bbox": [
+        53.279998779296875,
+        446.4000244140625,
+        436.8002014160156,
+        455.4090270996094
+      ],
+      "size": 8.291656017303467,
+      "bold": false
+    },
+    {
+      "text": "Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:$40,916$40,916",
+      "bbox": [
+        275.0400085449219,
+        423.3600158691406,
+        313.0401306152344,
+        433.4500732421875
+      ],
+      "size": 10.461369514465332,
+      "bold": false
+    },
+    {
+      "text": "7.9%7.9%",
+      "bbox": [
+        360.0,
+        423.3599853515625,
+        383.0,
+        432.0086364746094
+      ],
+      "size": 9.967954635620117,
+      "bold": false
+    },
+    {
+      "text": "8.0%8.0%",
+      "bbox": [
+        218.8800048828125,
+        423.7200012207031,
+        241.8800048828125,
+        432.36865234375
+      ],
+      "size": 9.967954635620117,
+      "bold": false
+    },
+    {
+      "text": "3,421,3993,421,399",
+      "bbox": [
+        425.8800048828125,
+        423.72003173828125,
+        472.88006591796875,
+        433.0893859863281
+      ],
+      "size": 9.887367248535156,
+      "bold": false
+    },
+    {
+      "text": "Population1.3%1.3%",
+      "bbox": [
+        146.16000366210938,
+        424.08001708984375,
+        169.15988159179688,
+        432.3682861328125
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        53.63999938964844,
+        498.96002197265625,
+        58.640037536621094,
+        507.9690246582031
+      ],
+      "size": 9.486870765686035,
+      "bold": false
+    },
+    {
+      "text": "TheThe SiteSite",
+      "bbox": [
+        71.63999938964844,
+        498.96002197265625,
+        116.48015594482422,
+        507.9690246582031
+      ],
+      "size": 10.081960678100586,
+      "bold": false
+    },
+    {
+      "text": "WhiteWhiteCityCitywaswasoriginallyoriginallyCampCampWhite,White,constructedconstructedby the USbyArmythe inUS1941Armyas aintraining1941",
+      "bbox": [
+        53.279998779296875,
+        519.1200561523438,
+        477.8802490234375,
+        529.9308471679688
+      ],
+      "size": 10.344860076904297,
+      "bold": false
+    },
+    {
+      "text": "campcampforforthethe91^’ 91^’InfantryInfantryDivision.Division.40,000 troops40,000shippedtroopsout ofshippedCamp Whiteoutduringof Camp",
+      "bbox": [
+        53.63999938964844,
+        536.760009765625,
+        458.56011962890625,
+        548.6519165039062
+      ],
+      "size": 10.289409637451172,
+      "bold": false
+    },
+    {
+      "text": "WorldWorldWarWarII.II.TheThearmyarmydeclareddeclaredCampCampWhiteWhitesurplussurpluspropertypropertyafter theafterwar andthesoldwar",
+      "bbox": [
+        53.279998779296875,
+        557.280029296875,
+        466.19976806640625,
+        567.73046875
+      ],
+      "size": 10.318798542022705,
+      "bold": false
+    },
+    {
+      "text": "manymanyofofthethebuildingsbuildingsandandlandlandat publicat publicauction.auction.The existingThe existingCamp WhiteCamproadsWhiteandroads",
+      "bbox": [
+        53.63999938964844,
+        576.3600463867188,
+        465.2801208496094,
+        586.8104858398438
+      ],
+      "size": 10.088284015655518,
+      "bold": false
+    },
+    {
+      "text": "facilitiesfacilitieswerewerepartpartofofunincorporatedunincorporatedJacksonJacksonCounty,County,and thereforeand thereforehad nohad",
+      "bbox": [
+        53.279998779296875,
+        595.4400024414062,
+        416.43994140625,
+        605.5300903320312
+      ],
+      "size": 10.039902687072754,
+      "bold": false
+    },
+    {
+      "text": "standardizedstandardized codes.codes.",
+      "bbox": [
+        53.63999938964844,
+        614.1600341796875,
+        149.51980590820312,
+        622.8087158203125
+      ],
+      "size": 9.333720207214355,
+      "bold": false
+    },
+    {
+      "text": "TheseThesetwotwofactorsfactorscontributedcontributedto rapid unplannedto rapidgrowthunplanned",
+      "bbox": [
+        157.67999267578125,
+        612.3600463867188,
+        429.1599426269531,
+        624.6104125976562
+      ],
+      "size": 9.547752380371094,
+      "bold": false
+    },
+    {
+      "text": "surroundingsurroundingthetheoldoldarmyarmycamp.camp.",
+      "bbox": [
+        53.279998779296875,
+        633.239990234375,
+        205.84010314941406,
+        643.6904296875
+      ],
+      "size": 10.31004810333252,
+      "bold": false
+    },
+    {
+      "text": "camp.HighHighpovertypovertyrates,rates,a largea largeimmigrantimmigrantpopulationspopulationsand",
+      "bbox": [
+        214.1999969482422,
+        633.239990234375,
+        471.4001159667969,
+        643.6904296875
+      ],
+      "size": 10.170992851257324,
+      "bold": false
+    },
+    {
+      "text": "3131<_http;//info.econ.state.or.us:591/profile.htm>31",
+      "bbox": [
+        53.279998779296875,
+        664.56005859375,
+        58.27998352050781,
+        669.6051025390625
+      ],
+      "size": 5.019951343536377,
+      "bold": false
+    },
+    {
+      "text": "31<_http;//info.econ.state.or.us:591/profile.htm>31<_http;//info.econ.state.or.us:591/profile.htm>32<_http;//info.econ.state.or.us:591/profile.htm>Community31 Oregon Economic and Community DevelopmentSelect: MedfordDepartment[15 March[2 February2005]Arts2005]Network",
+      "bbox": [
+        63.36000061035156,
+        659.8800659179688,
+        421.1598815917969,
+        677.1697387695312
+      ],
+      "size": 9.85897445678711,
+      "bold": false
+    },
+    {
+      "text": "3231<_http;//info.econ.state.or.us:591/profile.htm>3132<_http;//info.econ.state.or.us:591/profile.htm><_http;//info.econ.state.or.us:591/profile.htm>32<_http;//info.econ.state.or.us:591/profile.htm>CommunityCommunity<_http;//info.econ.state.or.us:591/profile.htm>CommunityArts Network [No Date]  Select: Medford [15 March[2ArtsFebruaryNetwork2005]Arts",
+      "bbox": [
+        53.63999938964844,
+        678.9600219726562,
+        393.43988037109375,
+        689.4104614257812
+      ],
+      "size": 9.530006408691406,
+      "bold": false
+    },
+    {
+      "text": "32<_http;//info.econ.state.or.us:591/profile.htm><_http;//info.econ.state.or.us:591/profile.htm>32<_http;//info.econ.state.or.us:591/profile.htm>Community<http;//www.communityarts.net/readingroom/archive/spirit/whitecity.php>Community<_http;//info.econ.state.or.us:591/profile.htm>CommunityArts Network [No Date]",
+      "bbox": [
+        63.36000061035156,
+        690.4800415039062,
+        215.7600555419922,
+        699.849365234375
+      ],
+      "size": 9.346698760986328,
+      "bold": false
+    },
+    {
+      "text": "<http;//www.communityarts.net/readingroom/archive/spirit/whitecity.php><http;//www.communityarts.net/readingroom/archive/spirit/whitecity.php><_http;//info.econ.state.or.us:591/profile.htm>Community Arts Network[20 May [No2004][20Date]",
+      "bbox": [
+        53.63999938964844,
+        702.0000610351562,
+        437.35986328125,
+        711.729736328125
+      ],
+      "size": 9.27962589263916,
+      "bold": false
+    },
+    {
+      "text": "3232<_http;//info.econ.state.or.us:591/profile.htm><_http;//info.econ.state.or.us:591/profile.htm>32<_http;//info.econ.state.or.us:591/profile.htm>Community",
+      "bbox": [
+        53.279998779296875,
+        687.9600219726562,
+        59.28001403808594,
+        693.0050659179688
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "27",
+      "bbox": [
+        471.9599914550781,
+        739.0800170898438,
+        480.9599914550781,
+        746.6475830078125
+      ],
+      "size": 8.248649597167969,
+      "bold": false
+    },
+    {
+      "text": "CommunityCommunity HealthHealthCenter,Center,WhiteWhiteCity,City,OregonOregon",
+      "bbox": [
+        53.279998779296875,
+        65.76226806640625,
+        325.9617614746094,
+        81.10984802246094
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "ii ^^",
+      "bbox": [
+        54.36000061035156,
+        163.1602325439453,
+        69.7371597290039,
+        181.4756622314453
+      ],
+      "size": 14.544245719909668,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        53.279998779296875,
+        215.88226318359375,
+        60.673500061035156,
+        231.22984313964844
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "DemographicsDemographics",
+      "bbox": [
+        71.63999938964844,
+        215.88226318359375,
+        157.3567352294922,
+        231.22984313964844
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "WhiteWhiteCityCityis theis thelargestlargestunincorporatedunincorporatedcommunitycommunityin the state ofinOregon,the stateand theof Oregon,fourth  and the fou",
+      "bbox": [
+        52.91999816894531,
+        235.29525756835938,
+        574.7637939453125,
+        251.13746643066406
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "largestlargestpopulation32populationcentercenterin Jacksonin JacksonCounty. County.ItItisisapproximatelyapproximately",
+      "bbox": [
+        53.279998779296875,
+        254.76226806640625,
+        314.92474365234375,
+        270.10986328125
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "Oregon.Oregon.3232",
+      "bbox": [
+        53.279998779296875,
+        274.6432800292969,
+        96.67915344238281,
+        288.5069274902344
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "largestOregon.3232population",
+      "bbox": [
+        92.5199966430664,
+        269.69000244140625,
+        103.11051177978516,
+        280.6820068359375
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "CityCityTableTablePopulationPopulation66",
+      "bbox": [
+        247.67999267578125,
+        312.16424560546875,
+        283.45196533203125,
+        324.54400634765625
+      ],
+      "size": 9.830731391906738,
+      "bold": false
+    },
+    {
+      "text": "WhiteWhiteCityCityTablePopulationPopulation6  DataData",
+      "bbox": [
+        191.52000427246094,
+        325.6552734375,
+        355.5346374511719,
+        341.49749755859375
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%% BelowBelowLevelLevel",
+      "bbox": [
+        352.0799865722656,
+        352.89825439453125,
+        390.4707336425781,
+        364.2886962890625
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%18.9%18.9%BelowLevelLevel",
+      "bbox": [
+        339.4800109863281,
+        365.36328125,
+        412.2484436035156,
+        379.2269287109375
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "8.9%8.9%",
+      "bbox": [
+        360.0,
+        395.3782653808594,
+        382.49163818359375,
+        406.7687072753906
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "PopulationPopulation",
+      "bbox": [
+        426.239990234375,
+        352.7632751464844,
+        482.9964904785156,
+        366.6269226074219
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%%",
+      "bbox": [
+        223.55999755859375,
+        353.2582702636719,
+        232.33360290527344,
+        364.6487121582031
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncomeMedianMedian",
+      "bbox": [
+        275.3999938964844,
+        353.2582702636719,
+        307.7607421875,
+        364.6487121582031
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncomeMedian",
+      "bbox": [
+        275.0400085449219,
+        365.8582763671875,
+        307.4007263183594,
+        377.24871826171875
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "$29,342$36,461$29,342$36,461",
+      "bbox": [
+        275.0400085449219,
+        380.1232604980469,
+        318.45123291015625,
+        393.9869079589844
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "$36,461$29,342$36,461",
+      "bbox": [
+        275.0400085449219,
+        394.8832702636719,
+        318.45123291015625,
+        408.7469177246094
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmericanIndianIndian",
+      "bbox": [
+        124.55999755859375,
+        353.6182556152344,
+        177.7543487548828,
+        365.0086975097656
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "AmericanIndianIndian",
+      "bbox": [
+        140.0399932861328,
+        366.1700134277344,
+        165.98294067382812,
+        377.1620178222656
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "1.1%1.1%",
+      "bbox": [
+        145.8000030517578,
+        395.73828125,
+        168.29164123535156,
+        407.12872314453125
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic16.5%16.5%%",
+      "bbox": [
+        206.27999877929688,
+        365.7232666015625,
+        252.33377075195312,
+        379.5869140625
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "6.7%6.7%",
+      "bbox": [
+        218.52000427246094,
+        395.73828125,
+        241.0116424560547,
+        407.12872314453125
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "181.2695,4665,466",
+      "bbox": [
+        447.1199951171875,
+        380.5372619628906,
+        475.0292663574219,
+        393.4116516113281
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "181.269181.2695,466",
+      "bbox": [
+        435.239990234375,
+        395.3782653808594,
+        470.9068603515625,
+        406.7687072753906
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "WhiteJacksonWhiteJacksonCityCity",
+      "bbox": [
+        52.91999816894531,
+        381.1762390136719,
+        109.59901428222656,
+        395.5345458984375
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "JacksonWhiteJacksonCountyCountyCity",
+      "bbox": [
+        52.91999816894531,
+        396.0982666015625,
+        89.1197738647461,
+        407.48870849609375
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "JacksonCountyOregonCountyOregonSource:",
+      "bbox": [
+        53.279998779296875,
+        408.5362548828125,
+        92.69156646728516,
+        422.8945617675781
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "OregonCountyOregonSource:Source:Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Population ResearchPopulation1.3%1.3% Center.",
+      "bbox": [
+        53.279998779296875,
+        423.6832580566406,
+        194.8287353515625,
+        437.5469055175781
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>OregonSource:<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Source:Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Population ResearchPopulation1.3% Center. Portland8.0%StateSelect;University$40,916$40,916Profiles[NoforDate],Oregon.Population7.9%[20PopulationJanuaryResearch2005]Research3,421,399Center.Center.PortlandPortlandStateSelectStat",
+      "bbox": [
+        53.63999938964844,
+        435.28424072265625,
+        571.7274169921875,
+        447.66400146484375
+      ],
+      "size": 9.830731391906738,
+      "bold": false
+    },
+    {
+      "text": "<http://www.upa.pdx.edu/CPRC/about/index.html><http://www.upa.pdx.edu/CPRC/about/index.html>Source:Source:Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Population Research Center. Portland StateSelect;UniversityProfiles[NoforDate],Oregon.Population[20PopulationJanuaryResearch2005]ResearchCenter.Center.PortlandPortlandStateSelectStat",
+      "bbox": [
+        53.279998779296875,
+        445.7242431640625,
+        571.3673706054688,
+        458.10400390625
+      ],
+      "size": 9.830731391906738,
+      "bold": false
+    },
+    {
+      "text": "Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:University$40,916$40,916[No",
+      "bbox": [
+        275.0400085449219,
+        422.603271484375,
+        318.45123291015625,
+        436.4669189453125
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:7.9%7.9%Population",
+      "bbox": [
+        360.0,
+        422.7112731933594,
+        383.4683532714844,
+        434.59637451171875
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:Portland8.0%8.0%State",
+      "bbox": [
+        218.8800048828125,
+        423.0712890625,
+        242.34835815429688,
+        434.9563903808594
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "Research3,421,3993,421,399Center.",
+      "bbox": [
+        425.8800048828125,
+        423.01727294921875,
+        475.4964904785156,
+        435.89166259765625
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "Oregon<http://www.upa.pdx.edu/CPRC/about/index.html>Source:ResearchPopulation1.3%1.3%",
+      "bbox": [
+        146.16000366210938,
+        423.4582824707031,
+        168.65164184570312,
+        434.8487243652344
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "WhiteWhiteCityCitywaswasoriginallyoriginallyCampCampWhite,White,constructedconstructedby the USbyArmythe inUS1941Armyas aintraining1941 as a training",
+      "bbox": [
+        53.279998779296875,
+        518.3092651367188,
+        553.9132080078125,
+        533.1621704101562
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "campcampforforthethe91^’ 91^’InfantryInfantryDivision.Division.40,000 troops40,000shippedtroopsout ofshippedCamp Whiteoutduringof Camp White durin",
+      "bbox": [
+        53.63999938964844,
+        535.8682861328125,
+        570.8710327148438,
+        552.2051391601562
+      ],
+      "size": 12.973073959350586,
+      "bold": false
+    },
+    {
+      "text": "WorldWorldWarWarII.II.TheThearmyarmydeclareddeclaredCampCampWhiteWhitesurplussurpluspropertypropertyafter theafterwar andthesoldwar and sold",
+      "bbox": [
+        53.279998779296875,
+        556.4962158203125,
+        520.6454467773438,
+        570.8545532226562
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "manymanyofofthethebuildingsbuildingsandandlandlandat publicat publicauction.auction.The existingThe existingCamp WhiteCamproadsWhiteandroads and",
+      "bbox": [
+        53.63999938964844,
+        575.5762329101562,
+        520.38330078125,
+        589.9345703125
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "facilitiesfacilitieswerewerepartpartofofunincorporatedunincorporatedJacksonJacksonCounty,County,and thereforeand thereforehad nohad no",
+      "bbox": [
+        53.279998779296875,
+        594.6832885742188,
+        453.2058410644531,
+        608.5469360351562
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "standardizedstandardized codes.codes.",
+      "bbox": [
+        53.63999938964844,
+        613.51123046875,
+        145.79367065429688,
+        625.3963623046875
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "TheseThesetwotwofactorsfactorscontributedcontributedto rapid unplannedto rapidgrowthunplanned growth",
+      "bbox": [
+        157.67999267578125,
+        611.4412231445312,
+        521.6375122070312,
+        628.272705078125
+      ],
+      "size": 13.365867614746094,
+      "bold": false
+    },
+    {
+      "text": "surroundingsurroundingthetheoldoldarmyarmycamp.camp.HighHigh",
+      "bbox": [
+        53.279998779296875,
+        632.4562377929688,
+        228.20614624023438,
+        646.8145751953125
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "camp.HighHighpovertypovertyrates,rates,a largea largeimmigrantimmigrantpopulationspopulationsand  and",
+      "bbox": [
+        214.1999969482422,
+        632.4562377929688,
+        509.4383544921875,
+        646.8145751953125
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "3131<_http;//info.econ.state.or.us:591/profile.htm>31<_http;//info.econ.state.or.us:591/profile.htm>32<_http;//info.econ.state.or.us:591/profile.htm>Community31 Oregon Economic and Community DevelopmentSelect: MedfordDepartment[15 March[2 February2005]Arts2005]Network [No Date]OregonSelect: M",
+      "bbox": [
+        53.279998779296875,
+        658.5833129882812,
+        574.8164672851562,
+        682.3397827148438
+      ],
+      "size": 13.79684829711914,
+      "bold": false
+    },
+    {
+      "text": "3231<_http;//info.econ.state.or.us:591/profile.htm>3132<_http;//info.econ.state.or.us:591/profile.htm><_http;//info.econ.state.or.us:591/profile.htm>32<_http;//info.econ.state.or.us:591/profile.htm>CommunityCommunity<_http;//info.econ.state.or.us:591/profile.htm>CommunityOregon EconomicArts Networkand Community[No Date] DevelopmentSelect: MedfordDepartment[15 March[2ArtsFebruaryNetwork2005]Arts2005]Network[No Date][No Date]OregonSelect: M",
+      "bbox": [
+        53.63999938964844,
+        678.17626953125,
+        570.1453857421875,
+        692.5346069335938
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "32<_http;//info.econ.state.or.us:591/profile.htm><_http;//info.econ.state.or.us:591/profile.htm><http;//www.communityarts.net/readingroom/archive/spirit/whitecity.php>32<_http;//info.econ.state.or.us:591/profile.htm>Community<http;//www.communityarts.net/readingroom/archive/spirit/whitecity.php>Community<_http;//info.econ.state.or.us:591/profile.htm>CommunityArts Network [No Date]  Select: Medford [15 MarchArts Network2005][20ArtsMayNetwork[No2004][20Date]May[No",
+      "bbox": [
+        63.36000061035156,
+        689.7772827148438,
+        461.3855895996094,
+        702.6516723632812
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "<http;//www.communityarts.net/readingroom/archive/spirit/whitecity.php><http;//www.communityarts.net/readingroom/archive/spirit/whitecity.php>Community<_http;//info.econ.state.or.us:591/profile.htm>CommunityArts Network [No Date]  Arts Network[20 May [No2004][20Date]May 2004]",
+      "bbox": [
+        53.63999938964844,
+        701.2702026367188,
+        502.34539794921875,
+        714.6392211914062
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "3232<_http;//info.econ.state.or.us:591/profile.htm><_http;//info.econ.state.or.us:591/profile.htm>32<_http;//info.econ.state.or.us:591/profile.htm>CommunityCommunity<_http;//info.econ.state.or.us:591/profile.htm>CommunityArts Network [No Date]  Select:",
+      "bbox": [
+        53.279998779296875,
+        684.4100341796875,
+        255.51878356933594,
+        695.4020385742188
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    }
+  ]
+}

@@ -1,0 +1,1194 @@
+{
+  "page": 37,
+  "body_size": 10.012651920318604,
+  "lines": [
+    {
+      "text": "FormerFormer NvssaNvssaLandfill,Landfill,Nvssa,Nvssa,Oregon,Oregon,",
+      "bbox": [
+        54.36000061035156,
+        66.95999145507812,
+        308.3999328613281,
+        78.13115692138672
+      ],
+      "size": 12.752124786376953,
+      "bold": false
+    },
+    {
+      "text": "^^",
+      "bbox": [
+        74.5199966430664,
+        115.20000457763672,
+        83.52000427246094,
+        121.32612609863281
+      ],
+      "size": 10.495719909667969,
+      "bold": false
+    },
+    {
+      "text": "iiIIiI",
+      "bbox": [
+        141.1199951171875,
+        118.08002471923828,
+        142.1199951171875,
+        120.96289825439453
+      ],
+      "size": 2.3999924659729004,
+      "bold": false
+    },
+    {
+      "text": "iiIIiI",
+      "bbox": [
+        130.67999267578125,
+        121.32000732421875,
+        142.68002319335938,
+        154.47312927246094
+      ],
+      "size": 28.19365882873535,
+      "bold": false
+    },
+    {
+      "text": "\\\\I\\II",
+      "bbox": [
+        55.439998626708984,
+        153.00003051757812,
+        56.440006256103516,
+        159.84686279296875
+      ],
+      "size": 3.6986632347106934,
+      "bold": false
+    },
+    {
+      "text": "\\\\I\\II",
+      "bbox": [
+        54.720001220703125,
+        160.20001220703125,
+        56.72001647949219,
+        166.3261260986328
+      ],
+      "size": 4.947746753692627,
+      "bold": false
+    },
+    {
+      "text": "DemographicsDemographics",
+      "bbox": [
+        75.5999984741211,
+        204.83999633789062,
+        156.6001739501953,
+        216.0111541748047
+      ],
+      "size": 12.27437686920166,
+      "bold": false
+    },
+    {
+      "text": "NyssaNyssaisisa smalla smallcity cityof 3,163of 3,163locatedlocatedin Malheurin MalheurCounty in easternCountyOregon,in easternnear theOregon,",
+      "bbox": [
+        54.36000061035156,
+        224.63998413085938,
+        461.47998046875,
+        235.81114196777344
+      ],
+      "size": 10.457394123077393,
+      "bold": false
+    },
+    {
+      "text": "Oregon-ldahoOregon-ldahoborder.border.4141border.41",
+      "bbox": [
+        54.0,
+        244.4400177001953,
+        157.2796630859375,
+        254.5301055908203
+      ],
+      "size": 10.064929485321045,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        54.36000061035156,
+        207.71998596191406,
+        59.36002731323242,
+        213.48573303222656
+      ],
+      "size": 7.589486122131348,
+      "bold": false
+    },
+    {
+      "text": "border.border.4141border.41",
+      "bbox": [
+        159.1199951171875,
+        242.280029296875,
+        165.12002563476562,
+        246.96470642089844
+      ],
+      "size": 5.299074172973633,
+      "bold": false
+    },
+    {
+      "text": "TableTable 88",
+      "bbox": [
+        248.0399932861328,
+        281.8800048828125,
+        288.3200378417969,
+        290.8890075683594
+      ],
+      "size": 9.939600944519043,
+      "bold": false
+    },
+    {
+      "text": "NyssaNyssaPopulationPopulationTable 8  DataData",
+      "bbox": [
+        204.47999572753906,
+        295.55999755859375,
+        331.8798828125,
+        307.09149169921875
+      ],
+      "size": 11.659128189086914,
+      "bold": false
+    },
+    {
+      "text": "%% BelowBelow",
+      "bbox": [
+        352.79998779296875,
+        322.55999755859375,
+        396.1198425292969,
+        331.2086486816406
+      ],
+      "size": 10.969941139221191,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty% BelowLevelLevel",
+      "bbox": [
+        339.8399963378906,
+        335.5199890136719,
+        408.400146484375,
+        345.9704284667969
+      ],
+      "size": 10.501674175262451,
+      "bold": false
+    },
+    {
+      "text": "Poverty19.9%19.9% Level",
+      "bbox": [
+        354.9599914550781,
+        350.6399841308594,
+        383.9599304199219,
+        358.9282531738281
+      ],
+      "size": 9.800386428833008,
+      "bold": false
+    },
+    {
+      "text": "14.6%14.6%",
+      "bbox": [
+        354.9599914550781,
+        365.3999938964844,
+        383.9599304199219,
+        373.6882629394531
+      ],
+      "size": 9.800386428833008,
+      "bold": false
+    },
+    {
+      "text": "PopulationPopulation",
+      "bbox": [
+        426.9599914550781,
+        322.55999755859375,
+        481.9599914550781,
+        333.01043701171875
+      ],
+      "size": 10.71634292602539,
+      "bold": false
+    },
+    {
+      "text": "%%",
+      "bbox": [
+        223.9199981689453,
+        322.91998291015625,
+        231.92002868652344,
+        331.5686340332031
+      ],
+      "size": 11.757576942443848,
+      "bold": false
+    },
+    {
+      "text": "MedianMedian",
+      "bbox": [
+        275.760009765625,
+        322.9200134277344,
+        311.76019287109375,
+        331.2082824707031
+      ],
+      "size": 9.967964172363281,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncome",
+      "bbox": [
+        275.3999938964844,
+        335.8800048828125,
+        312.4001159667969,
+        344.16827392578125
+      ],
+      "size": 10.105466842651367,
+      "bold": false
+    },
+    {
+      "text": "$23,372$23,372",
+      "bbox": [
+        275.3999938964844,
+        350.6399841308594,
+        313.40032958984375,
+        360.3697204589844
+      ],
+      "size": 10.272894859313965,
+      "bold": false
+    },
+    {
+      "text": "$31,625$31,625",
+      "bbox": [
+        275.3999938964844,
+        365.4000244140625,
+        314.3998718261719,
+        375.4900817871094
+      ],
+      "size": 10.598102569580078,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmerican",
+      "bbox": [
+        124.91999816894531,
+        323.2799987792969,
+        185.880126953125,
+        331.5682678222656
+      ],
+      "size": 10.738968849182129,
+      "bold": false
+    },
+    {
+      "text": "AmericanIndianIndian",
+      "bbox": [
+        140.0399932861328,
+        335.8800048828125,
+        171.0398406982422,
+        344.16827392578125
+      ],
+      "size": 9.249837875366211,
+      "bold": false
+    },
+    {
+      "text": "1.0%1.0%",
+      "bbox": [
+        146.16000366210938,
+        351.0,
+        169.15988159179688,
+        359.28826904296875
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "1.0%1.0%",
+      "bbox": [
+        146.16000366210938,
+        365.760009765625,
+        169.15988159179688,
+        374.04827880859375
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%",
+      "bbox": [
+        206.27999877929688,
+        335.8800048828125,
+        250.27963256835938,
+        345.9700622558594
+      ],
+      "size": 10.529909133911133,
+      "bold": false
+    },
+    {
+      "text": "57.2%57.2%",
+      "bbox": [
+        212.75999450683594,
+        351.0,
+        241.75985717773438,
+        359.28826904296875
+      ],
+      "size": 9.800386428833008,
+      "bold": false
+    },
+    {
+      "text": "25.6%25.6%",
+      "bbox": [
+        212.39999389648438,
+        365.760009765625,
+        242.4000701904297,
+        374.04827880859375
+      ],
+      "size": 9.967964172363281,
+      "bold": false
+    },
+    {
+      "text": "3,1703,170",
+      "bbox": [
+        447.8399963378906,
+        350.6400146484375,
+        472.84014892578125,
+        360.0093688964844
+      ],
+      "size": 9.674726486206055,
+      "bold": false
+    },
+    {
+      "text": "31,62531,625",
+      "bbox": [
+        441.7200012207031,
+        365.3999938964844,
+        473.7202453613281,
+        375.1297302246094
+      ],
+      "size": 10.182367324829102,
+      "bold": false
+    },
+    {
+      "text": "NyssaNyssa",
+      "bbox": [
+        54.36000061035156,
+        351.3600158691406,
+        82.36022186279297,
+        361.4500732421875
+      ],
+      "size": 10.625295639038086,
+      "bold": false
+    },
+    {
+      "text": "MalheurNyssaMalheur",
+      "bbox": [
+        54.36000061035156,
+        366.1199951171875,
+        92.3597412109375,
+        374.40826416015625
+      ],
+      "size": 9.481376647949219,
+      "bold": false
+    },
+    {
+      "text": "CountyCountyMalheur",
+      "bbox": [
+        54.0,
+        378.7200012207031,
+        88.00003051757812,
+        388.81005859375
+      ],
+      "size": 10.68831729888916,
+      "bold": false
+    },
+    {
+      "text": "OregonCountyOregonSource:Source:OregonSource:Population",
+      "bbox": [
+        54.0,
+        393.4800109863281,
+        90.99984741210938,
+        403.570068359375
+      ],
+      "size": 11.14986515045166,
+      "bold": false
+    },
+    {
+      "text": "OregonOregonSource:<http;//www.upa.pdx.edu/CPRC/about/index.html>Source:Source:OregonSource:PopulationPopulationResearchPopulation1.3% Center.ResearchPortland8.0%Center.SlatePortlandUniversity$40,916ProfilesSlate[NoforPopulationDate],UniversityProfiles[NoforDate],Oregon.Oregon.",
+      "bbox": [
+        54.36000061035156,
+        404.9999694824219,
+        344.2798156738281,
+        413.64862060546875
+      ],
+      "size": 8.13878059387207,
+      "bold": false
+    },
+    {
+      "text": "<http;//www.upa.pdx.edu/CPRC/about/index.html><http;//www.upa.pdx.edu/CPRC/about/index.html>Source:Source:OregonSource:PopulationPopulationResearch Center.ResearchPortlandCenter.SlateSelect:PortlandUniversityProfilesSlate[NoforPopulationDate],UniversityProfiles[NoforDate],Oregon.Oregon. [20ResearchJanuary 2005]Center.",
+      "bbox": [
+        54.0,
+        415.4399719238281,
+        437.159912109375,
+        424.088623046875
+      ],
+      "size": 8.211940288543701,
+      "bold": false
+    },
+    {
+      "text": "Portland$40,916$40,916Slate",
+      "bbox": [
+        275.3999938964844,
+        392.760009765625,
+        314.3998718261719,
+        402.48974609375
+      ],
+      "size": 10.407119750976562,
+      "bold": false
+    },
+    {
+      "text": "7.9%7.9%",
+      "bbox": [
+        360.3599853515625,
+        392.760009765625,
+        383.35986328125,
+        401.04827880859375
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "UniversityProfiles[NoforDate],Oregon.3,421,3993,421,399",
+      "bbox": [
+        426.239990234375,
+        392.760009765625,
+        473.2403259277344,
+        402.48974609375
+      ],
+      "size": 10.075754165649414,
+      "bold": false
+    },
+    {
+      "text": "Population1.3%1.3%",
+      "bbox": [
+        146.16000366210938,
+        393.1199951171875,
+        169.15988159179688,
+        401.40826416015625
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "8.0%8.0%",
+      "bbox": [
+        218.8800048828125,
+        393.1199951171875,
+        241.8798828125,
+        401.40826416015625
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        54.36000061035156,
+        468.3599853515625,
+        59.35997009277344,
+        477.0086364746094
+      ],
+      "size": 9.295130729675293,
+      "bold": false
+    },
+    {
+      "text": "TheThe SiteSite",
+      "bbox": [
+        72.0,
+        468.3599853515625,
+        116.83987426757812,
+        477.0086364746094
+      ],
+      "size": 10.014111518859863,
+      "bold": false
+    },
+    {
+      "text": "TheTheNyssaNyssalandfilllandfillwaswasa municipala municipalsolid solidwastewastedump fromdumpthefromearlythe1960’searlythat1960’sstoppedthat",
+      "bbox": [
+        54.0,
+        488.5199890136719,
+        476.1997375488281,
+        498.9704284667969
+      ],
+      "size": 10.21766185760498,
+      "bold": false
+    },
+    {
+      "text": "operatingoperatinginin1972.1972.The",
+      "bbox": [
+        54.0,
+        507.60003662109375,
+        139.1999969482422,
+        518.0504760742188
+      ],
+      "size": 10.011192321777344,
+      "bold": false
+    },
+    {
+      "text": "1972.TheThe propertypropertyis isapproximatelyapproximately13 acres,13 acres,locatedlocatedabout 2aboutmiles",
+      "bbox": [
+        147.9600067138672,
+        507.60003662109375,
+        445.5599365234375,
+        518.0504760742188
+      ],
+      "size": 10.114427089691162,
+      "bold": false
+    },
+    {
+      "text": "outsideoutside ofoftown.42town.42town.42",
+      "bbox": [
+        54.0,
+        526.3199462890625,
+        128.75997924804688,
+        534.6082763671875
+      ],
+      "size": 8.915602684020996,
+      "bold": false
+    },
+    {
+      "text": "town.42town.42town.42",
+      "bbox": [
+        130.32000732421875,
+        524.1599731445312,
+        137.32003784179688,
+        529.5653686523438
+      ],
+      "size": 6.148179531097412,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        54.36000061035156,
+        566.6400146484375,
+        59.360015869140625,
+        577.8111572265625
+      ],
+      "size": 10.564105987548828,
+      "bold": false
+    },
+    {
+      "text": "TheThe ProjectProject",
+      "bbox": [
+        72.0,
+        566.6400146484375,
+        135.55990600585938,
+        577.8111572265625
+      ],
+      "size": 11.602930545806885,
+      "bold": false
+    },
+    {
+      "text": "TheTheNyssaNyssasitesitereceivedreceivedits firstitsTargetedfirst TargetedBrownfieldBrownfieldAssessmentAssessmentin June of 1997in Juneas partof",
+      "bbox": [
+        54.0,
+        586.7999877929688,
+        482.4801330566406,
+        597.6104125976562
+      ],
+      "size": 10.089058876037598,
+      "bold": false
+    },
+    {
+      "text": "ofofthethethen-pilotthen-pilotTargetedTargetedBrownfieldsBrownfieldsAssessmentAssessmentprogramprogramthrough throughEPA and EPADEQ. andTheDEQ.",
+      "bbox": [
+        54.0,
+        605.8800048828125,
+        481.76007080078125,
+        616.3304443359375
+      ],
+      "size": 10.419549465179443,
+      "bold": false
+    },
+    {
+      "text": "firstfirstassessmentassessmentrecommendedrecommendedfurtherfurthersamplingsamplingin orderintoorderdetermineto determinethe full extentthe fullof",
+      "bbox": [
+        53.63999938964844,
+        624.9600219726562,
+        471.32012939453125,
+        635.4104614257812
+      ],
+      "size": 9.699453353881836,
+      "bold": false
+    },
+    {
+      "text": "4141<^http://info.econ.state.or.us;591/profile.htm>Oregon<^http://info.econ.state.or.us;591/profile.htm>42<^http://info.econ.state.or.us;591/profile.htm>\"Oregon Economic and Community DevelopmentSelect:Department [2 OregonOregonFebruary 2005]",
+      "bbox": [
+        53.63999938964844,
+        648.3600463867188,
+        411.43988037109375,
+        665.6497192382812
+      ],
+      "size": 9.85897445678711,
+      "bold": false
+    },
+    {
+      "text": "4241<^http://info.econ.state.or.us;591/profile.htm>Oregon42<^http://info.econ.state.or.us;591/profile.htm>\"<^http://info.econ.state.or.us;591/profile.htm>42<^http://info.econ.state.or.us;591/profile.htm>\"\"Cleanup,42<^http://info.econ.state.or.us;591/profile.htm>\"OregonOregon DEQ,Economic[No Date],and Community<www.deq.state.or.us>DevelopmentSelect:Select:DepartmentNyssaLand[15 March[2Quality,OregonOregonFebruaryOregonSelect:DEQ,2005]Select:",
+      "bbox": [
+        54.0,
+        667.4400024414062,
+        385.1598815917969,
+        678.6111450195312
+      ],
+      "size": 9.687033653259277,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,42Cleanup,Landfill.\"42<^http://info.econ.state.or.us;591/profile.htm>\"<^http://info.econ.state.or.us;591/profile.htm>42<^http://info.econ.state.or.us;591/profile.htm>\"\"Cleanup,42<^http://info.econ.state.or.us;591/profile.htm>\"OregonSelect:DEQ, [NoBrownfields,Date],Oregon[15Select:DEQ,March[NoBrownfields,2005]Date],<www.deq.state.or.us>Select: Site SpecificSelect:Select:NyssaLand[15 MarchQuality,OregonOregonOregonSelect:DEQ,2005]Select: EnvironmentalDEQ,Economic[No[NoBrownfields,Date]",
+      "bbox": [
+        57.2400016784668,
+        679.3200073242188,
+        468.1593933105469,
+        689.04931640625
+      ],
+      "size": 9.359476089477539,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,Landfill.\"Landfill.Landfill.\"Cleanup,42<^http://info.econ.state.or.us;591/profile.htm>\"Oregon[15[15Select:DEQ,MarchMarch[NoBrownfields,2005]Date],2005]Oregon[15Select:DEQ,March[NoBrownfields,2005]Date],<www.deq.state.or.us>Select: Site Specific AssessmentSelect: LandofQuality,BrownfieldOregonSelect:DEQ,Select:Sites,EnvironmentalSelect: Nyssa[NoBrownfields,Date]<www.deq.state.o",
+      "bbox": [
+        53.63999938964844,
+        690.4800415039062,
+        480.7598571777344,
+        700.9296875
+      ],
+      "size": 8.802837371826172,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Landfill.\"Landfill.Landfill.[15[15MarchMarch2005]2005]Oregon[15Select:DEQ,March[NoBrownfields,2005]Date],",
+      "bbox": [
+        54.0,
+        702.3599853515625,
+        160.8798828125,
+        711.7293090820312
+      ],
+      "size": 8.966472148895264,
+      "bold": false
+    },
+    {
+      "text": "4242<^http://info.econ.state.or.us;591/profile.htm>\"<^http://info.econ.state.or.us;591/profile.htm>42<^http://info.econ.state.or.us;591/profile.htm>\"\"Cleanup,42<^http://info.econ.state.or.us;591/profile.htm>\"",
+      "bbox": [
+        53.63999938964844,
+        676.4400024414062,
+        59.6400146484375,
+        681.4850463867188
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "33",
+      "bbox": [
+        472.32000732421875,
+        739.7999877929688,
+        481.32000732421875,
+        747.3675537109375
+      ],
+      "size": 8.248649597167969,
+      "bold": false
+    },
+    {
+      "text": "FormerFormer NvssaNvssaLandfill,Landfill,Nvssa,Nvssa,Oregon,Oregon,",
+      "bbox": [
+        54.36000061035156,
+        66.12225341796875,
+        283.43878173828125,
+        81.46983337402344
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "iiIIiI",
+      "bbox": [
+        141.1199951171875,
+        112.36002349853516,
+        145.8819122314453,
+        123.35202026367188
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "iiIIiI",
+      "bbox": [
+        130.67999267578125,
+        118.8337173461914,
+        150.41221618652344,
+        164.38182067871094
+      ],
+      "size": 36.169673919677734,
+      "bold": false
+    },
+    {
+      "text": "\\\\I\\II",
+      "bbox": [
+        54.720001220703125,
+        151.24996948242188,
+        60.73525619506836,
+        168.72201538085938
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "DemographicsDemographics",
+      "bbox": [
+        75.5999984741211,
+        204.00225830078125,
+        161.31674194335938,
+        219.34983825683594
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "NyssaNyssaisisa smalla smallcity cityofborder.413,163of 3,163locatedlocatedin Malheurin MalheurCounty in easternCountyOregon,in easternnear theOregon, near the",
+      "bbox": [
+        54.36000061035156,
+        223.80224609375,
+        550.2828979492188,
+        239.1498260498047
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "border.border.41city41border.41of 3,163",
+      "bbox": [
+        159.1199951171875,
+        238.36001586914062,
+        199.8820343017578,
+        249.35202026367188
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "PopulationPopulationTableTable 88",
+      "bbox": [
+        248.0399932861328,
+        281.2042236328125,
+        283.81195068359375,
+        293.583984375
+      ],
+      "size": 9.830731391906738,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%% BelowBelowLevelLevel",
+      "bbox": [
+        352.79998779296875,
+        321.9112548828125,
+        392.8578186035156,
+        333.7963562011719
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%19.9%19.9%BelowLevelLevel",
+      "bbox": [
+        339.8399963378906,
+        334.7362365722656,
+        415.2046203613281,
+        349.09454345703125
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "Poverty19.9%19.9%",
+      "bbox": [
+        354.9599914550781,
+        350.01824951171875,
+        382.9388427734375,
+        361.40869140625
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%%",
+      "bbox": [
+        223.9199981689453,
+        322.2712707519531,
+        233.07461547851562,
+        334.1563720703125
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "IncomeMedianMedian",
+      "bbox": [
+        275.760009765625,
+        322.2982482910156,
+        308.1207580566406,
+        333.6886901855469
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncomeMedian",
+      "bbox": [
+        275.3999938964844,
+        335.25823974609375,
+        307.7607116699219,
+        346.648681640625
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "$23,372$23,372$31,625",
+      "bbox": [
+        275.3999938964844,
+        349.9102478027344,
+        317.26239013671875,
+        363.2792663574219
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "$31,625$23,372$31,625",
+      "bbox": [
+        275.3999938964844,
+        364.64324951171875,
+        318.81121826171875,
+        378.50689697265625
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmericanIndianIndian",
+      "bbox": [
+        124.91999816894531,
+        322.65826416015625,
+        178.11434936523438,
+        334.0487060546875
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic57.2%%",
+      "bbox": [
+        206.27999877929688,
+        335.1232604980469,
+        252.33377075195312,
+        348.9869079589844
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "Hispanic57.2%57.2%",
+      "bbox": [
+        212.75999450683594,
+        350.3782653808594,
+        240.7388458251953,
+        361.7687072753906
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "31,6253,1703,170",
+      "bbox": [
+        447.8399963378906,
+        349.937255859375,
+        475.749267578125,
+        362.8116455078125
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "31,62531,6253,170",
+      "bbox": [
+        441.7200012207031,
+        364.6702575683594,
+        477.14202880859375,
+        378.0392761230469
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "NyssaMalheurNyssaMalheur",
+      "bbox": [
+        54.36000061035156,
+        350.603271484375,
+        87.72918701171875,
+        364.4669189453125
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "CountyCountyMalheurNyssaMalheur",
+      "bbox": [
+        54.36000061035156,
+        365.4982604980469,
+        90.0071029663086,
+        376.8887023925781
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "CountyOregonCountyOregonSource:Malheur",
+      "bbox": [
+        54.0,
+        377.9632568359375,
+        92.05384063720703,
+        391.826904296875
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "OregonCountyOregonSource:Source:OregonSource:PopulationPopulationResearchPopulation1.3%1.3% Center.Research",
+      "bbox": [
+        54.0,
+        392.7232666015625,
+        195.54873657226562,
+        406.5869140625
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "Oregon<http;//www.upa.pdx.edu/CPRC/about/index.html>OregonSource:<http;//www.upa.pdx.edu/CPRC/about/index.html>Source:Source:OregonSource:PopulationPopulationResearchPopulation1.3% Center.ResearchPortland8.0%Center.SlateSelect:PortlandUniversity$40,916$40,916ProfilesSlate[NoforPopulationDate],UniversityProfiles[NoforDate],Oregon.Oregon.7.9%[20ResearchJanuary 2005]Center.3,421,3993,421,399Portland SlateSelect:Univ",
+      "bbox": [
+        54.36000061035156,
+        404.35125732421875,
+        501.9164123535156,
+        416.2363586425781
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "<http;//www.upa.pdx.edu/CPRC/about/index.html><http;//www.upa.pdx.edu/CPRC/about/index.html>Source:Source:OregonSource:PopulationPopulationResearch Center.ResearchPortlandCenter.SlateSelect:PortlandUniversityProfilesSlate[NoforPopulationDate],UniversityProfiles[NoforDate],Oregon.Oregon. [20ResearchJanuary 2005]Center. Portland SlateSelect:Univ",
+      "bbox": [
+        54.0,
+        414.791259765625,
+        574.2680053710938,
+        426.6763610839844
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "PortlandUniversity$40,916$40,916Slate[No",
+      "bbox": [
+        275.3999938964844,
+        392.0302429199219,
+        317.26239013671875,
+        405.3992614746094
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "UniversityProfiles[NoforDate],Oregon.7.9%7.9%",
+      "bbox": [
+        360.3599853515625,
+        392.13824462890625,
+        382.85162353515625,
+        403.5286865234375
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "PopulationResearchPopulation1.3%1.3%",
+      "bbox": [
+        146.16000366210938,
+        392.4982604980469,
+        168.65164184570312,
+        403.8887023925781
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "ResearchPortland8.0%8.0%Center.Slate",
+      "bbox": [
+        218.8800048828125,
+        392.4982604980469,
+        241.37164306640625,
+        403.8887023925781
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        54.36000061035156,
+        467.7112731933594,
+        60.08549499511719,
+        479.59637451171875
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "TheThe SiteSite",
+      "bbox": [
+        72.0,
+        467.7112731933594,
+        110.34845733642578,
+        479.59637451171875
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "TheTheNyssaNyssalandfilllandfillwaswasa municipala municipalsolid solidwastewastedump fromdumpthefromearlythe1960’searlythat1960’sstoppedthat stopped",
+      "bbox": [
+        54.0,
+        487.7362365722656,
+        535.22412109375,
+        502.09454345703125
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "operatingoperatingtown.42town.42inin1972.1972.TheThe propertypropertyis isapproximatelyapproximately13 acres,13 acres,locatedlocatedabout 2aboutmiles 2 miles",
+      "bbox": [
+        54.0,
+        506.81622314453125,
+        487.44921875,
+        521.174560546875
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "outsideoperatingoutside ofoftown.42town.42town.in 1972.The42",
+      "bbox": [
+        54.0,
+        520.9700317382812,
+        163.67250061035156,
+        537.0886840820312
+      ],
+      "size": 8.886937618255615,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        54.36000061035156,
+        565.80224609375,
+        61.753501892089844,
+        581.1498413085938
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "TheThe ProjectProject",
+      "bbox": [
+        72.0,
+        565.80224609375,
+        139.99095153808594,
+        581.1498413085938
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "TheTheNyssaNyssasitesitereceivedreceivedits firstitsTargetedfirst TargetedBrownfieldBrownfieldAssessmentAssessmentin June of 1997in Juneas partof 1997 as part",
+      "bbox": [
+        54.0,
+        585.9892578125,
+        558.957275390625,
+        600.8421630859375
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "ofofthethethen-pilotthen-pilotTargetedTargetedBrownfieldsBrownfieldsAssessmentAssessmentprogramprogramthrough throughEPA and EPADEQ. andTheDEQ. The",
+      "bbox": [
+        54.0,
+        605.0962524414062,
+        538.7073974609375,
+        619.45458984375
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "firstfirstassessmentassessmentrecommendedrecommendedfurtherfurthersamplingsamplingin orderintoorderdetermineto determinethe full extentthe fullof extent of",
+      "bbox": [
+        53.63999938964844,
+        624.17626953125,
+        528.643798828125,
+        638.5346069335938
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "4141<^http://info.econ.state.or.us;591/profile.htm>Oregon<^http://info.econ.state.or.us;591/profile.htm>42<^http://info.econ.state.or.us;591/profile.htm>\"Oregon Economic and Community DevelopmentSelect:DepartmentNyssa [15 March[2 OregonOregonFebruary2005] 2005]  DEQ,Economic[No DatE",
+      "bbox": [
+        53.63999938964844,
+        647.0632934570312,
+        577.0348510742188,
+        670.8197631835938
+      ],
+      "size": 18.864967346191406,
+      "bold": false
+    },
+    {
+      "text": "4241<^http://info.econ.state.or.us;591/profile.htm>Oregon42<^http://info.econ.state.or.us;591/profile.htm>\"<^http://info.econ.state.or.us;591/profile.htm>42<^http://info.econ.state.or.us;591/profile.htm>\"\"Cleanup,42<^http://info.econ.state.or.us;591/profile.htm>\"OregonOregon DEQ,Economic[No Date],and Community<www.deq.state.or.us>DevelopmentSelect:Select:DepartmentNyssaLand[15 March[2Quality,OregonOregonFebruaryOregonSelect:DEQ,2005]Select:2005]EnvironmentalDEQ,Economic[No[NoBrownfields,Date]DatE",
+      "bbox": [
+        54.0,
+        666.6022338867188,
+        571.9970092773438,
+        681.9498291015625
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,42Cleanup,Landfill.\"42<^http://info.econ.state.or.us;591/profile.htm>\"<^http://info.econ.state.or.us;591/profile.htm>42<^http://info.econ.state.or.us;591/profile.htm>\"\"Cleanup,42<^http://info.econ.state.or.us;591/profile.htm>\"OregonSelect:DEQ, [NoBrownfields,Date],Oregon[15Select:DEQ,March[NoBrownfields,2005]Date],<www.deq.state.or.us>Select: Site SpecificSelect:AssessmentSelect:NyssaLand[15 MarchofQuality,OregonOregonBrownfieldOregonSelect:DEQ,2005]Select:Sites,EnvironmentalSelect:DEQ,Economic[NoNyssa[NoBrownfields,Date]<www.deq.state.oDat",
+      "bbox": [
+        57.2400016784668,
+        678.5902099609375,
+        570.2678833007812,
+        691.959228515625
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,Landfill.\"Landfill.Landfill.[15[15Select:MarchMarchBrownfields,2005]2005]Oregon[15Select:DEQ,March[NoBrownfields,2005]Date],",
+      "bbox": [
+        54.0,
+        701.6572265625,
+        176.1450653076172,
+        714.5316162109375
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "4242<^http://info.econ.state.or.us;591/profile.htm>\"<^http://info.econ.state.or.us;591/profile.htm>42<^http://info.econ.state.or.us;591/profile.htm>\"\"Cleanup,42<^http://info.econ.state.or.us;591/profile.htm>\"Oregon DEQ, [No Date], <www.deq.state.or.us>Select:",
+      "bbox": [
+        53.63999938964844,
+        672.8900146484375,
+        258.4311828613281,
+        683.8820190429688
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    }
+  ]
+}

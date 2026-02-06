@@ -1,0 +1,666 @@
+{
+  "page": 10,
+  "body_size": 11.061629056930542,
+  "lines": [
+    {
+      "text": "economicallyeconomicallydistresseddistressedby thebyOregonthe OregonEconomicEconomicand Communityand CommunityDevelopment",
+      "bbox": [
+        51.47999954223633,
+        65.52002716064453,
+        438.299560546875,
+        77.41190338134766
+      ],
+      "size": 11.426307678222656,
+      "bold": false
+    },
+    {
+      "text": "Department.Department.",
+      "bbox": [
+        52.20000076293945,
+        86.76002502441406,
+        110.20024108886719,
+        96.85010528564453
+      ],
+      "size": 10.31011962890625,
+      "bold": false
+    },
+    {
+      "text": "Oregon’sOregon’s PlanningPlanning StructureStructure",
+      "bbox": [
+        52.20000076293945,
+        124.20000457763672,
+        240.90003967285156,
+        137.89369201660156
+      ],
+      "size": 13.96204662322998,
+      "bold": false
+    },
+    {
+      "text": "TheThestatestateof ofOregonOregonhas alwayshas alwaysbeen consideredbeen considereda progressivea stateprogressivein terms ofstateland",
+      "bbox": [
+        51.84000015258789,
+        146.16001892089844,
+        463.7798767089844,
+        158.41226196289062
+      ],
+      "size": 10.783293724060059,
+      "bold": false
+    },
+    {
+      "text": "OregonOregonwaswasoneoneof theoffirstthestatesfirsttostatessuccessfullyto successfullyimplement a stateimplementwide urbana",
+      "bbox": [
+        79.19999694824219,
+        164.88003540039062,
+        462.14007568359375,
+        177.49264526367188
+      ],
+      "size": 10.970715045928955,
+      "bold": false
+    },
+    {
+      "text": "growthgrowthpolicy.policy.Then-GovernorThen-GovernorTom McCallTomis creditedMcCallwithis establishingcredited withOregon’sestablishingunique",
+      "bbox": [
+        52.560001373291016,
+        183.59999084472656,
+        480.0997619628906,
+        196.5729522705078
+      ],
+      "size": 11.079652786254883,
+      "bold": false
+    },
+    {
+      "text": "landlanduseusepolicypolicyin theinearlythe early1970s.1970s.Senate SenateBill 100, whichBill 100,createdwhichthe Landcreated",
+      "bbox": [
+        52.91999816894531,
+        202.68003845214844,
+        415.6601257324219,
+        214.93228149414062
+      ],
+      "size": 10.430370330810547,
+      "bold": false
+    },
+    {
+      "text": "ConservationConservationandandDevelopmentDevelopmentCommissionCommission(LCDC), was(LCDC),signedwasinto lawsignedin 1973.intoOverlaw",
+      "bbox": [
+        52.91999816894531,
+        221.4000244140625,
+        481.5398864746094,
+        233.2919158935547
+      ],
+      "size": 11.043584823608398,
+      "bold": false
+    },
+    {
+      "text": "thethenextnext3 years,3 years,LCDCLCDCadoptedadopted19 state-wide19 state-wideland use goalslandto governuse goalslocal landto usegovern",
+      "bbox": [
+        52.560001373291016,
+        240.48001098632812,
+        469.0599365234375,
+        253.09262084960938
+      ],
+      "size": 10.733154296875,
+      "bold": false
+    },
+    {
+      "text": "planning.planning.AsAsstatedstatedin Oregonin OregonAdministrativeAdministrativeRules 660-015-0000,Rules 660-015-0000,660-015-0005, 660-660-015-0005,",
+      "bbox": [
+        53.279998779296875,
+        259.55999755859375,
+        476.5801086425781,
+        272.172607421875
+      ],
+      "size": 10.945698738098145,
+      "bold": false
+    },
+    {
+      "text": "015-0010,015-0010,thethegoalsgoalsareareasasfollows:follows:",
+      "bbox": [
+        52.91999816894531,
+        279.72003173828125,
+        221.65975952148438,
+        290.53082275390625
+      ],
+      "size": 10.216103076934814,
+      "bold": false
+    },
+    {
+      "text": "use.use.",
+      "bbox": [
+        52.560001373291016,
+        169.5600128173828,
+        71.5599365234375,
+        175.3257598876953
+      ],
+      "size": 7.397284984588623,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal11--CitizenCitizenInvolvement:Involvement:ToTodevelopdevelopa citizena citizeninvolvementinvolvementprogramprogramthat ensuresthat ensures",
+      "bbox": [
+        53.63999938964844,
+        316.08001708984375,
+        476.37994384765625,
+        327.2511901855469
+      ],
+      "size": 10.71634292602539,
+      "bold": false
+    },
+    {
+      "text": "thetheopportunityopportunityfor citizensfor citizensto be involvedto be involvedin all phasesin allof thephasesplanningofprocess.the planning",
+      "bbox": [
+        53.279998779296875,
+        335.1600341796875,
+        433.739501953125,
+        347.4122619628906
+      ],
+      "size": 10.251256942749023,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal22--LandLandUseUsePlanning:Planning:ToToestablishestablisha landa landuse planninguse planningprocessprocessand policyand",
+      "bbox": [
+        53.63999938964844,
+        353.8800354003906,
+        457.7403564453125,
+        365.4115295410156
+      ],
+      "size": 10.733154296875,
+      "bold": false
+    },
+    {
+      "text": "frameworkframeworktotobebethethebasisbasisforforallalldecisionsdecisionsandandactionsactionsrelatedrelatedto useto useof landof landand toand",
+      "bbox": [
+        53.279998779296875,
+        372.96002197265625,
+        454.93994140625,
+        383.41046142578125
+      ],
+      "size": 9.659841537475586,
+      "bold": false
+    },
+    {
+      "text": "assureassureananadequateadequatefactualfactualbasebasefor suchfordecisionssuch decisionsand actions.and",
+      "bbox": [
+        53.63999938964844,
+        392.0400390625,
+        364.50048828125,
+        403.571533203125
+      ],
+      "size": 10.562714576721191,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal33--AgriculturalAgriculturalLands:Lands:To preserveTo preserveand maintainand maintainagriculturalagriculturallands.",
+      "bbox": [
+        54.0,
+        410.4000244140625,
+        418.14019775390625,
+        422.6522521972656
+      ],
+      "size": 10.866480827331543,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal44-- ForestForestLands:Lands:ToToconserveconserveforestforestlandslandsby maintainingby maintainingthe forestthe forestland baseland",
+      "bbox": [
+        54.0,
+        429.1200256347656,
+        470.3798828125,
+        440.29119873046875
+      ],
+      "size": 10.55276870727539,
+      "bold": false
+    },
+    {
+      "text": "andandtotoprotectprotectthe thestate’sstate’sforest foresteconomyeconomyby makingbypossiblemakingeconomicallypossibleefficienteconomically",
+      "bbox": [
+        54.0,
+        448.20001220703125,
+        455.5005798339844,
+        460.4522399902344
+      ],
+      "size": 10.384992599487305,
+      "bold": false
+    },
+    {
+      "text": "forestforestpracticespracticesthatthatassureassurethe continuousthe continuousgrowing andgrowingharvestingandof harvestingforest tree speciesof forest",
+      "bbox": [
+        54.0,
+        467.280029296875,
+        480.7801818847656,
+        479.5322570800781
+      ],
+      "size": 10.495755195617676,
+      "bold": false
+    },
+    {
+      "text": "asasthetheleadingleadinguseuseon foreston forestland consistentland consistentwith soundwithmanagementsound managementof soil, air, water,of",
+      "bbox": [
+        54.36000061035156,
+        486.3600158691406,
+        472.06011962890625,
+        498.25189208984375
+      ],
+      "size": 10.350682258605957,
+      "bold": false
+    },
+    {
+      "text": "andandfishfishandandwildlifewildliferesourcesresourcesand andto provideto providefor recreationalfor recreationalopportunitiesopportunitiesand",
+      "bbox": [
+        54.36000061035156,
+        505.4399719238281,
+        436.22015380859375,
+        516.6111450195312
+      ],
+      "size": 10.21989393234253,
+      "bold": false
+    },
+    {
+      "text": "agriculture.agriculture.",
+      "bbox": [
+        54.36000061035156,
+        525.9600219726562,
+        106.35994720458984,
+        536.4104614257812
+      ],
+      "size": 9.512094497680664,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal55--OpenOpenSpaces,Spaces,ScenicScenicand andHistoricHistoricAreasAreasand Naturaland NaturalResources:Resources:To",
+      "bbox": [
+        54.720001220703125,
+        542.8800048828125,
+        455.70001220703125,
+        554.7719116210938
+      ],
+      "size": 11.559906005859375,
+      "bold": false
+    },
+    {
+      "text": "protectprotectnaturalnaturalresourcesresourcesand consen/eand consen/escenic andscenichistoricandareashistoricand openareasspaces.and",
+      "bbox": [
+        54.720001220703125,
+        561.9600219726562,
+        456.6601867675781,
+        574.2122802734375
+      ],
+      "size": 11.251506805419922,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal66-- Air,Air,WaterWaterandandLandLandResourcesResourcesQuality:Quality:ToTomaintainmaintainandandimproveimprovethe",
+      "bbox": [
+        54.720001220703125,
+        581.0400390625,
+        451.219970703125,
+        592.211181640625
+      ],
+      "size": 10.861723899841309,
+      "bold": false
+    },
+    {
+      "text": "qualityqualityofofthetheair,air,waterwaterandandlandlandresourcesresourcesof theofstate.the",
+      "bbox": [
+        54.720001220703125,
+        600.8400268554688,
+        320.2003173828125,
+        612.0111694335938
+      ],
+      "size": 10.205879211425781,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal77-- AreasAreasSubjectSubjecttotoNaturalNaturalDisastersDisastersandandHazards:Hazards:To Toprotectprotectpeoplepeopleand",
+      "bbox": [
+        54.720001220703125,
+        619.2000122070312,
+        464.3001403808594,
+        630.3711547851562
+      ],
+      "size": 11.043605327606201,
+      "bold": false
+    },
+    {
+      "text": "propertypropertyfromfromnaturalnaturalhazard.hazard.",
+      "bbox": [
+        55.08000183105469,
+        639.0000610351562,
+        195.38011169433594,
+        650.1712036132812
+      ],
+      "size": 10.497666835784912,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal88-- RecreationRecreationNeeds:Needs:ToTosatisfysatisfythetherecreationalrecreationalneedsneedsof theofcitizensthe citizensof the",
+      "bbox": [
+        55.08000183105469,
+        657.0000610351562,
+        460.9399719238281,
+        668.1712036132812
+      ],
+      "size": 10.205879211425781,
+      "bold": false
+    },
+    {
+      "text": "state,state,andandvisitors,visitors,andandwherewhereappropriate,appropriate,to provideto providefor the forsitingtheofsitingnecessaryof necessary",
+      "bbox": [
+        54.720001220703125,
+        676.4400634765625,
+        437.3403625488281,
+        687.6112060546875
+      ],
+      "size": 10.122906684875488,
+      "bold": false
+    },
+    {
+      "text": "recreationalrecreationalfacilitiesfacilitiesincludingincludingdestinationdestinationresorts.resorts.",
+      "bbox": [
+        55.08000183105469,
+        696.2400512695312,
+        294.82025146484375,
+        707.0508422851562
+      ],
+      "size": 9.919669151306152,
+      "bold": false
+    },
+    {
+      "text": "6",
+      "bbox": [
+        480.6000061035156,
+        737.6400146484375,
+        484.60003662109375,
+        744.8472290039062
+      ],
+      "size": 7.589496612548828,
+      "bold": false
+    },
+    {
+      "text": "economicallyeconomicallydistresseddistressedby thebyOregonthe OregonEconomicEconomicand Communityand CommunityDevelopment Development",
+      "bbox": [
+        51.47999954223633,
+        64.62828063964844,
+        518.4437255859375,
+        80.96514129638672
+      ],
+      "size": 12.533210754394531,
+      "bold": false
+    },
+    {
+      "text": "TheThestatestateOregonof ofOregonOregonwashasonealwayshasof thealwaysbeenfirstconsideredbeenstatesconsideredtoa progressivesuccessfullya stateprogressiveimplementin terms ofstatelanda statein termswideofurbanland",
+      "bbox": [
+        51.84000015258789,
+        145.2412872314453,
+        564.0164184570312,
+        162.07278442382812
+      ],
+      "size": 12.91268539428711,
+      "bold": false
+    },
+    {
+      "text": "growthstateOregonOregonpolicy.ofwasOregonwasoneThen-Governoroneof thehasoffirstthealwaysstatesfirstTomtobeenstatessuccessfullyMcCallconsideredto successfullyimplementis crediteda progressivea stateimplementwithwideestablishingurbanstatea statein termswideOregon’sofurbanland",
+      "bbox": [
+        79.19999694824219,
+        163.93423461914062,
+        570.587646484375,
+        181.2603759765625
+      ],
+      "size": 13.292160034179688,
+      "bold": false
+    },
+    {
+      "text": "growthgrowthlandOregonusepolicy.policy.policyThen-GovernorwasThen-Governorinonethe earlyof theTom1970s.firstMcCallTomstatesSenateis creditedMcCallto successfullyBillwithis100,establishingcreditedwhichimplementwithcreatedOregon’sestablishingtheuniquea stateLandwideOregon’surban",
+      "bbox": [
+        52.560001373291016,
+        182.62725830078125,
+        569.1159057617188,
+        200.4480438232422
+      ],
+      "size": 13.671634674072266,
+      "bold": false
+    },
+    {
+      "text": "growthlandlandConservationuseusepolicypolicy.policyinandtheThen-GovernorinearlyDevelopmentthe early1970s.1970s.SenateCommissionTomSenateBill McCall100, whichBill(LCDC),is100,createdcreditedwhichwasthe LandwithsignedcreatedestablishingintothelawLandin 1973.",
+      "bbox": [
+        52.91999816894531,
+        201.76124572753906,
+        501.57293701171875,
+        218.59274291992188
+      ],
+      "size": 12.91268539428711,
+      "bold": false
+    },
+    {
+      "text": "ConservationlandConservationuse policyandandDevelopmentin Developmentthe earlyCommission1970s.CommissionSenate(LCDC),Billwas(LCDC),100,signedwhichwasinto lawsignedcreatedin 1973.intotheOverlawLandin 1973. Over",
+      "bbox": [
+        52.91999816894531,
+        220.50828552246094,
+        567.589599609375,
+        236.84515380859375
+      ],
+      "size": 12.533210754394531,
+      "bold": false
+    },
+    {
+      "text": "thetheplanning.nextnext3 years,3Asyears,statedLCDCLCDCadoptedin Oregonadopted19 state-wideAdministrative19 state-wideland use goalsRuleslandto govern660-015-0000,use goalslocal landto usegovern660-015-0005,local land 6u",
+      "bbox": [
+        52.560001373291016,
+        239.53427124023438,
+        571.2416381835938,
+        256.86041259765625
+      ],
+      "size": 13.292160034179688,
+      "bold": false
+    },
+    {
+      "text": "theplanning.planning.nextAs3Asyears,statedstatedinLCDCOregonin OregonadoptedAdministrativeAdministrative19 state-wideRules 660-015-0000,Rulesland 660-015-0000,use660-015-0005,goals to govern660-660-015-0005,local land 6u",
+      "bbox": [
+        53.279998779296875,
+        258.6142578125,
+        571.1770629882812,
+        275.9403991699219
+      ],
+      "size": 13.292160034179688,
+      "bold": false
+    },
+    {
+      "text": "thetheGoalopportunityopportunity2 - LandforUsecitizensforPlanning:citizensto be involvedtoTobeestablishinvolvedin all phasesa landin allofusethephasesplanningplanningofprocess.theprocessplanningandprocess.policy",
+      "bbox": [
+        53.279998779296875,
+        334.2412414550781,
+        527.6445922851562,
+        351.07275390625
+      ],
+      "size": 12.91268539428711,
+      "bold": false
+    },
+    {
+      "text": "theGoalGoalopportunity22--LandLandUseUseforPlanning:Planning:citizensTotoToestablishbeestablishinvolveda landa landusein allplanningusephasesplanningprocessof theprocessandplanningpolicyandprocess.policy",
+      "bbox": [
+        53.63999938964844,
+        353.0152587890625,
+        511.5130615234375,
+        368.85748291015625
+      ],
+      "size": 12.153735160827637,
+      "bold": false
+    },
+    {
+      "text": "frameworkframeworktotobebethethebasisbasisforforallalldecisionsdecisionsandandactionsactionsrelatedrelatedto useto useof landof landand toand to",
+      "bbox": [
+        53.279998779296875,
+        372.1762390136719,
+        479.2371826171875,
+        386.5345458984375
+      ],
+      "size": 11.015311241149902,
+      "bold": false
+    },
+    {
+      "text": "assureassureananadequateadequatefactualfactualbasebasefor suchfordecisionssuch decisionsand actions.and actions.",
+      "bbox": [
+        53.63999938964844,
+        391.1752624511719,
+        418.247314453125,
+        407.0174865722656
+      ],
+      "size": 12.153735160827637,
+      "bold": false
+    },
+    {
+      "text": "GoalGoalGoal343---AgriculturalForestAgriculturalLands:Lands:Lands:To conserveTo preserveTo preserveforestand landsmaintainandbymaintainagriculturalmaintainingagriculturallands.the forestlands.land base",
+      "bbox": [
+        54.0,
+        409.48126220703125,
+        487.4628601074219,
+        426.3127746582031
+      ],
+      "size": 12.91268539428711,
+      "bold": false
+    },
+    {
+      "text": "GoalGoalGoal443---ForestForestAgriculturalLands:Lands:Lands:ToToconserveconserveTo forestpreserveforestlandslandsandby maintainingbymaintainmaintainingtheagriculturalforestthe forestland baselands.land base",
+      "bbox": [
+        54.0,
+        428.2822570800781,
+        512.7431640625,
+        443.6298522949219
+      ],
+      "size": 11.774261474609375,
+      "bold": false
+    },
+    {
+      "text": "andandtotoprotectprotectthe thestate’sstate’sforest foresteconomyeconomyby makingbypossiblemakingeconomicallypossibleefficienteconomically efficient",
+      "bbox": [
+        54.0,
+        447.28125,
+        552.5380249023438,
+        464.1127624511719
+      ],
+      "size": 12.91268539428711,
+      "bold": false
+    },
+    {
+      "text": "forestforestpracticespracticesthatthatassureassurethe continuousthe continuousgrowing andgrowingharvestingandof harvestingforest tree speciesof forest tree speci",
+      "bbox": [
+        54.0,
+        466.36126708984375,
+        569.9602661132812,
+        483.1927795410156
+      ],
+      "size": 12.91268539428711,
+      "bold": false
+    },
+    {
+      "text": "asasthetheleadingleadinguseuseon foreston forestland consistentland consistentwith soundwithmanagementsound managementof soil, air, water,of soil, air, water,",
+      "bbox": [
+        54.36000061035156,
+        485.46826171875,
+        559.5703735351562,
+        501.80511474609375
+      ],
+      "size": 12.533210754394531,
+      "bold": false
+    },
+    {
+      "text": "andandfishfishandandwildlifewildliferesourcesresourcesand andto provideto providefor recreationalfor recreationalopportunitiesopportunitiesand  and",
+      "bbox": [
+        54.36000061035156,
+        504.60223388671875,
+        487.5733642578125,
+        519.9498291015625
+      ],
+      "size": 11.774261474609375,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal55--OpenOpenSpaces,Spaces,ScenicScenicand andHistoricHistoricAreasAreasand Naturaland NaturalResources:Resources:To  To",
+      "bbox": [
+        54.720001220703125,
+        541.98828125,
+        505.5528869628906,
+        558.3251342773438
+      ],
+      "size": 12.533210754394531,
+      "bold": false
+    },
+    {
+      "text": "protectprotectnaturalnaturalresourcesresourcesand consen/eand consen/escenic andscenichistoricandareashistoricand openareasspaces.and open spaces.",
+      "bbox": [
+        54.720001220703125,
+        561.041259765625,
+        555.5582885742188,
+        577.8727416992188
+      ],
+      "size": 12.91268539428711,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal66-- Air,Air,WaterWaterandandLandLandResourcesResourcesQuality:Quality:ToTomaintainmaintainandandimproveimprovethe the",
+      "bbox": [
+        54.720001220703125,
+        580.2022705078125,
+        481.7028503417969,
+        595.5498657226562
+      ],
+      "size": 11.774261474609375,
+      "bold": false
+    },
+    {
+      "text": "qualityqualityofofthetheair,air,waterwaterandandlandlandresourcesresourcesof theofstate.the state.",
+      "bbox": [
+        54.720001220703125,
+        600.0022583007812,
+        356.88336181640625,
+        615.349853515625
+      ],
+      "size": 11.774261474609375,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal77-- AreasAreasSubjectSubjecttotoNaturalNaturalDisastersDisastersandandHazards:Hazards:To Toprotectprotectpeoplepeopleand and",
+      "bbox": [
+        54.720001220703125,
+        618.3622436523438,
+        493.4439392089844,
+        633.7098388671875
+      ],
+      "size": 11.774261474609375,
+      "bold": false
+    },
+    {
+      "text": "propertypropertyfromfromnaturalnaturalhazard.hazard.",
+      "bbox": [
+        55.08000183105469,
+        638.1622924804688,
+        215.11019897460938,
+        653.5098876953125
+      ],
+      "size": 11.774261474609375,
+      "bold": false
+    },
+    {
+      "text": "GoalGoal88-- RecreationRecreationNeeds:Needs:ToTosatisfysatisfythetherecreationalrecreationalneedsneedsof theofcitizensthe citizensof the of the",
+      "bbox": [
+        55.08000183105469,
+        656.1622924804688,
+        502.0946044921875,
+        671.5098876953125
+      ],
+      "size": 11.774261474609375,
+      "bold": false
+    },
+    {
+      "text": "state,state,andandvisitors,visitors,andandwherewhereappropriate,appropriate,to provideto providefor the forsitingtheofsitingnecessaryof necessary",
+      "bbox": [
+        54.720001220703125,
+        675.6022338867188,
+        488.6283264160156,
+        690.9498291015625
+      ],
+      "size": 11.774261474609375,
+      "bold": false
+    }
+  ]
+}

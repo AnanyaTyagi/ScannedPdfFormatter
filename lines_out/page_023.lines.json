@@ -1,0 +1,633 @@
+{
+  "page": 23,
+  "body_size": 10.393939971923828,
+  "lines": [
+    {
+      "text": "□?",
+      "bbox": [
+        54.720001220703125,
+        68.04000854492188,
+        59.72001647949219,
+        79.21117401123047
+      ],
+      "size": 10.564105987548828,
+      "bold": false
+    },
+    {
+      "text": "TheThe ProjectProject",
+      "bbox": [
+        72.18000030517578,
+        68.04000854492188,
+        137.09983825683594,
+        79.21117401123047
+      ],
+      "size": 11.825500965118408,
+      "bold": false
+    },
+    {
+      "text": "InIn1997,1997,thetheCityCityof Fallsof FallsCity approachedCity approachedthe Departmentthe Departmentof Environmentalof QualityEnvironmentalfor",
+      "bbox": [
+        55.08000183105469,
+        87.12001037597656,
+        471.1799011230469,
+        98.65153503417969
+      ],
+      "size": 9.949490070343018,
+      "bold": false
+    },
+    {
+      "text": "helphelpinininvestigatinginvestigatingthe site.theTheresite. wasThereinterestwasininterestconvertingintheconvertingsite into a park,the sitebut",
+      "bbox": [
+        55.08000183105469,
+        106.20002746582031,
+        466.69989013671875,
+        117.73155212402344
+      ],
+      "size": 10.068507194519043,
+      "bold": false
+    },
+    {
+      "text": "theretherewaswasalsoalsoa greata greatdeal ofdealconcernof concernabout potentialaboutcontaminationpotential contaminationbased on past",
+      "bbox": [
+        54.720001220703125,
+        124.91999816894531,
+        457.30010986328125,
+        136.45152282714844
+      ],
+      "size": 10.512754917144775,
+      "bold": false
+    },
+    {
+      "text": "historicalhistoricalusesusesof theofproperty,the property,and lackandof informationlack of informationregarding thoseregardinguses. DEQthose",
+      "bbox": [
+        55.08000183105469,
+        143.64002990722656,
+        451.65985107421875,
+        155.1715545654297
+      ],
+      "size": 10.07241678237915,
+      "bold": false
+    },
+    {
+      "text": "completedcompletedthetheTargetedTargetedBrownfieldsBrownfieldsAssessmentAssessmentin April of 1998,inandAprildeterminedof 1998,thatand",
+      "bbox": [
+        55.08000183105469,
+        162.72003173828125,
+        471.499755859375,
+        174.61192321777344
+      ],
+      "size": 10.767375946044922,
+      "bold": false
+    },
+    {
+      "text": "thethecitycitycouldcoulduse usethe sitetheforsitea parkforwithouta parkconcernwithoutof a concernthreat to humanof a healththreatandtothehuman",
+      "bbox": [
+        55.08000183105469,
+        181.79998779296875,
+        479.6600646972656,
+        193.69187927246094
+      ],
+      "size": 10.529996871948242,
+      "bold": false
+    },
+    {
+      "text": "environment.environment.Should",
+      "bbox": [
+        55.439998626708984,
+        201.96002197265625,
+        117.43978881835938,
+        212.41046142578125
+      ],
+      "size": 10.386513710021973,
+      "bold": false
+    },
+    {
+      "text": "environment.ShouldShould thethelandlanduseusechangechangeto residentialto residentialor otheroruse,otherfurtheruse,",
+      "bbox": [
+        126.18000030517578,
+        201.6000213623047,
+        425.37969970703125,
+        212.41082763671875
+      ],
+      "size": 9.871183395385742,
+      "bold": false
+    },
+    {
+      "text": "investigationinvestigationis isrequired.required.",
+      "bbox": [
+        55.439998626708984,
+        222.1200408935547,
+        172.21987915039062,
+        232.93084716796875
+      ],
+      "size": 9.901073455810547,
+      "bold": false
+    },
+    {
+      "text": "required.1919",
+      "bbox": [
+        174.24000549316406,
+        219.9600067138672,
+        180.2400360107422,
+        225.00503540039062
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        55.79999923706055,
+        261.72003173828125,
+        60.800018310546875,
+        271.0893859863281
+      ],
+      "size": 9.674726486206055,
+      "bold": false
+    },
+    {
+      "text": "CurrentCurrent StatusStatus",
+      "bbox": [
+        73.9800033569336,
+        261.72003173828125,
+        155.4200439453125,
+        271.0893859863281
+      ],
+      "size": 10.460521697998047,
+      "bold": false
+    },
+    {
+      "text": "TheThesitesiteis iscurrentlycurrentlybeingbeingused forusedstorage.for storage.A temporaryA buildingtemporaryhas beenbuildingerectedhason",
+      "bbox": [
+        55.439998626708984,
+        281.1600341796875,
+        473.50006103515625,
+        292.6915283203125
+      ],
+      "size": 10.648630142211914,
+      "bold": false
+    },
+    {
+      "text": "thethesitesiteforforstoragestorageof theofcity’sthefirecity’strucksfirewhiletrucksa newwhilefirehousea newandfirehousecommunity centerand communityfuture.20",
+      "bbox": [
+        55.439998626708984,
+        300.2400207519531,
+        473.06005859375,
+        311.7715148925781
+      ],
+      "size": 10.039934158325195,
+      "bold": false
+    },
+    {
+      "text": "arearebeingbeingcompleted.completed.ThereThereare no plansare noto turnplansthe siteto turninto atheparksitein theintonearafuture.park20future.20",
+      "bbox": [
+        55.79999923706055,
+        318.96002197265625,
+        470.8199462890625,
+        330.8518981933594
+      ],
+      "size": 10.529996871948242,
+      "bold": false
+    },
+    {
+      "text": "future.parkcommunity20future.20in",
+      "bbox": [
+        471.6000061035156,
+        317.1600036621094,
+        478.5999450683594,
+        322.2050476074219
+      ],
+      "size": 5.939677715301514,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        56.15999984741211,
+        360.0,
+        61.16001510620117,
+        371.1711730957031
+      ],
+      "size": 10.564105987548828,
+      "bold": false
+    },
+    {
+      "text": "AnalysisAnalysis",
+      "bbox": [
+        73.9800033569336,
+        360.0,
+        121.9796371459961,
+        371.1711730957031
+      ],
+      "size": 11.572333335876465,
+      "bold": false
+    },
+    {
+      "text": "ThereTherearearenonocurrentcurrentplansplansfor redevelopmentfor redevelopmentat this site.atThethiscitysite.feelsThethatcitythe",
+      "bbox": [
+        55.79999923706055,
+        379.08001708984375,
+        441.1399841308594,
+        390.2511901855469
+      ],
+      "size": 10.065486431121826,
+      "bold": false
+    },
+    {
+      "text": "economyeconomyof theof thesurroundingsurroundingarea is growing,area isandgrowing,that eventuallyand thatthe righteventuallyproject willthe",
+      "bbox": [
+        56.15999984741211,
+        397.8000183105469,
+        463.0998840332031,
+        409.69189453125
+      ],
+      "size": 10.393939971923828,
+      "bold": false
+    },
+    {
+      "text": "comecomealongalongforforthethesite.site.",
+      "bbox": [
+        56.15999984741211,
+        417.60003662109375,
+        168.2998046875,
+        428.41082763671875
+      ],
+      "size": 10.039934158325195,
+      "bold": false
+    },
+    {
+      "text": "site.AtAtthisthistime,time,thethecity citybelievesbelievesa commerciala commercialor industrialor",
+      "bbox": [
+        176.22000122070312,
+        416.8800354003906,
+        441.4195251464844,
+        428.4115295410156
+      ],
+      "size": 9.949490070343018,
+      "bold": false
+    },
+    {
+      "text": "developmentdevelopmenton thison thissite issitea betteris achoicebetterthanchoicea communitythan abasedcommunitydevelopment.based",
+      "bbox": [
+        56.15999984741211,
+        435.96002197265625,
+        450.4597473144531,
+        447.49151611328125
+      ],
+      "size": 10.564144134521484,
+      "bold": false
+    },
+    {
+      "text": "1919Bill",
+      "bbox": [
+        56.52000045776367,
+        653.4000244140625,
+        62.52001953125,
+        658.445068359375
+      ],
+      "size": 5.499099254608154,
+      "bold": false
+    },
+    {
+      "text": "conversation,2019BillBill Ewing,Ewing,FormerFormer15 DecemberCityCityAdministrator,Administrator,2004 City ofCityFallsofCity,FallsinterviewCity, interviewby author, bytelephoneauthor,",
+      "bbox": [
+        66.23999786376953,
+        655.56005859375,
+        443.21990966796875,
+        665.2897338867188
+      ],
+      "size": 8.974250793457031,
+      "bold": false
+    },
+    {
+      "text": "conversation,20conversation,20conversation,2019BillDarrinEwing,Feener,15FormerDecember15Mayor,DecemberCity2004Administrator,City2004",
+      "bbox": [
+        56.15999984741211,
+        667.4400024414062,
+        202.2600555419922,
+        676.0886840820312
+      ],
+      "size": 9.171424865722656,
+      "bold": false
+    },
+    {
+      "text": "conversation,202005conversation,20DarrinDarrinFeener,Feener,Mayor,15Mayor,DecemberCity ofCityFalls2004ofCity,FallsinterviewCity, interviewby author,bytelephoneauthor,conversation,telephone4conversation,April",
+      "bbox": [
+        66.5999984741211,
+        678.6000366210938,
+        468.5400390625,
+        688.689697265625
+      ],
+      "size": 8.861108303070068,
+      "bold": false
+    },
+    {
+      "text": "20052005Darrin",
+      "bbox": [
+        56.15999984741211,
+        690.8399658203125,
+        77.15990447998047,
+        697.6868286132812
+      ],
+      "size": 8.47464656829834,
+      "bold": false
+    },
+    {
+      "text": "conversation,20conversation,20conversation,20",
+      "bbox": [
+        56.15999984741211,
+        676.7999877929688,
+        62.160037994384766,
+        681.4846801757812
+      ],
+      "size": 5.299074172973633,
+      "bold": false
+    },
+    {
+      "text": "19",
+      "bbox": [
+        476.6400146484375,
+        738.7200317382812,
+        485.6400146484375,
+        746.28759765625
+      ],
+      "size": 8.248649597167969,
+      "bold": false
+    },
+    {
+      "text": "InIn1997,1997,thetheCityCityof Fallsof FallsCity approachedCity approachedthe Departmentthe Departmentof Environmentalof QualityEnvironmentalfor  Quality fo",
+      "bbox": [
+        55.08000183105469,
+        86.2552719116211,
+        573.8628540039062,
+        102.09749603271484
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "helphelpinininvestigatinginvestigatingthe site.theTheresite. wasThereinterestwasininterestconvertingintheconvertingsite into a park,the sitebut into a park, but",
+      "bbox": [
+        55.08000183105469,
+        105.33528900146484,
+        568.5370483398438,
+        121.1775131225586
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "theretherewaswasalsoalsoa greata greatdeal ofdealconcernof concernabout potentialaboutcontaminationpotential contaminationbased on past  based on past",
+      "bbox": [
+        54.720001220703125,
+        124.05525970458984,
+        560.5863037109375,
+        139.89747619628906
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "historicalhistoricalusesusesof theofproperty,the property,and lackandof informationlack of informationregarding thoseregardinguses. DEQthose uses. DEQ",
+      "bbox": [
+        55.08000183105469,
+        142.77529907226562,
+        549.4437866210938,
+        158.6175079345703
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "completedcompletedthetheTargetedTargetedBrownfieldsBrownfieldsAssessmentAssessmentin April of 1998,inandAprildeterminedof 1998,thatand determined",
+      "bbox": [
+        55.08000183105469,
+        161.82823181152344,
+        571.1785278320312,
+        178.16510009765625
+      ],
+      "size": 12.973073959350586,
+      "bold": false
+    },
+    {
+      "text": "thethecitycitycouldcoulduse usethe sitetheforsitea parkforwithouta parkconcernwithoutof a concernthreat to humanof a healththreatandtothehuman health an",
+      "bbox": [
+        55.08000183105469,
+        180.9082489013672,
+        573.5848999023438,
+        197.2451171875
+      ],
+      "size": 12.973073959350586,
+      "bold": false
+    },
+    {
+      "text": "environment.environment.ShouldShould thethe19landlanduseusechangechangeto residentialto residentialor otheroruse,otherfurtheruse, further",
+      "bbox": [
+        55.439998626708984,
+        200.78927612304688,
+        478.84442138671875,
+        215.64222717285156
+      ],
+      "size": 11.598299503326416,
+      "bold": false
+    },
+    {
+      "text": "investigationinvestigationis isrequired.required.1919",
+      "bbox": [
+        55.439998626708984,
+        221.30923461914062,
+        194.19448852539062,
+        236.1621856689453
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "required.the1919",
+      "bbox": [
+        174.24000549316406,
+        216.41000366210938,
+        184.8305206298828,
+        227.40200805664062
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        55.79999923706055,
+        261.01727294921875,
+        62.00206756591797,
+        273.89166259765625
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "CurrentCurrent StatusStatus",
+      "bbox": [
+        73.9800033569336,
+        261.01727294921875,
+        145.89500427246094,
+        273.89166259765625
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "TheThesitesiteis iscurrentlycurrentlybeingbeingused forusedstorage.for storage.A temporaryA buildingtemporaryhas beenbuildingerectedhason been erected on",
+      "bbox": [
+        55.439998626708984,
+        280.2952575683594,
+        577.28369140625,
+        296.1374816894531
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "thethesitesiteforforstoragestorageof theofcity’sthefirecity’strucksfirewhiletrucksa newwhilefirehousea newandfirehousecommunity centerand community20future.20  cente",
+      "bbox": [
+        55.439998626708984,
+        299.3752746582031,
+        574.9640502929688,
+        315.2174987792969
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "arearebeingbeingcompleted.completed.ThereThereare no plansare noto turnplansthe siteto turninto atheparksitein theintonearafuture.park20future.20in the near futu",
+      "bbox": [
+        55.79999923706055,
+        318.0682678222656,
+        572.733642578125,
+        334.4051208496094
+      ],
+      "size": 12.973073959350586,
+      "bold": false
+    },
+    {
+      "text": "future.centerparkcommunity20future.20in the",
+      "bbox": [
+        471.6000061035156,
+        313.6100158691406,
+        509.1905822753906,
+        324.6020202636719
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "ThereTherearearenonocurrentcurrentplansplansfor redevelopmentfor redevelopmentat this site.atThethiscitysite.feelsThethatcitythe feels that the",
+      "bbox": [
+        55.79999923706055,
+        378.24224853515625,
+        520.6994018554688,
+        393.58984375
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "economyeconomyof theof thesurroundingsurroundingarea is growing,area isandgrowing,that eventuallyand thatthe righteventuallyproject willthe right project w",
+      "bbox": [
+        56.15999984741211,
+        396.90826416015625,
+        573.843994140625,
+        413.2451171875
+      ],
+      "size": 12.973073959350586,
+      "bold": false
+    },
+    {
+      "text": "comecomealongalongforforthethesite.site.AtAtthis",
+      "bbox": [
+        56.15999984741211,
+        416.78924560546875,
+        189.92129516601562,
+        431.6421813964844
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "site.AtAtthisthistime,time,thethecity citybelievesbelievesa commerciala commercialor industrialor industrial",
+      "bbox": [
+        176.22000122070312,
+        416.0152587890625,
+        509.56134033203125,
+        431.85748291015625
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "developmentdevelopmenton thison thissite issitea betteris achoicebetterthanchoicea communitythan abasedcommunitydevelopment.based development.",
+      "bbox": [
+        56.15999984741211,
+        435.09527587890625,
+        551.3062744140625,
+        450.9375
+      ],
+      "size": 12.580281257629395,
+      "bold": false
+    },
+    {
+      "text": "conversation,conversation,201919BillBill Ewing,Ewing,Former15FormerDecember15 DecemberCityCityAdministrator,2004Administrator,2004 City ofCityFallsofCity,FallsinterviewCity, interviewby author, bytelephoneauthor, telephone",
+      "bbox": [
+        56.52000045776367,
+        649.8500366210938,
+        505.88720703125,
+        668.1992797851562
+      ],
+      "size": 9.672523021697998,
+      "bold": false
+    },
+    {
+      "text": "conversation,20conversation,20conversation,2019BillBillDarrinDarrinEwing,Ewing,Feener,Feener,Former15FormerDecemberMayor,15Mayor,DecemberCityCityCityAdministrator,2004Administrator,ofCityFalls2004ofCity,",
+      "bbox": [
+        56.15999984741211,
+        666.791259765625,
+        222.14784240722656,
+        678.6763916015625
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "conversation,2005conversation,202005conversation,20DarrinDarrinFeener,Feener,15 DecemberMayor,15Mayor,DecemberCity2004ofCityFalls2004ofCity,FallsinterviewCity, interviewby author,bytelephoneauthor,conversation,telephone4conversation,April  4 April",
+      "bbox": [
+        66.5999984741211,
+        677.84326171875,
+        553.2521362304688,
+        691.7069091796875
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "20052005DarrinDarrin",
+      "bbox": [
+        56.15999984741211,
+        689.0900268554688,
+        77.34102630615234,
+        700.08203125
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "conversation,20conversation,20conversation,20DarrinDarrinFeener,Feener,15",
+      "bbox": [
+        56.15999984741211,
+        672.8800048828125,
+        123.38880920410156,
+        683.8720092773438
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    }
+  ]
+}

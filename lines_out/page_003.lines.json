@@ -1,0 +1,457 @@
+{
+  "page": 3,
+  "body_size": 10.01612138748169,
+  "lines": [
+    {
+      "text": "TableTableofofContentsContents",
+      "bbox": [
+        210.60000610351562,
+        67.32000732421875,
+        326.739501953125,
+        77.77044677734375
+      ],
+      "size": 12.261200904846191,
+      "bold": false
+    },
+    {
+      "text": "11",
+      "bbox": [
+        480.239990234375,
+        154.44003295898438,
+        483.2400207519531,
+        161.286865234375
+      ],
+      "size": 6.4062724113464355,
+      "bold": false
+    },
+    {
+      "text": "1.1.PROJECTPROJECTOBJECTIVEOBJECTIVE",
+      "bbox": [
+        55.08000183105469,
+        155.87997436523438,
+        173.10035705566406,
+        164.1682586669922
+      ],
+      "size": 10.241124153137207,
+      "bold": false
+    },
+    {
+      "text": "22",
+      "bbox": [
+        479.8800048828125,
+        189.36001586914062,
+        483.8800354003906,
+        196.20684814453125
+      ],
+      "size": 7.397326469421387,
+      "bold": false
+    },
+    {
+      "text": "2.2.HISTORYHISTORYOF OFBROWNFIELDSBROWNFIELDSAWARENESSAWARENESS",
+      "bbox": [
+        54.720001220703125,
+        190.4399871826172,
+        271.0599365234375,
+        198.36790466308594
+      ],
+      "size": 10.146939277648926,
+      "bold": false
+    },
+    {
+      "text": "55",
+      "bbox": [
+        479.8800048828125,
+        224.27999877929688,
+        483.8800354003906,
+        231.1268310546875
+      ],
+      "size": 7.397326469421387,
+      "bold": false
+    },
+    {
+      "text": "3.3.THETHESTATESTATEOF OREGONOF OREGON",
+      "bbox": [
+        54.720001220703125,
+        225.3600311279297,
+        185.7399444580078,
+        233.28794860839844
+      ],
+      "size": 10.146939277648926,
+      "bold": false
+    },
+    {
+      "text": "99",
+      "bbox": [
+        480.239990234375,
+        258.8399658203125,
+        484.2400207519531,
+        266.04718017578125
+      ],
+      "size": 7.589496612548828,
+      "bold": false
+    },
+    {
+      "text": "4.4.OREGON’SOREGON’SBROWNFIELDSBROWNFIELDSAPPROACHAPPROACH",
+      "bbox": [
+        55.08000183105469,
+        259.9200134277344,
+        256.06024169921875,
+        267.84796142578125
+      ],
+      "size": 10.199857234954834,
+      "bold": false
+    },
+    {
+      "text": "1414",
+      "bbox": [
+        475.9200134277344,
+        293.760009765625,
+        484.9199523925781,
+        300.6068420410156
+      ],
+      "size": 7.845990180969238,
+      "bold": false
+    },
+    {
+      "text": "5.5.CHALLENGESCHALLENGESUNIQUEUNIQUETO RURAL COMMUNITIESTO RURAL",
+      "bbox": [
+        55.08000183105469,
+        294.4800109863281,
+        310.4195861816406,
+        303.849365234375
+      ],
+      "size": 11.145947456359863,
+      "bold": false
+    },
+    {
+      "text": "1616",
+      "bbox": [
+        476.6400146484375,
+        328.67999267578125,
+        484.64007568359375,
+        335.5268249511719
+      ],
+      "size": 7.397326469421387,
+      "bold": false
+    },
+    {
+      "text": "6.6.CASECASESTUDIESSTUDIES",
+      "bbox": [
+        55.439998626708984,
+        330.1199951171875,
+        138.019775390625,
+        337.68756103515625
+      ],
+      "size": 9.410605430603027,
+      "bold": false
+    },
+    {
+      "text": "2020",
+      "bbox": [
+        475.9200134277344,
+        345.9599914550781,
+        484.9199523925781,
+        352.80682373046875
+      ],
+      "size": 7.845990180969238,
+      "bold": false
+    },
+    {
+      "text": "Bennett’SBennett’SAutoAutoDealership,Dealership,Burns, ORBurns, OR",
+      "bbox": [
+        65.5199966430664,
+        347.0400085449219,
+        278.47998046875,
+        355.3282775878906
+      ],
+      "size": 9.270693302154541,
+      "bold": false
+    },
+    {
+      "text": "BrogoittiBennett’SBrogoittiElevatorElevatorAutoCorp,Dealership,Corp,Helix,Helix,OregonBurns,OregonOR",
+      "bbox": [
+        65.5199966430664,
+        358.55999755859375,
+        278.5599670410156,
+        366.4879455566406
+      ],
+      "size": 8.909305095672607,
+      "bold": false
+    },
+    {
+      "text": "ChiloquinChiloquinCommunityBrogoittiForestElevatorForestHealthProducts,Corp,Products,Center,Chiloquin,Helix,WhiteOregonOregonChiloquin,City,",
+      "bbox": [
+        65.16000366210938,
+        369.7200012207031,
+        276.89996337890625,
+        378.72900390625
+      ],
+      "size": 9.433851718902588,
+      "bold": false
+    },
+    {
+      "text": "CommunityChiloquinCommunityHealthForestHealthCenter,Products,Center,White City,WhiteChiloquin,OregonCity,",
+      "bbox": [
+        65.16000366210938,
+        380.8800048828125,
+        278.6999816894531,
+        389.16827392578125
+      ],
+      "size": 9.338757514953613,
+      "bold": false
+    },
+    {
+      "text": "CommunityFormerFormerLimeLimeCementHealthCementPlant,Center,BakerPlant,County,WhiteBakerOR..City,County,",
+      "bbox": [
+        65.5199966430664,
+        392.3999938964844,
+        278.9001159667969,
+        400.6882629394531
+      ],
+      "size": 9.228541374206543,
+      "bold": false
+    },
+    {
+      "text": "FormerFormerFormerNyssaLimeNyssaLandfill,CementLandfill,Nyssa,Plant,Nyssa,Oregon,BakerOregon,County,",
+      "bbox": [
+        65.5199966430664,
+        403.9200134277344,
+        279.3999938964844,
+        412.2082824707031
+      ],
+      "size": 9.254100799560547,
+      "bold": false
+    },
+    {
+      "text": "2222",
+      "bbox": [
+        475.9200134277344,
+        357.4800109863281,
+        484.9199523925781,
+        364.32684326171875
+      ],
+      "size": 7.845990180969238,
+      "bold": false
+    },
+    {
+      "text": "242224",
+      "bbox": [
+        475.9200134277344,
+        368.6400146484375,
+        484.9199523925781,
+        375.4868469238281
+      ],
+      "size": 7.845990180969238,
+      "bold": false
+    },
+    {
+      "text": "2727",
+      "bbox": [
+        475.9200134277344,
+        380.1600036621094,
+        484.9199523925781,
+        387.0068359375
+      ],
+      "size": 7.845990180969238,
+      "bold": false
+    },
+    {
+      "text": "273030",
+      "bbox": [
+        476.2799987792969,
+        391.3199768066406,
+        485.2799987792969,
+        398.5271911621094
+      ],
+      "size": 8.049844741821289,
+      "bold": false
+    },
+    {
+      "text": "333033",
+      "bbox": [
+        476.2799987792969,
+        402.8399963378906,
+        485.2799987792969,
+        410.0472106933594
+      ],
+      "size": 8.049844741821289,
+      "bold": false
+    },
+    {
+      "text": "3535",
+      "bbox": [
+        476.2799987792969,
+        432.0,
+        485.2799987792969,
+        439.20721435546875
+      ],
+      "size": 8.049844741821289,
+      "bold": false
+    },
+    {
+      "text": "7.7.ANALYSISANALYSISANDANDCONCLUSIONSCONCLUSIONS",
+      "bbox": [
+        55.79999923706055,
+        433.0799865722656,
+        217.62034606933594,
+        441.0079345703125
+      ],
+      "size": 10.01612138748169,
+      "bold": false
+    },
+    {
+      "text": "TableTableofofContentsContents",
+      "bbox": [
+        210.60000610351562,
+        66.53627014160156,
+        346.93426513671875,
+        80.89456939697266
+      ],
+      "size": 13.43505859375,
+      "bold": false
+    },
+    {
+      "text": "22",
+      "bbox": [
+        479.8800048828125,
+        187.61001586914062,
+        487.23211669921875,
+        198.60202026367188
+      ],
+      "size": 10.285212516784668,
+      "bold": false
+    },
+    {
+      "text": "2.2.HISTORYHISTORYOF OFBROWNFIELDSBROWNFIELDSAWARENESSAWARENESS",
+      "bbox": [
+        54.720001220703125,
+        189.76998901367188,
+        339.0717468261719,
+        200.76199340820312
+      ],
+      "size": 10.285212516784668,
+      "bold": false
+    },
+    {
+      "text": "5.5.CHALLENGESCHALLENGESUNIQUEUNIQUETO RURAL COMMUNITIESTO RURAL COMMUNITIES",
+      "bbox": [
+        55.08000183105469,
+        293.7772521972656,
+        438.02825927734375,
+        306.6516418457031
+      ],
+      "size": 12.046555519104004,
+      "bold": false
+    },
+    {
+      "text": "202022",
+      "bbox": [
+        475.9200134277344,
+        344.2099914550781,
+        490.6242370605469,
+        355.2019958496094
+      ],
+      "size": 10.285212516784668,
+      "bold": false
+    },
+    {
+      "text": "Bennett’SBrogoittiBennett’SBrogoittiElevatorAutoElevatorAutoDealership,Corp,Dealership,Corp,Helix,Burns,Helix,OregonORBurns,OregonOR",
+      "bbox": [
+        65.5199966430664,
+        346.4182434082031,
+        297.805419921875,
+        357.8086853027344
+      ],
+      "size": 10.658051490783691,
+      "bold": false
+    },
+    {
+      "text": "ChiloquinChiloquinBrogoittiBennett’SBrogoittiElevatorForestElevatorAutoForestProducts,Corp,Dealership,Corp,Products,Helix,Chiloquin,Helix,OregonBurns,OregonOregonChiloquin,OR",
+      "bbox": [
+        65.5199966430664,
+        357.8899841308594,
+        286.7177429199219,
+        368.8819885253906
+      ],
+      "size": 10.285212516784668,
+      "bold": false
+    },
+    {
+      "text": "ChiloquinCommunityChiloquinCommunityBrogoittiForestElevatorHealthForestHealthProducts,Center,Corp,Products,Center,WhiteChiloquin,Helix,City,WhiteOregonOregonChiloquin,OregonCity, OregonOregon",
+      "bbox": [
+        65.16000366210938,
+        369.04425048828125,
+        364.7848205566406,
+        381.42401123046875
+      ],
+      "size": 11.583721160888672,
+      "bold": false
+    },
+    {
+      "text": "ChiloquinCommunityChiloquinCommunityFormerFormerLimeForestLimeHealthCementForestHealthProducts,CementCenter,Plant,Products,Center,WhiteBakerChiloquin,Plant,City,County,WhiteBakerOregonChiloquin,OregonOR..City,County,OregonOregonOR..",
+      "bbox": [
+        65.16000366210938,
+        380.2582702636719,
+        346.144287109375,
+        391.6487121582031
+      ],
+      "size": 10.658051490783691,
+      "bold": false
+    },
+    {
+      "text": "CommunityFormerFormerFormerFormerLimeNyssaLimeNyssaCementLandfill,HealthCementLandfill,Plant,Nyssa,Center,BakerPlant,Nyssa,Oregon,County,WhiteBakerOregon,OR..City,County,OregonOR..",
+      "bbox": [
+        65.5199966430664,
+        391.77825927734375,
+        356.4112243652344,
+        403.168701171875
+      ],
+      "size": 10.658051490783691,
+      "bold": false
+    },
+    {
+      "text": "2224202224",
+      "bbox": [
+        475.9200134277344,
+        355.72998046875,
+        490.6242370605469,
+        366.72198486328125
+      ],
+      "size": 10.285212516784668,
+      "bold": false
+    },
+    {
+      "text": "24222427",
+      "bbox": [
+        475.9200134277344,
+        366.8899841308594,
+        490.6242370605469,
+        377.8819885253906
+      ],
+      "size": 10.285212516784668,
+      "bold": false
+    },
+    {
+      "text": "2724273030",
+      "bbox": [
+        475.9200134277344,
+        378.4100036621094,
+        490.6242370605469,
+        389.4020080566406
+      ],
+      "size": 10.285212516784668,
+      "bold": false
+    },
+    {
+      "text": "2730333033",
+      "bbox": [
+        476.2799987792969,
+        389.92999267578125,
+        490.9842224121094,
+        400.9219970703125
+      ],
+      "size": 10.285212516784668,
+      "bold": false
+    }
+  ]
+}

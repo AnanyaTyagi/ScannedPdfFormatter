@@ -1,0 +1,1062 @@
+{
+  "page": 26,
+  "body_size": 9.953219890594482,
+  "lines": [
+    {
+      "text": "BroqoittiBroqoitti ElevatorElevatorCorp,Corp,Helix,Helix,OregonOregon",
+      "bbox": [
+        54.36000061035156,
+        66.96000671386719,
+        303.320068359375,
+        77.77081298828125
+      ],
+      "size": 11.962480545043945,
+      "bold": false
+    },
+    {
+      "text": "aa",
+      "bbox": [
+        53.63999938964844,
+        214.1999969482422,
+        58.63996887207031,
+        225.01080322265625
+      ],
+      "size": 10.392271995544434,
+      "bold": false
+    },
+    {
+      "text": "DemographicsDemographics",
+      "bbox": [
+        72.36000061035156,
+        214.1999969482422,
+        153.36000061035156,
+        225.01080322265625
+      ],
+      "size": 12.074767112731934,
+      "bold": false
+    },
+    {
+      "text": "HelixHelixisisaaveryverysmallsmallcommunitycommunityof 183,oflocated183, locatedin Umatillain UmatillaCounty in northeasternCounty in northeastern",
+      "bbox": [
+        54.0,
+        233.99998474121094,
+        447.44024658203125,
+        244.810791015625
+      ],
+      "size": 10.043014526367188,
+      "bold": false
+    },
+    {
+      "text": "Oregon.Oregon.TheThenearestnearestmajormajorfreewayfreewayis Hwy is84,Hwy11 miles84,away.11 milesThe away.nearestThemajornearestcity",
+      "bbox": [
+        53.63999938964844,
+        253.07998657226562,
+        471.8398742675781,
+        264.25115966796875
+      ],
+      "size": 10.59809684753418,
+      "bold": false
+    },
+    {
+      "text": "isis PendletonPendleton(population(population16,354),16,354),whichwhichis 20 milesis 20away.miles24away.24",
+      "bbox": [
+        54.0,
+        272.52001953125,
+        330.11981201171875,
+        282.970458984375
+      ],
+      "size": 9.935018539428711,
+      "bold": false
+    },
+    {
+      "text": "away.miles24away.24away.24",
+      "bbox": [
+        331.55999755859375,
+        270.3600158691406,
+        338.5599365234375,
+        275.4050598144531
+      ],
+      "size": 5.939677715301514,
+      "bold": false
+    },
+    {
+      "text": "TableTable 44",
+      "bbox": [
+        248.0399932861328,
+        310.67999267578125,
+        288.5999755859375,
+        319.3286437988281
+      ],
+      "size": 10.096763610839844,
+      "bold": false
+    },
+    {
+      "text": "HelixHelix PopulationPopulationDataData",
+      "bbox": [
+        207.72000122070312,
+        324.0,
+        328.2798767089844,
+        335.1711730957031
+      ],
+      "size": 11.328691482543945,
+      "bold": false
+    },
+    {
+      "text": "%%",
+      "bbox": [
+        223.55999755859375,
+        349.9200134277344,
+        231.56002807617188,
+        358.56866455078125
+      ],
+      "size": 11.757576942443848,
+      "bold": false
+    },
+    {
+      "text": "%% BelowBelow",
+      "bbox": [
+        352.0799865722656,
+        349.9200134277344,
+        395.7601623535156,
+        358.2082824707031
+      ],
+      "size": 11.088088512420654,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty LevelLevel",
+      "bbox": [
+        339.4800109863281,
+        362.8800354003906,
+        409.0399169921875,
+        372.9700927734375
+      ],
+      "size": 10.418411254882812,
+      "bold": false
+    },
+    {
+      "text": "Poverty14.3%14.3%Level",
+      "bbox": [
+        354.6000061035156,
+        377.6400146484375,
+        383.5999450683594,
+        385.92828369140625
+      ],
+      "size": 9.800386428833008,
+      "bold": false
+    },
+    {
+      "text": "9.8%9.8%",
+      "bbox": [
+        360.0,
+        392.3999938964844,
+        383.0,
+        401.04864501953125
+      ],
+      "size": 9.967954635620117,
+      "bold": false
+    },
+    {
+      "text": "PopulationPopulation",
+      "bbox": [
+        426.6000061035156,
+        349.9200134277344,
+        481.5993957519531,
+        360.01007080078125
+      ],
+      "size": 10.529909133911133,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmerican",
+      "bbox": [
+        124.55999755859375,
+        350.280029296875,
+        185.52012634277344,
+        358.56829833984375
+      ],
+      "size": 10.738968849182129,
+      "bold": false
+    },
+    {
+      "text": "AmericanIndianIndian",
+      "bbox": [
+        140.0399932861328,
+        362.8800048828125,
+        170.0397186279297,
+        371.16827392578125
+      ],
+      "size": 9.099414825439453,
+      "bold": false
+    },
+    {
+      "text": "2.2%2.2%",
+      "bbox": [
+        145.44000244140625,
+        378.0000305175781,
+        168.43988037109375,
+        386.2882995605469
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "3.4%3.4%",
+      "bbox": [
+        145.44000244140625,
+        392.760009765625,
+        168.44000244140625,
+        401.4086608886719
+      ],
+      "size": 9.967954635620117,
+      "bold": false
+    },
+    {
+      "text": "MedianMedian",
+      "bbox": [
+        275.3999938964844,
+        350.2799987792969,
+        311.4001770019531,
+        358.20794677734375
+      ],
+      "size": 9.748873710632324,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncome",
+      "bbox": [
+        275.0400085449219,
+        362.8800048828125,
+        312.0401306152344,
+        371.16827392578125
+      ],
+      "size": 10.105466842651367,
+      "bold": false
+    },
+    {
+      "text": "$34,292$34,292",
+      "bbox": [
+        275.0400085449219,
+        377.6400146484375,
+        313.04034423828125,
+        387.3697509765625
+      ],
+      "size": 10.272894859313965,
+      "bold": false
+    },
+    {
+      "text": "$36,249$36,249",
+      "bbox": [
+        275.0400085449219,
+        392.4000244140625,
+        313.0401306152344,
+        402.4900817871094
+      ],
+      "size": 10.461369514465332,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%",
+      "bbox": [
+        205.9199981689453,
+        362.8800354003906,
+        249.9196319580078,
+        372.9700927734375
+      ],
+      "size": 10.529909133911133,
+      "bold": false
+    },
+    {
+      "text": "2.7%2.7%",
+      "bbox": [
+        218.52000427246094,
+        378.0000305175781,
+        241.51988220214844,
+        386.2882995605469
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "16.1%16.1%",
+      "bbox": [
+        213.1199951171875,
+        392.760009765625,
+        242.11985778808594,
+        401.04827880859375
+      ],
+      "size": 9.800386428833008,
+      "bold": false
+    },
+    {
+      "text": "180180",
+      "bbox": [
+        457.20001220703125,
+        378.0,
+        473.199951171875,
+        385.9279479980469
+      ],
+      "size": 9.191295623779297,
+      "bold": false
+    },
+    {
+      "text": "HelixHelix",
+      "bbox": [
+        54.0,
+        378.3600158691406,
+        77.00006866455078,
+        386.2879638671875
+      ],
+      "size": 8.536055564880371,
+      "bold": false
+    },
+    {
+      "text": "UmatillaUmatilla",
+      "bbox": [
+        54.0,
+        393.1200256347656,
+        91.99988555908203,
+        401.4082946777344
+      ],
+      "size": 8.869035720825195,
+      "bold": false
+    },
+    {
+      "text": "CountyCountyUmatilla",
+      "bbox": [
+        53.63999938964844,
+        405.7200012207031,
+        87.6397476196289,
+        416.1704406738281
+      ],
+      "size": 10.877457618713379,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:CountyOregonSource:OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationPopulation",
+      "bbox": [
+        53.63999938964844,
+        420.4800109863281,
+        90.64020538330078,
+        430.9304504394531
+      ],
+      "size": 11.347275733947754,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>OregonSource:OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationPopulation ResearchPopulation1.3% Center, Portland8.0%SlateSelect:University$40,916Profiles[NoforDate],Oregon.",
+      "bbox": [
+        53.63999938964844,
+        432.3599853515625,
+        344.5599365234375,
+        441.0086364746094
+      ],
+      "size": 8.24838399887085,
+      "bold": false
+    },
+    {
+      "text": "Source:<http://www.upa.pdx.edu/CPRC/about/index,html>OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationPopulation Research Center, Portland SlateSelect:UniversityProfiles[NoforDate],Oregon. [20ResearchJanuaryResearch2005]Center,",
+      "bbox": [
+        53.63999938964844,
+        442.79998779296875,
+        436.15985107421875,
+        451.4486389160156
+      ],
+      "size": 8.084831714630127,
+      "bold": false
+    },
+    {
+      "text": "70,54870,548",
+      "bbox": [
+        441.3599853515625,
+        392.760009765625,
+        473.3602294921875,
+        402.48974609375
+      ],
+      "size": 10.182367324829102,
+      "bold": false
+    },
+    {
+      "text": "8.0%8.0%",
+      "bbox": [
+        218.52000427246094,
+        420.1200256347656,
+        242.5200653076172,
+        428.4082946777344
+      ],
+      "size": 9.967964172363281,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>Population$40,916$40,916",
+      "bbox": [
+        275.3999938964844,
+        420.1200256347656,
+        313.40032958984375,
+        429.8497619628906
+      ],
+      "size": 10.272894859313965,
+      "bold": false
+    },
+    {
+      "text": "7.9%7.9%",
+      "bbox": [
+        360.0,
+        420.1200256347656,
+        382.9998779296875,
+        428.4082946777344
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "Research3,421,3993,421,399Center,",
+      "bbox": [
+        426.239990234375,
+        420.1200256347656,
+        473.2403259277344,
+        429.8497619628906
+      ],
+      "size": 10.075754165649414,
+      "bold": false
+    },
+    {
+      "text": "Population1.3%1.3%",
+      "bbox": [
+        145.8000030517578,
+        420.4800109863281,
+        168.7998809814453,
+        428.7682800292969
+      ],
+      "size": 9.758042335510254,
+      "bold": false
+    },
+    {
+      "text": "□?",
+      "bbox": [
+        53.63999938964844,
+        495.3599853515625,
+        58.63996887207031,
+        504.0086364746094
+      ],
+      "size": 9.295130729675293,
+      "bold": false
+    },
+    {
+      "text": "TheThe SiteSite",
+      "bbox": [
+        71.63999938964844,
+        495.3599853515625,
+        116.4798812866211,
+        504.0086364746094
+      ],
+      "size": 10.014111518859863,
+      "bold": false
+    },
+    {
+      "text": "TheThesitesiteunderunderstudystudywaswaspurchasedpurchasedby Mr.by Mr.S. E.S.BrogoittiE. Brogoittiin 1926,in 1926,from Standardfrom StandardOil of",
+      "bbox": [
+        53.63999938964844,
+        515.8800048828125,
+        475.2801208496094,
+        525.9700927734375
+      ],
+      "size": 9.938485145568848,
+      "bold": false
+    },
+    {
+      "text": "California.California.The",
+      "bbox": [
+        53.63999938964844,
+        534.6000366210938,
+        100.64058685302734,
+        545.0504760742188
+      ],
+      "size": 9.445402145385742,
+      "bold": false
+    },
+    {
+      "text": "California.TheThe BrogoittiBrogoittifamilyfamilyranrana graina grainelevatorelevatorbusinessbusinessfrom 1926fromuntil19261962.untilThe1962.",
+      "bbox": [
+        109.44000244140625,
+        534.6000366210938,
+        476.2799072265625,
+        545.0504760742188
+      ],
+      "size": 10.011192321777344,
+      "bold": false
+    },
+    {
+      "text": "BrogoittiBrogoittiElevatorElevatorCorporationCorporationwaswasformedformedin 1962,in 1962,and ranandtheransitetheuntilsite1993,untilwhen1993,",
+      "bbox": [
+        54.0,
+        553.6799926757812,
+        458.1601257324219,
+        563.7700805664062
+      ],
+      "size": 9.837067604064941,
+      "bold": false
+    },
+    {
+      "text": "theytheyfiledfiledforforbankruptcy.bankruptcy.TheThesitesiterevertedrevertedto thetocountythe countyat that time.at that",
+      "bbox": [
+        53.279998779296875,
+        572.4000244140625,
+        384.6002197265625,
+        582.8504638671875
+      ],
+      "size": 9.256382942199707,
+      "bold": false
+    },
+    {
+      "text": "that2525",
+      "bbox": [
+        387.0,
+        570.6000366210938,
+        393.99993896484375,
+        575.6450805664062
+      ],
+      "size": 5.939677715301514,
+      "bold": false
+    },
+    {
+      "text": "24Oregon24Oregon<http://info.econ.state.or.us:591/profile.htm>Economic<http://info.econ.state.or.us:591/profile.htm>24Oregon25<http://info.econ.state.or.us:591/profile.htm>?OregonEconomic and Community DevelopmentSelect;Department [2 February 2005]EconomicDEQ,",
+      "bbox": [
+        53.279998779296875,
+        653.4000244140625,
+        408.55987548828125,
+        665.6497192382812
+      ],
+      "size": 9.85897445678711,
+      "bold": false
+    },
+    {
+      "text": "24Oregon2524Oregon<http://info.econ.state.or.us:591/profile.htm>Economic25<http://info.econ.state.or.us:591/profile.htm>?Oregon<http://info.econ.state.or.us:591/profile.htm>24Oregon25<http://info.econ.state.or.us:591/profile.htm>?Oregon■OregonCleanup,25<http://info.econ.state.or.us:591/profile.htm>?OregonEconomicDEQ, [No Date],and Community<www.deq.state.or.us>DevelopmentSelect;Select:DepartmentHelix [15 March[2 February2005]",
+      "bbox": [
+        53.63999938964844,
+        667.4400634765625,
+        379.0398864746094,
+        677.1693725585938
+      ],
+      "size": 9.071009159088135,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,25Cleanup,25<http://info.econ.state.or.us:591/profile.htm>?Oregon<http://info.econ.state.or.us:591/profile.htm>24Oregon25<http://info.econ.state.or.us:591/profile.htm>?Oregon■OregonCleanup,25<http://info.econ.state.or.us:591/profile.htm>?OregonSelect:DEQ,Select:[NoBrownfields,Brownfields,Date], <www.deq.state.or.us>Select:Select:Site SiteSpecificSelect;SpecificSelect:AssessmentHelixAssessmentLand[15LandMarchofQuality,Brownfield2005]Select:ofQuality,BrownfieldSelect:Sites,EnvEconomicDEQ,Sites,Select:DEQ,EnvironmentalSelect:",
+      "bbox": [
+        54.36000061035156,
+        678.6000366210938,
+        464.9194030761719,
+        688.6893310546875
+      ],
+      "size": 9.359476089477539,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,BrogiottiCleanup,25<http://info.econ.state.or.us:591/profile.htm>?OregonSelect:ElevatorSelect:Brownfields,Brownfields,Corp. [15Select:MarchSelect:Site2005]SiteSpecificSpecificAssessmentAssessmentLandLand ofQuality,BrownfieldSelect:ofQuality,BrownfieldSelect:Sites,EnvSites,Select:DEQ,EnvironmentalSelect:",
+      "bbox": [
+        53.279998779296875,
+        690.1199951171875,
+        451.0398254394531,
+        699.4893188476562
+      ],
+      "size": 8.8060941696167,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,BrogiottiBrogiottiElevatorElevatorSelect:Corp.Brownfields,Corp.[15[15MarchMarchSelect:2005]2005]",
+      "bbox": [
+        53.63999938964844,
+        701.6400146484375,
+        229.27987670898438,
+        711.0093383789062
+      ],
+      "size": 9.062771320343018,
+      "bold": false
+    },
+    {
+      "text": "2525<http://info.econ.state.or.us:591/profile.htm>?Oregon<http://info.econ.state.or.us:591/profile.htm>24Oregon25<http://info.econ.state.or.us:591/profile.htm>?Oregon■OregonCleanup,25<http://info.econ.state.or.us:591/profile.htm>?Oregon",
+      "bbox": [
+        53.279998779296875,
+        676.4400024414062,
+        59.28003692626953,
+        681.1246948242188
+      ],
+      "size": 5.299074172973633,
+      "bold": false
+    },
+    {
+      "text": "22",
+      "bbox": [
+        471.9599914550781,
+        739.4400024414062,
+        480.9599914550781,
+        747.007568359375
+      ],
+      "size": 8.248649597167969,
+      "bold": false
+    },
+    {
+      "text": "BroqoittiBroqoitti ElevatorElevatorCorp,Corp,Helix,Helix,OregonOregon",
+      "bbox": [
+        54.36000061035156,
+        66.1492691040039,
+        269.63409423828125,
+        81.00221252441406
+      ],
+      "size": 11.794695854187012,
+      "bold": false
+    },
+    {
+      "text": "Oregon.Oregon.TheThenearestnearestmajormajorfreewayfreewayis Hwy is84,Hwy11 miles84,away.away.2411 milesThe away.nearestThemajornearestcity  major city",
+      "bbox": [
+        53.63999938964844,
+        252.24224853515625,
+        555.4271850585938,
+        267.58984375
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "isis PendletonPendleton(population(population16,354),16,354),whichwhichis 20 milesis 20away.miles24away.24away.24",
+      "bbox": [
+        54.0,
+        271.7362365722656,
+        383.822998046875,
+        286.09454345703125
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "away.miles24away.2411away.24miles",
+      "bbox": [
+        331.55999755859375,
+        266.80999755859375,
+        367.02679443359375,
+        277.802001953125
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "PopulationTableTable 44",
+      "bbox": [
+        248.0399932861328,
+        310.0312805175781,
+        282.3826599121094,
+        321.9163818359375
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "HelixHelix PopulationPopulationTable 4  DataData",
+      "bbox": [
+        207.72000122070312,
+        323.1622619628906,
+        335.5769958496094,
+        338.5098571777344
+      ],
+      "size": 12.187488555908203,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic%%",
+      "bbox": [
+        223.55999755859375,
+        349.2712707519531,
+        232.71461486816406,
+        361.1563720703125
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "Poverty%% BelowBelowLevel",
+      "bbox": [
+        352.0799865722656,
+        349.29827880859375,
+        390.4707336425781,
+        360.688720703125
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "PovertyPoverty%14.3%14.3%BelowLevelLevel",
+      "bbox": [
+        339.4800109863281,
+        362.1232604980469,
+        412.2484436035156,
+        375.9869079589844
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "9.8%9.8%",
+      "bbox": [
+        360.0,
+        391.75128173828125,
+        383.4683532714844,
+        403.6363830566406
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "PopulationPopulation",
+      "bbox": [
+        426.6000061035156,
+        349.16326904296875,
+        483.35650634765625,
+        363.02691650390625
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "%% AmericanAmericanIndianIndian",
+      "bbox": [
+        124.55999755859375,
+        349.65826416015625,
+        177.7543487548828,
+        361.0487060546875
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "2.2%2.2%",
+      "bbox": [
+        145.44000244140625,
+        377.3782653808594,
+        167.931640625,
+        388.7687072753906
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "IncomeMedianMedian",
+      "bbox": [
+        275.3999938964844,
+        349.6100158691406,
+        306.628662109375,
+        360.6020202636719
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "IncomeIncomeMedian",
+      "bbox": [
+        275.0400085449219,
+        362.2582702636719,
+        307.4007263183594,
+        373.6487121582031
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "$34,292$34,292$36,249",
+      "bbox": [
+        275.0400085449219,
+        376.9102783203125,
+        316.90240478515625,
+        390.279296875
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "$36,249$34,292$36,249",
+      "bbox": [
+        275.0400085449219,
+        391.6432800292969,
+        318.45123291015625,
+        405.5069274902344
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "HispanicHispanic2.7%%",
+      "bbox": [
+        205.9199981689453,
+        362.1232604980469,
+        251.97377014160156,
+        375.9869079589844
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "Hispanic2.7%2.7%",
+      "bbox": [
+        218.52000427246094,
+        377.3782653808594,
+        241.0116424560547,
+        388.7687072753906
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "16.1%16.1%",
+      "bbox": [
+        213.1199951171875,
+        392.1382751464844,
+        241.09884643554688,
+        403.5287170410156
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "HelixHelix",
+      "bbox": [
+        54.0,
+        377.69000244140625,
+        75.16197967529297,
+        388.6820068359375
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "CountyCountyUmatillaUmatilla",
+      "bbox": [
+        54.0,
+        392.4982604980469,
+        89.63723754882812,
+        403.8887023925781
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "CountyOregonCountyOregonSource:Umatilla",
+      "bbox": [
+        53.63999938964844,
+        404.9362487792969,
+        93.05156707763672,
+        419.2945556640625
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:CountyOregonSource:OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationPopulation ResearchPopulation1.3%1.3% Center,",
+      "bbox": [
+        53.63999938964844,
+        419.6962585449219,
+        200.2390899658203,
+        434.0545654296875
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>OregonSource:OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationPopulation ResearchPopulation1.3% Center, Portland8.0%SlateSelect:University$40,916$40,916Profiles[NoforDate],Oregon.7.9%[20ResearchJanuaryResearch2005]Center,3,421,3993,421,399Center,PortlandPortlandSlateSelect:UnivSlateSele",
+      "bbox": [
+        53.63999938964844,
+        431.7112731933594,
+        573.9183349609375,
+        443.59637451171875
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "Source:<http://www.upa.pdx.edu/CPRC/about/index,html>OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationPopulation Research Center, Portland SlateSelect:UniversityProfiles[NoforDate],Oregon. [20ResearchJanuaryResearch2005]Center,Center,PortlandPortlandSlateSelect:UnivSlateSele",
+      "bbox": [
+        53.63999938964844,
+        442.1512756347656,
+        571.0453491210938,
+        454.036376953125
+      ],
+      "size": 9.43793773651123,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationPortland8.0%8.0%Slate",
+      "bbox": [
+        218.52000427246094,
+        419.4982604980469,
+        241.0116424560547,
+        430.8887023925781
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationUniversity$40,916$40,916[No",
+      "bbox": [
+        275.3999938964844,
+        419.3902587890625,
+        317.26239013671875,
+        432.75927734375
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>Population7.9%7.9%",
+      "bbox": [
+        360.0,
+        419.4982604980469,
+        382.49163818359375,
+        430.8887023925781
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "Research3,421,3993,421,399Center,",
+      "bbox": [
+        426.239990234375,
+        419.3902587890625,
+        477.762939453125,
+        432.75927734375
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "OregonSource:<http://www.upa.pdx.edu/CPRC/about/index,html>PopulationResearchPopulation1.3%1.3%",
+      "bbox": [
+        145.8000030517578,
+        419.8582763671875,
+        168.29164123535156,
+        431.24871826171875
+      ],
+      "size": 9.045145988464355,
+      "bold": false
+    },
+    {
+      "text": "TheThesitesiteunderunderstudystudywaswaspurchasedpurchasedby Mr.by Mr.S. E.S.BrogoittiE. Brogoittiin 1926,in 1926,from Standardfrom StandardOil of Oil of",
+      "bbox": [
+        53.63999938964844,
+        515.1232299804688,
+        516.9768676757812,
+        528.9868774414062
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "California.California.TheThe BrogoittiBrogoittifamilyfamilyranrana graina grainelevatorelevatorbusinessbusinessfrom 1926fromuntil19261962.untilThe1962. The",
+      "bbox": [
+        53.63999938964844,
+        533.8162841796875,
+        524.306396484375,
+        548.1746215820312
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "BrogoittiBrogoittiElevatorElevatorCorporationCorporationwaswasformedformedin 1962,in 1962,and ranandtheransitetheuntil25site1993,untilwhen1993, when",
+      "bbox": [
+        54.0,
+        552.9232788085938,
+        499.9917297363281,
+        566.7869262695312
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "theytheyfiledfiledforforbankruptcy.bankruptcy.TheThesitesiterevertedrevertedto thetocountythe countyat that time.at that2525 time.",
+      "bbox": [
+        53.279998779296875,
+        571.6162719726562,
+        428.759765625,
+        585.974609375
+      ],
+      "size": 11.40190315246582,
+      "bold": false
+    },
+    {
+      "text": "thethat2525site",
+      "bbox": [
+        387.0,
+        567.050048828125,
+        397.59051513671875,
+        578.0420532226562
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    },
+    {
+      "text": "24Oregon24Oregon<http://info.econ.state.or.us:591/profile.htm>Economic<http://info.econ.state.or.us:591/profile.htm>24Oregon25<http://info.econ.state.or.us:591/profile.htm>?OregonEconomic and Community DevelopmentSelect;DepartmentHelix [15 March[2 February2005] 2005]EconomicDEQ,and[No Date],andCommunityCom",
+      "bbox": [
+        53.279998779296875,
+        652.4812622070312,
+        573.67333984375,
+        669.312744140625
+      ],
+      "size": 13.365867614746094,
+      "bold": false
+    },
+    {
+      "text": "24Oregon2524Oregon<http://info.econ.state.or.us:591/profile.htm>Economic25<http://info.econ.state.or.us:591/profile.htm>?Oregon<http://info.econ.state.or.us:591/profile.htm>24Oregon25<http://info.econ.state.or.us:591/profile.htm>?Oregon■OregonCleanup,25<http://info.econ.state.or.us:591/profile.htm>?OregonEconomicDEQ, [No Date],and Community<www.deq.state.or.us>DevelopmentSelect;Select:DepartmentHelix [15LandMarch[2Quality,February2005]Select:2005]EconomicDEQ,Select:DEQ,Environmental [NoBrownfields,Daand[No Date],andCommunityCom",
+      "bbox": [
+        53.63999938964844,
+        666.7102661132812,
+        574.5098266601562,
+        680.0792846679688
+      ],
+      "size": 10.616316795349121,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,25Cleanup,25<http://info.econ.state.or.us:591/profile.htm>?Oregon<http://info.econ.state.or.us:591/profile.htm>24Oregon25<http://info.econ.state.or.us:591/profile.htm>?Oregon■OregonCleanup,25<http://info.econ.state.or.us:591/profile.htm>?OregonSelect:DEQ,Select:[NoBrownfields,Brownfields,Date], <www.deq.state.or.us>Select:Select:Site SiteSpecificSelect;SpecificSelect:AssessmentHelixAssessmentLand[15LandMarchofQuality,Brownfield2005]Select:ofQuality,BrownfieldSelect:Sites,EnvEconomicDEQ,Sites,Select:DEQ,EnvironmentalSelect:  [NoBrownfields,Da[No Date],and Com",
+      "bbox": [
+        54.36000061035156,
+        677.84326171875,
+        569.7926635742188,
+        691.7069091796875
+      ],
+      "size": 11.009110450744629,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,BrogiottiBrogiotti■OregonCleanup,25<http://info.econ.state.or.us:591/profile.htm>?OregonElevatorSelect:DEQ,ElevatorSelect:[NoBrownfields,Corp.Brownfields,Corp.Date],[15<www.deq.state.or.us>[15MarchSelect:MarchSelect:2005]Site2005]SiteSpecificSpecificSelect:AssessmentAssessmentLandLand ofQuality,BrownfieldSelect:ofQuality,BrownfieldSelect:Sites,EnvSites,Select:DEQ,EnvironmentalSelect:  [NoBrownfields,Da",
+      "bbox": [
+        53.279998779296875,
+        689.417236328125,
+        572.8145751953125,
+        702.2916259765625
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "Cleanup,Cleanup,BrogiottiBrogiottiElevatorSelect:ElevatorSelect:Brownfields,Corp.Brownfields,Corp.[15[15MarchSelect:MarchSelect:2005]Site2005]SiteSpecific",
+      "bbox": [
+        53.63999938964844,
+        700.937255859375,
+        252.6527862548828,
+        713.8116455078125
+      ],
+      "size": 10.22352409362793,
+      "bold": false
+    },
+    {
+      "text": "2525<http://info.econ.state.or.us:591/profile.htm>?Oregon<http://info.econ.state.or.us:591/profile.htm>24Oregon25<http://info.econ.state.or.us:591/profile.htm>?Oregon■OregonCleanup,25<http://info.econ.state.or.us:591/profile.htm>?OregonDEQ, [No Date], <www.deq.state.or.us>Select;Select:Helix",
+      "bbox": [
+        53.279998779296875,
+        672.52001953125,
+        287.28082275390625,
+        683.5120239257812
+      ],
+      "size": 8.728729248046875,
+      "bold": false
+    }
+  ]
+}
