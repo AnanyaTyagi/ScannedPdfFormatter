@@ -76,7 +76,7 @@ def main(pdf_path, dpi="300", weights=None, labelmap="labelmap.json"):
     probing = which_script(script_dir, "ProbingFile.py")
     detect = which_script(script_dir, "DetectLayoutFixed.py", "DetectLayout.py")
     export = which_script(script_dir, "ExportLines.py")
-    fuse = which_script(script_dir, "FuseLinesFixed_fixed.py", "FuseLines.py")
+    fuse = which_script(script_dir, "FuseLinesFixed_fixed.py")
     tables = which_script(script_dir, "TableLists.py")
     tagger = which_script(script_dir, "TagPDFFinal.py", "TagPikePDFProduction.py")
 

@@ -285,7 +285,10 @@ def page_add_invisible_mcid_stream(pdf, page_obj, mcid, text, *, bbox=None):
         x0, y0, x1, y1 = [float(v) for v in bbox]
         x = x0
         y = page_h - y1
-        font_size = max(8.0, (y1 - y0))
+        bbox_height = y1 - y0
+        font_size = min(12.0, max(8.0, bbox_height))
+
+       # font_size = max(8.0, (y1 - y0))
     else:
         x, y, font_size = 0.0, 0.0, 1.0
 
