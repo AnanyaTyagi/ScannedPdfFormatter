@@ -391,19 +391,16 @@ def get_pdf_page_size_pts(pdf, page_index: int):
 def to_pdf_bbox(xyxy, img_w, img_h, pdf_w, pdf_h):
     """
     Convert image pixel bbox (x0,y0,x1,y1) with origin TOP-LEFT (image space)
-    to PDF points with origin BOTTOM-LEFT (PDF standard).
-
-    ✅ FIXED: Now matches ExportLines.py (PyMuPDF) and TagPDFFinal.py expectations.
+    to page points with origin TOP-LEFT (matching PyMuPDF / ExportLines.py convention).
     """
     x0, y0, x1, y1 = [float(v) for v in xyxy]
     sx = pdf_w / float(img_w)
     sy = pdf_h / float(img_h)
 
-    # ✅ FIX: Flip Y to convert from top-left (image) to bottom-left (PDF)
     px0 = x0 * sx
+    py0 = y0 * sy
     px1 = x1 * sx
-    py0 = pdf_h - (y1 * sy)  # Bottom of bbox in PDF coords
-    py1 = pdf_h - (y0 * sy)  # Top of bbox in PDF coords
+    py1 = y1 * sy
 
     if px1 < px0:
         px0, px1 = px1, px0

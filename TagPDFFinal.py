@@ -200,7 +200,8 @@ def create_page_bookmarks(pdf, fused_dir):
             p = os.path.join(fused_dir, f'page_{i:03d}.{stem}.json')
             if os.path.exists(p):
                 try:
-                    data = json.load(open(p, "r", encoding="utf-8"))
+                    with open(p, "r", encoding="utf-8") as fh:
+                        data = json.load(fh)
                     for t in data.get("tags", []):
                         if t.get("tag") in ("H1", "H2") and (t.get("text") or "").strip():
                             title_text = t["text"].strip()

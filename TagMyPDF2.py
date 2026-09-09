@@ -1,6 +1,5 @@
 # !/usr/bin/env python3
 import os, sys, subprocess, shlex, shutil, glob
-import shutil
 
 def q(p):  # shell-safe quoting
     return shlex.quote(str(p))

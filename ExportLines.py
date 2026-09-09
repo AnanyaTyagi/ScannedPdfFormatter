@@ -277,6 +277,7 @@ def page_lines_from_ocr(page, lang='eng'):
         if key not in lines_dict:
             lines_dict[key] = {
                 'words': [],
+                'heights': [],
                 'x0': float('inf'),
                 'y0': float('inf'),
                 'x1': float('-inf'),
@@ -292,6 +293,8 @@ def page_lines_from_ocr(page, lang='eng'):
         x1 = (x + w) * 72.0 / DPI_FOR_OCR
         y1 = (y + h) * 72.0 / DPI_FOR_OCR
 
+        if h > 0:
+            l['heights'].append(h)
         l['x0'] = min(l['x0'], x0)
         l['y0'] = min(l['y0'], y0)
         l['x1'] = max(l['x1'], x1)
@@ -307,10 +310,12 @@ def page_lines_from_ocr(page, lang='eng'):
         if not txt:
             continue
 
+        heights = l.get('heights', [])
+        size_pt = (sorted(heights)[len(heights) // 2] * 72.0 / DPI_FOR_OCR) if heights else 10.0
         ocr_lines.append({
             'text': txt,
             'bbox': [l['x0'], l['y0'], l['x1'], l['y1']],
-            'size': 10.0,
+            'size': round(size_pt, 1),
             'bold': False
         })
 

@@ -242,10 +242,14 @@ def tag_line_smart(ln, region, body, page_height):
             if (size >= body * 1.4 and is_short(txt)) or (size >= body * 1.25 and bold):
                 return "H2", f"ML:{region_cls}+font"
 
-            # Title/section region but normal size: do NOT blindly trust ML.
-            # Only promote to H2 if the font size also suggests a heading.
+            # Font size suggests heading
             if size >= body * 1.15 and is_short(txt):
                 return "H2", f"ML:{region_cls}"
+
+            # Font size check failed (scanned PDF rounding) — trust YOLO directly
+            if region_cls == "title":
+                return "H1", f"ML:{region_cls}"
+            return "H2", f"ML:{region_cls}"
 
         # --- CAPTION REGIONS ---
         if region_cls == "caption":
