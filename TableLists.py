@@ -56,7 +56,17 @@ def build_lists(tags):
 
 def main(fused_dir, out_dir):
     os.makedirs(out_dir, exist_ok=True)
-    for tp in sorted(glob.glob(os.path.join(fused_dir, "page_*.fused.json"))):
+    # DEBUG: confirm what files are found (known issue: pattern may not match)
+    fused_files = sorted(glob.glob(os.path.join(fused_dir, "page_*.fused.json")))
+    tags_files  = sorted(glob.glob(os.path.join(fused_dir, "page_*.tags.json")))
+    with open('/tmp/tablelists_debug.txt', 'w') as dbg:
+        dbg.write(f"fused_dir: {fused_dir}\n")
+        dbg.write(f"*.fused.json files found: {len(fused_files)}\n")
+        dbg.write(f"*.tags.json  files found: {len(tags_files)}\n")
+        for f in tags_files[:5]:
+            dbg.write(f"  {f}\n")
+    print(f"[TableLists] *.fused.json={len(fused_files)}, *.tags.json={len(tags_files)}")
+    for tp in fused_files:
         with open(tp,"r",encoding="utf-8") as f: T=json.load(f)
         pnum = T["page"]; tags = T["tags"]
         tables = build_tables(tags)

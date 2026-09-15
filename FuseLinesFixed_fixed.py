@@ -307,6 +307,142 @@ def tag_line_smart(ln, region, body, page_height):
     return "P", "default"
 
 
+# ========== PARAGRAPH GROUPING ==========
+
+def group_paragraphs(tagged):
+    """Merge consecutive P-tagged lines within the same YOLO region into one P element."""
+    if not tagged:
+        return tagged
+
+    grouped = []
+    i = 0
+    while i < len(tagged):
+        t = tagged[i]
+        reg = t.get('region')
+        if t['tag'] == 'P' and reg and reg.get('cls') in ('text', 'footnote'):
+            reg_key = tuple(reg['bbox'])
+            group = [t]
+            j = i + 1
+            while j < len(tagged):
+                nt = tagged[j]
+                nr = nt.get('region')
+                if nt['tag'] == 'P' and nr and tuple(nr['bbox']) == reg_key:
+                    group.append(nt)
+                    j += 1
+                else:
+                    break
+
+            # Two-pass reading-order sort:
+            # Pass 1 — top-to-bottom by Y
+            # Pass 2 — group same-row entries (Y within avg_h/3), sort each row left-to-right
+            heights = [l['bbox'][3] - l['bbox'][1] for l in group if l['bbox'][3] > l['bbox'][1]]
+            avg_h = (sum(heights) / len(heights)) if heights else 10.0
+            row_threshold = avg_h / 3
+
+            sorted_by_y = sorted(group, key=lambda l: l['bbox'][1])
+            rows = []
+            for line in sorted_by_y:
+                if rows and line['bbox'][1] - rows[-1][-1]['bbox'][1] <= row_threshold:
+                    rows[-1].append(line)
+                else:
+                    rows.append([line])
+            group = []
+            for row in rows:
+                group.extend(sorted(row, key=lambda l: l['bbox'][0]))
+
+            # Split on vertical gaps > 1.5x the median line gap for this group.
+            # Using median gap (not avg_h) adapts to the document's actual line
+            # spacing, so it works for single, 1.5x, and double-spaced documents.
+            gaps = [group[k]['bbox'][1] - group[k-1]['bbox'][3] for k in range(1, len(group))]
+            positive_gaps = sorted([g for g in gaps if g > 0])
+            if positive_gaps:
+                median_gap = positive_gaps[len(positive_gaps) // 2]
+                split_threshold = median_gap * 1.5
+            else:
+                split_threshold = avg_h * 2
+
+            sub_groups = [[group[0]]]
+            for k in range(1, len(group)):
+                prev = group[k - 1]
+                curr = group[k]
+                gap = curr['bbox'][1] - prev['bbox'][3]
+                if gap > split_threshold:
+                    sub_groups.append([curr])
+                else:
+                    sub_groups[-1].append(curr)
+
+            for sub in sub_groups:
+                merged_bbox = [
+                    min(l['bbox'][0] for l in sub),
+                    min(l['bbox'][1] for l in sub),
+                    max(l['bbox'][2] for l in sub),
+                    max(l['bbox'][3] for l in sub),
+                ]
+                grouped.append({
+                    'tag': 'P',
+                    'text': ' '.join(l['text'] for l in sub),
+                    'bbox': merged_bbox,
+                    'lines': [{'text': l['text'], 'bbox': l['bbox']} for l in sub],
+                    'size': sub[0]['size'],
+                    'bold': sub[0]['bold'],
+                    'italic': sub[0].get('italic', False),
+                    'region': reg,
+                    'source': sub[0]['source'],
+                })
+            i = j
+
+        elif t['tag'] == 'P' and reg is None:
+            # No-region fallback: collect consecutive no-region P lines,
+            # merge words on the same visual row, keep each row as its own P.
+            group = [t]
+            j = i + 1
+            while j < len(tagged):
+                nt = tagged[j]
+                if nt['tag'] == 'P' and nt.get('region') is None:
+                    group.append(nt)
+                    j += 1
+                else:
+                    break
+
+            heights = [l['bbox'][3] - l['bbox'][1] for l in group if l['bbox'][3] > l['bbox'][1]]
+            avg_h = (sum(heights) / len(heights)) if heights else 10.0
+            row_threshold = avg_h / 3
+
+            sorted_by_y = sorted(group, key=lambda l: l['bbox'][1])
+            rows = []
+            for line in sorted_by_y:
+                if rows and line['bbox'][1] - rows[-1][-1]['bbox'][1] <= row_threshold:
+                    rows[-1].append(line)
+                else:
+                    rows.append([line])
+
+            for row in rows:
+                row_sorted = sorted(row, key=lambda l: l['bbox'][0])
+                merged_bbox = [
+                    min(l['bbox'][0] for l in row_sorted),
+                    min(l['bbox'][1] for l in row_sorted),
+                    max(l['bbox'][2] for l in row_sorted),
+                    max(l['bbox'][3] for l in row_sorted),
+                ]
+                grouped.append({
+                    'tag': 'P',
+                    'text': ' '.join(l['text'] for l in row_sorted),
+                    'bbox': merged_bbox,
+                    'lines': [{'text': l['text'], 'bbox': l['bbox']} for l in row_sorted],
+                    'size': row_sorted[0]['size'],
+                    'bold': row_sorted[0]['bold'],
+                    'italic': row_sorted[0].get('italic', False),
+                    'region': None,
+                    'source': row_sorted[0]['source'],
+                })
+            i = j
+
+        else:
+            grouped.append(t)
+            i += 1
+    return grouped
+
+
 # ========== MAIN PROCESSING ==========
 
 def main(pdf_path, layout_dir, lines_dir, out_dir):
@@ -371,6 +507,15 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
             # ✅ Smart tagging with artifact detection (PASS PAGE_HEIGHT)
             tag, source = tag_line_smart(ln, use_reg, body, page_height)
 
+            # DEBUG: log LI tags and heading tags to understand list/heading issues
+            txt_stripped = ln.get("text", "").strip()
+            reg_cls = (use_reg.get('cls') or '') if use_reg else 'NO_REGION'
+            if tag in ('LI', 'H1', 'H2') or (tag == 'P' and looks_like_list_item(txt_stripped)):
+                with open('/tmp/fuse_debug.txt', 'a') as dbg:
+                    dbg.write(f"P{pnum} tag={tag:4} source={source:30} reg={reg_cls:15} "
+                              f"y0={ln['bbox'][1]:.1f} x0={ln['bbox'][0]:.1f} "
+                              f"text='{txt_stripped[:60]}'\n")
+
             # Track statistics
             stats['total_tags'] += 1
             stats['tag_types'][tag] = stats['tag_types'].get(tag, 0) + 1
@@ -398,6 +543,9 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                 "source": source
             })
 
+        # Merge P lines within the same YOLO region into single paragraph elements
+        tagged = group_paragraphs(tagged)
+
         # Save tagged output
         outp = os.path.join(out_dir, f"page_{pnum:03d}.tags.json")
         with open(outp, "w", encoding="utf-8") as f:
@@ -415,6 +563,26 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
         # Print page summary
         print(
             f"Page {pnum}: {len(tagged)} tags ({page_ml_count} ML, {page_heuristic_count} heuristic, {page_artifact_count} artifacts)")
+
+    # Final summary across all pages
+    total = stats['total_tags']
+    ml = stats['ml_tags']
+    heuristic = stats['heuristic_tags']
+    artifact = stats['artifact_tags']
+    print("\n" + "=" * 60)
+    print("TAGGING SUMMARY")
+    print("=" * 60)
+    print(f"Total tags   : {total}")
+    print(f"ML-based     : {ml:5d}  ({ml/total*100:.1f}%)" if total else "ML-based     : 0")
+    print(f"Heuristic    : {heuristic:5d}  ({heuristic/total*100:.1f}%)" if total else "Heuristic    : 0")
+    print(f"Artifacts    : {artifact:5d}  ({artifact/total*100:.1f}%)" if total else "Artifacts    : 0")
+    print("\nTag type breakdown:")
+    for tag, count in sorted(stats['tag_types'].items(), key=lambda x: x[1], reverse=True):
+        print(f"  {tag:<30} {count:5d}  ({count/total*100:.1f}%)" if total else f"  {tag}")
+    print("\nDecision source breakdown:")
+    for src, count in sorted(stats['source_breakdown'].items(), key=lambda x: x[1], reverse=True):
+        print(f"  {src:<35} {count:5d}  ({count/total*100:.1f}%)" if total else f"  {src}")
+    print("=" * 60)
 
 
 if __name__ == "__main__":

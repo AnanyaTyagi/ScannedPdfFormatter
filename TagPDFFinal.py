@@ -371,6 +371,13 @@ def normalize_heading_hierarchy(tags):
 
 # ---------------- main ----------------
 def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", author=None):
+    # DEBUG: confirm struct_dir is never read
+    import glob as _glob
+    struct_files = _glob.glob(os.path.join(struct_dir, "*.json")) if os.path.isdir(struct_dir) else []
+    with open('/tmp/tagpdf_debug.txt', 'w') as dbg:
+        dbg.write(f"struct_dir: {struct_dir}\n")
+        dbg.write(f"struct files available: {len(struct_files)} (NONE ARE READ — confirmed unused)\n\n")
+        dbg.write("TAG MAPPING (first 3 pages):\n")
     pdf = pikepdf.open(pdf_in)
     set_doc_metadata(pdf, input_path=pdf_in, title=title, lang=lang, author=author)
     ensure_markinfo(pdf)
@@ -441,6 +448,13 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
             txt = (t.get('text') or '')
             bbox = t.get('bbox')
 
+            # DEBUG: log problematic tag types on first 3 pages
+            if pnum <= 3 or tag in ('TableRowCandidate', 'FigureCaptionCandidate', 'LI'):
+                with open('/tmp/tagpdf_debug.txt', 'a') as dbg:
+                    dbg.write(f"P{pnum} tag={tag:25} → role={str(role):10} "
+                              f"sub_lines={len(t.get('lines') or [])} "
+                              f"text='{txt[:50]}'\n")
+
             # ✅ Handle LI elements specially - WRAP IN L CONTAINER
             if role == 'LI':
                 # Create or reuse L container
@@ -460,11 +474,19 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
                 se = make_selement(pdf, role, parent=page_part, actual_text=txt)
                 page_part[Name.K].append(se)
 
-            # Attach to page content
-            next_mcid = attach_text_to_elem(
-                pdf, se, page_obj, txt, bbox,
-                parenttree=parenttree, page_key=page_key, mcid=next_mcid
-            )
+            # Attach to page content — one stream per line if lines are stored
+            sub_lines = t.get('lines')
+            if sub_lines:
+                for ln in sub_lines:
+                    next_mcid = attach_text_to_elem(
+                        pdf, se, page_obj, ln['text'], ln['bbox'],
+                        parenttree=parenttree, page_key=page_key, mcid=next_mcid
+                    )
+            else:
+                next_mcid = attach_text_to_elem(
+                    pdf, se, page_obj, txt, bbox,
+                    parenttree=parenttree, page_key=page_key, mcid=next_mcid
+                )
 
     # Finalize
     pt_dict = parenttree.build_numbertree_dict()

@@ -270,9 +270,10 @@ def page_lines_from_ocr(page, lang='eng'):
         if not txt:
             continue
 
-        line_num = data['line_num'][i]
         block_num = data['block_num'][i]
-        key = (block_num, line_num)
+        par_num = data['par_num'][i]
+        line_num = data['line_num'][i]
+        key = (block_num, par_num, line_num)
 
         if key not in lines_dict:
             lines_dict[key] = {
@@ -386,4 +387,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
     main(sys.argv[1], sys.argv[2])
+
+
+
+
 
