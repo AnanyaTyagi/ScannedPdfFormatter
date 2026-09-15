@@ -437,6 +437,118 @@ def group_paragraphs(tagged):
                 })
             i = j
 
+        elif t['tag'] == 'LI' and reg and reg.get('cls') in ('list_item', 'list'):
+            # Merge consecutive LI lines in the same list_item/list region into
+            # logical list items. Uses heuristic:list_pattern source (explicit item
+            # start detection) or x0 outdent to detect item boundaries.
+            reg_key = tuple(reg['bbox'])
+            group = [t]
+            j = i + 1
+            while j < len(tagged):
+                nt = tagged[j]
+                nr = nt.get('region')
+                if nt['tag'] == 'LI' and nr and tuple(nr['bbox']) == reg_key:
+                    group.append(nt)
+                    j += 1
+                else:
+                    break
+
+            heights = [l['bbox'][3] - l['bbox'][1] for l in group if l['bbox'][3] > l['bbox'][1]]
+            avg_h = (sum(heights) / len(heights)) if heights else 10.0
+            row_threshold = avg_h / 3
+            sorted_by_y = sorted(group, key=lambda l: l['bbox'][1])
+            rows = []
+            for line in sorted_by_y:
+                if rows and line['bbox'][1] - rows[-1][-1]['bbox'][1] <= row_threshold:
+                    rows[-1].append(line)
+                else:
+                    rows.append([line])
+            group = []
+            for row in rows:
+                group.extend(sorted(row, key=lambda l: l['bbox'][0]))
+
+            # Split into logical items: new item starts when heuristic detected an
+            # item start OR when x0 is significantly less than prev (hanging indent).
+            items = [[group[0]]]
+            for k in range(1, len(group)):
+                prev = group[k - 1]
+                curr = group[k]
+                x_diff = prev['bbox'][0] - curr['bbox'][0]  # positive → curr more outdented
+                is_new_item = (curr.get('source') == 'heuristic:list_pattern') or (x_diff > avg_h * 0.8)
+                if is_new_item:
+                    items.append([curr])
+                else:
+                    items[-1].append(curr)
+
+            for item_lines in items:
+                merged_bbox = [
+                    min(l['bbox'][0] for l in item_lines),
+                    min(l['bbox'][1] for l in item_lines),
+                    max(l['bbox'][2] for l in item_lines),
+                    max(l['bbox'][3] for l in item_lines),
+                ]
+                grouped.append({
+                    'tag': 'LI',
+                    'text': ' '.join(l['text'] for l in item_lines),
+                    'bbox': merged_bbox,
+                    'lines': [{'text': l['text'], 'bbox': l['bbox']} for l in item_lines],
+                    'size': item_lines[0]['size'],
+                    'bold': item_lines[0]['bold'],
+                    'italic': item_lines[0].get('italic', False),
+                    'region': reg,
+                    'source': item_lines[0]['source'],
+                })
+            i = j
+
+        elif t['tag'] in ('H1', 'H2') and reg and reg.get('cls') in ('title', 'section_header'):
+            # Merge consecutive H1/H2 lines in the same title/section_header region
+            # into a single heading element.
+            tag_type = t['tag']
+            reg_key = tuple(reg['bbox'])
+            group = [t]
+            j = i + 1
+            while j < len(tagged):
+                nt = tagged[j]
+                nr = nt.get('region')
+                if nt['tag'] == tag_type and nr and tuple(nr['bbox']) == reg_key:
+                    group.append(nt)
+                    j += 1
+                else:
+                    break
+
+            heights = [l['bbox'][3] - l['bbox'][1] for l in group if l['bbox'][3] > l['bbox'][1]]
+            avg_h = (sum(heights) / len(heights)) if heights else 10.0
+            row_threshold = avg_h / 3
+            sorted_by_y = sorted(group, key=lambda l: l['bbox'][1])
+            rows = []
+            for line in sorted_by_y:
+                if rows and line['bbox'][1] - rows[-1][-1]['bbox'][1] <= row_threshold:
+                    rows[-1].append(line)
+                else:
+                    rows.append([line])
+            group = []
+            for row in rows:
+                group.extend(sorted(row, key=lambda l: l['bbox'][0]))
+
+            merged_bbox = [
+                min(l['bbox'][0] for l in group),
+                min(l['bbox'][1] for l in group),
+                max(l['bbox'][2] for l in group),
+                max(l['bbox'][3] for l in group),
+            ]
+            grouped.append({
+                'tag': tag_type,
+                'text': ' '.join(l['text'] for l in group),
+                'bbox': merged_bbox,
+                'lines': [{'text': l['text'], 'bbox': l['bbox']} for l in group],
+                'size': group[0]['size'],
+                'bold': group[0]['bold'],
+                'italic': group[0].get('italic', False),
+                'region': reg,
+                'source': group[0]['source'],
+            })
+            i = j
+
         else:
             grouped.append(t)
             i += 1

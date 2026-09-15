@@ -66,7 +66,7 @@ def main(fused_dir, out_dir):
         for f in tags_files[:5]:
             dbg.write(f"  {f}\n")
     print(f"[TableLists] *.fused.json={len(fused_files)}, *.tags.json={len(tags_files)}")
-    for tp in fused_files:
+    for tp in tags_files:
         with open(tp,"r",encoding="utf-8") as f: T=json.load(f)
         pnum = T["page"]; tags = T["tags"]
         tables = build_tables(tags)

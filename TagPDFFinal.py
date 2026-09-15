@@ -128,7 +128,7 @@ TAG_TO_S = {
     'Table': 'Table', 'TR': 'TR', 'TH': 'TH', 'TD': 'TD',
     'Figure': 'Figure', 'Caption': 'Caption',
     'FigureCaptionCandidate': 'Caption',
-    'TableRowCandidate': 'P',
+    'TableRowCandidate': 'TR',
     'Artifact': None,  # ← Artifacts don't go in structure tree
 }
 
@@ -371,13 +371,6 @@ def normalize_heading_hierarchy(tags):
 
 # ---------------- main ----------------
 def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", author=None):
-    # DEBUG: confirm struct_dir is never read
-    import glob as _glob
-    struct_files = _glob.glob(os.path.join(struct_dir, "*.json")) if os.path.isdir(struct_dir) else []
-    with open('/tmp/tagpdf_debug.txt', 'w') as dbg:
-        dbg.write(f"struct_dir: {struct_dir}\n")
-        dbg.write(f"struct files available: {len(struct_files)} (NONE ARE READ — confirmed unused)\n\n")
-        dbg.write("TAG MAPPING (first 3 pages):\n")
     pdf = pikepdf.open(pdf_in)
     set_doc_metadata(pdf, input_path=pdf_in, title=title, lang=lang, author=author)
     ensure_markinfo(pdf)
@@ -433,9 +426,10 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
         # ✅ Initialize page_part K array ONCE
         page_part[Name.K] = Array()
 
-        # ✅ Track current list for LI wrapping
+        # ✅ Track current list/table containers for wrapping
         next_mcid = 0
-        current_list = None  # Track current L container
+        current_list = None   # current <L> container
+        current_table = None  # current <Table> container
 
         for t in tags:
             tag = t.get('tag', 'P')
@@ -448,29 +442,31 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
             txt = (t.get('text') or '')
             bbox = t.get('bbox')
 
-            # DEBUG: log problematic tag types on first 3 pages
-            if pnum <= 3 or tag in ('TableRowCandidate', 'FigureCaptionCandidate', 'LI'):
-                with open('/tmp/tagpdf_debug.txt', 'a') as dbg:
-                    dbg.write(f"P{pnum} tag={tag:25} → role={str(role):10} "
-                              f"sub_lines={len(t.get('lines') or [])} "
-                              f"text='{txt[:50]}'\n")
-
-            # ✅ Handle LI elements specially - WRAP IN L CONTAINER
             if role == 'LI':
-                # Create or reuse L container
+                current_table = None
                 if current_list is None:
                     current_list = make_selement(pdf, 'L', parent=page_part)
                     page_part[Name.K].append(current_list)
-                    current_list[Name.K] = Array()  # Initialize L's children array
-
-                # Create LI inside L container (parent is L, not page_part)
+                    current_list[Name.K] = Array()
                 se = make_selement(pdf, 'LI', parent=current_list, actual_text=txt)
                 current_list[Name.K].append(se)
-            else:
-                # Non-list item closes current list
-                current_list = None
 
-                # Create regular element (parent is page_part)
+            elif role == 'TR':
+                current_list = None
+                if current_table is None:
+                    current_table = make_selement(pdf, 'Table', parent=page_part)
+                    page_part[Name.K].append(current_table)
+                    current_table[Name.K] = Array()
+                tr_elem = make_selement(pdf, 'TR', parent=current_table)
+                current_table[Name.K].append(tr_elem)
+                tr_elem[Name.K] = Array()
+                # One TD per row (simplified; cell splitting can be added later)
+                se = make_selement(pdf, 'TD', parent=tr_elem, actual_text=txt)
+                tr_elem[Name.K].append(se)
+
+            else:
+                current_list = None
+                current_table = None
                 se = make_selement(pdf, role, parent=page_part, actual_text=txt)
                 page_part[Name.K].append(se)
 
