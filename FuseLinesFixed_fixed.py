@@ -270,7 +270,13 @@ def tag_line_smart(ln, region, body, page_height):
 
         # --- TABLE REGIONS ---
         if region_cls == "table":
-            return "TableRowCandidate", f"ML:{region_cls}"
+            # Only treat as a real table row if there are 2+ columns (cells separated
+            # by 2+ spaces). Single-column "table" detections are YOLO false positives
+            # on paragraph text → fall through to P.
+            cells = [p for p in re.split(r'\s{2,}', txt.strip()) if p]
+            if len(cells) >= 2:
+                return "TableRowCandidate", f"ML:{region_cls}"
+            return "P", f"ML:{region_cls}"
 
         # --- FOOTNOTE REGIONS ---
         if region_cls == "footnote":
@@ -310,6 +316,49 @@ def tag_line_smart(ln, region, body, page_height):
 
 
 # ========== PARAGRAPH GROUPING ==========
+
+def _merge_rows(rows):
+    """Merge each visual row (list of tokens) into one line element.
+    Fixes word-level pink-box issue: OCR sometimes emits one token per word;
+    merging here ensures one MCID per visual line, not one per word."""
+    result = []
+    for row in rows:
+        row_sorted = sorted(row, key=lambda l: l['bbox'][0])
+        if len(row_sorted) == 1:
+            result.append(row_sorted[0])
+        else:
+            result.append({
+                'text': ' '.join(l['text'] for l in row_sorted),
+                'bbox': [
+                    min(l['bbox'][0] for l in row_sorted),
+                    min(l['bbox'][1] for l in row_sorted),
+                    max(l['bbox'][2] for l in row_sorted),
+                    max(l['bbox'][3] for l in row_sorted),
+                ],
+                'size': row_sorted[0]['size'],
+                'bold': row_sorted[0].get('bold', False),
+                'italic': row_sorted[0].get('italic', False),
+                'tag': row_sorted[0].get('tag', 'P'),
+                'source': row_sorted[0].get('source', 'default'),
+                'region': row_sorted[0].get('region'),
+            })
+    return result
+
+
+def _to_lines(flat_list, avg_h):
+    """Convert a flat ordered token list to one merged {text,bbox} entry per visual row.
+    One entry = one MCID = one pink highlight box per line (not per word)."""
+    if not flat_list:
+        return []
+    threshold = max(avg_h / 3, 1.0)
+    rows = []
+    for tok in flat_list:
+        if rows and tok['bbox'][1] - rows[-1][-1]['bbox'][1] <= threshold:
+            rows[-1].append(tok)
+        else:
+            rows.append([tok])
+    return [{'text': e['text'], 'bbox': e['bbox']} for e in _merge_rows(rows)]
+
 
 def group_paragraphs(tagged):
     """Merge consecutive P-tagged lines within the same YOLO region into one P element."""
@@ -384,7 +433,7 @@ def group_paragraphs(tagged):
                     'tag': 'P',
                     'text': ' '.join(l['text'] for l in sub),
                     'bbox': merged_bbox,
-                    'lines': [{'text': l['text'], 'bbox': l['bbox']} for l in sub],
+                    'lines': _to_lines(sub, avg_h),
                     'size': sub[0]['size'],
                     'bold': sub[0]['bold'],
                     'italic': sub[0].get('italic', False),
@@ -430,7 +479,7 @@ def group_paragraphs(tagged):
                     'tag': 'P',
                     'text': ' '.join(l['text'] for l in row_sorted),
                     'bbox': merged_bbox,
-                    'lines': [{'text': l['text'], 'bbox': l['bbox']} for l in row_sorted],
+                    'lines': [{'text': ' '.join(l['text'] for l in row_sorted), 'bbox': merged_bbox}],
                     'size': row_sorted[0]['size'],
                     'bold': row_sorted[0]['bold'],
                     'italic': row_sorted[0].get('italic', False),
@@ -511,7 +560,7 @@ def group_paragraphs(tagged):
                     'tag': 'LI',
                     'text': ' '.join(l['text'] for l in item_lines),
                     'bbox': merged_bbox,
-                    'lines': [{'text': l['text'], 'bbox': l['bbox']} for l in item_lines],
+                    'lines': _to_lines(item_lines, avg_h),
                     'size': item_lines[0]['size'],
                     'bold': item_lines[0]['bold'],
                     'italic': item_lines[0].get('italic', False),
@@ -560,7 +609,7 @@ def group_paragraphs(tagged):
                 'tag': tag_type,
                 'text': ' '.join(l['text'] for l in group),
                 'bbox': merged_bbox,
-                'lines': [{'text': l['text'], 'bbox': l['bbox']} for l in group],
+                'lines': _to_lines(group, avg_h),
                 'size': group[0]['size'],
                 'bold': group[0]['bold'],
                 'italic': group[0].get('italic', False),
