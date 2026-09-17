@@ -285,11 +285,27 @@ def page_add_invisible_mcid_stream(pdf, page_obj, mcid, text, *, bbox=None):
     if bbox and len(bbox) == 4:
         x0, y0, x1, y1 = [float(v) for v in bbox]
         x = x0
-        y = page_h - y1
         bbox_height = y1 - y0
-        font_size = min(12.0, max(8.0, bbox_height))
+        # Use full bbox height as font size so the invisible glyph fills the visual line.
+        # Baseline sits at bottom of bbox (page_h - y1 in PDF coords where y goes up).
+        font_size = max(4.0, bbox_height)
+        y = page_h - y1  # baseline = bottom of visual bbox
 
-       # font_size = max(8.0, (y1 - y0))
+        # DEBUG: log first 200 MCIDs so we can check bbox vs font_size alignment
+        try:
+            if not hasattr(page_add_invisible_mcid_stream, '_dbg_count'):
+                page_add_invisible_mcid_stream._dbg_count = 0
+            if page_add_invisible_mcid_stream._dbg_count < 200:
+                with open('/tmp/pinkbox_debug.txt', 'a') as _dbg:
+                    _dbg.write(
+                        f"mcid={mcid:4d}  bbox=({x0:.1f},{y0:.1f},{x1:.1f},{y1:.1f})  "
+                        f"bbox_h={bbox_height:.1f}  font_size={font_size:.1f}  "
+                        f"x={x:.1f}  y_pdf={y:.1f}  page_h={page_h:.1f}  "
+                        f"text={repr((text or '')[:50])}\n"
+                    )
+                page_add_invisible_mcid_stream._dbg_count += 1
+        except Exception:
+            pass
     else:
         x, y, font_size = 0.0, 0.0, 1.0
 
@@ -371,6 +387,12 @@ def normalize_heading_hierarchy(tags):
 
 # ---------------- main ----------------
 def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", author=None):
+    # Reset pink-box debug counter and log file for this run
+    page_add_invisible_mcid_stream._dbg_count = 0
+    try:
+        open('/tmp/pinkbox_debug.txt', 'w').close()
+    except Exception:
+        pass
     pdf = pikepdf.open(pdf_in)
     set_doc_metadata(pdf, input_path=pdf_in, title=title, lang=lang, author=author)
     ensure_markinfo(pdf)
