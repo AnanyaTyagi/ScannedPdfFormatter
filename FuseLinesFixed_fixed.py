@@ -151,9 +151,8 @@ def should_be_artifact(txt, region_cls, bbox, page_height):
     if not txt_stripped:
         return True
 
-    # ✅ ML detected header/footer regions → artifact
-    # This is the PRIMARY artifact detection method
-    if region_cls in ("page_header", "page_footer"):
+    # ✅ ML detected header/footer/figure regions → artifact
+    if region_cls in ("page_header", "page_footer", "figure", "picture"):
         return True
 
     # ✅ Page numbers: short numeric text at page edges
@@ -216,9 +215,19 @@ def tag_line_smart(ln, region, body, page_height):
     if region:
         region_cls = (region.get("cls") or region.get("label") or "").lower()
 
-    # ===== PRIORITY 0: ARTIFACT DETECTION (NEW!) =====
-    # Check FIRST if this should be an artifact
+    # ===== PRIORITY 0: ARTIFACT DETECTION =====
     if should_be_artifact(txt, region_cls, bbox, page_height):
+        return "Artifact", "artifact_detection"
+
+    # ===== PRIORITY 0.5: FIGURE/PICTURE REGION OVERRIDE =====
+    # Must run BEFORE list/heading pattern checks so that OCR noise inside
+    # images (bullets, dashes, single chars) is not mis-tagged as LI/H.
+    if region_cls in ("figure", "picture"):
+        if looks_like_caption(txt):
+            return "FigureCaptionCandidate", f"ML:{region_cls}+pattern"
+        low = txt.lower()
+        if "figure" in low or "fig." in low or "table" in low or "tbl" in low:
+            return "FigureCaptionCandidate", f"ML:{region_cls}+pattern"
         return "Artifact", "artifact_detection"
 
     # ===== PRIORITY 1: High-Confidence Patterns =====
@@ -262,13 +271,6 @@ def tag_line_smart(ln, region, body, page_height):
         # --- TABLE REGIONS ---
         if region_cls == "table":
             return "TableRowCandidate", f"ML:{region_cls}"
-
-        # --- FIGURE / PICTURE REGIONS ---
-        if region_cls in ("figure", "picture"):
-            low = txt.lower()
-            if "figure" in low or "fig." in low or "table" in low or "tbl" in low:
-                return "FigureCaptionCandidate", f"ML:{region_cls}+pattern"
-            return "P", f"ML:{region_cls}"
 
         # --- FOOTNOTE REGIONS ---
         if region_cls == "footnote":
@@ -437,21 +439,34 @@ def group_paragraphs(tagged):
                 })
             i = j
 
-        elif t['tag'] == 'LI' and reg and reg.get('cls') in ('list_item', 'list'):
-            # Merge consecutive LI lines in the same list_item/list region into
-            # logical list items. Uses heuristic:list_pattern source (explicit item
-            # start detection) or x0 outdent to detect item boundaries.
-            reg_key = tuple(reg['bbox'])
+        elif t['tag'] == 'LI':
+            # Merge consecutive LI lines (any region) into logical list items.
+            # Also pulls in immediately following P lines from the SAME region as
+            # continuation lines, guarded by a vertical gap check so a new paragraph
+            # that happens to share the region bbox is NOT swallowed.
+            reg_key = tuple(reg['bbox']) if reg else None
+
+            # Estimate avg_h from first line before the collection loop (needed for gap guard)
+            h0 = t['bbox'][3] - t['bbox'][1]
+            avg_h_est = h0 if h0 > 0 else 10.0
+
             group = [t]
             j = i + 1
             while j < len(tagged):
                 nt = tagged[j]
                 nr = nt.get('region')
-                if nt['tag'] == 'LI' and nr and tuple(nr['bbox']) == reg_key:
-                    group.append(nt)
-                    j += 1
-                else:
+                nr_key = tuple(nr['bbox']) if nr else None
+
+                if nr_key != reg_key or nt['tag'] not in ('LI', 'P'):
                     break
+
+                # Gap guard: large vertical gap means a new paragraph, not a continuation
+                gap = nt['bbox'][1] - group[-1]['bbox'][3]
+                if gap > avg_h_est * 2:
+                    break
+
+                group.append(nt)
+                j += 1
 
             heights = [l['bbox'][3] - l['bbox'][1] for l in group if l['bbox'][3] > l['bbox'][1]]
             avg_h = (sum(heights) / len(heights)) if heights else 10.0
@@ -467,18 +482,23 @@ def group_paragraphs(tagged):
             for row in rows:
                 group.extend(sorted(row, key=lambda l: l['bbox'][0]))
 
-            # Split into logical items: new item starts when heuristic detected an
-            # item start OR when x0 is significantly less than prev (hanging indent).
+            # Split into logical items:
+            # - LI line with heuristic:list_pattern → always new item start
+            # - LI line with x0 significantly less than prev (hanging indent) → new item
+            # - P line → always a continuation of the current item
             items = [[group[0]]]
             for k in range(1, len(group)):
                 prev = group[k - 1]
                 curr = group[k]
-                x_diff = prev['bbox'][0] - curr['bbox'][0]  # positive → curr more outdented
-                is_new_item = (curr.get('source') == 'heuristic:list_pattern') or (x_diff > avg_h * 0.8)
-                if is_new_item:
-                    items.append([curr])
-                else:
+                if curr['tag'] == 'P':
                     items[-1].append(curr)
+                else:
+                    x_diff = prev['bbox'][0] - curr['bbox'][0]  # positive → curr more outdented
+                    is_new_item = (curr.get('source') == 'heuristic:list_pattern') or (x_diff > avg_h * 0.8)
+                    if is_new_item:
+                        items.append([curr])
+                    else:
+                        items[-1].append(curr)
 
             for item_lines in items:
                 merged_bbox = [
@@ -550,6 +570,13 @@ def group_paragraphs(tagged):
             i = j
 
         else:
+            # DEBUG: log anything that falls through unmerged — reveals no-region LI,
+            # H1/H2 without title region, and other orphaned lines
+            reg_cls = reg.get('cls', '?') if reg else 'NO_REGION'
+            with open('/tmp/fuse_group_debug.txt', 'a') as _dbg:
+                _dbg.write(f"PASSTHROUGH  tag={t['tag']:4}  reg={reg_cls:15}  "
+                           f"y0={t['bbox'][1]:.1f}  x0={t['bbox'][0]:.1f}  "
+                           f"text='{t.get('text','')[:60]}'\n")
             grouped.append(t)
             i += 1
     return grouped
@@ -615,6 +642,16 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
 
             # Use region only if coverage meets threshold
             use_reg = best if best_cov >= MIN_COVER else None
+
+            # DEBUG: log every no-region line (no YOLO match) — reveals orphan words
+            # like single "A" that couldn't be matched to any region
+            if use_reg is None:
+                txt_raw = ln.get("text", "").strip()
+                with open('/tmp/fuse_noregion_debug.txt', 'a') as _dbg:
+                    _dbg.write(f"P{pnum} best_cov={best_cov:.3f}  "
+                               f"best_reg={best.get('cls','?') if best else 'NONE':15}  "
+                               f"y0={ln['bbox'][1]:.1f}  x0={ln['bbox'][0]:.1f}  "
+                               f"text='{txt_raw[:60]}'\n")
 
             # ✅ Smart tagging with artifact detection (PASS PAGE_HEIGHT)
             tag, source = tag_line_smart(ln, use_reg, body, page_height)
