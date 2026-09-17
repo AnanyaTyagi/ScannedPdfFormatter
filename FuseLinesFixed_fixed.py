@@ -270,13 +270,7 @@ def tag_line_smart(ln, region, body, page_height):
 
         # --- TABLE REGIONS ---
         if region_cls == "table":
-            # Only treat as a real table row if there are 2+ columns (cells separated
-            # by 2+ spaces). Single-column "table" detections are YOLO false positives
-            # on paragraph text → fall through to P.
-            cells = [p for p in re.split(r'\s{2,}', txt.strip()) if p]
-            if len(cells) >= 2:
-                return "TableRowCandidate", f"ML:{region_cls}"
-            return "P", f"ML:{region_cls}"
+            return "TableRowCandidate", f"ML:{region_cls}"
 
         # --- FOOTNOTE REGIONS ---
         if region_cls == "footnote":
@@ -628,6 +622,17 @@ def group_paragraphs(tagged):
                            f"text='{t.get('text','')[:60]}'\n")
             grouped.append(t)
             i += 1
+
+    # Post-process: demote isolated TableRowCandidate (no adjacent TR) to P.
+    # YOLO sometimes marks a single body-text paragraph as "table"; a lone TR
+    # with no neighbouring TR should not become a <Table> structure.
+    for k, elem in enumerate(grouped):
+        if elem.get('tag') == 'TableRowCandidate':
+            prev_is_tr = k > 0 and grouped[k - 1].get('tag') == 'TableRowCandidate'
+            next_is_tr = k < len(grouped) - 1 and grouped[k + 1].get('tag') == 'TableRowCandidate'
+            if not prev_is_tr and not next_is_tr:
+                elem['tag'] = 'P'
+
     return grouped
 
 
