@@ -3,6 +3,25 @@ import unicodedata
 import pikepdf
 from pikepdf import Name, Dictionary, Array, String
 
+# Helvetica glyph widths (units per 1000 em).  Used to compute natural text width
+# so we can apply Tz (horizontal scale) and make the invisible MCID text fill the
+# exact OCR bbox width → pink highlight box matches the visual line.
+_HV_W = {
+    ' ':278,'A':667,'B':667,'C':667,'D':722,'E':611,'F':556,'G':722,'H':722,
+    'I':278,'J':500,'K':667,'L':611,'M':833,'N':722,'O':778,'P':667,'Q':778,
+    'R':722,'S':667,'T':611,'U':722,'V':667,'W':944,'X':667,'Y':667,'Z':611,
+    'a':556,'b':556,'c':500,'d':556,'e':556,'f':278,'g':556,'h':556,'i':222,
+    'j':222,'k':500,'l':222,'m':833,'n':556,'o':556,'p':556,'q':556,'r':333,
+    's':500,'t':278,'u':556,'v':500,'w':722,'x':500,'y':500,'z':500,
+    '0':556,'1':556,'2':556,'3':556,'4':556,'5':556,'6':556,'7':556,'8':556,
+    '9':556,'.':278,',':278,':':278,';':278,'!':333,'?':556,'-':333,
+    '(':333,')':333,'[':278,']':278,'/':278,'\\':278,
+}
+
+def _hv_width(text, font_size):
+    """Approximate width of `text` in Helvetica at `font_size` pt."""
+    return sum(_HV_W.get(c, 556) for c in (text or '')) * font_size / 1000.0
+
 
 # ---------------- ParentTree builder ----------------
 class ParentTreeBuilder:
@@ -291,6 +310,15 @@ def page_add_invisible_mcid_stream(pdf, page_obj, mcid, text, *, bbox=None):
         font_size = max(4.0, bbox_height)
         y = page_h - y1  # baseline = bottom of visual bbox
 
+        # Horizontal scale: stretch/compress invisible text so its glyph bboxes
+        # exactly cover the OCR bbox width → pink highlight matches visual line.
+        bbox_width = x1 - x0
+        natural_w = _hv_width(text or '', font_size)
+        if natural_w > 0 and bbox_width > 0:
+            h_scale = max(10.0, min(500.0, (bbox_width / natural_w) * 100.0))
+        else:
+            h_scale = 100.0
+
         # DEBUG: log first 200 MCIDs so we can check bbox vs font_size alignment
         try:
             if not hasattr(page_add_invisible_mcid_stream, '_dbg_count'):
@@ -299,26 +327,28 @@ def page_add_invisible_mcid_stream(pdf, page_obj, mcid, text, *, bbox=None):
                 with open('/tmp/pinkbox_debug.txt', 'a') as _dbg:
                     _dbg.write(
                         f"mcid={mcid:4d}  bbox=({x0:.1f},{y0:.1f},{x1:.1f},{y1:.1f})  "
-                        f"bbox_h={bbox_height:.1f}  font_size={font_size:.1f}  "
-                        f"x={x:.1f}  y_pdf={y:.1f}  page_h={page_h:.1f}  "
-                        f"text={repr((text or '')[:50])}\n"
+                        f"bbox_h={bbox_height:.1f}  bbox_w={bbox_width:.1f}  "
+                        f"font_size={font_size:.1f}  natural_w={natural_w:.1f}  "
+                        f"h_scale={h_scale:.1f}  text={repr((text or '')[:50])}\n"
                     )
                 page_add_invisible_mcid_stream._dbg_count += 1
         except Exception:
             pass
     else:
-        x, y, font_size = 0.0, 0.0, 1.0
+        x, y, font_size, h_scale = 0.0, 0.0, 1.0, 100.0
 
     # ---------------- FIX #3: sanitize text to WinAnsi + escape, and do not write UTF-8 strings ----------------
     safe_text = escape_pdf_literal_string(to_winansi_safe(text or ""))
 
-    # Use text rendering mode 3 = invisible (still tagged & extractable)
+    # Use text rendering mode 3 = invisible (still tagged & extractable).
+    # Tz sets horizontal scale so the glyph bboxes fill the OCR bbox width.
     # IMPORTANT: encode stream as latin-1 so the PDF literal string stays single-byte.
     content = f"""q
 /Span << /MCID {int(mcid)} >> BDC
 BT
 /F1 {font_size:.2f} Tf
 3 Tr
+{h_scale:.2f} Tz
 {x:.2f} {y:.2f} Td
 ({safe_text}) Tj
 ET
