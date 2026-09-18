@@ -708,7 +708,8 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
 
     # Clear debug files at start of each run so output isn't stale
     for _dbgf in ('/tmp/fuse_regions_debug.txt', '/tmp/fuse_debug.txt',
-                  '/tmp/fuse_noregion_debug.txt', '/tmp/fuse_group_debug.txt'):
+                  '/tmp/fuse_noregion_debug.txt', '/tmp/fuse_group_debug.txt',
+                  '/tmp/fuse_figure_debug.txt'):
         open(_dbgf, 'w').close()
 
     pages = sorted(glob.glob(os.path.join(lines_dir, "page_*.lines.json")))
@@ -850,12 +851,25 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                     'source': f"ML:{reg['cls']}",
                     'lines': [{'text': '', 'bbox': reg['bbox']}],
                 })
+                with open('/tmp/fuse_figure_debug.txt', 'a') as _fdbg:
+                    _fdbg.write(f"[INJECT FigureArea] P{pnum} cls={reg.get('cls')}  "
+                                f"bbox=({reg['bbox'][0]:.0f},{reg['bbox'][1]:.0f},"
+                                f"{reg['bbox'][2]:.0f},{reg['bbox'][3]:.0f})\n")
 
         # Sort into reading order before grouping (FigureArea injected above may be out of order)
         tagged.sort(key=lambda t: (t['bbox'][1], t['bbox'][0]))
 
         # Merge P lines within the same YOLO region into single paragraph elements
         tagged = group_paragraphs(tagged)
+
+        # DEBUG: log all FigureArea and FigureCaptionCandidate tokens in grouped output
+        with open('/tmp/fuse_figure_debug.txt', 'a') as _fdbg:
+            for _t in tagged:
+                if _t['tag'] in ('FigureArea', 'FigureCaptionCandidate'):
+                    _fdbg.write(f"[GROUPED] P{pnum} tag={_t['tag']:25}  "
+                                f"bbox=({_t['bbox'][0]:.0f},{_t['bbox'][1]:.0f},"
+                                f"{_t['bbox'][2]:.0f},{_t['bbox'][3]:.0f})  "
+                                f"text='{_t.get('text','')[:60]}'\n")
 
         # Save tagged output
         outp = os.path.join(out_dir, f"page_{pnum:03d}.tags.json")

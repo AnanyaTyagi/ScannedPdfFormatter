@@ -306,15 +306,29 @@ def page_add_invisible_mcid_stream(pdf, page_obj, mcid, text, *, bbox=None):
         x0, y0, x1, y1 = [float(v) for v in bbox]
         x = x0
         bbox_height = y1 - y0
-        # Use full bbox height as font size so the invisible glyph fills the visual line.
-        # Baseline sits at bottom of bbox (page_h - y1 in PDF coords where y goes up).
-        font_size = max(4.0, bbox_height)
+        bbox_width = x1 - x0
         y = page_h - y1  # baseline = bottom of visual bbox
+
+        if not (text or '').strip():
+            # FigureArea has no text — fill the bbox with spaces so Acrobat can
+            # compute a highlight box when clicking <Figure>.
+            # font_size scaled so Helvetica ascent (0.718 em) spans full bbox height.
+            font_size = max(4.0, bbox_height / 0.718)
+            # Use enough spaces so h_scale stays under 500 (PDF Tz limit).
+            # Each space in Helvetica is 278/1000 em wide.
+            space_w = 278 * font_size / 1000.0
+            n_spaces = max(1, int((bbox_width * 500.0) // (space_w * 100.0 * 500.0 / 100.0)) + 1)
+            # Simpler: n_spaces such that n_spaces * space_w * (h_scale/100) ≈ bbox_width
+            # with h_scale ≤ 500, so n_spaces ≥ bbox_width / (space_w * 5.0)
+            n_spaces = max(1, int(bbox_width / (space_w * 5.0)) + 1)
+            text = ' ' * n_spaces
+        else:
+            # Use full bbox height as font size so the invisible glyph fills the visual line.
+            font_size = max(4.0, bbox_height)
 
         # Horizontal scale: stretch/compress invisible text so its glyph bboxes
         # exactly cover the OCR bbox width → pink highlight matches visual line.
-        bbox_width = x1 - x0
-        natural_w = _hv_width(text or '', font_size)
+        natural_w = _hv_width(text, font_size)
         if natural_w > 0 and bbox_width > 0:
             h_scale = max(10.0, min(500.0, (bbox_width / natural_w) * 100.0))
         else:
@@ -422,6 +436,7 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
     page_add_invisible_mcid_stream._dbg_count = 0
     try:
         open('/tmp/pinkbox_debug.txt', 'w').close()
+        open('/tmp/tag_figure_debug.txt', 'w').close()
     except Exception:
         pass
     pdf = pikepdf.open(pdf_in)
@@ -526,11 +541,19 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
                 # Ensure a <Figure> container exists, then attach an MCID covering
                 # the image bbox directly to it — clicking <Figure> in Acrobat will
                 # highlight the image area on the page.
+                with open('/tmp/tag_figure_debug.txt', 'a') as _tdbg:
+                    _tdbg.write(f"[FigureArea] P{pnum} current_figure={'SET' if current_figure is not None else 'NONE'}  "
+                                f"bbox={bbox}\n")
                 if current_figure is None:
                     current_figure = make_selement(pdf, 'Figure', parent=page_part)
                     current_figure[Name.Alt] = as_str('Figure')
                     page_part[Name.K].append(current_figure)
                     current_figure[Name.K] = Array()
+                    with open('/tmp/tag_figure_debug.txt', 'a') as _tdbg:
+                        _tdbg.write(f"  -> created new Figure element\n")
+                else:
+                    with open('/tmp/tag_figure_debug.txt', 'a') as _tdbg:
+                        _tdbg.write(f"  -> reusing existing Figure element\n")
                 # Attach MCID directly to Figure (not a child element) so the image
                 # area becomes the Figure's own content reference.
                 se = current_figure
@@ -549,15 +572,24 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
                 # Create a <Figure> wrapper on the first Caption and reuse it for
                 # subsequent ones (e.g. a source-attribution line that follows).
                 # /Alt on the Figure gives screen readers the image description.
+                with open('/tmp/tag_figure_debug.txt', 'a') as _tdbg:
+                    _tdbg.write(f"[Caption] P{pnum} current_figure={'SET' if current_figure is not None else 'NONE'}  "
+                                f"text='{txt[:60]}'\n")
                 if current_figure is None:
                     current_figure = make_selement(pdf, 'Figure', parent=page_part)
                     current_figure[Name.Alt] = as_str(txt)
                     page_part[Name.K].append(current_figure)
                     current_figure[Name.K] = Array()
+                    with open('/tmp/tag_figure_debug.txt', 'a') as _tdbg:
+                        _tdbg.write(f"  -> created new Figure element (from Caption)\n")
                 se = make_selement(pdf, 'Caption', parent=current_figure, actual_text=txt)
                 current_figure[Name.K].append(se)
 
             else:
+                with open('/tmp/tag_figure_debug.txt', 'a') as _tdbg:
+                    if current_figure is not None:
+                        _tdbg.write(f"[RESET Figure] P{pnum} role={role} tag={tag}  "
+                                    f"text='{txt[:60]}' -> current_figure=None\n")
                 current_list = None
                 current_table = None
                 current_figure = None  # close figure context when non-Caption appears
