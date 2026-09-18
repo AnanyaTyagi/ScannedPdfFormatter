@@ -129,7 +129,7 @@ def page_lines_from_text_layer(page):
     Uses span text directly (not word-overlap search) so that words from
     stacked OCR layers are never mixed into the same line.  Duplicate span
     lines from the two layers are removed by a (text, approx-y) key with an
-    adjacent-bucket check that covers ±5 pt positional jitter.
+    adjacent-bucket check that covers up to ±8 pt positional jitter.
     """
     d = page.get_text("dict")
 
@@ -139,7 +139,7 @@ def page_lines_from_text_layer(page):
     def _is_dup(text: str, y_key: int) -> bool:
         if text not in seen:
             return False
-        return any(abs(y_key - k) <= 1 for k in seen[text])
+        return any(abs(y_key - k) <= 2 for k in seen[text])
 
     def _record(text: str, y_key: int) -> None:
         seen.setdefault(text, set()).add(y_key)
@@ -182,9 +182,9 @@ def page_lines_from_text_layer(page):
             if not txt:
                 continue
 
-            # Dedupe: same text at same visual line (bucket size 6 pt, ±1 bucket
-            # check so a 2-5 pt layer offset never slips through the boundary).
-            y_key = round(y0 / 6)
+            # Dedupe: same text at same visual line (bucket size 4 pt, ±2 bucket
+            # check so up to ~8 pt layer offset never slips through the boundary).
+            y_key = round(y0 / 4)
             if _is_dup(txt, y_key):
                 continue
             _record(txt, y_key)
