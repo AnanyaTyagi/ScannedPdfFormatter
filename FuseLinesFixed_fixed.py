@@ -490,10 +490,12 @@ def group_paragraphs(tagged):
             i = j
 
         elif t['tag'] == 'LI':
-            # Merge consecutive LI lines (any region) into logical list items.
-            # Also pulls in immediately following P lines from the SAME region as
-            # continuation lines, guarded by a vertical gap check so a new paragraph
-            # that happens to share the region bbox is NOT swallowed.
+            # Merge consecutive LI lines into logical list items.
+            # P continuation lines are accepted from ANY region (YOLO often puts
+            # a list item header in a small list_item bbox while its body text
+            # falls in a separate text bbox — the old same-region check dropped
+            # that body text, orphaning it as a bare <P> that broke the <L>).
+            # A different-region LI token always signals a new list context → stop.
             reg_key = tuple(reg['bbox']) if reg else None
 
             # Estimate avg_h from first line before the collection loop (needed for gap guard)
@@ -507,10 +509,13 @@ def group_paragraphs(tagged):
                 nr = nt.get('region')
                 nr_key = tuple(nr['bbox']) if nr else None
 
-                if nr_key != reg_key or nt['tag'] not in ('LI', 'P'):
+                if nt['tag'] not in ('LI', 'P'):
+                    break
+                # A new LI token in a different region = new list context, stop.
+                if nt['tag'] == 'LI' and nr_key != reg_key:
                     break
 
-                # Gap guard: large vertical gap means a new paragraph, not a continuation
+                # Gap guard: large vertical gap means a new paragraph, not continuation
                 gap = nt['bbox'][1] - group[-1]['bbox'][3]
                 if gap > avg_h_est * 2:
                     break
