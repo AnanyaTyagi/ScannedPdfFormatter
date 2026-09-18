@@ -147,6 +147,7 @@ TAG_TO_S = {
     'Table': 'Table', 'TR': 'TR', 'TH': 'TH', 'TD': 'TD',
     'Figure': 'Figure', 'Caption': 'Caption',
     'FigureCaptionCandidate': 'Caption',
+    'FigureArea': 'FigureArea',   # image bbox placeholder → MCID on <Figure>
     'TableRowCandidate': 'TR',
     'Artifact': None,  # ← Artifacts don't go in structure tree
 }
@@ -478,10 +479,11 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
         # ✅ Initialize page_part K array ONCE
         page_part[Name.K] = Array()
 
-        # ✅ Track current list/table containers for wrapping
+        # ✅ Track current list/table/figure containers for wrapping
         next_mcid = 0
-        current_list = None   # current <L> container
-        current_table = None  # current <Table> container
+        current_list = None    # current <L> container
+        current_table = None   # current <Table> container
+        current_figure = None  # current <Figure> container (for consecutive Captions)
 
         for t in tags:
             tag = t.get('tag', 'P')
@@ -496,6 +498,7 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
 
             if role == 'LI':
                 current_table = None
+                current_figure = None
                 if current_list is None:
                     current_list = make_selement(pdf, 'L', parent=page_part)
                     page_part[Name.K].append(current_list)
@@ -505,6 +508,7 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
 
             elif role == 'TR':
                 current_list = None
+                current_figure = None
                 if current_table is None:
                     current_table = make_selement(pdf, 'Table', parent=page_part)
                     page_part[Name.K].append(current_table)
@@ -516,9 +520,47 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
                 se = make_selement(pdf, 'TD', parent=tr_elem, actual_text=txt)
                 tr_elem[Name.K].append(se)
 
+            elif role == 'FigureArea':
+                current_list = None
+                current_table = None
+                # Ensure a <Figure> container exists, then attach an MCID covering
+                # the image bbox directly to it — clicking <Figure> in Acrobat will
+                # highlight the image area on the page.
+                if current_figure is None:
+                    current_figure = make_selement(pdf, 'Figure', parent=page_part)
+                    current_figure[Name.Alt] = as_str('Figure')
+                    page_part[Name.K].append(current_figure)
+                    current_figure[Name.K] = Array()
+                # Attach MCID directly to Figure (not a child element) so the image
+                # area becomes the Figure's own content reference.
+                se = current_figure
+                sub_lines = t.get('lines') or [{'text': '', 'bbox': bbox}]
+                for ln in sub_lines:
+                    next_mcid = attach_text_to_elem(
+                        pdf, se, page_obj, ln['text'], ln['bbox'],
+                        parenttree=parenttree, page_key=page_key, mcid=next_mcid
+                    )
+                continue  # skip the generic attach block below
+
+            elif role == 'Caption':
+                current_list = None
+                current_table = None
+                # Consecutive Caption elements belong to the same figure.
+                # Create a <Figure> wrapper on the first Caption and reuse it for
+                # subsequent ones (e.g. a source-attribution line that follows).
+                # /Alt on the Figure gives screen readers the image description.
+                if current_figure is None:
+                    current_figure = make_selement(pdf, 'Figure', parent=page_part)
+                    current_figure[Name.Alt] = as_str(txt)
+                    page_part[Name.K].append(current_figure)
+                    current_figure[Name.K] = Array()
+                se = make_selement(pdf, 'Caption', parent=current_figure, actual_text=txt)
+                current_figure[Name.K].append(se)
+
             else:
                 current_list = None
                 current_table = None
+                current_figure = None  # close figure context when non-Caption appears
                 se = make_selement(pdf, role, parent=page_part, actual_text=txt)
                 page_part[Name.K].append(se)
 

@@ -23,7 +23,7 @@ H2_PATTERNS = [
     re.compile(r'^\s*[A-Z]\)\s+\S'),  # A) Title
 ]
 
-CAPTION_PAT = re.compile(r'^\s*(figure|fig\.|table|tbl\.?)\s*\d+[\.:)]', re.I)
+CAPTION_PAT = re.compile(r'^\s*(figure|fig\.|table|tbl\.?)\s*\d+(?:[-–]\d+)*[\.:)]', re.I)
 
 
 # ========== HELPER FUNCTIONS ==========
@@ -152,7 +152,7 @@ def should_be_artifact(txt, region_cls, bbox, page_height):
         return True
 
     # ✅ ML detected header/footer/figure regions → artifact
-    if region_cls in ("page_header", "page_footer", "figure", "picture"):
+    if region_cls in ("page_header", "page_footer"):
         return True
 
     # ✅ Page numbers: short numeric text at page edges
@@ -237,6 +237,13 @@ def tag_line_smart(ln, region, body, page_height):
 
     if looks_like_list_item(txt):
         return "LI", "heuristic:list_pattern"
+
+    # ===== PRIORITY 1.5: Trust YOLO 'text' region =====
+    # Individual OCR word tokens are always short (is_short=True), so font-size
+    # heuristics below would fire on body text words and tag them H1/H2.
+    # When YOLO explicitly labels a region as body text, trust it.
+    if region_cls == 'text':
+        return "P", f"ML:{region_cls}"
 
     # ===== PRIORITY 2: ML Region + Font Analysis =====
 
@@ -563,6 +570,51 @@ def group_paragraphs(tagged):
                 })
             i = j
 
+        elif t['tag'] == 'FigureCaptionCandidate':
+            # Merge all caption tokens (word-level OCR) into one Caption element.
+            # Collects: (a) tokens in the same YOLO region regardless of their tag —
+            # caption continuation lines may be tagged P or H1 if they don't start
+            # with "Figure"; (b) any subsequent FigureCaptionCandidate token from
+            # another region (multi-region captions); (c) vertically adjacent P/H1/H2
+            # tokens within 1.5 line heights for captions that wrap across YOLO regions.
+            reg_key = tuple(reg['bbox']) if reg else None
+            group = [t]
+            j = i + 1
+            while j < len(tagged):
+                nt = tagged[j]
+                nr = nt.get('region')
+                nr_key = tuple(nr['bbox']) if nr else None
+
+                same_region = reg_key is not None and nr_key == reg_key
+                is_fig_cap = nt['tag'] == 'FigureCaptionCandidate'
+
+                if same_region or is_fig_cap:
+                    group.append(nt)
+                    j += 1
+                else:
+                    break
+
+            heights = [l['bbox'][3] - l['bbox'][1] for l in group if l['bbox'][3] > l['bbox'][1]]
+            avg_h = (sum(heights) / len(heights)) if heights else 10.0
+            merged_bbox = [
+                min(l['bbox'][0] for l in group),
+                min(l['bbox'][1] for l in group),
+                max(l['bbox'][2] for l in group),
+                max(l['bbox'][3] for l in group),
+            ]
+            grouped.append({
+                'tag': 'FigureCaptionCandidate',
+                'text': ' '.join(l['text'] for l in group),
+                'bbox': merged_bbox,
+                'lines': _to_lines(group, avg_h),
+                'size': group[0]['size'],
+                'bold': group[0].get('bold', False),
+                'italic': group[0].get('italic', False),
+                'region': reg,
+                'source': group[0].get('source', 'default'),
+            })
+            i = j
+
         elif t['tag'] in ('H1', 'H2') and reg and reg.get('cls') in ('title', 'section_header'):
             # Merge consecutive H1/H2 lines in the same title/section_header region
             # into a single heading element.
@@ -641,6 +693,11 @@ def group_paragraphs(tagged):
 def main(pdf_path, layout_dir, lines_dir, out_dir):
     os.makedirs(out_dir, exist_ok=True)
 
+    # Clear debug files at start of each run so output isn't stale
+    for _dbgf in ('/tmp/fuse_regions_debug.txt', '/tmp/fuse_debug.txt',
+                  '/tmp/fuse_noregion_debug.txt', '/tmp/fuse_group_debug.txt'):
+        open(_dbgf, 'w').close()
+
     pages = sorted(glob.glob(os.path.join(lines_dir, "page_*.lines.json")))
 
     if not pages:
@@ -678,6 +735,18 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
             # ✅ GET PAGE HEIGHT for artifact detection
             page_height = R.get("height", 792.0)
 
+            # DEBUG: log all YOLO regions on this page so we can see what
+            # figure/picture regions were detected (or missed)
+            with open('/tmp/fuse_regions_debug.txt', 'a') as _rdbg:
+                _rdbg.write(f"\n=== Page {pnum} ({len(regions)} regions) ===\n")
+                for r in regions:
+                    _rdbg.write(
+                        f"  cls={r.get('cls','?'):20}  "
+                        f"bbox=({r['bbox'][0]:.0f},{r['bbox'][1]:.0f},"
+                        f"{r['bbox'][2]:.0f},{r['bbox'][3]:.0f})  "
+                        f"conf={r.get('conf', r.get('score', '?'))}\n"
+                    )
+
         # Tag each line
         tagged = []
         page_ml_count = 0
@@ -710,14 +779,19 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
             # ✅ Smart tagging with artifact detection (PASS PAGE_HEIGHT)
             tag, source = tag_line_smart(ln, use_reg, body, page_height)
 
-            # DEBUG: log LI tags and heading tags to understand list/heading issues
+            # DEBUG: log H1/H2/LI tags with full region info to diagnose
+            # YOLO mislabelling (Bug 2: body text getting H1/H2 via section_header region)
             txt_stripped = ln.get("text", "").strip()
             reg_cls = (use_reg.get('cls') or '') if use_reg else 'NO_REGION'
+            reg_bbox = use_reg.get('bbox', []) if use_reg else []
             if tag in ('LI', 'H1', 'H2') or (tag == 'P' and looks_like_list_item(txt_stripped)):
                 with open('/tmp/fuse_debug.txt', 'a') as dbg:
-                    dbg.write(f"P{pnum} tag={tag:4} source={source:30} reg={reg_cls:15} "
-                              f"y0={ln['bbox'][1]:.1f} x0={ln['bbox'][0]:.1f} "
-                              f"text='{txt_stripped[:60]}'\n")
+                    dbg.write(
+                        f"P{pnum} tag={tag:4} source={source:35} reg={reg_cls:18} "
+                        f"reg_bbox={str(reg_bbox):40} "
+                        f"tok_bbox=({ln['bbox'][0]:.0f},{ln['bbox'][1]:.0f},{ln['bbox'][2]:.0f},{ln['bbox'][3]:.0f}) "
+                        f"text='{txt_stripped[:60]}'\n"
+                    )
 
             # Track statistics
             stats['total_tags'] += 1
@@ -745,6 +819,27 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                 "region": use_reg,
                 "source": source
             })
+
+        # Inject a FigureArea placeholder for every picture/figure YOLO region.
+        # This element carries no OCR text but its bbox covers the image on the page.
+        # TagPDFFinal.py attaches an MCID to the <Figure> structure element using this
+        # bbox so that clicking <Figure> in Acrobat highlights the image area.
+        for reg in regions:
+            if reg.get('cls') in ('picture', 'figure'):
+                tagged.append({
+                    'tag': 'FigureArea',
+                    'text': '',
+                    'bbox': reg['bbox'],
+                    'size': 10.0,
+                    'bold': False,
+                    'italic': False,
+                    'region': reg,
+                    'source': f"ML:{reg['cls']}",
+                    'lines': [{'text': '', 'bbox': reg['bbox']}],
+                })
+
+        # Sort into reading order before grouping (FigureArea injected above may be out of order)
+        tagged.sort(key=lambda t: (t['bbox'][1], t['bbox'][0]))
 
         # Merge P lines within the same YOLO region into single paragraph elements
         tagged = group_paragraphs(tagged)
