@@ -151,8 +151,10 @@ def should_be_artifact(txt, region_cls, bbox, page_height):
     if not txt_stripped:
         return True
 
-    # ✅ ML detected header/footer/figure regions → artifact
-    if region_cls in ("page_header", "page_footer", "figure", "picture"):
+    # ML detected header/footer regions → artifact
+    # NOTE: figure/picture intentionally excluded here so Priority 0.5 in
+    # tag_line_smart() can rescue captions before marking the rest Artifact.
+    if region_cls in ("page_header", "page_footer"):
         return True
 
     # ✅ Page numbers: short numeric text at page edges
@@ -610,6 +612,69 @@ def group_paragraphs(tagged):
                 'region': reg,
                 'source': group[0]['source'],
             })
+            i = j
+
+        elif t['tag'] == 'FigureCaptionCandidate':
+            # Collect all consecutive FigureCaptionCandidate + Artifact lines
+            # in the same figure/picture region, then emit:
+            #   1. A synthetic <Figure> element covering the region bbox (for screen readers)
+            #   2. A <Caption> element for the caption text
+            reg_key = tuple(reg['bbox']) if reg else None
+            captions = [t]
+            j = i + 1
+            while j < len(tagged):
+                nt = tagged[j]
+                nr = nt.get('region')
+                nr_key = tuple(nr['bbox']) if nr else None
+                if nr_key != reg_key or nt['tag'] not in ('FigureCaptionCandidate', 'Artifact'):
+                    break
+                captions.append(nt)
+                j += 1
+
+            # Visible caption lines only (not Artifact)
+            cap_lines = [l for l in captions if l['tag'] == 'FigureCaptionCandidate']
+
+            # Figure bbox: use the region bbox if available, else union of all lines
+            if reg:
+                fig_bbox = list(reg['bbox'])
+            else:
+                fig_bbox = [
+                    min(l['bbox'][0] for l in captions),
+                    min(l['bbox'][1] for l in captions),
+                    max(l['bbox'][2] for l in captions),
+                    max(l['bbox'][3] for l in captions),
+                ]
+
+            # Alt text = caption text, or generic fallback
+            alt_text = ' '.join(l['text'] for l in cap_lines) if cap_lines else 'Figure'
+
+            # Emit the <Figure> structure element (no visible text — screen readers use Alt)
+            grouped.append({
+                'tag': 'Figure',
+                'text': '',
+                'alt': alt_text,
+                'bbox': fig_bbox,
+                'lines': [],
+                'size': t['size'],
+                'bold': t.get('bold', False),
+                'italic': t.get('italic', False),
+                'region': reg,
+                'source': t['source'],
+            })
+
+            # Emit each caption line as a separate Caption element
+            for cl in cap_lines:
+                grouped.append({
+                    'tag': 'FigureCaptionCandidate',
+                    'text': cl['text'],
+                    'bbox': cl['bbox'],
+                    'lines': [{'text': cl['text'], 'bbox': cl['bbox']}],
+                    'size': cl['size'],
+                    'bold': cl.get('bold', False),
+                    'italic': cl.get('italic', False),
+                    'region': reg,
+                    'source': cl['source'],
+                })
             i = j
 
         else:

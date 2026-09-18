@@ -145,7 +145,7 @@ ROLEMAP = {}
 TAG_TO_S = {
     'H1': 'H1', 'H2': 'H2', 'H3': 'H3', 'P': 'P', 'LI': 'LI',
     'Table': 'Table', 'TR': 'TR', 'TH': 'TH', 'TD': 'TD',
-    'Figure': 'Figure', 'Caption': 'Caption',
+    'Figure': 'Figure', 'Caption': 'Caption', 'FigureCandidate': 'Figure',
     'FigureCaptionCandidate': 'Caption',
     'TableRowCandidate': 'TR',
     'Artifact': None,  # ← Artifacts don't go in structure tree
@@ -516,25 +516,40 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
                 se = make_selement(pdf, 'TD', parent=tr_elem, actual_text=txt)
                 tr_elem[Name.K].append(se)
 
+            elif role == 'Figure':
+                current_list = None
+                current_table = None
+                # Figure element: use /Alt for alt text so screen readers describe the image.
+                # No MCID needed — the figure content is an image, not text.
+                alt = t.get('alt') or txt or 'Figure'
+                se = make_selement(pdf, 'Figure', parent=page_part, actual_text=alt)
+                se[Name.Alt] = String(alt)
+                page_part[Name.K].append(se)
+
             else:
                 current_list = None
                 current_table = None
                 se = make_selement(pdf, role, parent=page_part, actual_text=txt)
                 page_part[Name.K].append(se)
 
-            # Attach to page content — one stream per line if lines are stored
-            sub_lines = t.get('lines')
-            if sub_lines:
-                for ln in sub_lines:
+            # Attach to page content — one stream per line if lines are stored.
+            # Figure elements have no text content (image only, described by /Alt),
+            # so skip MCID attachment for them entirely.
+            if role == 'Figure':
+                pass
+            else:
+                sub_lines = t.get('lines')
+                if sub_lines:
+                    for ln in sub_lines:
+                        next_mcid = attach_text_to_elem(
+                            pdf, se, page_obj, ln['text'], ln['bbox'],
+                            parenttree=parenttree, page_key=page_key, mcid=next_mcid
+                        )
+                else:
                     next_mcid = attach_text_to_elem(
-                        pdf, se, page_obj, ln['text'], ln['bbox'],
+                        pdf, se, page_obj, txt, bbox,
                         parenttree=parenttree, page_key=page_key, mcid=next_mcid
                     )
-            else:
-                next_mcid = attach_text_to_elem(
-                    pdf, se, page_obj, txt, bbox,
-                    parenttree=parenttree, page_key=page_key, mcid=next_mcid
-                )
 
     # Finalize
     pt_dict = parenttree.build_numbertree_dict()
