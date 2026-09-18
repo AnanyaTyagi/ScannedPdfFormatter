@@ -596,7 +596,7 @@ def group_paragraphs(tagged):
                 line_h = max(prev['bbox'][3] - prev['bbox'][1], 4.0)
                 gap = nt['bbox'][1] - prev['bbox'][3]
                 is_heading_continuation = (
-                    0 <= gap <= line_h * 1.5
+                    -line_h <= gap <= line_h * 1.5  # negative gap: two OCR layers overlap
                     and nt['tag'] in ('H1', 'H2')
                     and not same_region
                 )

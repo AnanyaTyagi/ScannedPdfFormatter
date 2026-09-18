@@ -122,10 +122,28 @@ def dedupe_lines(lines, y_bucket=2.0):
     return [groups[k] for k in order]
 
 
+
 def page_lines_from_text_layer(page):
-    """Extract line objects using PyMuPDF text spans/words (digital PDFs)."""
-    words = page.get_text("words")
+    """Extract line objects from a page's text layer.
+
+    Uses span text directly (not word-overlap search) so that words from
+    stacked OCR layers are never mixed into the same line.  Duplicate span
+    lines from the two layers are removed by a (text, approx-y) key with an
+    adjacent-bucket check that covers ±5 pt positional jitter.
+    """
     d = page.get_text("dict")
+
+    # seen: full_text -> set of y_keys already recorded
+    seen: dict = {}
+
+    def _is_dup(text: str, y_key: int) -> bool:
+        if text not in seen:
+            return False
+        return any(abs(y_key - k) <= 1 for k in seen[text])
+
+    def _record(text: str, y_key: int) -> None:
+        seen.setdefault(text, set()).add(y_key)
+
     span_lines = []
 
     for b in d.get("blocks", []):
@@ -141,38 +159,35 @@ def page_lines_from_text_layer(page):
             x1 = max(s["bbox"][2] for s in spans)
             y1 = max(s["bbox"][3] for s in spans)
 
-            line_words = [
-                w for w in words
-                if (w[0] <= x1 + 1 and w[2] >= x0 - 1 and
-                    w[1] <= y1 + 1 and w[3] >= y0 - 1)
-            ]
-            # Sort ONLY left-to-right to avoid y-jitter scrambling
-            line_words.sort(key=lambda w: w[0])
+            # Drop monster spans — second OCR layer fuses the whole page into
+            # one huge block; 60 pt covers the tallest realistic text line.
+            if (y1 - y0) > 60.0:
+                continue
 
-            # Build text with spacing based on horizontal gaps (preserves columns better)
-            text_parts = []
+            # Build text from span texts directly (one layer, no word-mixing).
+            # Add a space between spans when there is a visible gap (> 1 pt).
+            parts: list = []
             prev_x1 = None
-            for w in line_words:
-                word_text = w[4]
-                word_x0 = w[0]
+            for s in spans:
+                s_text = s.get("text", "")
+                if not s_text:
+                    continue
+                if prev_x1 is not None and s["bbox"][0] > prev_x1 + 1:
+                    if parts and not parts[-1].endswith(" ") and not s_text.startswith(" "):
+                        parts.append(" ")
+                parts.append(s_text)
+                prev_x1 = s["bbox"][2]
 
-                if prev_x1 is not None:
-                    gap = word_x0 - prev_x1
-                    if gap > 15:
-                        text_parts.append("  ")  # column-ish break
-                    elif gap > 2:
-                        text_parts.append(" ")
-
-                text_parts.append(word_text)
-                prev_x1 = w[2]
-
-            txt = "".join(text_parts).strip()
-
-            # ✅ APPLY SAFER TEXT CLEANING
-            txt = clean_text_for_pdf(txt)
-
+            txt = clean_text_for_pdf("".join(parts).strip())
             if not txt:
                 continue
+
+            # Dedupe: same text at same visual line (bucket size 6 pt, ±1 bucket
+            # check so a 2-5 pt layer offset never slips through the boundary).
+            y_key = round(y0 / 6)
+            if _is_dup(txt, y_key):
+                continue
+            _record(txt, y_key)
 
             sizes = [s.get("size", 0) for s in spans]
             fonts = [s.get("font", "") for s in spans]
