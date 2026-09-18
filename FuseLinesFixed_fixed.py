@@ -235,11 +235,18 @@ def tag_line_smart(ln, region, body, page_height):
     if looks_like_caption(txt):
         return "FigureCaptionCandidate", "heuristic:caption_pattern"
 
-    # Skip list heuristic when YOLO explicitly says this is a heading region —
-    # section sub-headings like "A. State Policy..." share the letter-list
-    # pattern but belong to H1/H2, not LI.
-    if looks_like_list_item(txt) and region_cls not in ('title', 'section_header'):
-        return "LI", "heuristic:list_pattern"
+    # Skip list heuristic when YOLO says this is a heading or table region.
+    # Section sub-headings like "B. Fair Share Determination" share the letter-
+    # list pattern but land in title/section_header/table regions — let Priority
+    # 2/3 classify them.  Genuine numbered/bullet list items (1), -, •) should
+    # still fire even in table regions (e.g. TOC numbered items).
+    _is_letter_list = bool(re.match(r'^\s*[a-zA-Z][\.\)]\s', txt))
+    if looks_like_list_item(txt):
+        _skip_regions = ('title', 'section_header')
+        if _is_letter_list:
+            _skip_regions = ('title', 'section_header', 'table')
+        if region_cls not in _skip_regions:
+            return "LI", "heuristic:list_pattern"
 
     # ===== PRIORITY 1.5: Trust YOLO 'text' region =====
     # Individual OCR word tokens are always short (is_short=True), so font-size
@@ -706,17 +713,36 @@ def group_paragraphs(tagged):
             grouped.append(t)
             i += 1
 
-    # Post-process: demote isolated TableRowCandidate (no adjacent TR) to P.
-    # YOLO sometimes marks a single body-text paragraph as "table"; a lone TR
-    # with no neighbouring TR should not become a <Table> structure.
-    for k, elem in enumerate(grouped):
-        if elem.get('tag') == 'TableRowCandidate':
-            prev_is_tr = k > 0 and grouped[k - 1].get('tag') == 'TableRowCandidate'
-            next_is_tr = k < len(grouped) - 1 and grouped[k + 1].get('tag') == 'TableRowCandidate'
-            if not prev_is_tr and not next_is_tr:
-                elem['tag'] = 'P'
+    # Post-process: validate table geometry on every contiguous group of
+    # TableRowCandidates.  YOLO over-detects tables; body-text paragraphs in a
+    # false table region are single-column (all tokens left-aligned, x0 spread
+    # ≤ 100 pt).  A real table always has tokens at 2+ distinct column positions
+    # (e.g. title column + page-number column in a TOC, or data cells in a grid).
+    # Demote the whole group to P when the column spread test fails.
+    def _has_column_spread(grp, min_spread=100.0):
+        x0s = [t['bbox'][0] for t in grp]
+        return (max(x0s) - min(x0s)) > min_spread
 
-    return grouped
+    result = []
+    k = 0
+    while k < len(grouped):
+        if grouped[k].get('tag') != 'TableRowCandidate':
+            result.append(grouped[k])
+            k += 1
+            continue
+        # Collect the full contiguous TR group
+        grp_start = k
+        while k < len(grouped) and grouped[k].get('tag') == 'TableRowCandidate':
+            k += 1
+        tr_group = grouped[grp_start:k]
+
+        if not _has_column_spread(tr_group):
+            # Single-column body text in a false YOLO table region → demote to P
+            for tr in tr_group:
+                tr['tag'] = 'P'
+        result.extend(tr_group)
+
+    return result
 
 
 # ========== MAIN PROCESSING ==========
