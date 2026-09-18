@@ -588,7 +588,20 @@ def group_paragraphs(tagged):
                 same_region = reg_key is not None and nr_key == reg_key
                 is_fig_cap = nt['tag'] == 'FigureCaptionCandidate'
 
-                if same_region or is_fig_cap:
+                # Collect immediately-adjacent H1/H2 tokens: caption continuation
+                # lines that landed in a title YOLO region get heading-tagged, but
+                # a real heading NEVER immediately follows a FigureCaptionCandidate.
+                # (P-tagged "system."-style continuations are intentionally excluded.)
+                prev = group[-1]
+                line_h = max(prev['bbox'][3] - prev['bbox'][1], 4.0)
+                gap = nt['bbox'][1] - prev['bbox'][3]
+                is_heading_continuation = (
+                    0 <= gap <= line_h * 1.5
+                    and nt['tag'] in ('H1', 'H2')
+                    and not same_region
+                )
+
+                if same_region or is_fig_cap or is_heading_continuation:
                     group.append(nt)
                     j += 1
                 else:
