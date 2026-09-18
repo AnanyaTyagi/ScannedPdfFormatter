@@ -235,7 +235,10 @@ def tag_line_smart(ln, region, body, page_height):
     if looks_like_caption(txt):
         return "FigureCaptionCandidate", "heuristic:caption_pattern"
 
-    if looks_like_list_item(txt):
+    # Skip list heuristic when YOLO explicitly says this is a heading region —
+    # section sub-headings like "A. State Policy..." share the letter-list
+    # pattern but belong to H1/H2, not LI.
+    if looks_like_list_item(txt) and region_cls not in ('title', 'section_header'):
         return "LI", "heuristic:list_pattern"
 
     # ===== PRIORITY 1.5: Trust YOLO 'text' region =====
@@ -273,6 +276,11 @@ def tag_line_smart(ln, region, body, page_height):
 
         # --- LIST REGIONS ---
         if region_cls in ("list", "list_item"):
+            # Footnote references land in list_item regions because they look
+            # like numbered items visually.  They start with bare digits + space
+            # ("13 California Government Code...") with no list marker (./)).
+            if re.match(r'^\d{1,3}\s', txt) and not looks_like_list_item(txt):
+                return "P", f"ML:{region_cls}"
             return "LI", f"ML:{region_cls}"
 
         # --- TABLE REGIONS ---
@@ -509,11 +517,16 @@ def group_paragraphs(tagged):
                 nr = nt.get('region')
                 nr_key = tuple(nr['bbox']) if nr else None
 
-                if nt['tag'] not in ('LI', 'P'):
+                if nt['tag'] not in ('LI', 'P', 'TableRowCandidate'):
                     break
                 # A new LI token in a different region = new list context, stop.
                 if nt['tag'] == 'LI' and nr_key != reg_key:
                     break
+                # TableRowCandidate: only collect if on the same visual row as the
+                # last item (inline page number in TOC); otherwise it's a real table.
+                if nt['tag'] == 'TableRowCandidate':
+                    if abs(nt['bbox'][1] - group[-1]['bbox'][1]) > avg_h_est:
+                        break
 
                 # Gap guard: large vertical gap means a new paragraph, not continuation
                 gap = nt['bbox'][1] - group[-1]['bbox'][3]
