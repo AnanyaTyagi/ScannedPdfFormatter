@@ -738,9 +738,35 @@ def group_paragraphs(tagged):
 
         if not _has_column_spread(tr_group):
             # Single-column body text in a false YOLO table region → demote to P
+            # and merge consecutive lines into paragraphs (by vertical proximity).
             for tr in tr_group:
                 tr['tag'] = 'P'
-        result.extend(tr_group)
+            # Merge adjacent demoted lines that belong to the same paragraph.
+            # Lines whose gap is > 1.5× the median line height start a new P.
+            heights = [t['bbox'][3] - t['bbox'][1] for t in tr_group if t['bbox'][3] > t['bbox'][1]]
+            med_h = sorted(heights)[len(heights) // 2] if heights else 12.0
+            gap_threshold = med_h * 1.5
+
+            merged_p = []
+            cur = dict(tr_group[0])
+            for tr in tr_group[1:]:
+                gap = tr['bbox'][1] - cur['bbox'][3]
+                if gap <= gap_threshold:
+                    # Same paragraph — extend bbox and append text
+                    cur['text'] = (cur.get('text', '') + ' ' + tr.get('text', '')).strip()
+                    cur['bbox'] = [
+                        min(cur['bbox'][0], tr['bbox'][0]),
+                        cur['bbox'][1],
+                        max(cur['bbox'][2], tr['bbox'][2]),
+                        tr['bbox'][3],
+                    ]
+                else:
+                    merged_p.append(cur)
+                    cur = dict(tr)
+            merged_p.append(cur)
+            result.extend(merged_p)
+        else:
+            result.extend(tr_group)
 
     return result
 
@@ -878,13 +904,21 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                 "source": source
             })
 
-        # Inject a FigureArea placeholder for every picture/figure YOLO region.
-        # This element carries no OCR text but its bbox covers the image on the page.
-        # TagPDFFinal.py attaches an MCID to the <Figure> structure element using this
-        # bbox so that clicking <Figure> in Acrobat highlights the image area.
+        # Merge P lines within the same YOLO region into single paragraph elements.
+        # group_paragraphs runs BEFORE any global Y-sort so that same-region tokens
+        # are still consecutive (OCR reading order: column by column).  A global
+        # Y-sort before grouping would interleave multi-column lines and break the
+        # P merge (every "group" would be just 1 line).
+        tagged = group_paragraphs(tagged)
+
+        # Inject FigureArea placeholders AFTER grouping and insert each one at the
+        # correct y-sorted position so it sits next to its caption in the structure
+        # tree without disturbing the column reading order of the merged paragraphs.
+        import bisect
+        figure_areas = []
         for reg in regions:
             if reg.get('cls') in ('picture', 'figure'):
-                tagged.append({
+                fa = {
                     'tag': 'FigureArea',
                     'text': '',
                     'bbox': reg['bbox'],
@@ -894,17 +928,19 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                     'region': reg,
                     'source': f"ML:{reg['cls']}",
                     'lines': [{'text': '', 'bbox': reg['bbox']}],
-                })
+                }
+                figure_areas.append(fa)
                 with open('/tmp/fuse_figure_debug.txt', 'a') as _fdbg:
                     _fdbg.write(f"[INJECT FigureArea] P{pnum} cls={reg.get('cls')}  "
                                 f"bbox=({reg['bbox'][0]:.0f},{reg['bbox'][1]:.0f},"
                                 f"{reg['bbox'][2]:.0f},{reg['bbox'][3]:.0f})\n")
 
-        # Sort into reading order before grouping (FigureArea injected above may be out of order)
-        tagged.sort(key=lambda t: (t['bbox'][1], t['bbox'][0]))
-
-        # Merge P lines within the same YOLO region into single paragraph elements
-        tagged = group_paragraphs(tagged)
+        # Insert FigureAreas in y-sorted order into the already-grouped list.
+        for fa in sorted(figure_areas, key=lambda t: t['bbox'][1]):
+            fa_y = fa['bbox'][1]
+            # Find the insertion index: after all tokens whose y-top < fa_y
+            ins = next((k for k, t in enumerate(tagged) if t['bbox'][1] >= fa_y), len(tagged))
+            tagged.insert(ins, fa)
 
         # DEBUG: log all FigureArea and FigureCaptionCandidate tokens in grouped output
         with open('/tmp/fuse_figure_debug.txt', 'a') as _fdbg:
