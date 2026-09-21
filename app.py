@@ -50,10 +50,8 @@ def is_pdf_already_tagged(pdf_path):
     logger.info(f"Checking if PDF is tagged: {pdf_path}")
     try:
         import pikepdf
-        pdf = pikepdf.open(pdf_path)
-        catalog = pdf.Root
-        has_struct_tree = '/StructTreeRoot' in catalog
-        pdf.close()
+        with pikepdf.open(pdf_path) as pdf:
+            has_struct_tree = '/StructTreeRoot' in pdf.Root
         logger.info(f"PDF {os.path.basename(pdf_path)} tagged status: {has_struct_tree}")
         return has_struct_tree
     except Exception as e:
@@ -61,54 +59,91 @@ def is_pdf_already_tagged(pdf_path):
         return False
 
 
-def untag_pdf(pdf_path):
+def _strip_marked_content(page_obj):
+    """Remove BDC/BMC/EMC operators from a page content stream.
+
+    Tagged PDFs embed MCID markers directly in the content stream.  If we
+    only delete the StructTreeRoot but leave these operators in place,
+    TagPDFFinal.py will write new MCIDs on top of the old ones, producing
+    duplicate marks that fail PDF/UA validation.
     """
-    Remove accessibility tags from a PDF in-place.
-    Returns True if successful, False otherwise.
+    import pikepdf
+    import re
+
+    def clean_stream(data: bytes) -> bytes:
+        # Remove tagged marked-content sequences:
+        #   /Tag <</MCID N>> BDC … EMC   (with dict)
+        #   /Tag BMC … EMC               (without dict)
+        # We strip the open operator and its dict; EMC is a no-argument
+        # operator that is safe to leave — it just becomes a no-op once
+        # the matching BDC/BMC is gone, so we remove it too.
+        data = re.sub(rb'/\w+\s*<<[^>]*>>\s*BDC', b'', data)
+        data = re.sub(rb'/\w+\s*BMC', b'', data)
+        data = re.sub(rb'\bEMC\b', b'', data)
+        return data
+
+    contents = page_obj.get('/Contents')
+    if contents is None:
+        return
+    # Contents may be a single stream or an array of streams
+    if isinstance(contents, pikepdf.Array):
+        streams = list(contents)
+    else:
+        streams = [contents]
+
+    for stream in streams:
+        try:
+            # Use read_bytes() (decoded/decompressed) not read_raw_bytes().
+            # read_raw_bytes() returns compressed data; running regex on it
+            # and writing back via write() corrupts the stream because write()
+            # expects uncompressed content but the /Filter is still declared.
+            decoded = stream.read_bytes()
+            cleaned = clean_stream(decoded)
+            if cleaned != decoded:
+                stream.write(cleaned)
+        except Exception:
+            pass  # Skip streams we can't read; they won't have MCIDs
+
+
+def untag_pdf(pdf_path):
+    """Remove accessibility tags from a PDF in-place.
+
+    Strips StructTreeRoot, MarkInfo, StructParents, and the BDC/EMC MCID
+    operators from every page content stream so that TagPDFFinal.py can
+    write a completely fresh structure tree without conflicting marks.
     """
     logger.info(f"🔄 Untagging PDF: {pdf_path}")
+    temp_path = pdf_path + ".temp"
     try:
         import pikepdf
         from pikepdf import Name
 
-        # Create a temporary file for the untagged version
-        temp_path = pdf_path + ".temp"
+        with pikepdf.open(pdf_path) as pdf:
+            if Name.StructTreeRoot in pdf.Root:
+                del pdf.Root[Name.StructTreeRoot]
+                logger.info("  - Removed StructTreeRoot")
 
-        pdf = pikepdf.open(pdf_path)
+            if Name.MarkInfo in pdf.Root:
+                del pdf.Root[Name.MarkInfo]
+                logger.info("  - Removed MarkInfo")
 
-        # Remove StructTreeRoot
-        if Name.StructTreeRoot in pdf.Root:
-            del pdf.Root[Name.StructTreeRoot]
-            logger.info("  - Removed StructTreeRoot")
+            page_count = 0
+            for page in pdf.pages:
+                page_obj = page.obj
+                if Name.StructParents in page_obj:
+                    del page_obj[Name.StructParents]
+                    page_count += 1
+                _strip_marked_content(page_obj)
+            logger.info(f"  - Removed StructParents + MCID markers from {page_count} pages")
 
-        # Remove MarkInfo
-        if Name.MarkInfo in pdf.Root:
-            del pdf.Root[Name.MarkInfo]
-            logger.info("  - Removed MarkInfo")
+            pdf.save(temp_path, linearize=True)
 
-        # Remove ParentTree references from pages
-        page_count = 0
-        for page in pdf.pages:
-            page_obj = page.obj
-            if Name.StructParents in page_obj:
-                del page_obj[Name.StructParents]
-                page_count += 1
-        logger.info(f"  - Removed StructParents from {page_count} pages")
-
-        # Save to temp file
-        pdf.save(temp_path, linearize=True)
-        pdf.close()
-
-        # Replace original with untagged version
         shutil.move(temp_path, pdf_path)
-
         logger.info(f"✅ Successfully untagged: {os.path.basename(pdf_path)}")
         return True
 
     except Exception as e:
         logger.error(f"❌ Error untagging PDF {pdf_path}: {e}", exc_info=True)
-        # Clean up temp file if it exists
-        temp_path = pdf_path + ".temp"
         if os.path.exists(temp_path):
             os.remove(temp_path)
         return False
