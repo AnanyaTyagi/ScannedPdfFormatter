@@ -1,1 +1,24 @@
-zsh: permission denied: ./quick_test.sh
+veraPDF 1.28.2, profile: PDF/UA-1 (ua1)
+Corpus: 258 scanned archival PDFs
+Date: 2026-09-30
+
+Pass: 153 / 258 (59.3%)
+Fail: 105 / 258 (40.7%)
+
+Per-batch:
+  Batch1:   9/10  (90%)
+  Batch2:   4/6   (67%)
+  Batch3:  11/12  (92%)
+  Batch4:   9/11  (82%)
+  Batch5:  10/12  (83%)
+  Batch6:  18/19  (95%)
+  Batch7:   4/4  (100%)
+  Flyers1: 26/56  (46%)
+  Flyers2: 22/51  (43%)
+  Flyers3: 40/77  (52%)
+
+Full per-document results: results/verapdf_results.csv
+Corpus manifest (filenames, page counts): results/corpus_manifest.csv
+
+Speed benchmark: 3,272 pages in ~22.9 minutes = 142.9 pages/minute
+Hardware: MacBook Pro M4

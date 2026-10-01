@@ -22,7 +22,6 @@ def _hv_width(text, font_size):
     """Approximate width of `text` in Helvetica at `font_size` pt."""
     return sum(_HV_W.get(c, 556) for c in (text or '')) * font_size / 1000.0
 
-
 # ---------------- ParentTree builder ----------------
 class ParentTreeBuilder:
     def __init__(self):
@@ -49,15 +48,12 @@ class ParentTreeBuilder:
         nt[Name.Nums] = nums
         return nt
 
-
 # ---------------- helpers ----------------
 def pdf_name(s):
     return Name(s if isinstance(s, str) and s.startswith('/') else '/' + s)
 
-
 def as_str(s):
     return String(s) if not isinstance(s, String) else s
-
 
 def ensure_markinfo(pdf):
     root = pdf.Root
@@ -67,7 +63,6 @@ def ensure_markinfo(pdf):
         root[Name.MarkInfo] = pdf.make_indirect(mi)
     mi[Name.Marked] = True
     return mi
-
 
 # ---------------- FIX #3: WinAnsi-safe text helpers ----------------
 def to_winansi_safe(text: str) -> str:
@@ -96,7 +91,6 @@ def to_winansi_safe(text: str) -> str:
     text = text.replace("\x00", "").replace("\ufeff", "").replace("\ufffe", "")
     return text
 
-
 def escape_pdf_literal_string(text: str) -> str:
     """
     Escape PDF literal string specials: backslash and parentheses.
@@ -106,7 +100,6 @@ def escape_pdf_literal_string(text: str) -> str:
             .replace("(", "\\(")
             .replace(")", "\\)")
     )
-
 
 # ---------------- FIX #1: Wrap existing page content as Artifact ----------------
 def wrap_existing_page_content_as_artifact(pdf, page_obj):
@@ -134,14 +127,12 @@ def wrap_existing_page_content_as_artifact(pdf, page_obj):
     else:
         page_obj[Name.Contents] = wrap_stream(contents)
 
-
 # Role map
 # ---------------- FIX #2: Remove self-mapping RoleMap to avoid circular mapping ----------------
 # For standard tags (Document, P, H1, etc.) you don't need RoleMap at all.
 ROLEMAP = {}
 
-
-# ✅ Tag mapping with Artifact handling
+# Tag mapping with Artifact handling
 TAG_TO_S = {
     'H1': 'H1', 'H2': 'H2', 'H3': 'H3', 'P': 'P', 'LI': 'LI',
     'Table': 'Table', 'TR': 'TR', 'TH': 'TH', 'TD': 'TD',
@@ -151,7 +142,6 @@ TAG_TO_S = {
     'TableRowCandidate': 'TR',
     'Artifact': None,  # ← Artifacts don't go in structure tree
 }
-
 
 def ensure_struct_tree_root(pdf):
     root = pdf.Root
@@ -169,7 +159,6 @@ def ensure_struct_tree_root(pdf):
 
     root[Name.StructTreeRoot] = pdf.make_indirect(st)
     return root[Name.StructTreeRoot]
-
 
 def set_doc_metadata(pdf, input_path, title=None, lang="en-US", author=None):
     if not title:
@@ -191,7 +180,7 @@ def set_doc_metadata(pdf, input_path, title=None, lang="en-US", author=None):
         pdf.Root[Name.ViewerPreferences] = pdf.make_indirect(vp)
     vp[Name.DisplayDocTitle] = True
 
-    # ✅ Add PDF/UA identifier in XMP metadata
+    # Add PDF/UA identifier in XMP metadata
     xmp = f'''<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
 <x:xmpmeta xmlns:x="adobe:ns:meta/">
  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -206,7 +195,6 @@ def set_doc_metadata(pdf, input_path, title=None, lang="en-US", author=None):
     meta[Name.Type] = Name.Metadata
     meta[Name.Subtype] = Name.XML
     pdf.Root[Name.Metadata] = pdf.make_indirect(meta)
-
 
 def create_page_bookmarks(pdf, fused_dir):
     """Create bookmarks from H1/H2 tags"""
@@ -251,7 +239,6 @@ def create_page_bookmarks(pdf, fused_dir):
         outlines[Name.Count] = 0
     pdf.Root[Name.Outlines] = pdf.make_indirect(outlines)
 
-
 def make_selement(pdf, S, *, parent=None, title_text=None, actual_text=None):
     """Create structure element"""
     el = Dictionary()
@@ -267,7 +254,6 @@ def make_selement(pdf, S, *, parent=None, title_text=None, actual_text=None):
             el[Name.T] = as_str(actual_text)
     return pdf.make_indirect(el)
 
-
 def attach_k_ref(el, page_obj, mcid):
     """Link structure element to page content"""
     kid = Dictionary()
@@ -280,7 +266,6 @@ def attach_k_ref(el, page_obj, mcid):
         arr = el[Name.K] if isinstance(el[Name.K], Array) else Array([el[Name.K]])
         arr.append(kid)
         el[Name.K] = arr
-
 
 def page_add_invisible_mcid_stream(pdf, page_obj, mcid, text, *, bbox=None):
     """Add invisible text overlay"""
@@ -385,14 +370,12 @@ Q
     else:
         page_obj[Name.Contents] = Array([pdf.make_indirect(cur), stream])
 
-
 def attach_text_to_elem(pdf, se, page_obj, text, bbox, *, parenttree, page_key, mcid):
     """Attach text to structure element"""
     attach_k_ref(se, page_obj, mcid)
     page_add_invisible_mcid_stream(pdf, page_obj, mcid, text, bbox=bbox)
     parenttree.add(page_key, mcid, se)
     return mcid + 1
-
 
 # ---------------- JSON I/O ----------------
 def load_json(path, default=None):
@@ -402,14 +385,12 @@ def load_json(path, default=None):
     except Exception:
         return default
 
-
 def load_tags_for_page(tag_dir, pnum):
     promoted = os.path.join(tag_dir, f'page_{pnum:03d}.promoted.json')
     standard = os.path.join(tag_dir, f'page_{pnum:03d}.tags.json')
     path = promoted if os.path.exists(promoted) else standard
     data = load_json(path, {}) or {}
     return data.get('tags') or []
-
 
 def normalize_heading_hierarchy(tags):
     has_h1 = any(t.get('tag') == 'H1' for t in tags)
@@ -429,7 +410,6 @@ def normalize_heading_hierarchy(tags):
             current = max(current, lvl)
     return tags
 
-
 # ---------------- main ----------------
 def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", author=None):
     # Reset pink-box debug counter and log file for this run
@@ -448,7 +428,7 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
     st_root[Name.K] = Array([doc_el])
     part_el = make_selement(pdf, 'Part', parent=doc_el)
 
-    # ✅ FIX #1: Initialize K array ONCE
+    # Initialize K array ONCE
     doc_el[Name.K] = Array([part_el])
     part_el[Name.K] = Array()  # Initialize empty, will append to it
 
@@ -482,19 +462,19 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
 
         tags = normalize_heading_hierarchy(tags)
 
-        # ✅ Filter out artifacts AND unmapped tags
+        # Filter out artifacts AND unmapped tags
         tags = [t for t in tags if TAG_TO_S.get(t.get('tag', 'P')) is not None]
 
         # Create page part
         page_part = make_selement(pdf, 'Part', parent=part_el, title_text=f'Page {pnum}')
 
-        # ✅ Append directly to existing array
+        # Append directly to existing array
         part_el[Name.K].append(page_part)
 
-        # ✅ Initialize page_part K array ONCE
+        # Initialize page_part K array ONCE
         page_part[Name.K] = Array()
 
-        # ✅ Track current list/table/figure containers for wrapping
+        # Track current list/table/figure containers for wrapping
         next_mcid = 0
         current_list = None    # current <L> container
         current_table = None   # current <Table> container
@@ -619,7 +599,7 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
     create_page_bookmarks(pdf, fused_dir)
 
     pdf.save(pdf_out, linearize=True, compress_streams=True)
-    print("✅ Wrote tagged PDF:", os.path.abspath(pdf_out))
+    print("Wrote tagged PDF:", os.path.abspath(pdf_out))
     print("\nFixes applied:")
     print("  ✓ Original page content wrapped as Artifact (UA 7.1 #3)")
     print("  ✓ RoleMap removed to avoid circular mapping (UA 7.1 #6)")
@@ -627,7 +607,6 @@ def main(pdf_in, fused_dir, struct_dir, pdf_out, title=None, lang="en-US", autho
     print("  ✓ List structure fixed (LI wrapped in L)")
     print("  ✓ Artifacts excluded from structure tree")
     print("  ✓ PDF/UA metadata identifier added")
-
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:

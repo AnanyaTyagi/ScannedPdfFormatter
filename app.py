@@ -13,7 +13,6 @@ import logging
 import sys
 from pathlib import Path
 
-
 # ═══════════════════════════════════════════════════════════════════
 # 🔧 LOGGING CONFIGURATION
 # ═══════════════════════════════════════════════════════════════════
@@ -44,7 +43,6 @@ SESSION_MAX_AGE = 7200
 
 logger.info(f"Configuration loaded: MAX_FILES={MAX_FILES}, TIMEOUT={TIMEOUT_PER_FILE}s")
 
-
 def is_pdf_already_tagged(pdf_path):
     """Check if PDF already has accessibility tags."""
     logger.info(f"Checking if PDF is tagged: {pdf_path}")
@@ -57,7 +55,6 @@ def is_pdf_already_tagged(pdf_path):
     except Exception as e:
         logger.error(f"Error checking if {pdf_path} is tagged: {e}")
         return False
-
 
 def _strip_marked_content(page_obj):
     """Remove BDC/BMC/EMC operators from a page content stream.
@@ -104,7 +101,6 @@ def _strip_marked_content(page_obj):
         except Exception:
             pass  # Skip streams we can't read; they won't have MCIDs
 
-
 def untag_pdf(pdf_path):
     """Remove accessibility tags from a PDF in-place.
 
@@ -139,7 +135,7 @@ def untag_pdf(pdf_path):
             pdf.save(temp_path, linearize=True)
 
         shutil.move(temp_path, pdf_path)
-        logger.info(f"✅ Successfully untagged: {os.path.basename(pdf_path)}")
+        logger.info(f"Successfully untagged: {os.path.basename(pdf_path)}")
         return True
 
     except Exception as e:
@@ -147,7 +143,6 @@ def untag_pdf(pdf_path):
         if os.path.exists(temp_path):
             os.remove(temp_path)
         return False
-
 
 def cleanup_old_sessions():
     """Background cleanup function that runs periodically."""
@@ -180,12 +175,11 @@ def cleanup_old_sessions():
 
         time.sleep(CLEANUP_INTERVAL)
 
-
 # Start background cleanup thread
 if not any(thread.name == "CleanupThread" for thread in threading.enumerate()):
     cleanup_thread = threading.Thread(target=cleanup_old_sessions, daemon=True, name="CleanupThread")
     cleanup_thread.start()
-    logger.info("✅ Background cleanup thread started")
+    logger.info("Background cleanup thread started")
 
 # Generate unique session ID
 if 'session_id' not in st.session_state:
@@ -239,7 +233,6 @@ if force_retag:
 else:
     st.info("ℹ️ **Smart Skip Mode**: Already-tagged PDFs will be skipped automatically to save processing time.")
 
-
 def process_single_pdf(pdf_path, output_dir, work_dir, force_retag=False):
     """
     Process a single PDF file through the tagging pipeline.
@@ -269,23 +262,23 @@ def process_single_pdf(pdf_path, output_dir, work_dir, force_retag=False):
                     logger.error(f"❌ Failed to untag {pdf_name}")
                     return {"status": "failed", "name": pdf_name, "error": "Failed to untag PDF"}
 
-                logger.info(f"✅ {pdf_name}: Untagged successfully, now retagging...")
+                logger.info(f"{pdf_name}: Untagged successfully, now retagging...")
                 st.success(f"✅ {pdf_name}: Untagged successfully, now retagging...")
             else:
                 # Skip already-tagged PDFs
                 logger.info(f"⏭️ Skipping {pdf_name}: Already tagged")
                 return {"status": "skipped", "name": pdf_name, "reason": "Already tagged"}
 
-        # ✅ Clean work directory
+        # Clean work directory
         logger.info("🧹 Cleaning work directory...")
         for folder in ["debug", "fused_tags", "layout_out", "lines_out", "structures"]:
             folder_path = os.path.join(work_dir, folder)
             if os.path.exists(folder_path):
                 shutil.rmtree(folder_path, ignore_errors=True)
             os.makedirs(folder_path, exist_ok=True)
-        logger.info("✅ Work directory cleaned")
+        logger.info("Work directory cleaned")
 
-        # ✅ Copy PDF to work directory as temp.pdf
+        # Copy PDF to work directory as temp.pdf
         temp_pdf = os.path.join(work_dir, "temp.pdf")
         output_pdf = os.path.join(work_dir, "output.pdf")
 
@@ -296,9 +289,9 @@ def process_single_pdf(pdf_path, output_dir, work_dir, force_retag=False):
 
         logger.info(f"📋 Copying {pdf_name} to work directory as temp.pdf...")
         shutil.copy2(pdf_path, temp_pdf)
-        logger.info(f"✅ Copied successfully (size: {os.path.getsize(temp_pdf)} bytes)")
+        logger.info(f"Copied successfully (size: {os.path.getsize(temp_pdf)} bytes)")
 
-        # ✅ Get TagMyPDF2.py script path
+        # Get TagMyPDF2.py script path
         script_dir = os.path.dirname(os.path.abspath(__file__))
         tagmypdf_script = os.path.join(script_dir, "TagMyPDF2.py")
 
@@ -307,7 +300,7 @@ def process_single_pdf(pdf_path, output_dir, work_dir, force_retag=False):
         logger.info(f"🔍 Work directory: {work_dir}")
         logger.info(f"🔍 temp.pdf exists: {os.path.exists(temp_pdf)}")
 
-        # ✅ Run TagMyPDF2.py
+        # Run TagMyPDF2.py
         logger.info("🚀 Starting TagMyPDF2.py processing...")
 
         env = os.environ.copy()
@@ -343,19 +336,19 @@ def process_single_pdf(pdf_path, output_dir, work_dir, force_retag=False):
                 if line.strip():
                     logger.warning(f"  {line}")
 
-        # ✅ Check if output.pdf was created
+        # Check if output.pdf was created
         logger.info(f"🔍 Checking for output.pdf at: {output_pdf}")
         logger.info(f"🔍 output.pdf exists: {os.path.exists(output_pdf)}")
 
         if os.path.exists(output_pdf):
-            logger.info(f"✅ output.pdf found (size: {os.path.getsize(output_pdf)} bytes)")
+            logger.info(f"output.pdf found (size: {os.path.getsize(output_pdf)} bytes)")
 
         if result.returncode == 0 and os.path.exists(output_pdf):
             output_filename = pdf_name
             final_output = os.path.join(output_dir, output_filename)
             shutil.copy2(output_pdf, final_output)
 
-            logger.info(f"✅ SUCCESS: {pdf_name} tagged successfully")
+            logger.info(f"SUCCESS: {pdf_name} tagged successfully")
             logger.info(f"📦 Output saved to: {final_output}")
 
             status_msg = "retagged" if is_tagged else "tagged"
@@ -374,7 +367,6 @@ def process_single_pdf(pdf_path, output_dir, work_dir, force_retag=False):
     except Exception as e:
         logger.error(f"💥 EXCEPTION: {pdf_name}", exc_info=True)
         return {"status": "failed", "name": pdf_name, "error": str(e)}
-
 
 if uploaded_file:
     file_size_mb = uploaded_file.size / (1024 * 1024)
@@ -416,7 +408,7 @@ if uploaded_file:
                 pdf_path = os.path.join(input_dir, uploaded_file.name)
                 with open(pdf_path, "wb") as f:
                     f.write(uploaded_file.read())
-                logger.info(f"✅ Saved to: {pdf_path}")
+                logger.info(f"Saved to: {pdf_path}")
                 pdf_files = [pdf_path]
 
             # Handle ZIP upload
@@ -426,11 +418,11 @@ if uploaded_file:
                 zip_path = os.path.join(temp_dir, "upload.zip")
                 with open(zip_path, "wb") as f:
                     f.write(uploaded_file.read())
-                logger.info(f"✅ ZIP saved to: {zip_path}")
+                logger.info(f"ZIP saved to: {zip_path}")
 
                 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
                     zip_ref.extractall(input_dir)
-                logger.info("✅ ZIP extracted")
+                logger.info("ZIP extracted")
 
                 pdf_files = []
                 for root, dirs, files in os.walk(input_dir):
@@ -448,7 +440,7 @@ if uploaded_file:
                 logger.error(f"Too many PDFs: {pdf_count} > {MAX_FILES}")
                 st.error(f"❌ Too many PDFs! Found {pdf_count} files, but maximum is {MAX_FILES}")
             else:
-                logger.info(f"✅ Processing {pdf_count} PDF file(s)")
+                logger.info(f"Processing {pdf_count} PDF file(s)")
                 st.success(f"✅ Found {pdf_count} PDF file(s) to process")
 
                 if force_retag:

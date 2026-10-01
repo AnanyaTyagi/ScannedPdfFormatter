@@ -1,12 +1,6 @@
-# !/usr/bin/env python3
-"""
-FuseLinesFixed_PATCHED.py
-FIXED: Added artifact detection for page numbers, headers, footers
-This fixes 22,000+ PDF/UA validation errors
-"""
+#!/usr/bin/env python3
 import os, sys, json, glob, re
 
-# ========== CONFIGURATION ==========
 MIN_COVER = 0.35  # line coverage by region
 
 # Pattern matching constants
@@ -25,9 +19,6 @@ H2_PATTERNS = [
 
 CAPTION_PAT = re.compile(r'^\s*(figure|fig\.|table|tbl\.?)\s*\d+(?:[-–]\d+)*[\.:)]', re.I)
 
-
-# ========== HELPER FUNCTIONS ==========
-
 def iou(a, b):
     """Calculate Intersection over Union (line overlap with region)"""
     ax0, ay0, ax1, ay1 = a
@@ -44,11 +35,9 @@ def iou(a, b):
     area = (ax1 - ax0) * (ay1 - ay0)
     return inter / max(1e-9, area)
 
-
 def looks_like_caption(txt):
     """Detect figure/table captions: 'Figure 1:', 'Table 2.', etc."""
     return CAPTION_PAT.match((txt or "").strip()) is not None
-
 
 def looks_like_list_item(txt):
     """Detect list items by bullet chars or numbering"""
@@ -74,7 +63,6 @@ def looks_like_list_item(txt):
 
     return False
 
-
 def looks_like_h1_pattern(txt):
     """Detect H1 by known section names"""
     s = (txt or "").strip()
@@ -85,7 +73,6 @@ def looks_like_h1_pattern(txt):
         if pat.match(s):
             return True
     return False
-
 
 def looks_like_h2_pattern(txt):
     """Detect H2 by numbering patterns"""
@@ -103,7 +90,6 @@ def looks_like_h2_pattern(txt):
     # which causes over-tagging of body paragraphs as H2.
     return False
 
-
 def is_short(txt):
     """Check if text is short *as a heading* (avoid paragraph wrapped lines)."""
     s = (txt or "").strip()
@@ -112,7 +98,6 @@ def is_short(txt):
     words = s.split()
     # Headings are typically short in both characters and words.
     return (len(s) <= 60) and (len(words) <= 10)
-
 
 def is_all_caps(txt):
     """Check if text is ALL CAPS (with numbers/punctuation allowed)"""
@@ -123,10 +108,6 @@ def is_all_caps(txt):
     letters = "".join([c for c in s if c.isalpha()])
     return bool(letters) and CAP_RE.match(s)
 
-
-# ============================================================================
-# ✅ NEW: ARTIFACT DETECTION (Fixes 22,000+ validation errors)
-# ============================================================================
 def should_be_artifact(txt, region_cls, bbox, page_height):
     """
     Determine if content should be marked as Artifact (decorative/non-structural).
@@ -151,11 +132,11 @@ def should_be_artifact(txt, region_cls, bbox, page_height):
     if not txt_stripped:
         return True
 
-    # ✅ ML detected header/footer/figure regions → artifact
+    # ML detected header/footer/figure regions → artifact
     if region_cls in ("page_header", "page_footer"):
         return True
 
-    # ✅ Page numbers: short numeric text at page edges
+    # Page numbers: short numeric text at page edges
     # Common patterns: "1", "Page 1", "- 42 -", etc.
     if len(txt_stripped) <= 10:
         # Check if mostly numeric
@@ -166,7 +147,7 @@ def should_be_artifact(txt, region_cls, bbox, page_height):
             if y0 < 60 or y1 > (page_height - 60):
                 return True
 
-    # ✅ Common page number patterns at edges
+    # Common page number patterns at edges
     page_num_patterns = [
         r'^\s*-?\s*\d+\s*-?\s*$',  # "1", "- 1 -", "42"
         r'^\s*page\s+\d+\s*$',  # "Page 1", "page 42"
@@ -179,7 +160,7 @@ def should_be_artifact(txt, region_cls, bbox, page_height):
             if y0 < 60 or y1 > (page_height - 60):
                 return True
 
-    # ✅ Very short text at extreme edges (likely decorative)
+    # Very short text at extreme edges (likely decorative)
     if len(txt_stripped) <= 3:
         y0, y1 = bbox[1], bbox[3]
         x0, x1 = bbox[0], bbox[2]
@@ -188,9 +169,6 @@ def should_be_artifact(txt, region_cls, bbox, page_height):
             return True
 
     return False
-
-
-# ========== SMART TAGGING FUNCTION WITH ARTIFACT DETECTION ==========
 
 def tag_line_smart(ln, region, body, page_height):
     """
@@ -298,7 +276,7 @@ def tag_line_smart(ln, region, body, page_height):
         if region_cls == "footnote":
             return "P", f"ML:{region_cls}"
 
-        # ✅ REMOVED: page_header/page_footer now return Artifact above
+        # page_header/page_footer now return Artifact above
 
     # ===== PRIORITY 3: Pattern-Based Headings =====
 
@@ -330,9 +308,6 @@ def tag_line_smart(ln, region, body, page_height):
     # ===== PRIORITY 6: Default =====
     return "P", "default"
 
-
-# ========== PARAGRAPH GROUPING ==========
-
 def _merge_rows(rows):
     """Merge each visual row (list of tokens) into one line element.
     Fixes word-level pink-box issue: OCR sometimes emits one token per word;
@@ -360,7 +335,6 @@ def _merge_rows(rows):
             })
     return result
 
-
 def _to_lines(flat_list, avg_h):
     """Convert a flat ordered token list to one merged {text,bbox} entry per visual row.
     One entry = one MCID = one pink highlight box per line (not per word)."""
@@ -374,7 +348,6 @@ def _to_lines(flat_list, avg_h):
         else:
             rows.append([tok])
     return [{'text': e['text'], 'bbox': e['bbox']} for e in _merge_rows(rows)]
-
 
 def group_paragraphs(tagged):
     """Merge consecutive P-tagged lines within the same YOLO region into one P element."""
@@ -770,9 +743,6 @@ def group_paragraphs(tagged):
 
     return result
 
-
-# ========== MAIN PROCESSING ==========
-
 def main(pdf_path, layout_dir, lines_dir, out_dir):
     os.makedirs(out_dir, exist_ok=True)
 
@@ -793,7 +763,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
         'total_tags': 0,
         'ml_tags': 0,
         'heuristic_tags': 0,
-        'artifact_tags': 0,  # NEW
+        'artifact_tags': 0,
         'source_breakdown': {},
         'tag_types': {}
     }
@@ -816,7 +786,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
             with open(layoutp, "r", encoding="utf-8") as f:
                 R = json.load(f)
             regions = R.get("regions", [])
-            # ✅ GET PAGE HEIGHT for artifact detection
+            # GET PAGE HEIGHT for artifact detection
             page_height = R.get("height", 792.0)
 
             # DEBUG: log all YOLO regions on this page so we can see what
@@ -835,7 +805,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
         tagged = []
         page_ml_count = 0
         page_heuristic_count = 0
-        page_artifact_count = 0  # NEW
+        page_artifact_count = 0
 
         for ln in lines:
             # Find best matching region
@@ -860,7 +830,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                                f"y0={ln['bbox'][1]:.1f}  x0={ln['bbox'][0]:.1f}  "
                                f"text='{txt_raw[:60]}'\n")
 
-            # ✅ Smart tagging with artifact detection (PASS PAGE_HEIGHT)
+            # Smart tagging with artifact detection (PASS PAGE_HEIGHT)
             tag, source = tag_line_smart(ln, use_reg, body, page_height)
 
             # DEBUG: log H1/H2/LI tags with full region info to diagnose
@@ -960,7 +930,7 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
                 "stats": {
                     "ml_tags": page_ml_count,
                     "heuristic_tags": page_heuristic_count,
-                    "artifact_tags": page_artifact_count,  # NEW
+                    "artifact_tags": page_artifact_count,
                     "total": len(tagged)
                 }
             }, f, indent=2)
@@ -989,10 +959,24 @@ def main(pdf_path, layout_dir, lines_dir, out_dir):
         print(f"  {src:<35} {count:5d}  ({count/total*100:.1f}%)" if total else f"  {src}")
     print("=" * 60)
 
+    # Write machine-readable stats for batch aggregation
+    stats_path = os.path.join(out_dir, '..', 'fuse_stats.json')
+    try:
+        with open(stats_path, 'w') as f:
+            json.dump({
+                'total_tags': total,
+                'ml_tags': ml,
+                'heuristic_tags': heuristic,
+                'artifact_tags': artifact,
+                'source_breakdown': stats['source_breakdown'],
+                'tag_types': stats['tag_types'],
+            }, f, indent=2)
+    except Exception:
+        pass
 
 if __name__ == "__main__":
     if len(sys.argv) < 5:
-        print("Usage: python FuseLinesFixed_PATCHED.py <pdf_path> <layout_dir> <lines_dir> <out_dir>")
+        print("Usage: python FuseLinesFixed_fixed.py <pdf_path> <layout_dir> <lines_dir> <out_dir>")
         sys.exit(1)
 
     main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
