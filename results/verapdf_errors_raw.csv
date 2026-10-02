@@ -1,0 +1,288 @@
+filename,batch,group,compliant,clause,description,failed_checks
+Batch1__A Comparison of the Portland and San Jose Light Rail Planning Process.pdf,Batch1,well_encoded,True,,,0
+Batch1__BART to San Jose A Special Opportunity for Transit-Oriented Redevelopement near Downtown San Jose.pdf,Batch1,well_encoded,True,,,0
+Batch1__City of Santa Clara_s Housing Element Approach to the Provision of Affordable Housing.pdf,Batch1,well_encoded,True,,,0
+Batch1__Copy of BAVC1012416_1_access-English.pdf,Batch1,well_encoded,True,,,0
+Batch1__Copy of SBBS  (07).pdf,Batch1,well_encoded,True,,,0
+Batch1__Copy of SBBS  (27).pdf,Batch1,well_encoded,True,,,0
+Batch1__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 10.pdf,Batch1,well_encoded,True,,,0
+Batch1__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 11.pdf,Batch1,well_encoded,True,,,0
+Batch1__Residential Design Review A Comparative Analysis of Three Bay Area Cities.pdf,Batch1,well_encoded,True,,,0
+Batch1__Theory and History of Social Indicators With Demonstration.pdf,Batch1,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+Batch1__Theory and History of Social Indicators With Demonstration.pdf,Batch1,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Batch2__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 4.pdf,Batch2,well_encoded,True,,,0
+Batch2__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 5.pdf,Batch2,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+Batch2__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 5.pdf,Batch2,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Batch2__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 6.pdf,Batch2,well_encoded,True,,,0
+Batch2__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 7.pdf,Batch2,well_encoded,True,,,0
+Batch2__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 8.pdf,Batch2,well_encoded,True,,,0
+Batch2__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 9.pdf,Batch2,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+Batch2__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 9.pdf,Batch2,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Batch3__Copy of BAVC1012416_1_access-Spanish.pdf,Batch3,well_encoded,True,,,0
+Batch3__Copy of DRR_AAS_Horizons_01.pdf,Batch3,well_encoded,True,,,0
+Batch3__Copy of DRR_AAS_Horizons_02.pdf,Batch3,well_encoded,True,,,0
+Batch3__Copy of DRR_AAS_Horizons_03.pdf,Batch3,well_encoded,True,,,0
+Batch3__Copy of SBBS  (06).pdf,Batch3,well_encoded,True,,,0
+Batch3__Copy of galarza_anglo.pdf,Batch3,well_encoded,True,,,0
+Batch3__Emeryville North Hollis Area Study.pdf,Batch3,well_encoded,True,,,0
+Batch3__Form-Based Zoning A Tool For Creating Small Business Opportunities.pdf,Batch3,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+Batch3__Form-Based Zoning A Tool For Creating Small Business Opportunities.pdf,Batch3,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+"Batch3__Mission of Mercy- The U.S. Military Mission in Berlin, 1919.pdf",Batch3,well_encoded,True,,,0
+Batch3__TOD Proposal for Fremont_s Warm Springs BART Station Fremont California.pdf,Batch3,well_encoded,True,,,0
+Batch3__Thresholds of Significance.pdf,Batch3,well_encoded,True,,,0
+Batch3__Transit Connectivity in the Bay Area.pdf,Batch3,well_encoded,True,,,0
+Batch4__Biodiesel To Switch or Not to Switch A Greener Fuel Option for the SJSU Shuttle Bus System.pdf,Batch4,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",4
+Batch4__Biodiesel To Switch or Not to Switch A Greener Fuel Option for the SJSU Shuttle Bus System.pdf,Batch4,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",4
+Batch4__City Team Ministries and Pact Assessing Two Models of Non-Profit Christian Service to Urban Communities.pdf,Batch4,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Batch4__City Team Ministries and Pact Assessing Two Models of Non-Profit Christian Service to Urban Communities.pdf,Batch4,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+Batch4__Copy of SBBS  (01).pdf,Batch4,well_encoded,True,,,0
+Batch4__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 8.pdf,Batch4,well_encoded,True,,,0
+Batch4__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 9.pdf,Batch4,well_encoded,True,,,0
+Batch4__Copy of [AH160-162] Galarza Symposium 1987.pdf,Batch4,well_encoded,True,,,0
+"Batch4__Housing Development in Imo State, Nigeria.pdf",Batch4,well_encoded,True,,,0
+Batch4__Individualized Marketing A Travel Behavior Change Program.pdf,Batch4,well_encoded,True,,,0
+Batch4__Integrating Pollution Prevention Measures in Trails Along Waterways.pdf,Batch4,well_encoded,True,,,0
+Batch4__Test.pdf,Batch4,well_encoded,True,,,0
+"Batch4__The value of the arts, history and culture in downtown revitalization (moving from theory to practice).pdf",Batch4,well_encoded,True,,,0
+Batch5__A Farmland Preservation Model for the City of Turlock.pdf,Batch5,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Batch5__A Farmland Preservation Model for the City of Turlock.pdf,Batch5,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+Batch5__A Study of Brownfields Redevelopment in Rural Oregon.pdf,Batch5,well_encoded,True,,,0
+Batch5__Copy of DRR_Chicano_question-english.pdf,Batch5,well_encoded,True,,,0
+Batch5__Copy of Galarza Symposium 1986.pdf,Batch5,well_encoded,True,,,0
+Batch5__Copy of SBBS  (03).pdf,Batch5,well_encoded,True,,,0
+Batch5__Copy of Sooper Dooper Asian Scooper Vol. 1 No. 2.pdf,Batch5,well_encoded,True,,,0
+Batch5__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 4.pdf,Batch5,well_encoded,True,,,0
+Batch5__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 5.pdf,Batch5,well_encoded,True,,,0
+Batch5__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 6.pdf,Batch5,well_encoded,True,,,0
+Batch5__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 7.pdf,Batch5,well_encoded,True,,,0
+Batch5__Shaping a New Neighborhood The Impact of Citizen Participation on the Design and Development of Mission Bay.pdf,Batch5,well_encoded,True,,,0
+Batch5__Smart Growth and its Effects on Enhancing the Quality.pdf,Batch5,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",2
+Batch5__Smart Growth and its Effects on Enhancing the Quality.pdf,Batch5,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Batch6__AFL-CIO - Rise of a Farm Workers Union.pdf,Batch6,well_encoded,True,,,0
+Batch6__Analysis of Redevelopment in Distressed Communities A Sacremento Case Study.pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of DRR_Chicano_question-spanish.pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of SBBS  (02).pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of SBBS  (04).pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of SBBS  (05).pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of SBBS  (08).pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of SBBS  (09).pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 1.pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 2.pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 3.pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of galarza_mexican.pdf,Batch6,well_encoded,True,,,0
+Batch6__Do Central Business District Redevelopment Investments Have a Positive Influence on Surrounding Neighborhoods.pdf,Batch6,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Batch6__Do Central Business District Redevelopment Investments Have a Positive Influence on Surrounding Neighborhoods.pdf,Batch6,well_encoded,False,7.18.5,"Links shall be tagged according to ISO 32000-1:2008, 14.8.4.4.2, Link Element",87
+Batch6__Do Central Business District Redevelopment Investments Have a Positive Influence on Surrounding Neighborhoods.pdf,Batch6,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+Batch6__Do Central Business District Redevelopment Investments Have a Positive Influence on Surrounding Neighborhoods.pdf,Batch6,well_encoded,False,7.18.5,"Links shall contain an alternate description via their Contents key as described in ISO 32000-1:2008, 14.9.3",87
+Batch6__Do Central Business District Redevelopment Investments Have a Positive Influence on Surrounding Neighborhoods.pdf,Batch6,well_encoded,False,7.18.1,"An annotation (except Widget annotations or hidden annotations, or those having rectangle outside the crop-box) shall have either Contents key or an Alt entry in the enclosing structure element",87
+Batch6__Evaluation of Performance Measures for the San Jose Strong Neighborhoods Initiative.pdf,Batch6,well_encoded,True,,,0
+Batch6__Inclusionary Housing and California_s Housing Crisis.pdf,Batch6,well_encoded,True,,,0
+Batch6__National Pollution Discharge Elimination System Storm Water Permits Effects in Urban Planning and Building.pdf,Batch6,well_encoded,True,,,0
+Batch6__Poco Way A Successful Neighborhood Revitalization Project.pdf,Batch6,well_encoded,True,,,0
+Batch6__Shophouse- A Mixed Use Building Type.pdf,Batch6,well_encoded,True,,,0
+Batch6__Transit-Oriented Development Guidelines For the Diridon.pdf,Batch6,well_encoded,True,,,0
+Batch7__Agenda Magazine Vol 2 #7.pdf,Batch7,well_encoded,True,,,0
+Batch7__Agenda Magazine Vol 3 #2.pdf,Batch7,well_encoded,True,,,0
+Batch7__Case Study The Urban Ballpark as an Element of Neighbirhood Revitalization.pdf,Batch7,well_encoded,True,,,0
+Batch7__Copy of DRR_MLK_art.pdf,Batch7,well_encoded,True,,,0
+Flyers1__A Portrait of Agribusiness Power.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",9
+Flyers1__Agriculture Employees Election Law of 1974 1.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+Flyers1__Agriculture Employees Election Law of 1974 1.pdf,Flyers1,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers1__Agriculture Employees Election Law of 1974 2.pdf,Flyers1,flyers,True,,,0
+Flyers1__Alquist Votes Against Farmworkers.pdf,Flyers1,flyers,True,,,0
+Flyers1__An Evening With Dolores Huerta.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Autoworkers Help Farmworkers.pdf,Flyers1,flyers,True,,,0
+Flyers1__Behold the Wages of the Laborers.pdf,Flyers1,flyers,True,,,0
+Flyers1__Boycott Brings Elections.pdf,Flyers1,flyers,True,,,0
+Flyers1__Boycott Gallo - Wines From Modesto - Lettuce - Grapes.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Boycott Gallo Wine.pdf,Flyers1,flyers,True,,,0
+Flyers1__Boycott Heublein.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Boycott Italian Swiss and Smirnoff.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",7
+Flyers1__Boycott Lettuce Unless You See This Label.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Boycott Lettuce.pdf,Flyers1,flyers,True,,,0
+Flyers1__Boycott Mayfair.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Boycott Non-Union Lettuce.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",4
+Flyers1__Boycott Party -- All Invited.pdf,Flyers1,flyers,True,,,0
+Flyers1__Boycott Scab Lettuce.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Boycott Smirnoff Vodka and Italian Swiss Colony Wine.pdf,Flyers1,flyers,True,,,0
+Flyers1__Boycott Sun-Maid and Sun-Sweet.pdf,Flyers1,flyers,True,,,0
+Flyers1__Boycott for Justice.pdf,Flyers1,flyers,True,,,0
+Flyers1__Boycott the 9 Non-Union Napa Valley Wine Companies.pdf,Flyers1,flyers,True,,,0
+Flyers1__Bring Justice For Farmworkers.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Buy Italian Swiss Colony.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__California Grape Workers Are Killed and Maimed.pdf,Flyers1,flyers,True,,,0
+Flyers1__California_s Grape Harvest to Begin.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Canvassing Kick-Off.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Cesar Chavez - The Farmworkers and the Teamsters.pdf,Flyers1,flyers,True,,,0
+Flyers1__Como Puede Usted Colaborar Con La Huelga De Las Uvas 1.pdf,Flyers1,flyers,True,,,0
+Flyers1__Como Puede Usted Colaborar Con La Huelga De Las Uvas 2.pdf,Flyers1,flyers,True,,,0
+Flyers1__Consumer Rights Committee - Anti-Consumer Boycotts.pdf,Flyers1,flyers,True,,,0
+Flyers1__Consumer Rights Committee - The Boycott of California Table Grapes is Unfair.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Delano Grape Strike.pdf,Flyers1,flyers,True,,,0
+Flyers1__Delano Strike Continues.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Demand Union Label Produce.pdf,Flyers1,flyers,True,,,0
+Flyers1__Did the Price of Lettuce Upset You.pdf,Flyers1,flyers,True,,,0
+Flyers1__Don_t Buy Calif. Grapes.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Don_t Buy Lettuce Unless it Bears This Label.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Don_t Buy at Safeway.pdf,Flyers1,flyers,False,7.21.5,"For every font embedded in a conforming file and used for rendering, the glyph width information in the font dictionary and in the embedded font program shall be consistent",6
+Flyers1__Don_t Destroy Farmworkers_ Jobs and Their Dignity.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Don_t Eat Lettuce.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",4
+Flyers1__Don_t Shop At Ralphs.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Don_t Shop Here - You Can Help.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",12
+Flyers1__Don_t Shop Here.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",4
+Flyers1__Don_t Shop Here.pdf,Flyers1,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers1__Dr. Jekyll and Mr. Hyde.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers1__Dr. Jekyll and Mr. Hyde.pdf,Flyers1,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers1__Emergency Food Caravan.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers1__Every California Grape You Buy.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Fact Sheet On Salinas Lettuce Strike.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Fact Sheet on E&J Gallo.pdf,Flyers1,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",2
+Flyers1__Fact Sheet on E&J Gallo.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",15
+Flyers1__Fact Sheet on E&J Gallo.pdf,Flyers1,flyers,False,7.1,Content shall be marked as Artifact or tagged as real content,621
+Flyers1__Facts About Seasonal Farm Workers.pdf,Flyers1,flyers,True,,,0
+Flyers1__Farm Workers March on Gallo.pdf,Flyers1,flyers,True,,,0
+Flyers1__Farm Workers Urge You Not To Buy Table Grapes.pdf,Flyers1,flyers,True,,,0
+Flyers1__Farm Workers Want Their Own Union!.pdf,Flyers1,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers1__Farmer Workers Are.pdf,Flyers1,flyers,True,,,0
+Flyers1__Farmworkers Ask Your Support.pdf,Flyers1,flyers,True,,,0
+Flyers1__Farmworkers Food Caravan to Delano 1.pdf,Flyers1,flyers,True,,,0
+Flyers2__Students Obtaining Summer Employment.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",8
+Flyers2__Support Farm Workers.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__Support Non-Violence.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__Thank You For Being Openminded.pdf,Flyers2,flyers,True,,,0
+Flyers2__The Arizona Rank and File (September 1973).pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",8
+Flyers2__The Boycott is the Necessary Deed.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",7
+Flyers2__The Boycott is the Necessary Deed.pdf,Flyers2,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers2__The Farm Workers - Our Cause 1.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers2__The Farm Workers - Our Cause 2.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers2__The Farm Workers_ Safeway Boycott.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers2__The Grape Bowl Story 1.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__The Grape Bowl Story 2.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__The Grape Boycott is Not Over.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__The Grape Strike.pdf,Flyers2,flyers,True,,,0
+Flyers2__The Grapefather.pdf,Flyers2,flyers,True,,,0
+Flyers2__The Grapes of War 1.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",19
+Flyers2__The Grapes of War 1.pdf,Flyers2,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",2
+Flyers2__The Grapes of War 2.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers2__The Lettuce Story.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__The Most You Can Give Is Of Yourself.pdf,Flyers2,flyers,True,,,0
+Flyers2__The Other Side.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__The Wine 9.pdf,Flyers2,flyers,True,,,0
+Flyers2__There Are Things We All Can Do.pdf,Flyers2,flyers,True,,,0
+Flyers2__Thirty Day Moratorium on Lettuce Boycott.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__This is What Safeway Does.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",32
+Flyers2__This is What Safeway Does.pdf,Flyers2,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers2__Tragedy Again Strikes Farm Workers.pdf,Flyers2,flyers,True,,,0
+Flyers2__Twenty Years of Struggle.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__U.A.W. Convention.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__UFW Songs and Chants.pdf,Flyers2,flyers,True,,,0
+Flyers2__UFW1-part-20-part-20-part-19-1.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers2__UFW1-part-20-part-20-part-19-2.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__UFW1-part-20-part-20-part-20-1.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__UFW1-part-20-part-20-part-20-part-6-2.pdf,Flyers2,flyers,True,,,0
+Flyers2__UFW_boycotts_safeway_BoycottSafeway-untagged.pdf,Flyers2,flyers,True,,,0
+Flyers2__UFW_boycotts_safeway_SafewayRefusesToAct-untagged.pdf,Flyers2,flyers,True,,,0
+Flyers2__Unidos En Coachella.pdf,Flyers2,flyers,True,,,0
+Flyers2__Unidos en Coachella(1).pdf,Flyers2,flyers,True,,,0
+Flyers2__United Farm Workers Union Newsletter.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+"Flyers2__Volante de El Malcriado No. 9, 23 de junio de 197S.pdf",Flyers2,flyers,True,,,0
+Flyers2__Volunteers Needed.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__Vote No On the Anti-Farmworker Initiative.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",9
+Flyers2__We Boycott grapes and Gallo wine.pdf,Flyers2,flyers,True,,,0
+Flyers2__We Shall Never be Free While Our Brothers are Slaves.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",9
+Flyers2__What Can A Safeway Customer Do.pdf,Flyers2,flyers,True,,,0
+Flyers2__What Harvest for the Reaper.pdf,Flyers2,flyers,True,,,0
+Flyers2__What Is the Story Behind the Napa Valley Wine Boycott.pdf,Flyers2,flyers,True,,,0
+Flyers2__What You Can Do To Help.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",10
+Flyers2__Who Are the Grape Strikers.pdf,Flyers2,flyers,True,,,0
+Flyers2__Why Should You Boycott Gallo Wine.pdf,Flyers2,flyers,True,,,0
+Flyers2__Why Should You Boycott Safeway.pdf,Flyers2,flyers,True,,,0
+Flyers2__Workers Vote UFW.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__Your Salad Or His Future.pdf,Flyers2,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers2__Your Vodka Affects Their Future.pdf,Flyers2,flyers,True,,,0
+Flyers3__Farmworkers Food Caravan to Delano 2.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers3__Farmworkers March on Gallo.pdf,Flyers3,flyers,True,,,0
+Flyers3__Farmworkers Need Your Help(1).pdf,Flyers3,flyers,True,,,0
+Flyers3__Farmworkers Need Your Help.pdf,Flyers3,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers3__Farmworkers Need Your Help.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",9
+Flyers3__Farmworkers_ Union vs. Farm Bureau.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",6
+Flyers3__Farmworkers_ Union vs. Farm Bureau.pdf,Flyers3,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",3
+Flyers3__Food Drive and Caravan to Delano.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__For Justice For All.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__From the Gallo Workers.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Fund Raising Ideas.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers3__Get Together.pdf,Flyers3,flyers,True,,,0
+Flyers3__Get the Storm Trooper Boots Off Our Back.pdf,Flyers3,flyers,True,,,0
+Flyers3__Grape Boycott Petition.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",8
+Flyers3__Hear Fred Gaboury.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Help Farm Workers This Summer.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Huelga Club.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",10
+Flyers3__Huelga Newsletter - Lettuce Boycott Comes to San Jose.pdf,Flyers3,flyers,False,7.21.5,"For every font embedded in a conforming file and used for rendering, the glyph width information in the font dictionary and in the embedded font program shall be consistent",1
+Flyers3__Huelga Newsletter - Lettuce Boycott Comes to San Jose.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",9
+Flyers3__Huge Fraud on Prop. 22.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",5
+Flyers3__Huge Fraud on Prop. 22.pdf,Flyers3,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers3__If Gallo Has a Sweetheart.pdf,Flyers3,flyers,True,,,0
+Flyers3__If You Believe in Justice for Farmworkers.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__If You_re Involved Enough.pdf,Flyers3,flyers,True,,,0
+Flyers3__Instructions to Pickets.pdf,Flyers3,flyers,True,,,0
+Flyers3__Interfaith Committee for Social Justice.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers3__International Grape Boycott Day.pdf,Flyers3,flyers,True,,,0
+Flyers3__Join the Labor Caravan 1.pdf,Flyers3,flyers,True,,,0
+Flyers3__Join the Labor Caravan 2.pdf,Flyers3,flyers,True,,,0
+Flyers3__Justice for Farm Workers.pdf,Flyers3,flyers,True,,,0
+Flyers3__La Lucha (December 1975).pdf,Flyers3,flyers,True,,,0
+"Flyers3__La Lucha (December 1975, p.2).pdf",Flyers3,flyers,True,,,0
+"Flyers3__La Lucha (June 15, 1975).pdf",Flyers3,flyers,True,,,0
+"Flyers3__La Lucha (June 15, 1975, p.3).pdf",Flyers3,flyers,True,,,0
+Flyers3__Lettuce Wage Comparison.pdf,Flyers3,flyers,True,,,0
+Flyers3__March and Rally - Delano Farm Workers_ Strike.pdf,Flyers3,flyers,True,,,0
+Flyers3__March and Rally.pdf,Flyers3,flyers,True,,,0
+Flyers3__Mod Squad Refuse To Cross Picket Line.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__More Reasons Why You Should Help the Farmworkers_ Union.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",6
+Flyers3__More Reasons Why You Should Help the Farmworkers_ Union.pdf,Flyers3,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers3__New Owner of Kentucky Fried Chicken.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__No Come Lechuga - Huelga.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",8
+Flyers3__No Come Lechuga.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__No Compre Aqui.pdf,Flyers3,flyers,True,,,0
+"Flyers3__No Way, Safeway!.pdf",Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",6
+Flyers3__On Sunday Give Us Your Prayers.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Only 10 Percent of Grapes are Scab.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Paul Masson Wants to Mechanize Workers Into Proverty.pdf,Flyers3,flyers,True,,,0
+Flyers3__Peligro de Muerte.pdf,Flyers3,flyers,True,,,0
+Flyers3__Pilgrimage by Farm Workers from Coachella Valley to Mexican Border.pdf,Flyers3,flyers,True,,,0
+Flyers3__Plan Of Action Against Lucky Stores.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",20
+Flyers3__Pleas Do Not Shop at this Store.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers3__Pleas Do Not Shop at this Store.pdf,Flyers3,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers3__Please Do Not Shop At This Store.pdf,Flyers3,flyers,True,,,0
+Flyers3__Please Don_t Buy Anything Here.pdf,Flyers3,flyers,True,,,0
+Flyers3__Please Don_t Buy Italian Swiss Colony Wines.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Please Don_t Shop At This Store.pdf,Flyers3,flyers,True,,,0
+Flyers3__Please Patronize Food Market Who Have Removed Scab-Picked Grapes.pdf,Flyers3,flyers,True,,,0
+Flyers3__Pledge to Boycott.pdf,Flyers3,flyers,True,,,0
+Flyers3__Por Favor No Compre Aqui.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers3__Priests Urge Boycott of Table Grapes.pdf,Flyers3,flyers,True,,,0
+Flyers3__Proclamation of the Delano Grape Workers 1.pdf,Flyers3,flyers,True,,,0
+Flyers3__Proclamation of the Delano Grape Workers 2.pdf,Flyers3,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",2
+Flyers3__Proclamation of the Delano Grape Workers 2.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",4
+Flyers3__Purex Products.pdf,Flyers3,flyers,True,,,0
+Flyers3__Purex Subsidiaries 1.pdf,Flyers3,flyers,True,,,0
+Flyers3__Purex Subsidiaries 2.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Purex Subsidiaries 3.pdf,Flyers3,flyers,True,,,0
+"Flyers3__Rev. Wayne C. Hartmire, Jr. - Straight Talk On the Lettuce.pdf",Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
+"Flyers3__Rev. Wayne C. Hartmire, Jr. - Straight Talk On the Lettuce.pdf",Flyers3,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers3__Ronald B. Taylor - Myths of Labor and the Plights of Children 1.pdf,Flyers3,flyers,True,,,0
+Flyers3__Ronald B. Taylor - Myths of Labor and the Plights of Children 2.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers3__SAFE WAY.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Safeway Fact Sheet.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Salinas Farm Workers Are On Strike.pdf,Flyers3,flyers,True,,,0
+Flyers3__Salinas Strikers Launch Lettuce Boycott.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",3
+Flyers3__Salinas Strikers Launch Lettuce Boycott.pdf,Flyers3,flyers,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
+Flyers3__Salinas The Workers Ignored.pdf,Flyers3,flyers,True,,,0
+Flyers3__San Jose March to Stop Gallo.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Say No to Safeway!.pdf,Flyers3,flyers,True,,,0
+Flyers3__Senator McGovern Boycotts Lettuce.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
+Flyers3__Should Union Workers Be Concerned.pdf,Flyers3,flyers,True,,,0
+Flyers3__Statement by Cesar Chavez from the Salinas Jail.pdf,Flyers3,flyers,True,,,0
+Flyers3__Stop Grapes in Coachella.pdf,Flyers3,flyers,True,,,0
+Flyers3__Stop The Dues Now.pdf,Flyers3,flyers,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",4
+Flyers3__march and demonstration in support of the Delano farmworkers’ strike.pdf,Flyers3,flyers,True,,,0

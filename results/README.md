@@ -17,3 +17,28 @@ Columns:
 Columns:
 - `batch`, `group`, `filename` — same as above
 - `pages` — page count of the source PDF
+
+## verapdf_errors_raw.csv
+
+Per-file, per-rule veraPDF failure details (non-compliant documents only; compliant documents have a single row with empty clause/description).
+
+Columns:
+- `filename` — tagged PDF filename
+- `batch`, `group` — same as above
+- `compliant` — True/False
+- `clause` — ISO 14289-1 clause number (e.g. `7.21.8`)
+- `description` — rule description text
+- `failed_checks` — number of individual check failures for this rule in this document
+
+## verapdf_error_summary.csv
+
+Aggregated failure counts across all 105 non-compliant documents.
+
+Columns:
+- `clause` — ISO 14289-1 clause number
+- `description` — rule description
+- `documents_affected` — count of non-compliant documents failing this rule
+- `pct_of_noncompliant` — percentage of the 105 non-compliant documents
+- `total_failed_checks` — sum of individual check failures across all documents
+
+Top failure modes: clause 7.21.8 `.notdef` glyph (99.0% of failures), clause 7.21.7 ToUnicode CMap (22.9%), clauses 7.18.1/7.18.5 annotation metadata (1.0%).
