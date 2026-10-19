@@ -1,17 +1,17 @@
 veraPDF 1.28.2, profile: PDF/UA-1 (ua1)
-Corpus: 258 scanned archival PDFs
-Date: 2026-09-30
+Corpus: 257 scanned archival PDFs
+Date: 2026-09-30 (re-validated 2026-10-13: removed duplicate Batch4/Test.pdf; re-processed Batch6 Chicano_question-spanish)
 
-Pass: 153 / 258 (59.3%)
-Fail: 105 / 258 (40.7%)
+Pass: 151 / 257 (58.8%)
+Fail: 106 / 257 (41.2%)
 
 Per-batch:
   Batch1:   9/10  (90%)
   Batch2:   4/6   (67%)
   Batch3:  11/12  (92%)
-  Batch4:   9/11  (82%)
+  Batch4:   8/10  (80%)
   Batch5:  10/12  (83%)
-  Batch6:  18/19  (95%)
+  Batch6:  17/19  (89%)
   Batch7:   4/4  (100%)
   Flyers1: 26/56  (46%)
   Flyers2: 22/51  (43%)
@@ -20,5 +20,5 @@ Per-batch:
 Full per-document results: results/verapdf_results.csv
 Corpus manifest (filenames, page counts): results/corpus_manifest.csv
 
-Speed benchmark: 3,272 pages in ~22.9 minutes = 142.9 pages/minute
+Speed benchmark (re-measured 2026-10-13, OCR enabled): 3,262 pages in 35.0 minutes = 93.1 pages/minute (0.64 s/page)
 Hardware: MacBook Pro M4

@@ -42,7 +42,6 @@ Batch4__Copy of [AH160-162] Galarza Symposium 1987.pdf,Batch4,well_encoded,True,
 "Batch4__Housing Development in Imo State, Nigeria.pdf",Batch4,well_encoded,True,,,0
 Batch4__Individualized Marketing A Travel Behavior Change Program.pdf,Batch4,well_encoded,True,,,0
 Batch4__Integrating Pollution Prevention Measures in Trails Along Waterways.pdf,Batch4,well_encoded,True,,,0
-Batch4__Test.pdf,Batch4,well_encoded,True,,,0
 "Batch4__The value of the arts, history and culture in downtown revitalization (moving from theory to practice).pdf",Batch4,well_encoded,True,,,0
 Batch5__A Farmland Preservation Model for the City of Turlock.pdf,Batch5,well_encoded,False,7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",1
 Batch5__A Farmland Preservation Model for the City of Turlock.pdf,Batch5,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",1
@@ -60,7 +59,7 @@ Batch5__Smart Growth and its Effects on Enhancing the Quality.pdf,Batch5,well_en
 Batch5__Smart Growth and its Effects on Enhancing the Quality.pdf,Batch5,well_encoded,False,7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",2
 Batch6__AFL-CIO - Rise of a Farm Workers Union.pdf,Batch6,well_encoded,True,,,0
 Batch6__Analysis of Redevelopment in Distressed Communities A Sacremento Case Study.pdf,Batch6,well_encoded,True,,,0
-Batch6__Copy of DRR_Chicano_question-spanish.pdf,Batch6,well_encoded,True,,,0
+Batch6__Copy of DRR_Chicano_question-spanish.pdf,Batch6,well_encoded,False,7.1,Tagged content should not be present inside content marked as Artifact,2
 Batch6__Copy of SBBS  (02).pdf,Batch6,well_encoded,True,,,0
 Batch6__Copy of SBBS  (04).pdf,Batch6,well_encoded,True,,,0
 Batch6__Copy of SBBS  (05).pdf,Batch6,well_encoded,True,,,0

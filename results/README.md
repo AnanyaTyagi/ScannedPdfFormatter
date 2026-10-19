@@ -32,13 +32,13 @@ Columns:
 
 ## verapdf_error_summary.csv
 
-Aggregated failure counts across all 105 non-compliant documents.
+Aggregated failure counts across all 106 non-compliant documents.
 
 Columns:
 - `clause` — ISO 14289-1 clause number
 - `description` — rule description
 - `documents_affected` — count of non-compliant documents failing this rule
-- `pct_of_noncompliant` — percentage of the 105 non-compliant documents
+- `pct_of_noncompliant` — percentage of the 106 non-compliant documents
 - `total_failed_checks` — sum of individual check failures across all documents
 
-Top failure modes: clause 7.21.8 `.notdef` glyph (99.0% of failures), clause 7.21.7 ToUnicode CMap (22.9%), clauses 7.18.1/7.18.5 annotation metadata (1.0%).
+Top failure modes: clause 7.21.8 `.notdef` glyph (98.1% of failures), clause 7.21.7 ToUnicode CMap (22.6%), clause 7.1 artifact/tagged content (1.9%), clause 7.21.5 glyph widths (1.9%), clauses 7.18.1/7.18.5 annotation metadata (0.9%).

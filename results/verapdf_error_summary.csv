@@ -1,7 +1,7 @@
 clause,description,documents_affected,pct_of_noncompliant,total_failed_checks
-7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",104,99.0,414
-7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",24,22.9,33
-7.18.5,"Links shall contain an alternate description via their Contents key as described in ISO 32000-1:2008, 14.9.3",2,1.9,174
+7.21.8,"A PDF/UA compliant document shall not contain a reference to the .notdef glyph from any of the text showing operators, regardless of text rendering mode, in any content stream",104,98.1,414
+7.21.7,"The Unicode values specified in the ToUnicode CMap shall all be greater than zero (0), but not equal to either U+FEFF or U+FFFE",24,22.6,33
+7.1,Content shall be marked as Artifact or tagged as real content; tagged content should not be present inside content marked as Artifact,2,1.9,623
 7.21.5,"For every font embedded in a conforming file and used for rendering, the glyph width information in the font dictionary and in the embedded font program shall be consistent",2,1.9,7
-7.18.1,"An annotation (except Widget annotations or hidden annotations, or those having rectangle outside the crop-box) shall have either Contents key or an Alt entry in the enclosing structure element",1,1.0,87
-7.1,Content shall be marked as Artifact or tagged as real content,1,1.0,621
+7.18.5,"Links shall contain an alternate description via their Contents key as described in ISO 32000-1:2008, 14.9.3",1,0.9,174
+7.18.1,"An annotation (except Widget annotations or hidden annotations, or those having rectangle outside the crop-box) shall have either Contents key or an Alt entry in the enclosing structure element",1,0.9,87

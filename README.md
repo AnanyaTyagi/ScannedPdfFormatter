@@ -36,14 +36,14 @@ Output is `output.pdf` in the working directory.
 
 ## Evaluation results
 
-Evaluated on 258 scanned archival PDFs from the [De la Colección: Farmworker Heritage](https://digitalcollections.sjlibrary.org/) collection.
+Evaluated on 257 scanned archival PDFs from the [De la Colección: Farmworker Heritage](https://digitalcollections.sjlibrary.org/) collection.
 Validation used veraPDF 1.28.2 with the PDF/UA-1 profile.
 
 | Group | Documents | Pass | Compliance |
 |---|---|---|---|
-| Well-encoded (Batch1–7) | 74 | 65 | 87.8% |
+| Well-encoded (Batch1–7) | 73 | 63 | 86.3% |
 | Flyers (Flyers1–3) | 184 | 88 | 47.8% |
-| **Overall** | **258** | **153** | **59.3%** |
+| **Overall** | **257** | **151** | **58.8%** |
 
 Per-batch breakdown:
 
@@ -52,9 +52,9 @@ Per-batch breakdown:
 | Batch1 | 9/10 | 90% |
 | Batch2 | 4/6 | 67% |
 | Batch3 | 11/12 | 92% |
-| Batch4 | 9/11 | 82% |
+| Batch4 | 8/10 | 80% |
 | Batch5 | 10/12 | 83% |
-| Batch6 | 18/19 | 95% |
+| Batch6 | 17/19 | 89% |
 | Batch7 | 4/4 | 100% |
 | Flyers1 | 26/56 | 46% |
 | Flyers2 | 22/51 | 43% |
@@ -62,14 +62,18 @@ Per-batch breakdown:
 
 The compliance split reflects source font encoding quality, not document complexity. Flyers1–3 contain embedded fonts with missing Unicode character mapping tables (ISO 14289-1 clause 7.21.8 violations), which the tagging pipeline cannot fix. Batch1–7 documents have well-encoded fonts and achieve 67–100% compliance.
 
-Speed: 142.9 pages/minute on a MacBook Pro M4 (0.42 seconds/page average, 3,272 pages total).
+Speed: 93.1 pages/minute on a MacBook Pro M4 with 16 GB RAM (0.64 seconds/page average, 3,262 pages total, including OCR on image-only pages).
 
 Raw veraPDF results and corpus manifest are in `results/`.
 
 ## Failure modes
 
-The dominant failure (99% of non-compliant documents) is source font encoding: embedded fonts lacking Unicode character maps produce `.notdef` glyph violations regardless of tagging quality. Secondary failures are reading order ambiguity in multi-column layouts and missing table structural markup.
+The dominant failure (104 of 106 non-compliant documents, 98%) is source font encoding: embedded fonts lacking Unicode character maps produce `.notdef` glyph violations regardless of tagging quality. The remaining failures are one flyer with inconsistent glyph widths (clause 7.21.5) and one document with tagged content inside an Artifact (clause 7.1); one document also has link annotations without alternate descriptions (clauses 7.18.1/7.18.5). No table-structure or reading-order failures occur in this corpus.
 
 ## Requirements
 
 See `requirements.txt`. YOLOv8 weights (`yolov8n-doclaynet.pt`) must be present in the working directory.
+
+## License
+
+GNU Affero General Public License v3.0 (AGPL-3.0). See `LICENSE`. This matches the licenses of the Ultralytics and PyMuPDF dependencies.
