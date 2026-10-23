@@ -55,6 +55,61 @@ def which_script(script_dir, *candidates):
     return os.path.join(script_dir, candidates[0])
 
 
+def _strip_marked_content(page_obj):
+    """Remove BDC/BMC/EMC operators from a page content stream.
+
+    Same logic as app.py: old MCID markers left in the content stream end up
+    nested inside the new tags (or inside Artifacts) and fail PDF/UA.
+    """
+    import pikepdf
+    import re
+
+    def clean_stream(data: bytes) -> bytes:
+        data = re.sub(rb'/\w+\s*<<[^>]*>>\s*BDC', b'', data)
+        data = re.sub(rb'/\w+\s*BMC', b'', data)
+        data = re.sub(rb'\bEMC\b', b'', data)
+        return data
+
+    contents = page_obj.get('/Contents')
+    if contents is None:
+        return
+    streams = list(contents) if isinstance(contents, pikepdf.Array) else [contents]
+    for stream in streams:
+        try:
+            # read_bytes() (decompressed), not read_raw_bytes()
+            decoded = stream.read_bytes()
+            cleaned = clean_stream(decoded)
+            if cleaned != decoded:
+                stream.write(cleaned)
+        except Exception:
+            pass
+
+
+def untag_if_tagged(pdf_path, untagged_path="untagged_input.pdf"):
+    """
+    If the input already has a structure tree, write an untagged copy
+    (StructTreeRoot, MarkInfo, StructParents and MCID markers removed) and
+    return its path. The original file is not modified.
+    """
+    import pikepdf
+    from pikepdf import Name
+
+    with pikepdf.open(pdf_path) as pdf:
+        if Name.StructTreeRoot not in pdf.Root:
+            return pdf_path
+        print("Input is already tagged - removing existing tags first...")
+        del pdf.Root[Name.StructTreeRoot]
+        if Name.MarkInfo in pdf.Root:
+            del pdf.Root[Name.MarkInfo]
+        for page in pdf.pages:
+            if Name.StructParents in page.obj:
+                del page.obj[Name.StructParents]
+            _strip_marked_content(page.obj)
+        pdf.save(untagged_path)
+    print(f"Untagged copy: {untagged_path}")
+    return untagged_path
+
+
 def main(pdf_path, dpi="300", weights=None, labelmap="labelmap.json"):
     # Find Python executable
     # For Streamlit Cloud
@@ -110,6 +165,9 @@ def main(pdf_path, dpi="300", weights=None, labelmap="labelmap.json"):
         print(f"Cleaned up: {out_pdf}")
 
     print("\n=== Starting Accessible PDF Tagger ===")
+
+    # 0) Remove existing tags so old markers don't conflict with the new tree
+    pdf_path = untag_if_tagged(pdf_path)
 
     # 1) Probe
     run([py, probing, pdf_path])

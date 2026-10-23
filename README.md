@@ -13,7 +13,7 @@ Converts scanned (OCR'd) PDFs into PDF/UA-compliant accessible PDFs with structu
 
 ## What it does
 
-Takes a scanned PDF with an invisible OCR text layer and outputs a tagged PDF with `<H1>`, `<H2>`, `<P>`, `<Figure>`, `<Caption>`, `<LI>`, and `<Table>` structure elements, validated against ISO 14289-1 (PDF/UA-1).
+Takes a scanned PDF (using its existing text layer, or Tesseract OCR on pages without one) and outputs a tagged PDF with `<H1>`, `<H2>`, `<P>`, `<Figure>`, `<Caption>`, `<LI>`, and `<Table>` structure elements, validated against ISO 14289-1 (PDF/UA-1).
 
 ## Pipeline
 
@@ -26,13 +26,92 @@ Takes a scanned PDF with an invisible OCR text layer and outputs a tagged PDF wi
 
 Run via `TagMyPDF2.py` or through the Streamlit web app (`app.py`).
 
-## Running
+## Running locally
+
+### Requirements
+
+- macOS or Linux (Windows users: use Docker, below)
+- Python 3.12 (the version used in the Dockerfile; PyTorch 2.5 does not support newer Python versions)
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) with English and Spanish language data
+- [Git LFS](https://git-lfs.com/), which stores the YOLO weights `yolov8n-doclaynet.pt`
+- Optional, for validation: [veraPDF](https://verapdf.org/software/) (the evaluation used 1.28.2)
+
+### Option A: setup script
 
 ```bash
-python TagMyPDF2.py input.pdf
+git lfs install
+git clone https://github.com/AnanyaTyagi/ScannedPdfFormatter.git
+cd ScannedPdfFormatter
+./setup.sh
 ```
 
-Output is `output.pdf` in the working directory.
+`setup.sh` installs Tesseract and Git LFS (Homebrew on macOS, apt on Debian/Ubuntu), creates a Python 3.12 virtual environment in `.venv`, and installs `requirements.txt`.
+
+### Option B: manual setup
+
+```bash
+# System packages
+brew install python@3.12 tesseract tesseract-lang git-lfs          # macOS
+# sudo apt-get install python3.12 python3.12-venv git-lfs \
+#     tesseract-ocr tesseract-ocr-eng tesseract-ocr-spa libgl1 libglib2.0-0   # Ubuntu/Debian
+
+git lfs install
+git clone https://github.com/AnanyaTyagi/ScannedPdfFormatter.git
+cd ScannedPdfFormatter
+git lfs pull                       # yolov8n-doclaynet.pt should be about 6 MB, not a small text file
+
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# Check OCR is available; if pytesseract cannot run, image-only pages are tagged without text
+python -c "import pytesseract; print(pytesseract.get_tesseract_version())"
+tesseract --list-langs             # should list eng and spa
+```
+
+### Tag a PDF
+
+```bash
+source .venv/bin/activate
+python TagMyPDF2.py path/to/input.pdf
+```
+
+The tagged PDF is written to `output.pdf` in the current directory. Intermediate files go to `debug/`, `layout_out/`, `lines_out/`, `fused_tags/` and `structures/` in the current directory; these folders and `output.pdf` are overwritten on every run, so copy `output.pdf` elsewhere before processing the next file.
+
+To process a folder of PDFs:
+
+```bash
+mkdir -p tagged
+for f in path/to/pdfs/*.pdf; do
+    python TagMyPDF2.py "$f" && cp output.pdf "tagged/$(basename "$f")"
+done
+```
+
+Options: `--dpi 300` (render resolution), `--weights yolov8n-doclaynet.pt`, `--labelmap labelmap.json`.
+
+### Validate with veraPDF
+
+```bash
+verapdf --flavour ua1 output.pdf                       # one file
+verapdf --flavour ua1 --format xml -r tagged/ > report.xml   # a folder
+```
+
+`isCompliant="true"` in the report means the file passes PDF/UA-1.
+
+### Option C: Docker
+
+```bash
+docker build -t tagmypdf .
+
+# Web interface at http://localhost:7860
+docker run --rm -p 7860:7860 tagmypdf
+
+# Command line, on a PDF in the current directory
+docker run --rm -v "$PWD":/data -w /data tagmypdf python /app/TagMyPDF2.py /data/input.pdf
+```
+
+The command-line form writes `output.pdf` to the current directory.
 
 ## Evaluation results
 
@@ -69,10 +148,6 @@ Raw veraPDF results and corpus manifest are in `results/`.
 ## Failure modes
 
 The dominant failure (104 of 106 non-compliant documents, 98%) is source font encoding: embedded fonts lacking Unicode character maps produce `.notdef` glyph violations regardless of tagging quality. The remaining failures are one flyer with inconsistent glyph widths (clause 7.21.5) and one document with tagged content inside an Artifact (clause 7.1); one document also has link annotations without alternate descriptions (clauses 7.18.1/7.18.5). No table-structure or reading-order failures occur in this corpus.
-
-## Requirements
-
-See `requirements.txt`. YOLOv8 weights (`yolov8n-doclaynet.pt`) must be present in the working directory.
 
 ## License
 

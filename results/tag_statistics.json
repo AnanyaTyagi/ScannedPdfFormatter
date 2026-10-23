@@ -1,0 +1,5153 @@
+{
+ "description": "Line-level tag types and tag-decision sources produced by the pipeline (FuseLinesFixed_fixed.py) on the 257-document validation corpus. Basis for Table 4 and the tag-source shares in Sections 3.2 and 5.5.",
+ "pipeline_commit": "27d9b8d",
+ "ocr": "Tesseract 5.5.1 via pytesseract 0.3.13 (eng+spa)",
+ "generated": "2026-10-19",
+ "groups": {
+  "well_encoded (Batch1-7)": {
+   "documents": 73,
+   "pages": 3060,
+   "tagged_lines": 136968,
+   "tag_types": {
+    "P": 90146,
+    "TableRowCandidate": 20256,
+    "Artifact": 13204,
+    "LI": 7647,
+    "H2": 3834,
+    "FigureCaptionCandidate": 1378,
+    "H1": 503
+   },
+   "tag_sources": {
+    "ML:text": 85843,
+    "ML:table": 20256,
+    "artifact_detection": 13204,
+    "ML:list_item": 5698,
+    "default": 3786,
+    "ML:section_header": 3411,
+    "heuristic:list_pattern": 2011,
+    "heuristic:caption_pattern": 755,
+    "ML:caption": 554,
+    "ML:footnote": 455,
+    "ML:section_header+font": 312,
+    "ML:title": 301,
+    "heuristic:font_size": 240,
+    "ML:picture+pattern": 69,
+    "ML:title+font": 46,
+    "heuristic:all_caps": 19,
+    "heuristic:h1_pattern": 6,
+    "heuristic:font_bold": 1,
+    "heuristic:h2_pattern": 1
+   }
+  },
+  "flyers (Flyers1-3)": {
+   "documents": 184,
+   "pages": 202,
+   "tagged_lines": 13293,
+   "tag_types": {
+    "P": 9260,
+    "Artifact": 1448,
+    "LI": 1174,
+    "TableRowCandidate": 843,
+    "H2": 337,
+    "H1": 211,
+    "FigureCaptionCandidate": 20
+   },
+   "tag_sources": {
+    "ML:text": 7789,
+    "default": 1457,
+    "artifact_detection": 1448,
+    "heuristic:list_pattern": 871,
+    "ML:table": 843,
+    "ML:list_item": 317,
+    "ML:section_header": 203,
+    "heuristic:font_size": 153,
+    "ML:section_header+font": 152,
+    "ML:caption": 20,
+    "ML:title+font": 14,
+    "ML:title": 12,
+    "heuristic:font_bold": 9,
+    "heuristic:all_caps": 5
+   }
+  }
+ },
+ "overall": {
+  "documents": 257,
+  "pages": 3262,
+  "tagged_lines": 150261,
+  "tag_types": {
+   "P": 99406,
+   "TableRowCandidate": 21099,
+   "Artifact": 14652,
+   "LI": 8821,
+   "H2": 4171,
+   "FigureCaptionCandidate": 1398,
+   "H1": 714
+  },
+  "tag_sources": {
+   "ML:text": 93632,
+   "ML:table": 21099,
+   "artifact_detection": 14652,
+   "ML:list_item": 6015,
+   "default": 5243,
+   "ML:section_header": 3614,
+   "heuristic:list_pattern": 2882,
+   "heuristic:caption_pattern": 755,
+   "ML:caption": 574,
+   "ML:section_header+font": 464,
+   "ML:footnote": 455,
+   "heuristic:font_size": 393,
+   "ML:title": 313,
+   "ML:picture+pattern": 69,
+   "ML:title+font": 60,
+   "heuristic:all_caps": 24,
+   "heuristic:font_bold": 10,
+   "heuristic:h1_pattern": 6,
+   "heuristic:h2_pattern": 1
+  }
+ },
+ "per_document": [
+  {
+   "batch": "Batch1",
+   "filename": "A Comparison of the Portland and San Jose Light Rail Planning Process.pdf",
+   "pages": 105,
+   "total_lines": 9358,
+   "tag_types": {
+    "H1": 4,
+    "P": 8809,
+    "Artifact": 200,
+    "TableRowCandidate": 76,
+    "FigureCaptionCandidate": 16,
+    "LI": 238,
+    "H2": 15
+   },
+   "source_breakdown": {
+    "ML:title": 4,
+    "ML:text": 8735,
+    "artifact_detection": 200,
+    "ML:table": 76,
+    "heuristic:caption_pattern": 4,
+    "default": 64,
+    "ML:caption": 12,
+    "ML:list_item": 239,
+    "heuristic:list_pattern": 1,
+    "ML:section_header": 15,
+    "ML:footnote": 8
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "BART to San Jose A Special Opportunity for Transit-Oriented Redevelopement near Downtown San Jose.pdf",
+   "pages": 89,
+   "total_lines": 3443,
+   "tag_types": {
+    "H2": 185,
+    "P": 1726,
+    "Artifact": 858,
+    "TableRowCandidate": 302,
+    "FigureCaptionCandidate": 64,
+    "H1": 8,
+    "LI": 300
+   },
+   "source_breakdown": {
+    "ML:title": 2,
+    "ML:title+font": 4,
+    "default": 38,
+    "ML:text": 1680,
+    "ML:section_header": 164,
+    "artifact_detection": 858,
+    "ML:section_header+font": 23,
+    "ML:table": 302,
+    "heuristic:caption_pattern": 36,
+    "ML:caption": 28,
+    "heuristic:list_pattern": 88,
+    "ML:footnote": 8,
+    "ML:list_item": 212
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "City of Santa Clara_s Housing Element Approach to the Provision of Affordable Housing.pdf",
+   "pages": 77,
+   "total_lines": 3118,
+   "tag_types": {
+    "H2": 61,
+    "H1": 18,
+    "P": 1346,
+    "Artifact": 326,
+    "TableRowCandidate": 1091,
+    "LI": 274,
+    "FigureCaptionCandidate": 2
+   },
+   "source_breakdown": {
+    "ML:title": 4,
+    "default": 313,
+    "artifact_detection": 326,
+    "ML:section_header": 45,
+    "ML:text": 1033,
+    "ML:table": 1091,
+    "ML:list_item": 189,
+    "heuristic:list_pattern": 85,
+    "heuristic:font_size": 16,
+    "heuristic:all_caps": 2,
+    "ML:section_header+font": 12,
+    "ML:caption": 2
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "Copy of BAVC1012416_1_access-English.pdf",
+   "pages": 47,
+   "total_lines": 1289,
+   "tag_types": {
+    "P": 1133,
+    "H2": 156
+   },
+   "source_breakdown": {
+    "ML:text": 1118,
+    "default": 15,
+    "ML:section_header": 156
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "Copy of SBBS  (07).pdf",
+   "pages": 1,
+   "total_lines": 10,
+   "tag_types": {
+    "P": 5,
+    "LI": 5
+   },
+   "source_breakdown": {
+    "ML:text": 5,
+    "heuristic:list_pattern": 5
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "Copy of SBBS  (27).pdf",
+   "pages": 1,
+   "total_lines": 55,
+   "tag_types": {
+    "P": 54,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "ML:text": 49,
+    "default": 5,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 10.pdf",
+   "pages": 1,
+   "total_lines": 21,
+   "tag_types": {
+    "H1": 1,
+    "P": 20
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 1,
+    "default": 3,
+    "ML:text": 17
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 11.pdf",
+   "pages": 1,
+   "total_lines": 16,
+   "tag_types": {
+    "H2": 2,
+    "H1": 1,
+    "P": 13
+   },
+   "source_breakdown": {
+    "ML:section_header": 1,
+    "ML:title": 2,
+    "ML:text": 13
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "Residential Design Review A Comparative Analysis of Three Bay Area Cities.pdf",
+   "pages": 68,
+   "total_lines": 3092,
+   "tag_types": {
+    "H1": 1,
+    "P": 2294,
+    "H2": 103,
+    "Artifact": 193,
+    "TableRowCandidate": 336,
+    "FigureCaptionCandidate": 68,
+    "LI": 97
+   },
+   "source_breakdown": {
+    "ML:title": 1,
+    "default": 44,
+    "ML:text": 2234,
+    "ML:section_header": 92,
+    "artifact_detection": 193,
+    "ML:table": 336,
+    "heuristic:caption_pattern": 45,
+    "ML:section_header+font": 11,
+    "ML:footnote": 16,
+    "heuristic:list_pattern": 37,
+    "ML:caption": 17,
+    "ML:list_item": 60,
+    "ML:picture+pattern": 6
+   }
+  },
+  {
+   "batch": "Batch1",
+   "filename": "Theory and History of Social Indicators With Demonstration.pdf",
+   "pages": 133,
+   "total_lines": 6634,
+   "tag_types": {
+    "H2": 129,
+    "H1": 25,
+    "P": 3472,
+    "TableRowCandidate": 1946,
+    "Artifact": 682,
+    "FigureCaptionCandidate": 23,
+    "LI": 357
+   },
+   "source_breakdown": {
+    "ML:section_header": 117,
+    "ML:title": 19,
+    "ML:text": 3254,
+    "default": 185,
+    "heuristic:h1_pattern": 1,
+    "ML:table": 1946,
+    "artifact_detection": 682,
+    "ML:caption": 22,
+    "heuristic:font_size": 2,
+    "ML:section_header+font": 14,
+    "ML:list_item": 37,
+    "heuristic:list_pattern": 325,
+    "ML:footnote": 28,
+    "ML:title+font": 1,
+    "ML:picture+pattern": 1
+   }
+  },
+  {
+   "batch": "Batch2",
+   "filename": "Copy of Sooper Dooper Asian Scooper Vol. 1 No. 4.pdf",
+   "pages": 16,
+   "total_lines": 494,
+   "tag_types": {
+    "P": 421,
+    "LI": 3,
+    "H2": 9,
+    "Artifact": 9,
+    "TableRowCandidate": 52
+   },
+   "source_breakdown": {
+    "ML:text": 409,
+    "default": 12,
+    "heuristic:list_pattern": 3,
+    "heuristic:font_size": 3,
+    "ML:section_header": 6,
+    "artifact_detection": 9,
+    "ML:table": 52
+   }
+  },
+  {
+   "batch": "Batch2",
+   "filename": "Copy of Sooper Dooper Asian Scooper Vol. 1 No. 5.pdf",
+   "pages": 20,
+   "total_lines": 721,
+   "tag_types": {
+    "Artifact": 12,
+    "LI": 7,
+    "H2": 17,
+    "P": 631,
+    "H1": 2,
+    "TableRowCandidate": 52
+   },
+   "source_breakdown": {
+    "artifact_detection": 12,
+    "heuristic:list_pattern": 7,
+    "heuristic:font_size": 6,
+    "ML:text": 586,
+    "default": 45,
+    "ML:section_header": 13,
+    "ML:table": 52
+   }
+  },
+  {
+   "batch": "Batch2",
+   "filename": "Copy of Sooper Dooper Asian Scooper Vol. 1 No. 6.pdf",
+   "pages": 24,
+   "total_lines": 581,
+   "tag_types": {
+    "Artifact": 26,
+    "H2": 6,
+    "P": 505,
+    "LI": 21,
+    "H1": 3,
+    "TableRowCandidate": 19,
+    "FigureCaptionCandidate": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 26,
+    "ML:section_header": 5,
+    "ML:text": 451,
+    "default": 53,
+    "heuristic:list_pattern": 15,
+    "heuristic:font_size": 4,
+    "ML:table": 19,
+    "ML:picture+pattern": 1,
+    "ML:list_item": 7
+   }
+  },
+  {
+   "batch": "Batch2",
+   "filename": "Copy of Sooper Dooper Asian Scooper Vol. 1 No. 7.pdf",
+   "pages": 15,
+   "total_lines": 457,
+   "tag_types": {
+    "P": 364,
+    "Artifact": 37,
+    "FigureCaptionCandidate": 1,
+    "H2": 9,
+    "H1": 2,
+    "TableRowCandidate": 43,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "default": 15,
+    "ML:text": 349,
+    "artifact_detection": 37,
+    "ML:caption": 1,
+    "ML:section_header": 9,
+    "heuristic:font_size": 2,
+    "ML:table": 43,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Batch2",
+   "filename": "Copy of Sooper Dooper Asian Scooper Vol. 1 No. 8.pdf",
+   "pages": 20,
+   "total_lines": 639,
+   "tag_types": {
+    "Artifact": 72,
+    "H1": 9,
+    "P": 542,
+    "LI": 4,
+    "H2": 12
+   },
+   "source_breakdown": {
+    "artifact_detection": 72,
+    "heuristic:font_size": 10,
+    "default": 27,
+    "ML:text": 515,
+    "heuristic:list_pattern": 4,
+    "ML:section_header": 9,
+    "heuristic:all_caps": 1,
+    "ML:section_header+font": 1
+   }
+  },
+  {
+   "batch": "Batch2",
+   "filename": "Copy of Sooper Dooper Asian Scooper Vol. 1 No. 9.pdf",
+   "pages": 20,
+   "total_lines": 664,
+   "tag_types": {
+    "Artifact": 86,
+    "H2": 11,
+    "P": 517,
+    "H1": 8,
+    "LI": 42
+   },
+   "source_breakdown": {
+    "artifact_detection": 86,
+    "ML:section_header": 7,
+    "ML:text": 424,
+    "ML:section_header+font": 2,
+    "heuristic:list_pattern": 17,
+    "heuristic:font_size": 10,
+    "default": 93,
+    "ML:list_item": 25
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Copy of BAVC1012416_1_access-Spanish.pdf",
+   "pages": 19,
+   "total_lines": 494,
+   "tag_types": {
+    "P": 450,
+    "H2": 44
+   },
+   "source_breakdown": {
+    "ML:text": 446,
+    "ML:section_header": 44,
+    "default": 4
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Copy of DRR_AAS_Horizons_01.pdf",
+   "pages": 2,
+   "total_lines": 52,
+   "tag_types": {
+    "H2": 3,
+    "P": 47,
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "ML:section_header": 1,
+    "default": 7,
+    "heuristic:font_size": 2,
+    "ML:text": 40,
+    "artifact_detection": 2
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Copy of DRR_AAS_Horizons_02.pdf",
+   "pages": 3,
+   "total_lines": 77,
+   "tag_types": {
+    "P": 69,
+    "H2": 2,
+    "LI": 4,
+    "H1": 2
+   },
+   "source_breakdown": {
+    "ML:text": 64,
+    "default": 5,
+    "heuristic:font_size": 4,
+    "heuristic:list_pattern": 1,
+    "ML:list_item": 3
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Copy of DRR_AAS_Horizons_03.pdf",
+   "pages": 1,
+   "total_lines": 40,
+   "tag_types": {
+    "P": 38,
+    "H2": 1,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "default": 11,
+    "heuristic:font_size": 1,
+    "ML:text": 27,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Copy of SBBS  (06).pdf",
+   "pages": 1,
+   "total_lines": 20,
+   "tag_types": {
+    "Artifact": 8,
+    "LI": 1,
+    "P": 10,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 8,
+    "heuristic:list_pattern": 1,
+    "default": 8,
+    "ML:text": 2,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Copy of galarza_anglo.pdf",
+   "pages": 8,
+   "total_lines": 386,
+   "tag_types": {
+    "P": 386
+   },
+   "source_breakdown": {
+    "default": 4,
+    "ML:text": 382
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Emeryville North Hollis Area Study.pdf",
+   "pages": 73,
+   "total_lines": 2850,
+   "tag_types": {
+    "H2": 64,
+    "P": 1290,
+    "Artifact": 977,
+    "TableRowCandidate": 451,
+    "LI": 45,
+    "FigureCaptionCandidate": 19,
+    "H1": 4
+   },
+   "source_breakdown": {
+    "ML:title+font": 2,
+    "ML:text": 1233,
+    "default": 55,
+    "artifact_detection": 977,
+    "ML:section_header+font": 5,
+    "ML:table": 451,
+    "ML:section_header": 58,
+    "heuristic:list_pattern": 38,
+    "ML:footnote": 2,
+    "ML:caption": 16,
+    "ML:picture+pattern": 2,
+    "heuristic:font_size": 2,
+    "heuristic:caption_pattern": 1,
+    "ML:title": 1,
+    "ML:list_item": 7
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Form-Based Zoning A Tool For Creating Small Business Opportunities.pdf",
+   "pages": 61,
+   "total_lines": 3114,
+   "tag_types": {
+    "H1": 6,
+    "H2": 52,
+    "P": 2048,
+    "Artifact": 471,
+    "TableRowCandidate": 482,
+    "FigureCaptionCandidate": 50,
+    "LI": 5
+   },
+   "source_breakdown": {
+    "ML:title+font": 3,
+    "ML:text": 2011,
+    "default": 26,
+    "artifact_detection": 471,
+    "ML:section_header+font": 7,
+    "ML:table": 482,
+    "ML:section_header": 43,
+    "heuristic:caption_pattern": 37,
+    "heuristic:list_pattern": 3,
+    "heuristic:h1_pattern": 2,
+    "ML:footnote": 11,
+    "ML:title": 2,
+    "ML:caption": 13,
+    "heuristic:font_size": 1,
+    "ML:list_item": 2
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Mission of Mercy- The U.S. Military Mission in Berlin, 1919.pdf",
+   "pages": 136,
+   "total_lines": 9635,
+   "tag_types": {
+    "H1": 55,
+    "P": 8491,
+    "LI": 48,
+    "H2": 150,
+    "Artifact": 200,
+    "TableRowCandidate": 689,
+    "FigureCaptionCandidate": 2
+   },
+   "source_breakdown": {
+    "ML:title": 58,
+    "default": 183,
+    "ML:text": 8308,
+    "heuristic:list_pattern": 48,
+    "ML:section_header": 146,
+    "artifact_detection": 200,
+    "ML:table": 689,
+    "ML:caption": 2,
+    "ML:title+font": 1
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "TOD Proposal for Fremont_s Warm Springs BART Station Fremont California.pdf",
+   "pages": 91,
+   "total_lines": 4659,
+   "tag_types": {
+    "H1": 17,
+    "P": 2364,
+    "H2": 148,
+    "TableRowCandidate": 1078,
+    "LI": 410,
+    "FigureCaptionCandidate": 78,
+    "Artifact": 564
+   },
+   "source_breakdown": {
+    "ML:title": 5,
+    "ML:text": 2214,
+    "ML:section_header": 143,
+    "default": 143,
+    "heuristic:font_size": 5,
+    "ML:table": 1078,
+    "heuristic:list_pattern": 216,
+    "heuristic:caption_pattern": 59,
+    "artifact_detection": 564,
+    "ML:list_item": 194,
+    "ML:section_header+font": 7,
+    "ML:caption": 16,
+    "ML:footnote": 7,
+    "heuristic:all_caps": 1,
+    "ML:picture+pattern": 3,
+    "ML:title+font": 4
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Thresholds of Significance.pdf",
+   "pages": 223,
+   "total_lines": 9000,
+   "tag_types": {
+    "H2": 603,
+    "P": 4276,
+    "H1": 33,
+    "TableRowCandidate": 2430,
+    "Artifact": 474,
+    "LI": 1143,
+    "FigureCaptionCandidate": 41
+   },
+   "source_breakdown": {
+    "ML:section_header": 589,
+    "ML:text": 3619,
+    "default": 618,
+    "ML:footnote": 36,
+    "ML:title": 30,
+    "ML:table": 2430,
+    "ML:section_header+font": 10,
+    "artifact_detection": 474,
+    "heuristic:list_pattern": 73,
+    "ML:list_item": 1073,
+    "heuristic:caption_pattern": 29,
+    "ML:picture+pattern": 6,
+    "heuristic:all_caps": 1,
+    "heuristic:font_size": 5,
+    "ML:title+font": 1,
+    "ML:caption": 6
+   }
+  },
+  {
+   "batch": "Batch3",
+   "filename": "Transit Connectivity in the Bay Area.pdf",
+   "pages": 120,
+   "total_lines": 3567,
+   "tag_types": {
+    "H1": 3,
+    "P": 1822,
+    "Artifact": 575,
+    "H2": 131,
+    "TableRowCandidate": 977,
+    "LI": 34,
+    "FigureCaptionCandidate": 25
+   },
+   "source_breakdown": {
+    "ML:title": 1,
+    "ML:text": 1671,
+    "default": 109,
+    "artifact_detection": 575,
+    "ML:section_header+font": 6,
+    "ML:table": 977,
+    "ML:section_header": 125,
+    "ML:title+font": 1,
+    "ML:list_item": 16,
+    "ML:footnote": 42,
+    "ML:caption": 21,
+    "heuristic:font_size": 1,
+    "ML:picture+pattern": 4,
+    "heuristic:list_pattern": 18
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "Biodiesel To Switch or Not to Switch A Greener Fuel Option for the SJSU Shuttle Bus System.pdf",
+   "pages": 89,
+   "total_lines": 4879,
+   "tag_types": {
+    "H1": 54,
+    "P": 2519,
+    "Artifact": 763,
+    "H2": 181,
+    "TableRowCandidate": 1095,
+    "FigureCaptionCandidate": 34,
+    "LI": 233
+   },
+   "source_breakdown": {
+    "ML:title": 20,
+    "ML:text": 2308,
+    "default": 206,
+    "artifact_detection": 763,
+    "ML:section_header": 114,
+    "ML:table": 1095,
+    "heuristic:caption_pattern": 3,
+    "heuristic:list_pattern": 131,
+    "ML:list_item": 107,
+    "heuristic:h1_pattern": 1,
+    "ML:picture+pattern": 1,
+    "ML:section_header+font": 63,
+    "ML:caption": 30,
+    "ML:title+font": 7,
+    "heuristic:font_size": 27,
+    "heuristic:all_caps": 3
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "City Team Ministries and Pact Assessing Two Models of Non-Profit Christian Service to Urban Communities.pdf",
+   "pages": 58,
+   "total_lines": 1341,
+   "tag_types": {
+    "H2": 52,
+    "P": 1037,
+    "Artifact": 64,
+    "H1": 5,
+    "TableRowCandidate": 125,
+    "FigureCaptionCandidate": 25,
+    "LI": 33
+   },
+   "source_breakdown": {
+    "ML:section_header": 52,
+    "ML:text": 965,
+    "artifact_detection": 64,
+    "ML:title": 5,
+    "default": 53,
+    "ML:table": 125,
+    "heuristic:caption_pattern": 17,
+    "heuristic:list_pattern": 13,
+    "ML:caption": 8,
+    "ML:footnote": 19,
+    "ML:list_item": 20
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "Copy of SBBS  (01).pdf",
+   "pages": 1,
+   "total_lines": 1,
+   "tag_types": {
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 8.pdf",
+   "pages": 1,
+   "total_lines": 17,
+   "tag_types": {
+    "Artifact": 1,
+    "H1": 1,
+    "P": 15
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "heuristic:font_size": 1,
+    "ML:text": 13,
+    "default": 2
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 9.pdf",
+   "pages": 1,
+   "total_lines": 43,
+   "tag_types": {
+    "H1": 1,
+    "H2": 12,
+    "P": 25,
+    "Artifact": 3,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 1,
+    "ML:section_header": 12,
+    "ML:text": 25,
+    "artifact_detection": 3,
+    "heuristic:list_pattern": 2
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "Copy of [AH160-162] Galarza Symposium 1987.pdf",
+   "pages": 2,
+   "total_lines": 63,
+   "tag_types": {
+    "H2": 6,
+    "H1": 1,
+    "P": 48,
+    "LI": 1,
+    "Artifact": 7
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 3,
+    "default": 41,
+    "ML:text": 7,
+    "ML:list_item": 1,
+    "artifact_detection": 7,
+    "ML:section_header": 2,
+    "ML:title": 2
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "Housing Development in Imo State, Nigeria.pdf",
+   "pages": 63,
+   "total_lines": 1591,
+   "tag_types": {
+    "H2": 45,
+    "P": 930,
+    "LI": 63,
+    "TableRowCandidate": 307,
+    "Artifact": 222,
+    "FigureCaptionCandidate": 23,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "ML:title": 1,
+    "default": 31,
+    "ML:text": 899,
+    "ML:section_header": 44,
+    "heuristic:list_pattern": 27,
+    "ML:table": 307,
+    "artifact_detection": 222,
+    "heuristic:caption_pattern": 21,
+    "ML:caption": 2,
+    "ML:list_item": 36,
+    "ML:section_header+font": 1
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "Individualized Marketing A Travel Behavior Change Program.pdf",
+   "pages": 140,
+   "total_lines": 7315,
+   "tag_types": {
+    "H2": 155,
+    "H1": 46,
+    "P": 5085,
+    "LI": 289,
+    "Artifact": 627,
+    "TableRowCandidate": 1072,
+    "FigureCaptionCandidate": 41
+   },
+   "source_breakdown": {
+    "ML:title": 35,
+    "ML:text": 4849,
+    "default": 235,
+    "ML:section_header": 131,
+    "heuristic:h1_pattern": 1,
+    "heuristic:list_pattern": 106,
+    "artifact_detection": 627,
+    "ML:table": 1072,
+    "heuristic:caption_pattern": 18,
+    "ML:caption": 17,
+    "ML:picture+pattern": 6,
+    "ML:list_item": 184,
+    "ML:section_header+font": 4,
+    "heuristic:font_size": 29,
+    "heuristic:all_caps": 1
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "Integrating Pollution Prevention Measures in Trails Along Waterways.pdf",
+   "pages": 55,
+   "total_lines": 1913,
+   "tag_types": {
+    "H1": 2,
+    "P": 1393,
+    "Artifact": 134,
+    "H2": 25,
+    "TableRowCandidate": 304,
+    "LI": 43,
+    "FigureCaptionCandidate": 12
+   },
+   "source_breakdown": {
+    "ML:title": 2,
+    "default": 31,
+    "ML:text": 1351,
+    "artifact_detection": 134,
+    "ML:section_header": 21,
+    "ML:table": 304,
+    "ML:list_item": 7,
+    "heuristic:list_pattern": 36,
+    "ML:footnote": 11,
+    "ML:section_header+font": 4,
+    "ML:picture+pattern": 12
+   }
+  },
+  {
+   "batch": "Batch4",
+   "filename": "The value of the arts, history and culture in downtown revitalization (moving from theory to practice).pdf",
+   "pages": 127,
+   "total_lines": 3466,
+   "tag_types": {
+    "H1": 9,
+    "P": 2511,
+    "Artifact": 368,
+    "H2": 66,
+    "TableRowCandidate": 405,
+    "LI": 42,
+    "FigureCaptionCandidate": 65
+   },
+   "source_breakdown": {
+    "ML:title": 9,
+    "default": 105,
+    "ML:text": 2342,
+    "artifact_detection": 368,
+    "ML:section_header": 66,
+    "ML:table": 405,
+    "ML:list_item": 41,
+    "heuristic:caption_pattern": 47,
+    "ML:footnote": 62,
+    "ML:caption": 11,
+    "ML:picture+pattern": 7,
+    "heuristic:list_pattern": 3
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "A Farmland Preservation Model for the City of Turlock.pdf",
+   "pages": 121,
+   "total_lines": 5903,
+   "tag_types": {
+    "H2": 103,
+    "H1": 2,
+    "P": 4125,
+    "TableRowCandidate": 44,
+    "Artifact": 240,
+    "LI": 1368,
+    "FigureCaptionCandidate": 21
+   },
+   "source_breakdown": {
+    "ML:title": 3,
+    "ML:text": 4079,
+    "default": 42,
+    "ML:section_header": 100,
+    "heuristic:font_size": 2,
+    "ML:table": 44,
+    "artifact_detection": 240,
+    "ML:list_item": 1365,
+    "heuristic:list_pattern": 7,
+    "heuristic:caption_pattern": 8,
+    "ML:caption": 13
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "A Study of Brownfields Redevelopment in Rural Oregon.pdf",
+   "pages": 43,
+   "total_lines": 1431,
+   "tag_types": {
+    "H1": 1,
+    "P": 904,
+    "H2": 113,
+    "TableRowCandidate": 231,
+    "LI": 50,
+    "Artifact": 115,
+    "FigureCaptionCandidate": 17
+   },
+   "source_breakdown": {
+    "ML:title": 1,
+    "default": 22,
+    "ML:text": 849,
+    "ML:section_header": 105,
+    "ML:table": 231,
+    "heuristic:list_pattern": 21,
+    "ML:section_header+font": 8,
+    "artifact_detection": 115,
+    "ML:list_item": 29,
+    "ML:caption": 17,
+    "ML:footnote": 33
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Copy of DRR_Chicano_question-english.pdf",
+   "pages": 2,
+   "total_lines": 53,
+   "tag_types": {
+    "H1": 9,
+    "Artifact": 8,
+    "P": 30,
+    "H2": 5,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:title+font": 2,
+    "artifact_detection": 8,
+    "ML:section_header+font": 1,
+    "ML:text": 29,
+    "heuristic:font_size": 7,
+    "heuristic:list_pattern": 1,
+    "default": 1,
+    "ML:section_header": 4
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Copy of Galarza Symposium 1986.pdf",
+   "pages": 2,
+   "total_lines": 87,
+   "tag_types": {
+    "Artifact": 4,
+    "H2": 15,
+    "P": 61,
+    "H1": 5,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "artifact_detection": 4,
+    "ML:section_header": 13,
+    "ML:text": 37,
+    "heuristic:font_size": 4,
+    "ML:title": 2,
+    "default": 24,
+    "heuristic:font_bold": 1,
+    "ML:list_item": 2
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Copy of SBBS  (03).pdf",
+   "pages": 1,
+   "total_lines": 15,
+   "tag_types": {
+    "H1": 3,
+    "P": 12
+   },
+   "source_breakdown": {
+    "ML:title": 1,
+    "default": 5,
+    "heuristic:font_size": 2,
+    "ML:text": 7
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Copy of Sooper Dooper Asian Scooper Vol. 1 No. 2.pdf",
+   "pages": 12,
+   "total_lines": 538,
+   "tag_types": {
+    "Artifact": 76,
+    "H1": 1,
+    "P": 302,
+    "H2": 6,
+    "LI": 8,
+    "TableRowCandidate": 145
+   },
+   "source_breakdown": {
+    "artifact_detection": 76,
+    "heuristic:font_size": 2,
+    "ML:text": 252,
+    "ML:section_header": 5,
+    "heuristic:list_pattern": 8,
+    "default": 50,
+    "ML:table": 145
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 4.pdf",
+   "pages": 1,
+   "total_lines": 11,
+   "tag_types": {
+    "H1": 4,
+    "H2": 2,
+    "Artifact": 1,
+    "P": 4
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 4,
+    "artifact_detection": 1,
+    "default": 2,
+    "ML:title": 2,
+    "ML:text": 2
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 5.pdf",
+   "pages": 1,
+   "total_lines": 15,
+   "tag_types": {
+    "H1": 3,
+    "P": 9,
+    "H2": 2,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 2,
+    "heuristic:font_size": 1,
+    "default": 3,
+    "ML:section_header": 2,
+    "ML:text": 6,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 6.pdf",
+   "pages": 1,
+   "total_lines": 12,
+   "tag_types": {
+    "H1": 1,
+    "H2": 1,
+    "P": 10
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 1,
+    "heuristic:all_caps": 1,
+    "ML:text": 10
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 7.pdf",
+   "pages": 1,
+   "total_lines": 36,
+   "tag_types": {
+    "H1": 2,
+    "P": 32,
+    "H2": 2
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 2,
+    "default": 6,
+    "ML:section_header": 2,
+    "ML:text": 26
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Shaping a New Neighborhood The Impact of Citizen Participation on the Design and Development of Mission Bay.pdf",
+   "pages": 53,
+   "total_lines": 1933,
+   "tag_types": {
+    "H2": 84,
+    "H1": 21,
+    "P": 1300,
+    "TableRowCandidate": 62,
+    "FigureCaptionCandidate": 25,
+    "Artifact": 297,
+    "LI": 144
+   },
+   "source_breakdown": {
+    "ML:section_header": 73,
+    "ML:title": 7,
+    "ML:text": 1211,
+    "default": 30,
+    "ML:table": 62,
+    "heuristic:caption_pattern": 18,
+    "artifact_detection": 297,
+    "ML:footnote": 56,
+    "heuristic:list_pattern": 15,
+    "ML:list_item": 132,
+    "ML:caption": 7,
+    "ML:section_header+font": 2,
+    "heuristic:font_size": 21,
+    "heuristic:all_caps": 2
+   }
+  },
+  {
+   "batch": "Batch5",
+   "filename": "Smart Growth and its Effects on Enhancing the Quality.pdf",
+   "pages": 100,
+   "total_lines": 3794,
+   "tag_types": {
+    "H2": 163,
+    "P": 1845,
+    "H1": 4,
+    "TableRowCandidate": 584,
+    "Artifact": 1011,
+    "FigureCaptionCandidate": 33,
+    "LI": 154
+   },
+   "source_breakdown": {
+    "ML:title+font": 4,
+    "ML:title": 1,
+    "ML:text": 1731,
+    "default": 99,
+    "ML:section_header+font": 32,
+    "ML:table": 584,
+    "artifact_detection": 1011,
+    "heuristic:caption_pattern": 19,
+    "heuristic:font_size": 3,
+    "ML:section_header": 126,
+    "ML:list_item": 148,
+    "heuristic:list_pattern": 7,
+    "ML:footnote": 14,
+    "ML:caption": 14,
+    "heuristic:all_caps": 1
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "AFL-CIO - Rise of a Farm Workers Union.pdf",
+   "pages": 6,
+   "total_lines": 386,
+   "tag_types": {
+    "P": 376,
+    "LI": 3,
+    "FigureCaptionCandidate": 2,
+    "H2": 4,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "default": 2,
+    "ML:text": 374,
+    "heuristic:list_pattern": 3,
+    "ML:caption": 2,
+    "ML:section_header": 3,
+    "ML:title": 2
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Analysis of Redevelopment in Distressed Communities A Sacremento Case Study.pdf",
+   "pages": 40,
+   "total_lines": 1217,
+   "tag_types": {
+    "H2": 23,
+    "H1": 7,
+    "P": 643,
+    "Artifact": 221,
+    "TableRowCandidate": 224,
+    "FigureCaptionCandidate": 46,
+    "LI": 53
+   },
+   "source_breakdown": {
+    "ML:section_header": 14,
+    "ML:title": 7,
+    "default": 65,
+    "ML:text": 550,
+    "artifact_detection": 221,
+    "ML:table": 224,
+    "heuristic:caption_pattern": 36,
+    "heuristic:font_size": 6,
+    "ML:caption": 10,
+    "ML:footnote": 26,
+    "heuristic:list_pattern": 9,
+    "ML:list_item": 46,
+    "ML:section_header+font": 3
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of DRR_Chicano_question-spanish.pdf",
+   "pages": 2,
+   "total_lines": 42,
+   "tag_types": {
+    "H1": 3,
+    "P": 31,
+    "H2": 8
+   },
+   "source_breakdown": {
+    "ML:title+font": 2,
+    "ML:section_header+font": 1,
+    "default": 2,
+    "ML:text": 29,
+    "heuristic:font_size": 2,
+    "ML:section_header": 6
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of SBBS  (02).pdf",
+   "pages": 1,
+   "total_lines": 14,
+   "tag_types": {
+    "H2": 3,
+    "H1": 4,
+    "P": 7
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 1,
+    "ML:title": 5,
+    "ML:title+font": 1,
+    "ML:text": 7
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of SBBS  (04).pdf",
+   "pages": 1,
+   "total_lines": 13,
+   "tag_types": {
+    "H2": 2,
+    "H1": 3,
+    "P": 8
+   },
+   "source_breakdown": {
+    "ML:section_header": 2,
+    "ML:section_header+font": 3,
+    "default": 1,
+    "ML:text": 7
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of SBBS  (05).pdf",
+   "pages": 1,
+   "total_lines": 31,
+   "tag_types": {
+    "P": 15,
+    "LI": 8,
+    "H1": 2,
+    "TableRowCandidate": 4,
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "ML:text": 14,
+    "default": 1,
+    "ML:list_item": 6,
+    "heuristic:list_pattern": 2,
+    "heuristic:font_size": 2,
+    "ML:table": 4,
+    "artifact_detection": 2
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of SBBS  (08).pdf",
+   "pages": 1,
+   "total_lines": 16,
+   "tag_types": {
+    "P": 15,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "ML:text": 14,
+    "heuristic:font_size": 1,
+    "default": 1
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of SBBS  (09).pdf",
+   "pages": 1,
+   "total_lines": 0,
+   "tag_types": {},
+   "source_breakdown": {}
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 1.pdf",
+   "pages": 1,
+   "total_lines": 41,
+   "tag_types": {
+    "H1": 2,
+    "P": 27,
+    "Artifact": 2,
+    "H2": 9,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 2,
+    "default": 1,
+    "artifact_detection": 2,
+    "ML:section_header": 9,
+    "ML:text": 26,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 2.pdf",
+   "pages": 1,
+   "total_lines": 9,
+   "tag_types": {
+    "H2": 1,
+    "P": 8
+   },
+   "source_breakdown": {
+    "ML:title+font": 1,
+    "ML:text": 8
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of [AH098-AH105]Asian American Spring Festival Flyers 1987 3.pdf",
+   "pages": 1,
+   "total_lines": 13,
+   "tag_types": {
+    "H1": 2,
+    "P": 10,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 2,
+    "default": 5,
+    "heuristic:all_caps": 1,
+    "ML:text": 5
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Copy of galarza_mexican.pdf",
+   "pages": 11,
+   "total_lines": 606,
+   "tag_types": {
+    "P": 589,
+    "LI": 4,
+    "Artifact": 8,
+    "H2": 5
+   },
+   "source_breakdown": {
+    "ML:text": 581,
+    "heuristic:list_pattern": 4,
+    "default": 8,
+    "artifact_detection": 8,
+    "ML:section_header": 5
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Do Central Business District Redevelopment Investments Have a Positive Influence on Surrounding Neighborhoods.pdf",
+   "pages": 85,
+   "total_lines": 4776,
+   "tag_types": {
+    "H2": 86,
+    "P": 2138,
+    "TableRowCandidate": 1618,
+    "Artifact": 453,
+    "FigureCaptionCandidate": 64,
+    "LI": 408,
+    "H1": 9
+   },
+   "source_breakdown": {
+    "ML:title": 5,
+    "ML:title+font": 2,
+    "ML:text": 1953,
+    "ML:section_header": 64,
+    "ML:table": 1618,
+    "artifact_detection": 453,
+    "ML:section_header+font": 18,
+    "heuristic:caption_pattern": 38,
+    "ML:list_item": 146,
+    "default": 135,
+    "ML:footnote": 29,
+    "heuristic:list_pattern": 283,
+    "ML:caption": 23,
+    "ML:picture+pattern": 3,
+    "heuristic:font_size": 5,
+    "heuristic:all_caps": 1
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Evaluation of Performance Measures for the San Jose Strong Neighborhoods Initiative.pdf",
+   "pages": 89,
+   "total_lines": 3757,
+   "tag_types": {
+    "H1": 13,
+    "P": 1660,
+    "Artifact": 241,
+    "H2": 42,
+    "TableRowCandidate": 1557,
+    "LI": 240,
+    "FigureCaptionCandidate": 4
+   },
+   "source_breakdown": {
+    "ML:title": 14,
+    "ML:text": 1528,
+    "default": 119,
+    "artifact_detection": 241,
+    "ML:section_header": 41,
+    "ML:table": 1557,
+    "ML:list_item": 138,
+    "heuristic:list_pattern": 108,
+    "ML:picture+pattern": 4,
+    "ML:footnote": 7
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Inclusionary Housing and California_s Housing Crisis.pdf",
+   "pages": 89,
+   "total_lines": 6339,
+   "tag_types": {
+    "H1": 32,
+    "P": 4727,
+    "Artifact": 493,
+    "H2": 151,
+    "TableRowCandidate": 126,
+    "LI": 804,
+    "FigureCaptionCandidate": 6
+   },
+   "source_breakdown": {
+    "ML:title": 31,
+    "ML:text": 4704,
+    "artifact_detection": 493,
+    "ML:section_header+font": 2,
+    "ML:section_header": 146,
+    "ML:table": 126,
+    "ML:list_item": 791,
+    "default": 19,
+    "heuristic:caption_pattern": 3,
+    "ML:caption": 2,
+    "ML:footnote": 3,
+    "ML:picture+pattern": 1,
+    "heuristic:list_pattern": 14,
+    "ML:title+font": 4
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "National Pollution Discharge Elimination System Storm Water Permits Effects in Urban Planning and Building.pdf",
+   "pages": 50,
+   "total_lines": 1662,
+   "tag_types": {
+    "H1": 7,
+    "H2": 60,
+    "P": 954,
+    "TableRowCandidate": 409,
+    "Artifact": 109,
+    "LI": 115,
+    "FigureCaptionCandidate": 8
+   },
+   "source_breakdown": {
+    "ML:title": 6,
+    "ML:section_header": 56,
+    "ML:text": 939,
+    "default": 15,
+    "heuristic:h1_pattern": 1,
+    "ML:table": 409,
+    "artifact_detection": 109,
+    "heuristic:list_pattern": 52,
+    "ML:section_header+font": 3,
+    "ML:caption": 8,
+    "ML:title+font": 1,
+    "ML:list_item": 63
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Poco Way A Successful Neighborhood Revitalization Project.pdf",
+   "pages": 80,
+   "total_lines": 3881,
+   "tag_types": {
+    "H2": 50,
+    "P": 3309,
+    "Artifact": 130,
+    "TableRowCandidate": 282,
+    "FigureCaptionCandidate": 71,
+    "LI": 38,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "ML:section_header": 43,
+    "default": 53,
+    "ML:text": 3239,
+    "artifact_detection": 130,
+    "ML:table": 282,
+    "heuristic:caption_pattern": 47,
+    "ML:footnote": 14,
+    "ML:caption": 17,
+    "heuristic:list_pattern": 21,
+    "ML:list_item": 20,
+    "ML:picture+pattern": 7,
+    "ML:section_header+font": 3,
+    "heuristic:font_size": 1,
+    "ML:title": 2,
+    "ML:title+font": 2
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Shophouse- A Mixed Use Building Type.pdf",
+   "pages": 72,
+   "total_lines": 2582,
+   "tag_types": {
+    "H1": 2,
+    "P": 1302,
+    "Artifact": 755,
+    "H2": 36,
+    "TableRowCandidate": 194,
+    "FigureCaptionCandidate": 117,
+    "LI": 176
+   },
+   "source_breakdown": {
+    "ML:title": 2,
+    "ML:text": 1235,
+    "default": 52,
+    "artifact_detection": 755,
+    "ML:section_header": 32,
+    "ML:table": 194,
+    "heuristic:caption_pattern": 81,
+    "ML:section_header+font": 2,
+    "heuristic:font_size": 2,
+    "heuristic:list_pattern": 10,
+    "ML:caption": 36,
+    "ML:footnote": 15,
+    "ML:list_item": 166
+   }
+  },
+  {
+   "batch": "Batch6",
+   "filename": "Transit-Oriented Development Guidelines For the Diridon.pdf",
+   "pages": 107,
+   "total_lines": 4245,
+   "tag_types": {
+    "H1": 7,
+    "H2": 173,
+    "P": 2571,
+    "Artifact": 551,
+    "TableRowCandidate": 559,
+    "LI": 207,
+    "FigureCaptionCandidate": 177
+   },
+   "source_breakdown": {
+    "ML:title+font": 3,
+    "ML:title": 4,
+    "ML:text": 2521,
+    "default": 41,
+    "artifact_detection": 551,
+    "ML:section_header+font": 18,
+    "ML:table": 559,
+    "heuristic:list_pattern": 62,
+    "heuristic:font_size": 2,
+    "ML:section_header": 153,
+    "heuristic:caption_pattern": 140,
+    "ML:caption": 34,
+    "ML:list_item": 146,
+    "ML:footnote": 8,
+    "ML:picture+pattern": 3
+   }
+  },
+  {
+   "batch": "Batch7",
+   "filename": "Agenda Magazine Vol 2 #7.pdf",
+   "pages": 19,
+   "total_lines": 757,
+   "tag_types": {
+    "P": 721,
+    "H1": 10,
+    "Artifact": 13,
+    "LI": 7,
+    "FigureCaptionCandidate": 4,
+    "H2": 2
+   },
+   "source_breakdown": {
+    "ML:text": 719,
+    "heuristic:font_size": 3,
+    "ML:section_header+font": 8,
+    "artifact_detection": 13,
+    "heuristic:list_pattern": 7,
+    "ML:caption": 4,
+    "ML:section_header": 1,
+    "default": 2
+   }
+  },
+  {
+   "batch": "Batch7",
+   "filename": "Agenda Magazine Vol 3 #2.pdf",
+   "pages": 37,
+   "total_lines": 1740,
+   "tag_types": {
+    "P": 1489,
+    "Artifact": 104,
+    "H1": 10,
+    "LI": 38,
+    "H2": 33,
+    "TableRowCandidate": 59,
+    "FigureCaptionCandidate": 7
+   },
+   "source_breakdown": {
+    "ML:text": 1404,
+    "artifact_detection": 104,
+    "default": 85,
+    "heuristic:font_size": 9,
+    "heuristic:list_pattern": 16,
+    "ML:table": 59,
+    "ML:section_header": 20,
+    "ML:section_header+font": 12,
+    "ML:list_item": 22,
+    "heuristic:h2_pattern": 1,
+    "ML:caption": 7,
+    "heuristic:all_caps": 1
+   }
+  },
+  {
+   "batch": "Batch7",
+   "filename": "Case Study The Urban Ballpark as an Element of Neighbirhood Revitalization.pdf",
+   "pages": 90,
+   "total_lines": 5236,
+   "tag_types": {
+    "H1": 3,
+    "P": 3875,
+    "Artifact": 188,
+    "TableRowCandidate": 824,
+    "H2": 142,
+    "FigureCaptionCandidate": 173,
+    "LI": 31
+   },
+   "source_breakdown": {
+    "ML:title": 2,
+    "ML:text": 3843,
+    "default": 31,
+    "heuristic:font_size": 13,
+    "artifact_detection": 188,
+    "ML:table": 824,
+    "ML:section_header": 111,
+    "ML:section_header+font": 18,
+    "heuristic:caption_pattern": 48,
+    "ML:caption": 125,
+    "heuristic:all_caps": 1,
+    "heuristic:list_pattern": 14,
+    "ML:list_item": 18
+   }
+  },
+  {
+   "batch": "Batch7",
+   "filename": "Copy of DRR_MLK_art.pdf",
+   "pages": 24,
+   "total_lines": 662,
+   "tag_types": {
+    "Artifact": 220,
+    "P": 331,
+    "H2": 50,
+    "TableRowCandidate": 2,
+    "LI": 40,
+    "FigureCaptionCandidate": 13,
+    "H1": 6
+   },
+   "source_breakdown": {
+    "artifact_detection": 220,
+    "default": 75,
+    "heuristic:all_caps": 2,
+    "ML:section_header": 45,
+    "ML:text": 256,
+    "ML:table": 2,
+    "heuristic:list_pattern": 40,
+    "ML:caption": 11,
+    "ML:section_header+font": 2,
+    "heuristic:font_size": 6,
+    "ML:picture+pattern": 2,
+    "ML:title": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "A Portrait of Agribusiness Power.pdf",
+   "pages": 1,
+   "total_lines": 113,
+   "tag_types": {
+    "Artifact": 3,
+    "H2": 1,
+    "TableRowCandidate": 63,
+    "LI": 9,
+    "P": 37
+   },
+   "source_breakdown": {
+    "artifact_detection": 3,
+    "ML:section_header": 1,
+    "ML:table": 63,
+    "heuristic:list_pattern": 9,
+    "ML:text": 33,
+    "default": 4
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Agriculture Employees Election Law of 1974 1.pdf",
+   "pages": 1,
+   "total_lines": 59,
+   "tag_types": {
+    "H2": 2,
+    "P": 18,
+    "LI": 39
+   },
+   "source_breakdown": {
+    "ML:section_header": 2,
+    "ML:text": 14,
+    "default": 1,
+    "heuristic:list_pattern": 12,
+    "ML:list_item": 30
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Agriculture Employees Election Law of 1974 2.pdf",
+   "pages": 1,
+   "total_lines": 63,
+   "tag_types": {
+    "LI": 40,
+    "P": 23
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 14,
+    "ML:list_item": 26,
+    "ML:text": 17,
+    "default": 6
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Alquist Votes Against Farmworkers.pdf",
+   "pages": 1,
+   "total_lines": 55,
+   "tag_types": {
+    "P": 41,
+    "H2": 3,
+    "LI": 10,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "ML:text": 38,
+    "ML:section_header+font": 3,
+    "heuristic:list_pattern": 4,
+    "default": 2,
+    "ML:list_item": 7,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "An Evening With Dolores Huerta.pdf",
+   "pages": 1,
+   "total_lines": 25,
+   "tag_types": {
+    "H2": 9,
+    "H1": 3,
+    "P": 13
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 6,
+    "ML:section_header": 6,
+    "ML:text": 12,
+    "default": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Autoworkers Help Farmworkers.pdf",
+   "pages": 1,
+   "total_lines": 30,
+   "tag_types": {
+    "P": 30
+   },
+   "source_breakdown": {
+    "ML:text": 30
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Behold the Wages of the Laborers.pdf",
+   "pages": 1,
+   "total_lines": 15,
+   "tag_types": {
+    "Artifact": 1,
+    "H2": 1,
+    "P": 10,
+    "H1": 2,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "ML:section_header+font": 1,
+    "default": 5,
+    "ML:text": 5,
+    "heuristic:font_size": 2,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Brings Elections.pdf",
+   "pages": 1,
+   "total_lines": 50,
+   "tag_types": {
+    "P": 41,
+    "H2": 8,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "default": 10,
+    "ML:section_header": 8,
+    "ML:text": 31,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Gallo - Wines From Modesto - Lettuce - Grapes.pdf",
+   "pages": 2,
+   "total_lines": 111,
+   "tag_types": {
+    "Artifact": 3,
+    "H1": 2,
+    "P": 81,
+    "LI": 20,
+    "H2": 5
+   },
+   "source_breakdown": {
+    "artifact_detection": 3,
+    "heuristic:font_size": 3,
+    "default": 22,
+    "heuristic:list_pattern": 8,
+    "ML:text": 58,
+    "ML:section_header": 4,
+    "ML:list_item": 13
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Gallo Wine.pdf",
+   "pages": 1,
+   "total_lines": 27,
+   "tag_types": {
+    "P": 26,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:text": 26,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Heublein.pdf",
+   "pages": 1,
+   "total_lines": 66,
+   "tag_types": {
+    "P": 65,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "default": 2,
+    "ML:text": 63,
+    "ML:section_header+font": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Italian Swiss and Smirnoff.pdf",
+   "pages": 1,
+   "total_lines": 38,
+   "tag_types": {
+    "P": 32,
+    "H2": 1,
+    "Artifact": 5
+   },
+   "source_breakdown": {
+    "default": 8,
+    "ML:text": 24,
+    "ML:section_header": 1,
+    "artifact_detection": 5
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Lettuce Unless You See This Label.pdf",
+   "pages": 1,
+   "total_lines": 96,
+   "tag_types": {
+    "P": 53,
+    "H2": 5,
+    "LI": 32,
+    "Artifact": 5,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "default": 27,
+    "ML:section_header": 3,
+    "ML:text": 26,
+    "heuristic:list_pattern": 23,
+    "artifact_detection": 5,
+    "heuristic:font_size": 3,
+    "ML:list_item": 9
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Lettuce.pdf",
+   "pages": 1,
+   "total_lines": 49,
+   "tag_types": {
+    "P": 27,
+    "LI": 22
+   },
+   "source_breakdown": {
+    "ML:text": 25,
+    "ML:list_item": 23,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Mayfair.pdf",
+   "pages": 1,
+   "total_lines": 37,
+   "tag_types": {
+    "H2": 1,
+    "P": 31,
+    "H1": 3,
+    "LI": 1,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 1,
+    "ML:text": 28,
+    "ML:title": 3,
+    "heuristic:list_pattern": 1,
+    "artifact_detection": 1,
+    "default": 3
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Non-Union Lettuce.pdf",
+   "pages": 1,
+   "total_lines": 51,
+   "tag_types": {
+    "Artifact": 28,
+    "P": 19,
+    "LI": 4
+   },
+   "source_breakdown": {
+    "artifact_detection": 28,
+    "ML:text": 19,
+    "heuristic:list_pattern": 4
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Party -- All Invited.pdf",
+   "pages": 1,
+   "total_lines": 66,
+   "tag_types": {
+    "Artifact": 1,
+    "H2": 1,
+    "P": 49,
+    "LI": 15
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "ML:section_header": 1,
+    "default": 4,
+    "heuristic:list_pattern": 15,
+    "ML:text": 45
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Scab Lettuce.pdf",
+   "pages": 1,
+   "total_lines": 61,
+   "tag_types": {
+    "H1": 2,
+    "H2": 3,
+    "P": 49,
+    "Artifact": 7
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 2,
+    "ML:section_header": 3,
+    "ML:text": 49,
+    "artifact_detection": 7
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Smirnoff Vodka and Italian Swiss Colony Wine.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "H1": 3,
+    "P": 14,
+    "Artifact": 22
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 3,
+    "ML:text": 14,
+    "artifact_detection": 22
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott Sun-Maid and Sun-Sweet.pdf",
+   "pages": 1,
+   "total_lines": 56,
+   "tag_types": {
+    "Artifact": 3,
+    "P": 43,
+    "H2": 5,
+    "LI": 4,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 3,
+    "default": 6,
+    "ML:text": 37,
+    "ML:section_header+font": 2,
+    "ML:section_header": 4,
+    "heuristic:list_pattern": 4
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott for Justice.pdf",
+   "pages": 1,
+   "total_lines": 5,
+   "tag_types": {
+    "P": 5
+   },
+   "source_breakdown": {
+    "default": 1,
+    "ML:text": 4
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Boycott the 9 Non-Union Napa Valley Wine Companies.pdf",
+   "pages": 1,
+   "total_lines": 42,
+   "tag_types": {
+    "H1": 5,
+    "P": 37
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 3,
+    "ML:section_header+font": 2,
+    "ML:text": 34,
+    "default": 3
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Bring Justice For Farmworkers.pdf",
+   "pages": 1,
+   "total_lines": 45,
+   "tag_types": {
+    "P": 30,
+    "H1": 5,
+    "LI": 2,
+    "H2": 4,
+    "Artifact": 4
+   },
+   "source_breakdown": {
+    "ML:text": 26,
+    "heuristic:font_size": 2,
+    "ML:section_header+font": 3,
+    "heuristic:list_pattern": 2,
+    "default": 4,
+    "ML:section_header": 4,
+    "artifact_detection": 4
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Buy Italian Swiss Colony.pdf",
+   "pages": 2,
+   "total_lines": 119,
+   "tag_types": {
+    "P": 67,
+    "TableRowCandidate": 37,
+    "H1": 3,
+    "LI": 2,
+    "H2": 10
+   },
+   "source_breakdown": {
+    "ML:text": 16,
+    "ML:table": 37,
+    "default": 51,
+    "heuristic:font_size": 8,
+    "heuristic:list_pattern": 2,
+    "heuristic:font_bold": 5
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "California Grape Workers Are Killed and Maimed.pdf",
+   "pages": 1,
+   "total_lines": 79,
+   "tag_types": {
+    "P": 79
+   },
+   "source_breakdown": {
+    "ML:text": 78,
+    "default": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "California_s Grape Harvest to Begin.pdf",
+   "pages": 1,
+   "total_lines": 53,
+   "tag_types": {
+    "H1": 2,
+    "P": 40,
+    "LI": 3,
+    "Artifact": 8
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 2,
+    "ML:text": 38,
+    "default": 2,
+    "heuristic:list_pattern": 3,
+    "artifact_detection": 8
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Canvassing Kick-Off.pdf",
+   "pages": 1,
+   "total_lines": 54,
+   "tag_types": {
+    "P": 51,
+    "H2": 3
+   },
+   "source_breakdown": {
+    "default": 1,
+    "ML:text": 50,
+    "ML:section_header": 3
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Cesar Chavez - The Farmworkers and the Teamsters.pdf",
+   "pages": 1,
+   "total_lines": 56,
+   "tag_types": {
+    "P": 54,
+    "H2": 1,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "default": 6,
+    "ML:section_header": 1,
+    "ML:text": 48,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Como Puede Usted Colaborar Con La Huelga De Las Uvas 1.pdf",
+   "pages": 1,
+   "total_lines": 54,
+   "tag_types": {
+    "Artifact": 1,
+    "H2": 1,
+    "P": 49,
+    "LI": 3
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "ML:section_header": 1,
+    "ML:text": 46,
+    "ML:list_item": 3,
+    "default": 3
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Como Puede Usted Colaborar Con La Huelga De Las Uvas 2.pdf",
+   "pages": 1,
+   "total_lines": 41,
+   "tag_types": {
+    "Artifact": 1,
+    "P": 36,
+    "LI": 4
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "ML:text": 36,
+    "heuristic:list_pattern": 3,
+    "ML:list_item": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Consumer Rights Committee - Anti-Consumer Boycotts.pdf",
+   "pages": 1,
+   "total_lines": 11,
+   "tag_types": {
+    "P": 9,
+    "H1": 1,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "ML:text": 9,
+    "ML:section_header+font": 2
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Consumer Rights Committee - The Boycott of California Table Grapes is Unfair.pdf",
+   "pages": 1,
+   "total_lines": 30,
+   "tag_types": {
+    "H1": 3,
+    "H2": 8,
+    "P": 19
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 5,
+    "heuristic:font_size": 6,
+    "default": 3,
+    "ML:text": 16
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Delano Grape Strike.pdf",
+   "pages": 1,
+   "total_lines": 24,
+   "tag_types": {
+    "P": 20,
+    "H1": 2,
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "ML:text": 18,
+    "ML:section_header+font": 2,
+    "artifact_detection": 2,
+    "default": 2
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Delano Strike Continues.pdf",
+   "pages": 1,
+   "total_lines": 33,
+   "tag_types": {
+    "H1": 5,
+    "P": 16,
+    "LI": 11,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 1,
+    "ML:section_header+font": 4,
+    "ML:text": 16,
+    "ML:list_item": 11,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Demand Union Label Produce.pdf",
+   "pages": 1,
+   "total_lines": 26,
+   "tag_types": {
+    "H1": 4,
+    "P": 22
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 2,
+    "ML:text": 21,
+    "heuristic:font_size": 2,
+    "default": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Did the Price of Lettuce Upset You.pdf",
+   "pages": 1,
+   "total_lines": 71,
+   "tag_types": {
+    "Artifact": 5,
+    "P": 62,
+    "LI": 4
+   },
+   "source_breakdown": {
+    "artifact_detection": 5,
+    "ML:text": 58,
+    "heuristic:list_pattern": 2,
+    "ML:list_item": 3,
+    "default": 3
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Don_t Buy Calif. Grapes.pdf",
+   "pages": 1,
+   "total_lines": 37,
+   "tag_types": {
+    "Artifact": 3,
+    "P": 33,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 3,
+    "ML:text": 33,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Don_t Buy Lettuce Unless it Bears This Label.pdf",
+   "pages": 1,
+   "total_lines": 63,
+   "tag_types": {
+    "P": 57,
+    "H1": 1,
+    "H2": 2,
+    "Artifact": 3
+   },
+   "source_breakdown": {
+    "default": 5,
+    "heuristic:font_size": 1,
+    "ML:section_header": 1,
+    "artifact_detection": 3,
+    "ML:text": 52,
+    "ML:section_header+font": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Don_t Buy at Safeway.pdf",
+   "pages": 2,
+   "total_lines": 101,
+   "tag_types": {
+    "Artifact": 7,
+    "P": 90,
+    "H1": 2,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "artifact_detection": 7,
+    "default": 6,
+    "ML:section_header+font": 1,
+    "ML:text": 84,
+    "heuristic:font_size": 1,
+    "heuristic:list_pattern": 2
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Don_t Destroy Farmworkers_ Jobs and Their Dignity.pdf",
+   "pages": 1,
+   "total_lines": 9,
+   "tag_types": {
+    "Artifact": 1,
+    "P": 7,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "ML:text": 7,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Don_t Eat Lettuce.pdf",
+   "pages": 1,
+   "total_lines": 92,
+   "tag_types": {
+    "Artifact": 2,
+    "P": 71,
+    "H2": 7,
+    "H1": 2,
+    "LI": 10
+   },
+   "source_breakdown": {
+    "artifact_detection": 2,
+    "default": 29,
+    "heuristic:font_size": 7,
+    "heuristic:list_pattern": 10,
+    "heuristic:all_caps": 1,
+    "ML:text": 42,
+    "heuristic:font_bold": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Don_t Shop At Ralphs.pdf",
+   "pages": 1,
+   "total_lines": 41,
+   "tag_types": {
+    "H1": 2,
+    "P": 31,
+    "LI": 1,
+    "Artifact": 7
+   },
+   "source_breakdown": {
+    "ML:title+font": 2,
+    "default": 10,
+    "ML:text": 21,
+    "heuristic:list_pattern": 1,
+    "artifact_detection": 7
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Don_t Shop Here - You Can Help.pdf",
+   "pages": 1,
+   "total_lines": 65,
+   "tag_types": {
+    "P": 62,
+    "H2": 1,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "ML:text": 50,
+    "ML:section_header": 1,
+    "heuristic:list_pattern": 2,
+    "default": 12
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Don_t Shop Here.pdf",
+   "pages": 1,
+   "total_lines": 71,
+   "tag_types": {
+    "LI": 19,
+    "Artifact": 1,
+    "P": 51
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 19,
+    "artifact_detection": 1,
+    "default": 6,
+    "ML:text": 45
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Dr. Jekyll and Mr. Hyde.pdf",
+   "pages": 1,
+   "total_lines": 47,
+   "tag_types": {
+    "P": 38,
+    "LI": 7,
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "ML:text": 35,
+    "heuristic:list_pattern": 7,
+    "default": 3,
+    "artifact_detection": 2
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Emergency Food Caravan.pdf",
+   "pages": 1,
+   "total_lines": 41,
+   "tag_types": {
+    "H1": 4,
+    "H2": 4,
+    "P": 29,
+    "Artifact": 4
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 2,
+    "ML:title": 2,
+    "ML:title+font": 1,
+    "ML:text": 27,
+    "default": 2,
+    "artifact_detection": 4,
+    "ML:section_header+font": 3
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Every California Grape You Buy.pdf",
+   "pages": 1,
+   "total_lines": 91,
+   "tag_types": {
+    "H1": 3,
+    "P": 77,
+    "H2": 3,
+    "Artifact": 7,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 3,
+    "ML:text": 75,
+    "default": 2,
+    "ML:section_header": 3,
+    "artifact_detection": 7,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Fact Sheet On Salinas Lettuce Strike.pdf",
+   "pages": 2,
+   "total_lines": 174,
+   "tag_types": {
+    "H2": 2,
+    "LI": 8,
+    "P": 162,
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 2,
+    "heuristic:list_pattern": 8,
+    "ML:text": 106,
+    "default": 56,
+    "artifact_detection": 2
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Fact Sheet on E&J Gallo.pdf",
+   "pages": 4,
+   "total_lines": 368,
+   "tag_types": {
+    "P": 279,
+    "H2": 13,
+    "LI": 60,
+    "TableRowCandidate": 9,
+    "H1": 2,
+    "Artifact": 5
+   },
+   "source_breakdown": {
+    "default": 45,
+    "ML:section_header": 12,
+    "ML:text": 234,
+    "heuristic:list_pattern": 60,
+    "ML:table": 9,
+    "heuristic:font_size": 1,
+    "artifact_detection": 5,
+    "ML:section_header+font": 2
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Facts About Seasonal Farm Workers.pdf",
+   "pages": 1,
+   "total_lines": 81,
+   "tag_types": {
+    "P": 72,
+    "LI": 6,
+    "Artifact": 2,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "default": 33,
+    "ML:text": 38,
+    "ML:list_item": 2,
+    "heuristic:list_pattern": 5,
+    "artifact_detection": 2,
+    "ML:section_header": 1
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Farm Workers March on Gallo.pdf",
+   "pages": 1,
+   "total_lines": 7,
+   "tag_types": {
+    "Artifact": 7
+   },
+   "source_breakdown": {
+    "artifact_detection": 7
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Farm Workers Urge You Not To Buy Table Grapes.pdf",
+   "pages": 1,
+   "total_lines": 65,
+   "tag_types": {
+    "H2": 2,
+    "P": 14,
+    "LI": 43,
+    "Artifact": 6
+   },
+   "source_breakdown": {
+    "ML:section_header": 2,
+    "ML:list_item": 43,
+    "heuristic:list_pattern": 1,
+    "ML:text": 4,
+    "default": 9,
+    "artifact_detection": 6
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Farm Workers Want Their Own Union!.pdf",
+   "pages": 1,
+   "total_lines": 44,
+   "tag_types": {
+    "P": 34,
+    "LI": 8,
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "ML:text": 20,
+    "heuristic:list_pattern": 7,
+    "default": 14,
+    "ML:list_item": 1,
+    "artifact_detection": 2
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Farmer Workers Are.pdf",
+   "pages": 1,
+   "total_lines": 49,
+   "tag_types": {
+    "Artifact": 25,
+    "P": 22,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "artifact_detection": 25,
+    "ML:text": 15,
+    "heuristic:list_pattern": 2,
+    "default": 7
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Farmworkers Ask Your Support.pdf",
+   "pages": 1,
+   "total_lines": 31,
+   "tag_types": {
+    "H2": 2,
+    "P": 29
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 1,
+    "ML:section_header": 1,
+    "ML:text": 24,
+    "default": 5
+   }
+  },
+  {
+   "batch": "Flyers1",
+   "filename": "Farmworkers Food Caravan to Delano 1.pdf",
+   "pages": 1,
+   "total_lines": 13,
+   "tag_types": {
+    "Artifact": 4,
+    "P": 7,
+    "H2": 2
+   },
+   "source_breakdown": {
+    "artifact_detection": 4,
+    "default": 7,
+    "heuristic:font_size": 1,
+    "heuristic:all_caps": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Students Obtaining Summer Employment.pdf",
+   "pages": 1,
+   "total_lines": 475,
+   "tag_types": {
+    "Artifact": 355,
+    "H2": 1,
+    "P": 114,
+    "H1": 1,
+    "LI": 4
+   },
+   "source_breakdown": {
+    "artifact_detection": 355,
+    "ML:section_header": 1,
+    "default": 3,
+    "ML:section_header+font": 1,
+    "ML:text": 111,
+    "heuristic:list_pattern": 4
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Support Farm Workers.pdf",
+   "pages": 1,
+   "total_lines": 44,
+   "tag_types": {
+    "P": 41,
+    "H2": 2,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:text": 40,
+    "ML:section_header": 1,
+    "heuristic:list_pattern": 1,
+    "heuristic:font_size": 1,
+    "default": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Support Non-Violence.pdf",
+   "pages": 1,
+   "total_lines": 53,
+   "tag_types": {
+    "H1": 2,
+    "P": 35,
+    "LI": 15,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 3,
+    "default": 9,
+    "heuristic:list_pattern": 15,
+    "ML:text": 26
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Thank You For Being Openminded.pdf",
+   "pages": 3,
+   "total_lines": 186,
+   "tag_types": {
+    "H2": 4,
+    "P": 70,
+    "TableRowCandidate": 100,
+    "LI": 1,
+    "Artifact": 7,
+    "H1": 4
+   },
+   "source_breakdown": {
+    "ML:section_header": 4,
+    "ML:text": 55,
+    "default": 15,
+    "ML:table": 100,
+    "heuristic:list_pattern": 1,
+    "artifact_detection": 7,
+    "heuristic:font_size": 4
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Arizona Rank and File (September 1973).pdf",
+   "pages": 1,
+   "total_lines": 202,
+   "tag_types": {
+    "LI": 38,
+    "P": 160,
+    "H2": 3,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 38,
+    "default": 18,
+    "ML:section_header": 2,
+    "heuristic:font_bold": 1,
+    "ML:text": 142,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Boycott is the Necessary Deed.pdf",
+   "pages": 1,
+   "total_lines": 204,
+   "tag_types": {
+    "P": 130,
+    "LI": 58,
+    "Artifact": 4,
+    "H2": 12
+   },
+   "source_breakdown": {
+    "default": 55,
+    "heuristic:list_pattern": 58,
+    "artifact_detection": 4,
+    "ML:section_header": 9,
+    "ML:text": 75,
+    "heuristic:font_size": 2,
+    "heuristic:font_bold": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Farm Workers - Our Cause 1.pdf",
+   "pages": 1,
+   "total_lines": 102,
+   "tag_types": {
+    "LI": 7,
+    "P": 94,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 7,
+    "ML:text": 89,
+    "default": 5,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Farm Workers - Our Cause 2.pdf",
+   "pages": 1,
+   "total_lines": 91,
+   "tag_types": {
+    "P": 78,
+    "Artifact": 8,
+    "LI": 2,
+    "H1": 1,
+    "H2": 2
+   },
+   "source_breakdown": {
+    "ML:text": 67,
+    "artifact_detection": 8,
+    "heuristic:list_pattern": 2,
+    "default": 11,
+    "heuristic:font_size": 3
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Farm Workers_ Safeway Boycott.pdf",
+   "pages": 1,
+   "total_lines": 160,
+   "tag_types": {
+    "H2": 4,
+    "P": 110,
+    "LI": 1,
+    "Artifact": 45
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 4,
+    "ML:text": 107,
+    "heuristic:list_pattern": 1,
+    "default": 3,
+    "artifact_detection": 45
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Grape Bowl Story 1.pdf",
+   "pages": 1,
+   "total_lines": 142,
+   "tag_types": {
+    "Artifact": 11,
+    "P": 125,
+    "LI": 6
+   },
+   "source_breakdown": {
+    "artifact_detection": 11,
+    "ML:text": 125,
+    "heuristic:list_pattern": 6
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Grape Bowl Story 2.pdf",
+   "pages": 1,
+   "total_lines": 457,
+   "tag_types": {
+    "TableRowCandidate": 437,
+    "LI": 5,
+    "H1": 1,
+    "P": 14
+   },
+   "source_breakdown": {
+    "ML:table": 437,
+    "heuristic:list_pattern": 5,
+    "heuristic:font_size": 1,
+    "ML:text": 14
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Grape Boycott is Not Over.pdf",
+   "pages": 1,
+   "total_lines": 37,
+   "tag_types": {
+    "P": 33,
+    "LI": 3,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "ML:text": 27,
+    "default": 6,
+    "heuristic:list_pattern": 3,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Grape Strike.pdf",
+   "pages": 1,
+   "total_lines": 88,
+   "tag_types": {
+    "P": 84,
+    "H1": 1,
+    "LI": 3
+   },
+   "source_breakdown": {
+    "default": 8,
+    "heuristic:font_size": 1,
+    "ML:text": 76,
+    "heuristic:list_pattern": 3
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Grapefather.pdf",
+   "pages": 1,
+   "total_lines": 8,
+   "tag_types": {
+    "P": 6,
+    "Artifact": 1,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "default": 4,
+    "ML:text": 2,
+    "artifact_detection": 1,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Grapes of War 1.pdf",
+   "pages": 1,
+   "total_lines": 376,
+   "tag_types": {
+    "P": 272,
+    "LI": 68,
+    "TableRowCandidate": 36
+   },
+   "source_breakdown": {
+    "ML:text": 271,
+    "heuristic:list_pattern": 68,
+    "default": 1,
+    "ML:table": 36
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Grapes of War 2.pdf",
+   "pages": 1,
+   "total_lines": 92,
+   "tag_types": {
+    "Artifact": 2,
+    "P": 82,
+    "H2": 1,
+    "LI": 7
+   },
+   "source_breakdown": {
+    "artifact_detection": 2,
+    "default": 11,
+    "ML:section_header": 1,
+    "ML:text": 71,
+    "heuristic:list_pattern": 7
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Lettuce Story.pdf",
+   "pages": 2,
+   "total_lines": 250,
+   "tag_types": {
+    "H2": 20,
+    "LI": 37,
+    "P": 180,
+    "Artifact": 9,
+    "H1": 4
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 3,
+    "ML:section_header": 16,
+    "ML:list_item": 33,
+    "ML:text": 171,
+    "artifact_detection": 9,
+    "default": 8,
+    "heuristic:font_size": 5,
+    "heuristic:list_pattern": 5
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Most You Can Give Is Of Yourself.pdf",
+   "pages": 1,
+   "total_lines": 63,
+   "tag_types": {
+    "P": 37,
+    "H2": 2,
+    "LI": 9,
+    "Artifact": 15
+   },
+   "source_breakdown": {
+    "ML:text": 29,
+    "heuristic:font_bold": 1,
+    "heuristic:list_pattern": 9,
+    "default": 8,
+    "ML:section_header+font": 1,
+    "artifact_detection": 15
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Other Side.pdf",
+   "pages": 1,
+   "total_lines": 74,
+   "tag_types": {
+    "H1": 1,
+    "P": 65,
+    "H2": 2,
+    "Artifact": 2,
+    "LI": 4
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 2,
+    "default": 22,
+    "heuristic:all_caps": 1,
+    "artifact_detection": 2,
+    "ML:text": 43,
+    "heuristic:list_pattern": 4
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "The Wine 9.pdf",
+   "pages": 1,
+   "total_lines": 95,
+   "tag_types": {
+    "P": 80,
+    "LI": 12,
+    "Artifact": 3
+   },
+   "source_breakdown": {
+    "default": 4,
+    "heuristic:list_pattern": 12,
+    "ML:text": 76,
+    "artifact_detection": 3
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "There Are Things We All Can Do.pdf",
+   "pages": 1,
+   "total_lines": 7,
+   "tag_types": {
+    "P": 6,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "ML:text": 4,
+    "artifact_detection": 1,
+    "default": 2
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Thirty Day Moratorium on Lettuce Boycott.pdf",
+   "pages": 1,
+   "total_lines": 53,
+   "tag_types": {
+    "H2": 4,
+    "P": 44,
+    "LI": 1,
+    "H1": 2,
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "ML:section_header": 3,
+    "ML:text": 43,
+    "default": 1,
+    "heuristic:list_pattern": 1,
+    "ML:section_header+font": 1,
+    "heuristic:font_size": 2,
+    "artifact_detection": 2
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "This is What Safeway Does.pdf",
+   "pages": 1,
+   "total_lines": 66,
+   "tag_types": {
+    "P": 59,
+    "H1": 4,
+    "LI": 2,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "default": 9,
+    "ML:title": 4,
+    "ML:text": 50,
+    "heuristic:list_pattern": 2,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Tragedy Again Strikes Farm Workers.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "H2": 1,
+    "P": 38
+   },
+   "source_breakdown": {
+    "ML:section_header": 1,
+    "ML:text": 25,
+    "default": 13
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Twenty Years of Struggle.pdf",
+   "pages": 1,
+   "total_lines": 17,
+   "tag_types": {
+    "Artifact": 7,
+    "P": 9,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 7,
+    "ML:text": 2,
+    "default": 7,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "U.A.W. Convention.pdf",
+   "pages": 1,
+   "total_lines": 18,
+   "tag_types": {
+    "H1": 2,
+    "P": 11,
+    "Artifact": 4,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 2,
+    "default": 3,
+    "ML:text": 8,
+    "artifact_detection": 4,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "UFW Songs and Chants.pdf",
+   "pages": 1,
+   "total_lines": 94,
+   "tag_types": {
+    "H2": 6,
+    "P": 88
+   },
+   "source_breakdown": {
+    "ML:section_header": 6,
+    "ML:text": 88
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "UFW1-part-20-part-20-part-19-1.pdf",
+   "pages": 1,
+   "total_lines": 41,
+   "tag_types": {
+    "Artifact": 10,
+    "H2": 1,
+    "P": 29,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 10,
+    "ML:section_header": 1,
+    "ML:text": 15,
+    "heuristic:list_pattern": 1,
+    "default": 14
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "UFW1-part-20-part-20-part-19-2.pdf",
+   "pages": 1,
+   "total_lines": 43,
+   "tag_types": {
+    "Artifact": 4,
+    "P": 37,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "artifact_detection": 4,
+    "ML:text": 26,
+    "heuristic:list_pattern": 2,
+    "default": 11
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "UFW1-part-20-part-20-part-20-1.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "FigureCaptionCandidate": 1,
+    "P": 30,
+    "H2": 2,
+    "H1": 2,
+    "LI": 1,
+    "Artifact": 3
+   },
+   "source_breakdown": {
+    "ML:caption": 1,
+    "ML:text": 29,
+    "heuristic:font_size": 4,
+    "default": 1,
+    "heuristic:list_pattern": 1,
+    "artifact_detection": 3
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "UFW1-part-20-part-20-part-20-part-6-2.pdf",
+   "pages": 1,
+   "total_lines": 41,
+   "tag_types": {
+    "P": 29,
+    "H1": 6,
+    "Artifact": 3,
+    "H2": 1,
+    "FigureCaptionCandidate": 2
+   },
+   "source_breakdown": {
+    "default": 1,
+    "ML:section_header+font": 6,
+    "ML:text": 28,
+    "artifact_detection": 3,
+    "heuristic:font_size": 1,
+    "ML:caption": 2
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "UFW_boycotts_safeway_BoycottSafeway-untagged.pdf",
+   "pages": 1,
+   "total_lines": 5,
+   "tag_types": {
+    "P": 5
+   },
+   "source_breakdown": {
+    "default": 5
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "UFW_boycotts_safeway_SafewayRefusesToAct-untagged.pdf",
+   "pages": 1,
+   "total_lines": 99,
+   "tag_types": {
+    "H1": 2,
+    "P": 94,
+    "LI": 3
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 2,
+    "ML:text": 93,
+    "default": 1,
+    "heuristic:list_pattern": 3
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Unidos En Coachella.pdf",
+   "pages": 1,
+   "total_lines": 11,
+   "tag_types": {
+    "Artifact": 2,
+    "H1": 4,
+    "P": 5
+   },
+   "source_breakdown": {
+    "artifact_detection": 2,
+    "ML:title+font": 3,
+    "ML:text": 5,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Unidos en Coachella(1).pdf",
+   "pages": 1,
+   "total_lines": 14,
+   "tag_types": {
+    "Artifact": 2,
+    "P": 8,
+    "H1": 1,
+    "H2": 2,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 2,
+    "default": 3,
+    "ML:title+font": 2,
+    "ML:text": 5,
+    "ML:section_header+font": 1,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "United Farm Workers Union Newsletter.pdf",
+   "pages": 1,
+   "total_lines": 71,
+   "tag_types": {
+    "P": 64,
+    "H2": 1,
+    "Artifact": 6
+   },
+   "source_breakdown": {
+    "default": 2,
+    "ML:text": 62,
+    "ML:section_header": 1,
+    "artifact_detection": 6
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Volante de El Malcriado No. 9, 23 de junio de 197S.pdf",
+   "pages": 1,
+   "total_lines": 54,
+   "tag_types": {
+    "H2": 8,
+    "H1": 1,
+    "P": 40,
+    "Artifact": 2,
+    "LI": 1,
+    "FigureCaptionCandidate": 2
+   },
+   "source_breakdown": {
+    "ML:section_header": 7,
+    "ML:section_header+font": 2,
+    "ML:text": 39,
+    "artifact_detection": 2,
+    "heuristic:list_pattern": 1,
+    "default": 1,
+    "ML:caption": 2
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Volunteers Needed.pdf",
+   "pages": 1,
+   "total_lines": 19,
+   "tag_types": {
+    "P": 14,
+    "LI": 2,
+    "H1": 2,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "ML:text": 14,
+    "heuristic:list_pattern": 2,
+    "heuristic:font_size": 2,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Vote No On the Anti-Farmworker Initiative.pdf",
+   "pages": 1,
+   "total_lines": 37,
+   "tag_types": {
+    "Artifact": 2,
+    "H2": 5,
+    "P": 12,
+    "LI": 14,
+    "H1": 4
+   },
+   "source_breakdown": {
+    "artifact_detection": 2,
+    "ML:section_header": 5,
+    "default": 7,
+    "ML:text": 5,
+    "ML:list_item": 14,
+    "ML:section_header+font": 2,
+    "ML:title+font": 2
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "We Boycott grapes and Gallo wine.pdf",
+   "pages": 1,
+   "total_lines": 2,
+   "tag_types": {
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "artifact_detection": 2
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "We Shall Never be Free While Our Brothers are Slaves.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "P": 37,
+    "Artifact": 2
+   },
+   "source_breakdown": {
+    "ML:text": 34,
+    "default": 3,
+    "artifact_detection": 2
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "What Can A Safeway Customer Do.pdf",
+   "pages": 1,
+   "total_lines": 89,
+   "tag_types": {
+    "H2": 1,
+    "P": 50,
+    "LI": 8,
+    "H1": 2,
+    "Artifact": 28
+   },
+   "source_breakdown": {
+    "ML:section_header": 1,
+    "default": 42,
+    "heuristic:list_pattern": 5,
+    "heuristic:font_size": 2,
+    "ML:text": 8,
+    "artifact_detection": 28,
+    "ML:list_item": 3
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "What Harvest for the Reaper.pdf",
+   "pages": 1,
+   "total_lines": 26,
+   "tag_types": {
+    "H1": 3,
+    "H2": 2,
+    "P": 20,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 1,
+    "ML:section_header+font": 2,
+    "ML:section_header": 2,
+    "ML:text": 20,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "What Is the Story Behind the Napa Valley Wine Boycott.pdf",
+   "pages": 1,
+   "total_lines": 69,
+   "tag_types": {
+    "P": 62,
+    "FigureCaptionCandidate": 4,
+    "Artifact": 2,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "default": 18,
+    "ML:text": 44,
+    "ML:caption": 4,
+    "artifact_detection": 2,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "What You Can Do To Help.pdf",
+   "pages": 1,
+   "total_lines": 150,
+   "tag_types": {
+    "P": 108,
+    "Artifact": 10,
+    "LI": 27,
+    "H1": 1,
+    "H2": 4
+   },
+   "source_breakdown": {
+    "default": 75,
+    "artifact_detection": 10,
+    "heuristic:list_pattern": 27,
+    "ML:text": 33,
+    "heuristic:font_size": 5
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Who Are the Grape Strikers.pdf",
+   "pages": 1,
+   "total_lines": 57,
+   "tag_types": {
+    "H2": 3,
+    "P": 53,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "ML:section_header": 3,
+    "ML:text": 44,
+    "default": 9,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Why Should You Boycott Gallo Wine.pdf",
+   "pages": 1,
+   "total_lines": 41,
+   "tag_types": {
+    "H2": 2,
+    "P": 37,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "ML:section_header": 2,
+    "ML:text": 33,
+    "heuristic:list_pattern": 2,
+    "default": 4
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Why Should You Boycott Safeway.pdf",
+   "pages": 1,
+   "total_lines": 89,
+   "tag_types": {
+    "P": 78,
+    "Artifact": 1,
+    "H1": 9,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:text": 78,
+    "artifact_detection": 1,
+    "ML:section_header+font": 6,
+    "heuristic:list_pattern": 1,
+    "heuristic:font_size": 3
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Workers Vote UFW.pdf",
+   "pages": 1,
+   "total_lines": 100,
+   "tag_types": {
+    "H2": 5,
+    "P": 16,
+    "LI": 6,
+    "TableRowCandidate": 73
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 1,
+    "ML:text": 6,
+    "heuristic:font_size": 4,
+    "heuristic:list_pattern": 6,
+    "default": 10,
+    "ML:table": 73
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Your Salad Or His Future.pdf",
+   "pages": 2,
+   "total_lines": 59,
+   "tag_types": {
+    "Artifact": 11,
+    "H1": 1,
+    "P": 38,
+    "LI": 9
+   },
+   "source_breakdown": {
+    "artifact_detection": 11,
+    "heuristic:font_size": 1,
+    "default": 16,
+    "ML:text": 22,
+    "heuristic:list_pattern": 9
+   }
+  },
+  {
+   "batch": "Flyers2",
+   "filename": "Your Vodka Affects Their Future.pdf",
+   "pages": 1,
+   "total_lines": 34,
+   "tag_types": {
+    "H1": 5,
+    "LI": 5,
+    "P": 17,
+    "Artifact": 7
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 5,
+    "heuristic:list_pattern": 5,
+    "ML:text": 12,
+    "artifact_detection": 7,
+    "default": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Farmworkers Food Caravan to Delano 2.pdf",
+   "pages": 1,
+   "total_lines": 125,
+   "tag_types": {
+    "Artifact": 125
+   },
+   "source_breakdown": {
+    "artifact_detection": 125
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Farmworkers March on Gallo.pdf",
+   "pages": 1,
+   "total_lines": 6,
+   "tag_types": {
+    "Artifact": 3,
+    "P": 3
+   },
+   "source_breakdown": {
+    "artifact_detection": 3,
+    "ML:text": 3
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Farmworkers Need Your Help(1).pdf",
+   "pages": 1,
+   "total_lines": 34,
+   "tag_types": {
+    "Artifact": 1,
+    "P": 26,
+    "LI": 6,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "ML:text": 25,
+    "default": 1,
+    "ML:list_item": 6,
+    "ML:section_header": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Farmworkers Need Your Help.pdf",
+   "pages": 1,
+   "total_lines": 135,
+   "tag_types": {
+    "P": 37,
+    "Artifact": 95,
+    "H1": 3
+   },
+   "source_breakdown": {
+    "ML:text": 37,
+    "artifact_detection": 95,
+    "ML:section_header+font": 3
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Farmworkers_ Union vs. Farm Bureau.pdf",
+   "pages": 1,
+   "total_lines": 107,
+   "tag_types": {
+    "LI": 16,
+    "P": 84,
+    "Artifact": 3,
+    "H1": 2,
+    "H2": 2
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 16,
+    "default": 18,
+    "artifact_detection": 3,
+    "ML:text": 66,
+    "heuristic:font_size": 4
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Food Drive and Caravan to Delano.pdf",
+   "pages": 1,
+   "total_lines": 72,
+   "tag_types": {
+    "Artifact": 18,
+    "P": 36,
+    "H1": 2,
+    "H2": 3,
+    "LI": 3,
+    "TableRowCandidate": 10
+   },
+   "source_breakdown": {
+    "artifact_detection": 18,
+    "default": 17,
+    "ML:text": 19,
+    "ML:title+font": 4,
+    "ML:title": 1,
+    "ML:list_item": 2,
+    "heuristic:list_pattern": 1,
+    "ML:table": 10
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "For Justice For All.pdf",
+   "pages": 1,
+   "total_lines": 128,
+   "tag_types": {
+    "H1": 4,
+    "P": 110,
+    "Artifact": 11,
+    "LI": 1,
+    "H2": 1,
+    "FigureCaptionCandidate": 1
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 4,
+    "ML:text": 100,
+    "artifact_detection": 11,
+    "default": 10,
+    "heuristic:list_pattern": 1,
+    "heuristic:font_size": 1,
+    "ML:caption": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "From the Gallo Workers.pdf",
+   "pages": 1,
+   "total_lines": 41,
+   "tag_types": {
+    "H1": 8,
+    "P": 27,
+    "Artifact": 3,
+    "FigureCaptionCandidate": 3
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 7,
+    "heuristic:font_size": 1,
+    "ML:text": 27,
+    "artifact_detection": 3,
+    "ML:caption": 3
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Fund Raising Ideas.pdf",
+   "pages": 1,
+   "total_lines": 118,
+   "tag_types": {
+    "LI": 34,
+    "Artifact": 3,
+    "TableRowCandidate": 34,
+    "P": 46,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 34,
+    "artifact_detection": 3,
+    "ML:table": 34,
+    "ML:text": 39,
+    "default": 7,
+    "ML:section_header": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Get Together.pdf",
+   "pages": 1,
+   "total_lines": 28,
+   "tag_types": {
+    "H2": 1,
+    "P": 26,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "heuristic:all_caps": 1,
+    "ML:text": 16,
+    "default": 10,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Get the Storm Trooper Boots Off Our Back.pdf",
+   "pages": 2,
+   "total_lines": 175,
+   "tag_types": {
+    "H1": 2,
+    "P": 164,
+    "LI": 2,
+    "Artifact": 1,
+    "H2": 6
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 3,
+    "ML:text": 164,
+    "heuristic:list_pattern": 2,
+    "artifact_detection": 1,
+    "ML:section_header": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Grape Boycott Petition.pdf",
+   "pages": 1,
+   "total_lines": 28,
+   "tag_types": {
+    "P": 13,
+    "LI": 2,
+    "TableRowCandidate": 12,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "default": 3,
+    "ML:text": 10,
+    "heuristic:list_pattern": 2,
+    "ML:table": 12,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Hear Fred Gaboury.pdf",
+   "pages": 1,
+   "total_lines": 32,
+   "tag_types": {
+    "H1": 1,
+    "H2": 3,
+    "P": 22,
+    "LI": 3,
+    "Artifact": 3
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 2,
+    "ML:text": 20,
+    "heuristic:list_pattern": 3,
+    "heuristic:font_size": 2,
+    "default": 2,
+    "artifact_detection": 3
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Help Farm Workers This Summer.pdf",
+   "pages": 1,
+   "total_lines": 62,
+   "tag_types": {
+    "Artifact": 48,
+    "P": 13,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 48,
+    "ML:text": 10,
+    "default": 3,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Huelga Club.pdf",
+   "pages": 1,
+   "total_lines": 57,
+   "tag_types": {
+    "P": 27,
+    "LI": 3,
+    "Artifact": 27
+   },
+   "source_breakdown": {
+    "ML:text": 25,
+    "heuristic:list_pattern": 3,
+    "default": 2,
+    "artifact_detection": 27
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Huelga Newsletter - Lettuce Boycott Comes to San Jose.pdf",
+   "pages": 2,
+   "total_lines": 111,
+   "tag_types": {
+    "H2": 7,
+    "P": 75,
+    "LI": 26,
+    "Artifact": 3
+   },
+   "source_breakdown": {
+    "ML:section_header": 7,
+    "ML:text": 62,
+    "heuristic:list_pattern": 14,
+    "default": 13,
+    "artifact_detection": 3,
+    "ML:list_item": 12
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Huge Fraud on Prop. 22.pdf",
+   "pages": 1,
+   "total_lines": 40,
+   "tag_types": {
+    "P": 19,
+    "LI": 19,
+    "H1": 1,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "ML:text": 14,
+    "default": 4,
+    "heuristic:list_pattern": 9,
+    "ML:list_item": 11,
+    "heuristic:font_size": 1,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "If Gallo Has a Sweetheart.pdf",
+   "pages": 1,
+   "total_lines": 33,
+   "tag_types": {
+    "Artifact": 23,
+    "LI": 9,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 23,
+    "ML:list_item": 9,
+    "ML:section_header": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "If You Believe in Justice for Farmworkers.pdf",
+   "pages": 1,
+   "total_lines": 82,
+   "tag_types": {
+    "H1": 3,
+    "P": 78,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 3,
+    "ML:text": 78,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "If You_re Involved Enough.pdf",
+   "pages": 1,
+   "total_lines": 8,
+   "tag_types": {
+    "H2": 1,
+    "P": 7
+   },
+   "source_breakdown": {
+    "ML:section_header": 1,
+    "ML:text": 5,
+    "default": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Instructions to Pickets.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "H2": 3,
+    "P": 34,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "ML:section_header": 3,
+    "ML:text": 27,
+    "heuristic:list_pattern": 2,
+    "default": 7
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Interfaith Committee for Social Justice.pdf",
+   "pages": 1,
+   "total_lines": 79,
+   "tag_types": {
+    "P": 62,
+    "H2": 5,
+    "LI": 12
+   },
+   "source_breakdown": {
+    "ML:text": 40,
+    "ML:section_header": 5,
+    "default": 22,
+    "heuristic:list_pattern": 12
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "International Grape Boycott Day.pdf",
+   "pages": 1,
+   "total_lines": 40,
+   "tag_types": {
+    "P": 39,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "default": 6,
+    "ML:text": 33,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Join the Labor Caravan 1.pdf",
+   "pages": 1,
+   "total_lines": 27,
+   "tag_types": {
+    "P": 9,
+    "LI": 17,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "default": 2,
+    "ML:text": 7,
+    "ML:list_item": 16,
+    "ML:section_header": 1,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Join the Labor Caravan 2.pdf",
+   "pages": 1,
+   "total_lines": 44,
+   "tag_types": {
+    "H1": 1,
+    "P": 24,
+    "LI": 8,
+    "TableRowCandidate": 11
+   },
+   "source_breakdown": {
+    "ML:title": 1,
+    "default": 2,
+    "heuristic:list_pattern": 2,
+    "ML:list_item": 7,
+    "ML:text": 21,
+    "ML:table": 11
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Justice for Farm Workers.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "P": 20,
+    "LI": 10,
+    "H1": 1,
+    "H2": 3,
+    "Artifact": 5
+   },
+   "source_breakdown": {
+    "default": 6,
+    "heuristic:list_pattern": 8,
+    "heuristic:font_size": 1,
+    "ML:text": 14,
+    "ML:section_header+font": 3,
+    "ML:list_item": 2,
+    "artifact_detection": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "La Lucha (December 1975).pdf",
+   "pages": 1,
+   "total_lines": 110,
+   "tag_types": {
+    "Artifact": 3,
+    "P": 100,
+    "H1": 2,
+    "LI": 5
+   },
+   "source_breakdown": {
+    "artifact_detection": 3,
+    "ML:text": 100,
+    "heuristic:font_size": 1,
+    "ML:section_header+font": 1,
+    "heuristic:list_pattern": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "La Lucha (December 1975, p.2).pdf",
+   "pages": 1,
+   "total_lines": 109,
+   "tag_types": {
+    "H2": 2,
+    "H1": 8,
+    "P": 78,
+    "Artifact": 21
+   },
+   "source_breakdown": {
+    "ML:section_header": 2,
+    "ML:section_header+font": 8,
+    "ML:text": 78,
+    "artifact_detection": 21
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "La Lucha (June 15, 1975).pdf",
+   "pages": 1,
+   "total_lines": 188,
+   "tag_types": {
+    "Artifact": 14,
+    "FigureCaptionCandidate": 1,
+    "H1": 3,
+    "P": 167,
+    "LI": 3
+   },
+   "source_breakdown": {
+    "artifact_detection": 14,
+    "ML:caption": 1,
+    "heuristic:font_size": 2,
+    "ML:text": 167,
+    "heuristic:list_pattern": 3,
+    "ML:section_header+font": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "La Lucha (June 15, 1975, p.3).pdf",
+   "pages": 1,
+   "total_lines": 142,
+   "tag_types": {
+    "P": 130,
+    "H2": 1,
+    "Artifact": 1,
+    "H1": 3,
+    "FigureCaptionCandidate": 6,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "default": 2,
+    "ML:text": 128,
+    "ML:section_header": 1,
+    "artifact_detection": 1,
+    "ML:section_header+font": 3,
+    "ML:caption": 6,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Lettuce Wage Comparison.pdf",
+   "pages": 1,
+   "total_lines": 69,
+   "tag_types": {
+    "H2": 3,
+    "P": 65,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:section_header": 3,
+    "default": 10,
+    "ML:text": 55,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "March and Rally - Delano Farm Workers_ Strike.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "P": 31,
+    "H2": 3,
+    "LI": 5
+   },
+   "source_breakdown": {
+    "ML:text": 30,
+    "ML:section_header": 3,
+    "heuristic:list_pattern": 5,
+    "default": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "March and Rally.pdf",
+   "pages": 1,
+   "total_lines": 14,
+   "tag_types": {
+    "Artifact": 7,
+    "P": 3,
+    "LI": 3,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 7,
+    "default": 3,
+    "heuristic:list_pattern": 3,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Mod Squad Refuse To Cross Picket Line.pdf",
+   "pages": 1,
+   "total_lines": 114,
+   "tag_types": {
+    "H1": 3,
+    "P": 85,
+    "LI": 21,
+    "Artifact": 5
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 3,
+    "default": 27,
+    "heuristic:list_pattern": 21,
+    "ML:text": 58,
+    "artifact_detection": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "More Reasons Why You Should Help the Farmworkers_ Union.pdf",
+   "pages": 1,
+   "total_lines": 136,
+   "tag_types": {
+    "H1": 9,
+    "P": 125,
+    "Artifact": 1,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 5,
+    "default": 15,
+    "artifact_detection": 1,
+    "ML:section_header+font": 4,
+    "ML:text": 110,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "New Owner of Kentucky Fried Chicken.pdf",
+   "pages": 1,
+   "total_lines": 56,
+   "tag_types": {
+    "LI": 6,
+    "P": 47,
+    "H2": 3
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 6,
+    "default": 25,
+    "ML:text": 22,
+    "heuristic:font_size": 3
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "No Come Lechuga - Huelga.pdf",
+   "pages": 1,
+   "total_lines": 168,
+   "tag_types": {
+    "Artifact": 3,
+    "P": 122,
+    "H1": 1,
+    "H2": 1,
+    "LI": 41
+   },
+   "source_breakdown": {
+    "artifact_detection": 3,
+    "default": 104,
+    "heuristic:font_size": 2,
+    "heuristic:list_pattern": 41,
+    "ML:text": 18
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "No Come Lechuga.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "Artifact": 23,
+    "P": 13,
+    "LI": 3
+   },
+   "source_breakdown": {
+    "artifact_detection": 23,
+    "ML:text": 8,
+    "heuristic:list_pattern": 2,
+    "ML:list_item": 1,
+    "default": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "No Compre Aqui.pdf",
+   "pages": 1,
+   "total_lines": 21,
+   "tag_types": {
+    "P": 21
+   },
+   "source_breakdown": {
+    "ML:text": 21
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "No Way, Safeway!.pdf",
+   "pages": 1,
+   "total_lines": 67,
+   "tag_types": {
+    "Artifact": 21,
+    "P": 46
+   },
+   "source_breakdown": {
+    "artifact_detection": 21,
+    "ML:text": 46
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "On Sunday Give Us Your Prayers.pdf",
+   "pages": 1,
+   "total_lines": 33,
+   "tag_types": {
+    "Artifact": 9,
+    "P": 22,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "artifact_detection": 9,
+    "ML:text": 20,
+    "heuristic:list_pattern": 2,
+    "default": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Only 10 Percent of Grapes are Scab.pdf",
+   "pages": 1,
+   "total_lines": 52,
+   "tag_types": {
+    "P": 32,
+    "H2": 13,
+    "Artifact": 2,
+    "LI": 4,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "default": 12,
+    "ML:section_header+font": 8,
+    "artifact_detection": 2,
+    "ML:section_header": 5,
+    "ML:text": 20,
+    "heuristic:list_pattern": 4,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Paul Masson Wants to Mechanize Workers Into Proverty.pdf",
+   "pages": 1,
+   "total_lines": 58,
+   "tag_types": {
+    "P": 44,
+    "LI": 7,
+    "H2": 4,
+    "Artifact": 3
+   },
+   "source_breakdown": {
+    "default": 6,
+    "heuristic:list_pattern": 2,
+    "ML:text": 38,
+    "ML:section_header": 2,
+    "artifact_detection": 3,
+    "ML:section_header+font": 2,
+    "ML:list_item": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Peligro de Muerte.pdf",
+   "pages": 1,
+   "total_lines": 4,
+   "tag_types": {
+    "P": 2,
+    "Artifact": 1,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "default": 2,
+    "artifact_detection": 1,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Pilgrimage by Farm Workers from Coachella Valley to Mexican Border.pdf",
+   "pages": 2,
+   "total_lines": 120,
+   "tag_types": {
+    "P": 96,
+    "H2": 3,
+    "LI": 17,
+    "Artifact": 4
+   },
+   "source_breakdown": {
+    "default": 7,
+    "heuristic:font_size": 2,
+    "heuristic:all_caps": 1,
+    "ML:text": 89,
+    "heuristic:list_pattern": 17,
+    "artifact_detection": 4
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Plan Of Action Against Lucky Stores.pdf",
+   "pages": 1,
+   "total_lines": 71,
+   "tag_types": {
+    "P": 61,
+    "LI": 3,
+    "Artifact": 6,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "default": 7,
+    "heuristic:list_pattern": 3,
+    "artifact_detection": 6,
+    "ML:title": 1,
+    "ML:text": 54
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Pleas Do Not Shop at this Store.pdf",
+   "pages": 1,
+   "total_lines": 30,
+   "tag_types": {
+    "P": 29,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "ML:text": 29,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Please Do Not Shop At This Store.pdf",
+   "pages": 1,
+   "total_lines": 31,
+   "tag_types": {
+    "LI": 4,
+    "P": 26,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 1,
+    "ML:text": 25,
+    "ML:list_item": 3,
+    "default": 1,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Please Don_t Buy Anything Here.pdf",
+   "pages": 1,
+   "total_lines": 83,
+   "tag_types": {
+    "H2": 5,
+    "P": 78
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 5,
+    "ML:text": 70,
+    "default": 8
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Please Don_t Buy Italian Swiss Colony Wines.pdf",
+   "pages": 1,
+   "total_lines": 30,
+   "tag_types": {
+    "P": 17,
+    "Artifact": 13
+   },
+   "source_breakdown": {
+    "default": 3,
+    "artifact_detection": 13,
+    "ML:text": 14
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Please Don_t Shop At This Store.pdf",
+   "pages": 1,
+   "total_lines": 57,
+   "tag_types": {
+    "H1": 3,
+    "H2": 4,
+    "P": 36,
+    "Artifact": 14
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 3,
+    "ML:section_header": 4,
+    "ML:text": 21,
+    "default": 15,
+    "artifact_detection": 14
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Please Patronize Food Market Who Have Removed Scab-Picked Grapes.pdf",
+   "pages": 1,
+   "total_lines": 38,
+   "tag_types": {
+    "P": 30,
+    "H2": 7,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "default": 1,
+    "ML:section_header": 7,
+    "ML:text": 29,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Pledge to Boycott.pdf",
+   "pages": 1,
+   "total_lines": 36,
+   "tag_types": {
+    "P": 33,
+    "H2": 1,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "default": 20,
+    "ML:text": 13,
+    "ML:section_header": 1,
+    "heuristic:list_pattern": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Por Favor No Compre Aqui.pdf",
+   "pages": 1,
+   "total_lines": 47,
+   "tag_types": {
+    "Artifact": 7,
+    "P": 32,
+    "H1": 2,
+    "LI": 6
+   },
+   "source_breakdown": {
+    "artifact_detection": 7,
+    "default": 13,
+    "ML:text": 19,
+    "heuristic:font_size": 1,
+    "heuristic:list_pattern": 6,
+    "ML:section_header+font": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Priests Urge Boycott of Table Grapes.pdf",
+   "pages": 1,
+   "total_lines": 56,
+   "tag_types": {
+    "P": 52,
+    "H1": 3,
+    "Artifact": 1
+   },
+   "source_breakdown": {
+    "ML:text": 48,
+    "ML:section_header+font": 3,
+    "default": 4,
+    "artifact_detection": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Proclamation of the Delano Grape Workers 1.pdf",
+   "pages": 1,
+   "total_lines": 107,
+   "tag_types": {
+    "P": 100,
+    "H2": 3,
+    "H1": 2,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "default": 7,
+    "ML:section_header": 3,
+    "ML:section_header+font": 2,
+    "ML:text": 93,
+    "heuristic:list_pattern": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Proclamation of the Delano Grape Workers 2.pdf",
+   "pages": 1,
+   "total_lines": 93,
+   "tag_types": {
+    "P": 79,
+    "H2": 4,
+    "Artifact": 1,
+    "LI": 9
+   },
+   "source_breakdown": {
+    "ML:text": 65,
+    "heuristic:font_size": 2,
+    "artifact_detection": 1,
+    "default": 14,
+    "heuristic:list_pattern": 9,
+    "ML:section_header": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Purex Products.pdf",
+   "pages": 1,
+   "total_lines": 48,
+   "tag_types": {
+    "H2": 4,
+    "P": 44
+   },
+   "source_breakdown": {
+    "ML:section_header": 4,
+    "ML:text": 35,
+    "default": 9
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Purex Subsidiaries 1.pdf",
+   "pages": 1,
+   "total_lines": 37,
+   "tag_types": {
+    "Artifact": 1,
+    "H2": 2,
+    "P": 33,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "ML:section_header": 2,
+    "ML:text": 28,
+    "heuristic:list_pattern": 1,
+    "default": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Purex Subsidiaries 2.pdf",
+   "pages": 1,
+   "total_lines": 24,
+   "tag_types": {
+    "P": 24
+   },
+   "source_breakdown": {
+    "default": 6,
+    "ML:text": 18
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Purex Subsidiaries 3.pdf",
+   "pages": 1,
+   "total_lines": 47,
+   "tag_types": {
+    "P": 45,
+    "H2": 2
+   },
+   "source_breakdown": {
+    "ML:text": 45,
+    "ML:section_header": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Rev. Wayne C. Hartmire, Jr. - Straight Talk On the Lettuce.pdf",
+   "pages": 4,
+   "total_lines": 363,
+   "tag_types": {
+    "LI": 19,
+    "P": 337,
+    "Artifact": 5,
+    "H2": 2
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 19,
+    "default": 13,
+    "ML:text": 324,
+    "artifact_detection": 5,
+    "ML:section_header": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Ronald B. Taylor - Myths of Labor and the Plights of Children 1.pdf",
+   "pages": 1,
+   "total_lines": 67,
+   "tag_types": {
+    "H1": 1,
+    "P": 65,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "heuristic:font_size": 1,
+    "ML:text": 65,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Ronald B. Taylor - Myths of Labor and the Plights of Children 2.pdf",
+   "pages": 1,
+   "total_lines": 57,
+   "tag_types": {
+    "Artifact": 1,
+    "P": 52,
+    "LI": 4
+   },
+   "source_breakdown": {
+    "artifact_detection": 1,
+    "ML:text": 52,
+    "heuristic:list_pattern": 4
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "SAFE WAY.pdf",
+   "pages": 1,
+   "total_lines": 36,
+   "tag_types": {
+    "P": 36
+   },
+   "source_breakdown": {
+    "default": 1,
+    "ML:text": 35
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Safeway Fact Sheet.pdf",
+   "pages": 1,
+   "total_lines": 102,
+   "tag_types": {
+    "P": 42,
+    "H2": 1,
+    "LI": 37,
+    "TableRowCandidate": 21,
+    "H1": 1
+   },
+   "source_breakdown": {
+    "ML:text": 16,
+    "ML:section_header": 1,
+    "heuristic:list_pattern": 22,
+    "ML:list_item": 15,
+    "default": 26,
+    "ML:table": 21,
+    "heuristic:font_size": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Salinas Farm Workers Are On Strike.pdf",
+   "pages": 1,
+   "total_lines": 27,
+   "tag_types": {
+    "Artifact": 2,
+    "P": 20,
+    "H1": 2,
+    "LI": 2,
+    "H2": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 2,
+    "default": 6,
+    "ML:text": 14,
+    "heuristic:font_size": 3,
+    "heuristic:list_pattern": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Salinas Strikers Launch Lettuce Boycott.pdf",
+   "pages": 1,
+   "total_lines": 64,
+   "tag_types": {
+    "Artifact": 37,
+    "P": 25,
+    "LI": 2
+   },
+   "source_breakdown": {
+    "artifact_detection": 37,
+    "ML:text": 20,
+    "heuristic:list_pattern": 2,
+    "default": 5
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Salinas The Workers Ignored.pdf",
+   "pages": 1,
+   "total_lines": 143,
+   "tag_types": {
+    "Artifact": 3,
+    "P": 134,
+    "H2": 6
+   },
+   "source_breakdown": {
+    "artifact_detection": 3,
+    "default": 2,
+    "heuristic:font_size": 2,
+    "ML:text": 132,
+    "ML:section_header+font": 3,
+    "ML:section_header": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "San Jose March to Stop Gallo.pdf",
+   "pages": 2,
+   "total_lines": 59,
+   "tag_types": {
+    "Artifact": 20,
+    "P": 34,
+    "LI": 2,
+    "H1": 3
+   },
+   "source_breakdown": {
+    "artifact_detection": 20,
+    "ML:text": 30,
+    "heuristic:list_pattern": 2,
+    "heuristic:font_size": 2,
+    "default": 4,
+    "ML:section_header+font": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Say No to Safeway!.pdf",
+   "pages": 1,
+   "total_lines": 42,
+   "tag_types": {
+    "Artifact": 6,
+    "P": 35,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "artifact_detection": 6,
+    "ML:text": 21,
+    "default": 14,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Senator McGovern Boycotts Lettuce.pdf",
+   "pages": 1,
+   "total_lines": 39,
+   "tag_types": {
+    "H1": 3,
+    "H2": 1,
+    "P": 5,
+    "Artifact": 30
+   },
+   "source_breakdown": {
+    "ML:section_header+font": 3,
+    "ML:section_header": 1,
+    "ML:text": 5,
+    "artifact_detection": 30
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Should Union Workers Be Concerned.pdf",
+   "pages": 1,
+   "total_lines": 10,
+   "tag_types": {
+    "P": 10
+   },
+   "source_breakdown": {
+    "default": 2,
+    "ML:text": 8
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Statement by Cesar Chavez from the Salinas Jail.pdf",
+   "pages": 1,
+   "total_lines": 24,
+   "tag_types": {
+    "P": 22,
+    "H2": 1,
+    "LI": 1
+   },
+   "source_breakdown": {
+    "default": 3,
+    "ML:section_header": 1,
+    "ML:text": 19,
+    "heuristic:list_pattern": 1
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Stop Grapes in Coachella.pdf",
+   "pages": 1,
+   "total_lines": 28,
+   "tag_types": {
+    "Artifact": 19,
+    "P": 9
+   },
+   "source_breakdown": {
+    "artifact_detection": 19,
+    "default": 7,
+    "ML:text": 2
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "Stop The Dues Now.pdf",
+   "pages": 1,
+   "total_lines": 56,
+   "tag_types": {
+    "LI": 2,
+    "Artifact": 16,
+    "H2": 3,
+    "H1": 2,
+    "P": 33
+   },
+   "source_breakdown": {
+    "heuristic:list_pattern": 2,
+    "artifact_detection": 16,
+    "ML:section_header": 2,
+    "ML:section_header+font": 3,
+    "ML:text": 33
+   }
+  },
+  {
+   "batch": "Flyers3",
+   "filename": "march and demonstration in support of the Delano farmworkers\u2019 strike.pdf",
+   "pages": 1,
+   "total_lines": 50,
+   "tag_types": {
+    "P": 41,
+    "LI": 9
+   },
+   "source_breakdown": {
+    "ML:text": 25,
+    "default": 15,
+    "heuristic:list_pattern": 4,
+    "ML:list_item": 6
+   }
+  }
+ ]
+}
